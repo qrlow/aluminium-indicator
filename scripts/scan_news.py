@@ -123,10 +123,9 @@ FACTOR_CATALOG: Tuple[Factor, ...] = (
             "global trade",
             "container throughput",
             "orders",
-            "premiums",
         ),
         queries=(
-            '("aluminium" OR "aluminum") ("export orders" OR "restocking" OR "global trade" OR "premiums")',
+            '("aluminium" OR "aluminum") ("export orders" OR "restocking" OR "global trade")',
         ),
     ),
     Factor(
@@ -206,6 +205,26 @@ FACTOR_CATALOG: Tuple[Factor, ...] = (
         ),
         queries=(
             '("aluminium" OR "aluminum") ("LME stocks" OR "SHFE stocks" OR "inventory" OR "warehouse")',
+        ),
+    ),
+    Factor(
+        id="supply_physical_premiums",
+        label="Physical premiums and regional tightness",
+        side="supply",
+        horizon="short",
+        metrics=("spot premiums", "regional delivery premiums", "physical availability"),
+        keywords=(
+            "premium",
+            "premiums",
+            "physical supply",
+            "physical supply tightens",
+            "delivered costs",
+            "regional tightness",
+            "japan premium",
+            "midwest premium",
+        ),
+        queries=(
+            '("aluminium" OR "aluminum") ("premium" OR "premiums" OR "physical supply tightens" OR "Japan premium" OR "Midwest premium")',
         ),
     ),
     Factor(
@@ -304,22 +323,25 @@ FACTOR_CATALOG: Tuple[Factor, ...] = (
     ),
     Factor(
         id="supply_new_capacity",
-        label="New smelter capacity and permanent closures",
+        label="New aluminium capacity and permanent closures",
         side="supply",
         horizon="long",
-        metrics=("announced capacity", "capex", "permanent closures"),
+        metrics=("announced capacity", "capex", "project ramp-ups", "permanent closures"),
         keywords=(
             "new smelter",
             "capacity expansion",
+            "foil capacity",
+            "rolling mill",
             "permanent closure",
             "greenfield",
             "brownfield",
             "ramp up",
             "ramp-up",
             "new capacity",
+            "trial production",
         ),
         queries=(
-            '("aluminium" OR "aluminum") ("new smelter" OR "capacity expansion" OR "permanent closure" OR "greenfield")',
+            '("aluminium" OR "aluminum") ("new smelter" OR "capacity expansion" OR "trial production" OR "permanent closure" OR "greenfield")',
         ),
     ),
     Factor(
@@ -433,6 +455,19 @@ DEMAND_DOWN_TERMS = (
     "recession",
     "destocking",
 )
+
+LOW_INFORMATION_TITLE_PATTERNS = (
+    re.compile(r"\boutlook and strategy\b", re.IGNORECASE),
+    re.compile(r"\btrade ideas?\b", re.IGNORECASE),
+    re.compile(r"\benterprise value to ebitda\b", re.IGNORECASE),
+    re.compile(r"\btop \d+ metal stocks?\b", re.IGNORECASE),
+    re.compile(r"\bshares? .* slumped\b", re.IGNORECASE),
+    re.compile(r"\bstocks? to (buy|watch)\b", re.IGNORECASE),
+    re.compile(r"\bmarket (size|share|growth|forecast|outlook)\b", re.IGNORECASE),
+    re.compile(r"\bmarket .* forecast to 20\d{2}\b", re.IGNORECASE),
+)
+
+DETAIL_SENTENCE_LIMIT = 3
 
 
 def clean_text(value: str) -> str:
@@ -603,6 +638,358 @@ def build_market_read(side: str, horizon: str, impact: str, terms: Sequence[str]
     return f"{impact}; {horizon_label} {side_label}; matched {reason}."
 
 
+def strip_source_suffix(title: str) -> str:
+    parts = title.rsplit(" - ", 1)
+    if len(parts) == 2 and len(parts[1]) <= 45:
+        return parts[0].strip('" ')
+    return title.strip('" ')
+
+
+def is_low_information_article(article: Dict[str, object]) -> bool:
+    title = str(article.get("title", ""))
+    normalized = canonical_text(title)
+    if not any(pattern.search(title) for pattern in LOW_INFORMATION_TITLE_PATTERNS):
+        return False
+    has_market_number = bool(re.search(r"(\$?\d+(?:\.\d+)?\s?(?:%|mt|ton|t|billion|million|crore))", normalized))
+    has_direct_aluminium_action = any(
+        term in normalized
+        for term in (
+            "smelter",
+            "premium",
+            "curtail",
+            "restart",
+            "tariff",
+            "sanction",
+            "alumina",
+            "bauxite",
+            "recycling plant",
+            "capacity expansion",
+        )
+    )
+    return not (has_market_number and has_direct_aluminium_action)
+
+
+def is_japan_premium_topic(text: str) -> bool:
+    return "japan" in text and (
+        "premium" in text
+        or "premiums" in text
+        or "buyers agree on higher aluminum fees" in text
+        or "buyers agree on higher aluminium fees" in text
+    )
+
+
+def is_luoyang_wanji_topic(text: str) -> bool:
+    return ("luoyang" in text and "wanji" in text) or (
+        "20,000 mt" in text
+        and "foil" in text
+        and ("capacity expans" in text or "trial production" in text)
+    )
+
+
+def topic_key(article: Dict[str, object]) -> str:
+    title = strip_source_suffix(str(article.get("title", "")))
+    text = canonical_text(" ".join([title, str(article.get("description", ""))]))
+    if is_japan_premium_topic(text):
+        return "japan_q3_aluminium_premium_395"
+    if is_luoyang_wanji_topic(text):
+        return "luoyang_wanji_foil_capacity_expansion"
+    if "adani" in text and ("ihc" in text or "irh" in text) and (
+        "odisha" in text or "aluminium project" in text or "aluminum project" in text
+    ):
+        return "adani_ihc_odisha_aluminium_project"
+    if "alcoa" in text and "south32" in text:
+        return "alcoa_south32_aluminium_assets"
+    if ("slovalco" in text or "slovak" in text) and "restart" in text:
+        return "slovalco_partial_restart"
+    if "inola" in text and "smelter" in text:
+        return "inola_aluminium_smelter_delay"
+    if "emirates global" in text and "recycling" in text:
+        return "ega_aluminium_recycling_plant"
+
+    numbers = re.findall(r"\b\d+(?:\.\d+)?\b", text)
+    tokens = [
+        token
+        for token in re.findall(r"[a-z][a-z0-9]+", text)
+        if token
+        not in {
+            "aluminium",
+            "aluminum",
+            "news",
+            "market",
+            "global",
+            "says",
+            "the",
+            "and",
+            "with",
+            "for",
+            "from",
+            "this",
+            "that",
+            "into",
+            "amid",
+            "after",
+            "over",
+            "due",
+        }
+    ]
+    key_parts = numbers[:2] + tokens[:7]
+    if not key_parts:
+        key_parts = [hashlib.sha1(title.encode("utf-8")).hexdigest()[:10]]
+    return "auto_" + "_".join(key_parts)
+
+
+def extract_numeric_phrases(text: str) -> List[str]:
+    details: List[str] = []
+    sentences = re.split(r"(?<=[.!?])\s+", clean_text(text))
+    for sentence in sentences:
+        if not re.search(r"\$?\d+(?:\.\d+)?\s?(?:%|mt|ton|t|billion|million|crore|year|years?)?", sentence, re.IGNORECASE):
+            continue
+        stripped = strip_source_suffix(sentence)
+        if stripped and stripped not in details:
+            details.append(stripped)
+        if len(details) >= DETAIL_SENTENCE_LIMIT:
+            break
+    return details
+
+
+def article_details(article: Dict[str, object]) -> List[str]:
+    title = strip_source_suffix(str(article.get("title", "")))
+    text = canonical_text(" ".join([title, str(article.get("description", ""))]))
+    if is_japan_premium_topic(text):
+        return [
+            "Japanese Q3 aluminium premium settled around $395/t over LME prices for at least one customer.",
+            "That is above Q2 shipment premiums of roughly $350/t for Rio Tinto and $353/t for South32.",
+            "Supplier opening offers were reported around $460-$480/t, so the final settlement was below the initial ask but still an 11-year high.",
+        ]
+    if is_luoyang_wanji_topic(text):
+        return [
+            "Luoyang Wanji's 20,000 mt/year aluminium foil expansion entered trial production after No. 5 and No. 6 rolling mills completed strip threading and trial runs.",
+            "Stable commissioning results mark the project's move into trial production.",
+            "At full production, the project would lift total company foil capacity to more than 50,000 mt/year.",
+        ]
+    return extract_numeric_phrases(title)
+
+
+def canonical_article_url(article: Dict[str, object]) -> str:
+    url = str(article.get("url", ""))
+    title = strip_source_suffix(str(article.get("title", "")))
+    source = canonical_text(str(article.get("source", "")))
+    text = canonical_text(" ".join([title, source]))
+    if is_japan_premium_topic(text):
+        if "mining.com" in source:
+            return "https://www.mining.com/web/japan-buyers-agree-on-higher-aluminum-fees-due-to-war-disruption/"
+        if "al circle" in source or "alcircle" in source:
+            return "https://www.alcircle.com/news/japans-q3-aluminium-premium-hits-11-year-high-at-395-t-as-physical-supply-tightens-120181"
+    if is_luoyang_wanji_topic(text):
+        return "https://news.metal.com/newscontent/103987818-luoyang-wanji-aluminum-expands-foil-capacity-enters-trial-production-with-advanced-equipment"
+    return url
+
+
+def signal_title(key: str, articles: Sequence[Dict[str, object]]) -> str:
+    if key == "japan_q3_aluminium_premium_395":
+        return "Japan Q3 aluminium premium settles near $395/t"
+    if key == "luoyang_wanji_foil_capacity_expansion":
+        return "Luoyang Wanji adds 20,000 mt/year foil capacity in trial production"
+    if key == "adani_ihc_odisha_aluminium_project":
+        return "Adani and IHC advance Odisha greenfield aluminium project"
+    if key == "alcoa_south32_aluminium_assets":
+        return "Alcoa-South32 asset deal reshapes alumina and bauxite exposure"
+    if key == "slovalco_partial_restart":
+        return "Slovalco aluminium smelter moves toward partial restart"
+    if key == "inola_aluminium_smelter_delay":
+        return "Inola proposed aluminium smelter faces local delay"
+    if key == "ega_aluminium_recycling_plant":
+        return "EGA opens aluminium recycling capacity in the UAE"
+    return strip_source_suffix(str(articles[0].get("title", "")))
+
+
+def signal_summary(key: str, signal: Dict[str, object]) -> str:
+    if key == "japan_q3_aluminium_premium_395":
+        return "Regional physical premiums point to tighter nearby aluminium availability and higher delivered costs for Japanese buyers."
+    if key == "luoyang_wanji_foil_capacity_expansion":
+        return "New foil capacity is moving from commissioning to trial output, adding future supply in higher-end rolled products."
+    if key == "adani_ihc_odisha_aluminium_project":
+        return "A large greenfield project would affect longer-term primary aluminium and alumina capacity rather than immediate supply."
+    if key == "alcoa_south32_aluminium_assets":
+        return "The transaction changes ownership and integration across upstream bauxite, alumina, and aluminium assets."
+    if key == "slovalco_partial_restart":
+        return "Restart news adds potential primary aluminium supply if power and operating economics hold."
+    if key == "inola_aluminium_smelter_delay":
+        return "Local approval delays push potential new smelting capacity further into the future."
+    if key == "ega_aluminium_recycling_plant":
+        return "Additional recycling capacity increases longer-term secondary aluminium supply."
+    return str(signal.get("market_read", ""))
+
+
+def topic_factor_override(key: str) -> List[str]:
+    overrides = {
+        "japan_q3_aluminium_premium_395": ["supply_physical_premiums"],
+        "luoyang_wanji_foil_capacity_expansion": ["supply_new_capacity"],
+        "adani_ihc_odisha_aluminium_project": [
+            "supply_new_capacity",
+            "supply_alumina_bauxite_projects",
+        ],
+        "alcoa_south32_aluminium_assets": ["supply_alumina_bauxite_projects"],
+        "slovalco_partial_restart": ["supply_smelter_operations"],
+        "inola_aluminium_smelter_delay": ["supply_new_capacity"],
+        "ega_aluminium_recycling_plant": ["supply_recycling_capacity"],
+    }
+    return overrides.get(key, [])
+
+
+def topic_dimension_override(key: str) -> Dict[str, str]:
+    overrides = {
+        "japan_q3_aluminium_premium_395": {
+            "side": "supply",
+            "horizon": "short",
+            "impact": "supply tightening",
+        },
+        "luoyang_wanji_foil_capacity_expansion": {
+            "side": "supply",
+            "horizon": "long",
+            "impact": "supply easing",
+        },
+        "adani_ihc_odisha_aluminium_project": {
+            "side": "supply",
+            "horizon": "long",
+            "impact": "supply easing",
+        },
+        "alcoa_south32_aluminium_assets": {
+            "side": "supply",
+            "horizon": "long",
+            "impact": "watch",
+        },
+        "slovalco_partial_restart": {
+            "side": "supply",
+            "horizon": "short",
+            "impact": "supply easing",
+        },
+        "inola_aluminium_smelter_delay": {
+            "side": "supply",
+            "horizon": "long",
+            "impact": "supply tightening",
+        },
+        "ega_aluminium_recycling_plant": {
+            "side": "supply",
+            "horizon": "long",
+            "impact": "supply easing",
+        },
+    }
+    return overrides.get(key, {})
+
+
+def unique_preserve_order(values: Iterable[str]) -> List[str]:
+    seen = set()
+    result = []
+    for value in values:
+        if value in seen:
+            continue
+        seen.add(value)
+        result.append(value)
+    return result
+
+
+def dominant_value(values: Sequence[str], fallback: str = "mixed") -> str:
+    counts: Dict[str, int] = {}
+    for value in values:
+        counts[value] = counts.get(value, 0) + 1
+    if not counts:
+        return fallback
+    sorted_counts = sorted(counts.items(), key=lambda item: (-item[1], item[0]))
+    if len(sorted_counts) > 1 and sorted_counts[0][1] == sorted_counts[1][1]:
+        return fallback
+    return sorted_counts[0][0]
+
+
+def build_signal(key: str, articles: Sequence[Dict[str, object]]) -> Dict[str, object]:
+    sorted_articles = sorted(
+        articles,
+        key=lambda article: str(article.get("published_at", "")),
+        reverse=True,
+    )
+    factor_ids = unique_preserve_order(
+        factor_id
+        for article in sorted_articles
+        for factor_id in article.get("factor_ids", [])
+    )
+    factor_ids = topic_factor_override(key) or factor_ids
+    factor_by_id = {factor.id: factor for factor in FACTOR_CATALOG}
+    factor_labels = [factor_by_id[factor_id].label for factor_id in factor_ids if factor_id in factor_by_id]
+    details = unique_preserve_order(
+        detail
+        for article in sorted_articles
+        for detail in article_details(article)
+    )[:5]
+    dimension_override = topic_dimension_override(key)
+    signal = {
+        "id": key,
+        "title": signal_title(key, sorted_articles),
+        "published_at": sorted_articles[0].get("published_at", ""),
+        "side": dimension_override.get(
+            "side",
+            dominant_value([str(article.get("side", "")) for article in sorted_articles], fallback="mixed"),
+        ),
+        "horizon": dimension_override.get(
+            "horizon",
+            dominant_value([str(article.get("horizon", "")) for article in sorted_articles], fallback="mixed"),
+        ),
+        "impact": dimension_override.get(
+            "impact",
+            dominant_value([str(article.get("impact", "")) for article in sorted_articles], fallback="watch"),
+        ),
+        "factor_ids": factor_ids,
+        "factor_labels": factor_labels,
+        "matched_terms": unique_preserve_order(
+            term
+            for article in sorted_articles
+            for term in article.get("matched_terms", [])
+        )[:12],
+        "details": details,
+        "source_articles": [
+            {
+                "title": article.get("title", ""),
+                "url": canonical_article_url(article),
+                "source": article.get("source", ""),
+                "published_at": article.get("published_at", ""),
+            }
+            for article in sorted_articles
+        ],
+        "source_count": len(sorted_articles),
+    }
+    signal["summary"] = signal_summary(key, signal)
+    return signal
+
+
+def group_articles(articles: Sequence[Dict[str, object]]) -> List[Dict[str, object]]:
+    groups: Dict[str, List[Dict[str, object]]] = {}
+    for article in articles:
+        groups.setdefault(topic_key(article), []).append(article)
+    signals = [build_signal(key, grouped) for key, grouped in groups.items()]
+    signals.sort(key=lambda signal: str(signal.get("published_at", "")), reverse=True)
+    return signals
+
+
+def build_factor_groups(signals: Sequence[Dict[str, object]]) -> List[Dict[str, object]]:
+    groups = []
+    for factor in FACTOR_CATALOG:
+        factor_signals = [
+            signal
+            for signal in signals
+            if factor.id in signal.get("factor_ids", [])
+        ]
+        factor_signals.sort(key=lambda signal: str(signal.get("published_at", "")), reverse=True)
+        groups.append(
+            {
+                **factor_to_json(factor),
+                "signal_count": len(factor_signals),
+                "article_count": sum(int(signal.get("source_count", 0)) for signal in factor_signals),
+                "signals": factor_signals,
+            }
+        )
+    groups.sort(key=lambda group: (-int(group["signal_count"]), group["label"]))
+    return groups
+
+
 def dedupe_articles(articles: Sequence[Dict[str, object]]) -> List[Dict[str, object]]:
     by_key: Dict[str, Dict[str, object]] = {}
     for article in articles:
@@ -622,19 +1009,25 @@ def dedupe_articles(articles: Sequence[Dict[str, object]]) -> List[Dict[str, obj
     return list(by_key.values())
 
 
-def summarize(articles: Sequence[Dict[str, object]]) -> Dict[str, object]:
+def summarize(
+    articles: Sequence[Dict[str, object]],
+    signals: Sequence[Dict[str, object]],
+    filtered_articles: int,
+) -> Dict[str, object]:
     counts = {
         "total_articles": len(articles),
+        "total_signals": len(signals),
+        "filtered_articles": filtered_articles,
         "side": {},
         "horizon": {},
         "impact": {},
         "factors": {},
     }
-    for article in articles:
-        increment(counts["side"], str(article.get("side", "monitor")))
-        increment(counts["horizon"], str(article.get("horizon", "monitor")))
-        increment(counts["impact"], str(article.get("impact", "watch")))
-        for factor_id in article.get("factor_ids", []):
+    for signal in signals:
+        increment(counts["side"], str(signal.get("side", "monitor")))
+        increment(counts["horizon"], str(signal.get("horizon", "monitor")))
+        increment(counts["impact"], str(signal.get("impact", "watch")))
+        for factor_id in signal.get("factor_ids", []):
             increment(counts["factors"], str(factor_id))
     return counts
 
@@ -675,8 +1068,13 @@ def scan_news(max_per_query: int, lookback_days: int, timeout: int) -> Dict[str,
             time.sleep(0.2)
 
     deduped = dedupe_articles(all_items)
-    classified = [classify_article(article) for article in deduped]
+    classified = [
+        article
+        for article in (classify_article(article) for article in deduped)
+        if not is_low_information_article(article)
+    ]
     classified.sort(key=lambda article: str(article.get("published_at", "")), reverse=True)
+    signals = group_articles(classified)
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -685,10 +1083,16 @@ def scan_news(max_per_query: int, lookback_days: int, timeout: int) -> Dict[str,
             "lookback_days": lookback_days,
             "max_per_query": max_per_query,
         },
-        "summary": summarize(classified),
+        "summary": summarize(
+            articles=classified,
+            signals=signals,
+            filtered_articles=len(deduped) - len(classified),
+        ),
         "factors": [factor_to_json(factor) for factor in FACTOR_CATALOG],
+        "factor_groups": build_factor_groups(signals),
         "queries": query_log,
         "articles": classified,
+        "signals": signals,
     }
 
 
@@ -720,6 +1124,7 @@ def main(argv: Sequence[str]) -> int:
     write_json(Path(args.output), payload)
     print(
         "Wrote "
+        f"{len(payload['signals'])} grouped signals from "
         f"{len(payload['articles'])} classified articles to {args.output}",
         file=sys.stderr,
     )

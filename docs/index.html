@@ -43,7 +43,7 @@
       .shell {
         width: min(1480px, calc(100vw - 32px));
         margin: 0 auto;
-        padding: 22px 0 36px;
+        padding: 22px 0 38px;
       }
 
       .topbar {
@@ -62,6 +62,11 @@
         letter-spacing: 0;
       }
 
+      h2,
+      h3 {
+        letter-spacing: 0;
+      }
+
       .timestamp {
         color: var(--muted);
         font-size: 0.95rem;
@@ -76,7 +81,7 @@
       }
 
       .search {
-        min-width: min(330px, 100%);
+        min-width: min(360px, 100%);
         height: 38px;
         border: 1px solid var(--line);
         border-radius: 8px;
@@ -123,53 +128,17 @@
         color: var(--accent-ink);
       }
 
-      .summary-grid {
-        display: grid;
-        grid-template-columns: repeat(5, minmax(140px, 1fr));
-        gap: 12px;
-        margin: 18px 0;
-      }
-
-      .metric {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        padding: 14px;
-        min-height: 92px;
-      }
-
-      .metric-label {
-        color: var(--muted);
-        font-size: 0.82rem;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-      }
-
-      .metric-value {
-        margin-top: 8px;
-        font-size: 2rem;
-        line-height: 1;
-        font-weight: 750;
-      }
-
-      .main-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) 370px;
-        gap: 18px;
-        align-items: start;
-      }
-
       .section-head {
         display: flex;
         justify-content: space-between;
         gap: 12px;
         align-items: center;
-        margin-bottom: 10px;
+        margin: 20px 0 10px;
       }
 
       .section-head h2 {
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.08rem;
         line-height: 1.2;
       }
 
@@ -178,40 +147,89 @@
         font-size: 0.92rem;
       }
 
-      .article-list {
+      .factor-list {
         display: grid;
+        gap: 24px;
+      }
+
+      .factor-section {
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+      }
+
+      .factor-header {
+        display: grid;
+        grid-template-columns: minmax(240px, 1fr) auto;
+        gap: 16px;
+        align-items: start;
+        margin-bottom: 10px;
+      }
+
+      .factor-title {
+        margin: 0;
+        font-size: 1.04rem;
+        line-height: 1.25;
+      }
+
+      .factor-metrics {
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-top: 7px;
+      }
+
+      .factor-count {
+        color: var(--muted);
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+
+      .signal-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr));
         gap: 10px;
       }
 
-      .article {
+      .signal {
         background: var(--panel);
         border: 1px solid var(--line);
         border-left: 5px solid var(--watch);
         border-radius: 8px;
         padding: 14px;
+        min-width: 0;
       }
 
-      .article[data-side="demand"] {
+      .signal[data-side="demand"] {
         border-left-color: var(--demand);
       }
 
-      .article[data-side="supply"] {
+      .signal[data-side="supply"] {
         border-left-color: var(--supply);
       }
 
-      .article-title {
+      .signal-title {
         margin: 0;
-        font-size: 1.02rem;
-        line-height: 1.35;
+        font-size: 1rem;
+        line-height: 1.32;
       }
 
-      .article-title a {
-        color: var(--ink);
-        text-decoration: none;
+      .summary {
+        margin: 8px 0 0;
+        color: #374151;
+        font-size: 0.93rem;
+        line-height: 1.45;
       }
 
-      .article-title a:hover {
-        text-decoration: underline;
+      .details {
+        margin: 10px 0 0;
+        padding-left: 18px;
+        color: #2f3a35;
+        font-size: 0.91rem;
+        line-height: 1.43;
+      }
+
+      .details li + li {
+        margin-top: 4px;
       }
 
       .meta {
@@ -219,15 +237,42 @@
         flex-wrap: wrap;
         gap: 8px;
         color: var(--muted);
-        font-size: 0.86rem;
-        margin: 7px 0 10px;
+        font-size: 0.84rem;
+        margin-top: 9px;
+      }
+
+      .sources {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 10px;
+      }
+
+      .source-link {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 8px;
+        color: var(--ink);
+        background: #fafbf9;
+        font-size: 0.8rem;
+        line-height: 1;
+        text-decoration: none;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .source-link:hover {
+        border-color: var(--accent);
+        color: var(--accent);
       }
 
       .tags {
         display: flex;
         flex-wrap: wrap;
         gap: 6px;
-        margin: 10px 0 0;
+        margin-top: 9px;
       }
 
       .tag {
@@ -271,59 +316,6 @@
         border-color: #bbf7d0;
       }
 
-      .market-read {
-        margin: 0;
-        color: #374151;
-        font-size: 0.93rem;
-        line-height: 1.45;
-      }
-
-      .factor-panel {
-        position: sticky;
-        top: 14px;
-        display: grid;
-        gap: 10px;
-      }
-
-      .factor {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        padding: 12px;
-      }
-
-      .factor-top {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        align-items: start;
-      }
-
-      .factor-title {
-        font-weight: 700;
-        font-size: 0.94rem;
-        line-height: 1.25;
-      }
-
-      .factor-count {
-        min-width: 28px;
-        height: 26px;
-        border-radius: 999px;
-        display: grid;
-        place-items: center;
-        background: #eef2f7;
-        color: var(--ink);
-        font-size: 0.83rem;
-        font-weight: 700;
-      }
-
-      .factor-metrics {
-        color: var(--muted);
-        font-size: 0.83rem;
-        line-height: 1.4;
-        margin-top: 8px;
-      }
-
       .empty,
       .error {
         background: var(--panel);
@@ -338,32 +330,27 @@
       }
 
       @media (max-width: 1050px) {
-        .topbar,
-        .main-grid {
+        .topbar {
           grid-template-columns: 1fr;
         }
 
         .toolbar {
           justify-content: start;
         }
-
-        .summary-grid {
-          grid-template-columns: repeat(2, minmax(140px, 1fr));
-        }
-
-        .factor-panel {
-          position: static;
-        }
       }
 
-      @media (max-width: 620px) {
+      @media (max-width: 720px) {
         .shell {
           width: min(100vw - 20px, 1480px);
           padding-top: 14px;
         }
 
-        .summary-grid {
+        .factor-header {
           grid-template-columns: 1fr;
+        }
+
+        .factor-count {
+          white-space: normal;
         }
 
         .segmented {
@@ -386,7 +373,7 @@
           <div class="timestamp" id="timestamp">Loading latest scan...</div>
         </div>
         <div class="toolbar" aria-label="Filters">
-          <input class="search" id="search" type="search" placeholder="Search news, factors, sources">
+          <input class="search" id="search" type="search" placeholder="Search factors, summaries, sources">
           <div class="segmented" data-filter="side" aria-label="Side">
             <button class="active" data-value="all" type="button">All</button>
             <button data-value="demand" type="button">Demand</button>
@@ -409,44 +396,12 @@
         </div>
       </header>
 
-      <section class="summary-grid" aria-label="Summary">
-        <div class="metric">
-          <div class="metric-label">Articles</div>
-          <div class="metric-value" id="metric-total">0</div>
+      <section>
+        <div class="section-head">
+          <h2>Watched Factors</h2>
+          <div class="count" id="result-count">0 signals</div>
         </div>
-        <div class="metric">
-          <div class="metric-label">Demand</div>
-          <div class="metric-value" id="metric-demand">0</div>
-        </div>
-        <div class="metric">
-          <div class="metric-label">Supply</div>
-          <div class="metric-value" id="metric-supply">0</div>
-        </div>
-        <div class="metric">
-          <div class="metric-label">0-3m</div>
-          <div class="metric-value" id="metric-short">0</div>
-        </div>
-        <div class="metric">
-          <div class="metric-label">3m+</div>
-          <div class="metric-value" id="metric-long">0</div>
-        </div>
-      </section>
-
-      <section class="main-grid">
-        <div>
-          <div class="section-head">
-            <h2>News Signals</h2>
-            <div class="count" id="result-count">0 shown</div>
-          </div>
-          <div class="article-list" id="articles"></div>
-        </div>
-        <aside class="factor-panel">
-          <div class="section-head">
-            <h2>Watched Factors</h2>
-            <div class="count" id="factor-count">0 active</div>
-          </div>
-          <div id="factors"></div>
-        </aside>
+        <div class="factor-list" id="factors"></div>
       </section>
     </main>
 
@@ -463,15 +418,8 @@
 
       const nodes = {
         timestamp: document.getElementById("timestamp"),
-        total: document.getElementById("metric-total"),
-        demand: document.getElementById("metric-demand"),
-        supply: document.getElementById("metric-supply"),
-        short: document.getElementById("metric-short"),
-        long: document.getElementById("metric-long"),
-        articles: document.getElementById("articles"),
         factors: document.getElementById("factors"),
         resultCount: document.getElementById("result-count"),
-        factorCount: document.getElementById("factor-count"),
         search: document.getElementById("search"),
         impact: document.getElementById("impact")
       };
@@ -494,17 +442,14 @@
         return `${formatDate(value, { timeZone: "UTC" })} UTC`;
       }
 
-      function countValue(section, key) {
-        return state.data?.summary?.[section]?.[key] || 0;
-      }
-
       function tagClass(value) {
-        if (value === "demand") return "demand";
-        if (value === "supply") return "supply";
-        if (value === "short") return "short";
-        if (value === "long") return "long";
-        if (value.includes("tightening") || value.includes("downside")) return "tight";
-        if (value.includes("easing") || value.includes("upside")) return "ease";
+        const text = String(value || "").toLowerCase();
+        if (text === "demand") return "demand";
+        if (text === "supply") return "supply";
+        if (text === "short" || text === "0-3m") return "short";
+        if (text === "long" || text === "3m+") return "long";
+        if (text.includes("tightening") || text.includes("downside")) return "tight";
+        if (text.includes("easing") || text.includes("upside")) return "ease";
         return "";
       }
 
@@ -523,96 +468,113 @@
           .replaceAll("'", "&#039;");
       }
 
-      function searchable(article) {
+      function searchable(factor, signal) {
         return [
-          article.title,
-          article.source,
-          article.impact,
-          article.side,
-          article.horizon,
-          ...(article.factor_labels || []),
-          ...(article.matched_terms || [])
-        ].join(" ").toLowerCase();
+          factor.label,
+          factor.side,
+          factor.horizon,
+          ...(factor.metrics || []),
+          signal.title,
+          signal.summary,
+          signal.impact,
+          signal.side,
+          signal.horizon,
+          ...(signal.details || []),
+          ...(signal.factor_labels || []),
+          ...(signal.matched_terms || []),
+          ...(signal.source_articles || []).map((article) => `${article.title} ${article.source}`)
+        ].flat().join(" ").toLowerCase();
       }
 
-      function filteredArticles() {
+      function signalMatches(factor, signal) {
         const search = state.filters.search.trim().toLowerCase();
-        return (state.data?.articles || []).filter((article) => {
-          if (state.filters.side !== "all" && article.side !== state.filters.side) return false;
-          if (state.filters.horizon !== "all" && article.horizon !== state.filters.horizon) return false;
-          if (state.filters.impact !== "all" && article.impact !== state.filters.impact) return false;
-          if (search && !searchable(article).includes(search)) return false;
-          return true;
+        const searchTerms = search.split(/\s+/).filter(Boolean);
+        const searchText = searchable(factor, signal);
+        if (state.filters.side !== "all" && factor.side !== state.filters.side && signal.side !== state.filters.side) return false;
+        if (state.filters.horizon !== "all" && factor.horizon !== state.filters.horizon && signal.horizon !== state.filters.horizon) return false;
+        if (state.filters.impact !== "all" && signal.impact !== state.filters.impact) return false;
+        if (searchTerms.length && !searchTerms.every((term) => searchText.includes(term))) return false;
+        return true;
+      }
+
+      function filteredGroups() {
+        return (state.data?.factor_groups || []).map((factor) => {
+          const signals = (factor.signals || []).filter((signal) => signalMatches(factor, signal));
+          return { ...factor, signals };
+        }).filter((factor) => factor.signals.length > 0);
+      }
+
+      function renderSignal(signal) {
+        const tags = [
+          signal.side,
+          labelHorizon(signal.horizon),
+          signal.impact
+        ];
+        const details = (signal.details || []).length
+          ? `<ul class="details">${signal.details.map((detail) => `<li>${escapeHtml(detail)}</li>`).join("")}</ul>`
+          : "";
+        const sourceLinks = (signal.source_articles || []).map((article) => {
+          const source = article.source || "Source";
+          const date = article.published_at ? ` | ${formatDate(article.published_at)}` : "";
+          return `<a class="source-link" href="${escapeHtml(article.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source + date)}</a>`;
+        }).join("");
+        return `
+          <article class="signal" data-side="${escapeHtml(signal.side)}">
+            <h3 class="signal-title">${escapeHtml(signal.title)}</h3>
+            <p class="summary">${escapeHtml(signal.summary || "")}</p>
+            ${details}
+            <div class="tags">
+              ${tags.map((tag) => `<span class="tag ${tagClass(tag)}">${escapeHtml(tag)}</span>`).join("")}
+            </div>
+            <div class="meta">
+              <span>${escapeHtml(signal.source_count || 0)} source${Number(signal.source_count || 0) === 1 ? "" : "s"}</span>
+              <span>Latest: ${escapeHtml(formatDate(signal.published_at))}</span>
+            </div>
+            <div class="sources">${sourceLinks}</div>
+          </article>
+        `;
+      }
+
+      function renderFactors() {
+        const groups = filteredGroups();
+        const uniqueSignals = new Map();
+        groups.forEach((factor) => {
+          factor.signals.forEach((signal) => uniqueSignals.set(signal.id, signal));
         });
-      }
+        const visibleSignals = uniqueSignals.size;
+        const visibleArticles = [...uniqueSignals.values()].reduce((sum, signal) => sum + Number(signal.source_count || 0), 0);
+        nodes.resultCount.textContent = `${visibleSignals} signals | ${visibleArticles} source articles`;
 
-      function renderSummary() {
-        nodes.total.textContent = state.data?.summary?.total_articles || 0;
-        nodes.demand.textContent = countValue("side", "demand");
-        nodes.supply.textContent = countValue("side", "supply");
-        nodes.short.textContent = countValue("horizon", "short");
-        nodes.long.textContent = countValue("horizon", "long");
-        nodes.timestamp.textContent = `Last scan: ${formatUtcDate(state.data?.generated_at)} | Source: ${state.data?.source?.name || "unknown"}`;
-      }
-
-      function renderArticles() {
-        const articles = filteredArticles();
-        nodes.resultCount.textContent = `${articles.length} shown`;
-        if (!articles.length) {
-          nodes.articles.innerHTML = '<div class="empty">No matching articles in the current scan.</div>';
+        if (!groups.length) {
+          nodes.factors.innerHTML = '<div class="empty">No matching factor signals in the current scan.</div>';
           return;
         }
-        nodes.articles.innerHTML = articles.map((article) => {
-          const tags = [
-            article.side,
-            labelHorizon(article.horizon),
-            article.impact,
-            ...(article.factor_labels || []).slice(0, 3)
-          ];
+
+        nodes.factors.innerHTML = groups.map((factor) => {
+          const articleCount = factor.signals.reduce((sum, signal) => sum + Number(signal.source_count || 0), 0);
           return `
-            <article class="article" data-side="${escapeHtml(article.side)}">
-              <h3 class="article-title">
-                <a href="${escapeHtml(article.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(article.title)}</a>
-              </h3>
-              <div class="meta">
-                <span>${escapeHtml(article.source || "Unknown source")}</span>
-                <span>${escapeHtml(formatDate(article.published_at))}</span>
+            <section class="factor-section">
+              <div class="factor-header">
+                <div>
+                  <h3 class="factor-title">${escapeHtml(factor.label)}</h3>
+                  <div class="factor-metrics">${escapeHtml((factor.metrics || []).join(", "))}</div>
+                  <div class="tags">
+                    <span class="tag ${tagClass(factor.side)}">${escapeHtml(factor.side)}</span>
+                    <span class="tag ${tagClass(factor.horizon)}">${escapeHtml(labelHorizon(factor.horizon))}</span>
+                  </div>
+                </div>
+                <div class="factor-count">${factor.signals.length} signals | ${articleCount} source articles</div>
               </div>
-              <p class="market-read">${escapeHtml(article.market_read || "")}</p>
-              <div class="tags">
-                ${tags.map((tag) => `<span class="tag ${tagClass(String(tag).toLowerCase())}">${escapeHtml(tag)}</span>`).join("")}
+              <div class="signal-grid">
+                ${factor.signals.map(renderSignal).join("")}
               </div>
-            </article>
+            </section>
           `;
         }).join("");
       }
 
-      function renderFactors() {
-        const factorCounts = state.data?.summary?.factors || {};
-        const factors = [...(state.data?.factors || [])]
-          .sort((a, b) => (factorCounts[b.id] || 0) - (factorCounts[a.id] || 0) || a.label.localeCompare(b.label));
-        const active = factors.filter((factor) => (factorCounts[factor.id] || 0) > 0).length;
-        nodes.factorCount.textContent = `${active} active`;
-        nodes.factors.innerHTML = factors.map((factor) => `
-          <div class="factor">
-            <div class="factor-top">
-              <div>
-                <div class="factor-title">${escapeHtml(factor.label)}</div>
-                <div class="tags">
-                  <span class="tag ${tagClass(factor.side)}">${escapeHtml(factor.side)}</span>
-                  <span class="tag ${tagClass(factor.horizon)}">${escapeHtml(labelHorizon(factor.horizon))}</span>
-                </div>
-              </div>
-              <div class="factor-count">${factorCounts[factor.id] || 0}</div>
-            </div>
-            <div class="factor-metrics">${escapeHtml((factor.metrics || []).join(", "))}</div>
-          </div>
-        `).join("");
-      }
-
       function render() {
-        renderSummary();
-        renderArticles();
+        nodes.timestamp.textContent = `Last scan: ${formatUtcDate(state.data?.generated_at)} | Source: ${state.data?.source?.name || "unknown"}`;
         renderFactors();
       }
 
@@ -624,16 +586,16 @@
             group.querySelectorAll("button").forEach((node) => node.classList.remove("active"));
             button.classList.add("active");
             state.filters[group.dataset.filter] = button.dataset.value;
-            renderArticles();
+            renderFactors();
           });
         });
         nodes.search.addEventListener("input", () => {
           state.filters.search = nodes.search.value;
-          renderArticles();
+          renderFactors();
         });
         nodes.impact.addEventListener("change", () => {
           state.filters.impact = nodes.impact.value;
-          renderArticles();
+          renderFactors();
         });
       }
 
@@ -646,7 +608,7 @@
           render();
         } catch (error) {
           nodes.timestamp.textContent = "Scan data unavailable";
-          nodes.articles.innerHTML = `<div class="error">Could not load data/latest.json: ${escapeHtml(error.message)}</div>`;
+          nodes.factors.innerHTML = `<div class="error">Could not load data/latest.json: ${escapeHtml(error.message)}</div>`;
         }
       }
 

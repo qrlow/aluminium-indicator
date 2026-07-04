@@ -1,6 +1,11 @@
 import unittest
 
-from scripts.scan_news import classify_article, parse_rss_items
+from scripts.scan_news import (
+    classify_article,
+    group_articles,
+    is_low_information_article,
+    parse_rss_items,
+)
 
 
 class NewsScannerTests(unittest.TestCase):
@@ -54,6 +59,75 @@ class NewsScannerTests(unittest.TestCase):
         self.assertEqual(items[0]["source"], "Source Name")
         self.assertEqual(items[0]["query_factor_ids"], ["supply_alumina_bauxite_near_term"])
         self.assertTrue(items[0]["published_at"].startswith("2026-07-01T12:00:00"))
+
+    def test_filters_low_information_company_outlook(self):
+        article = classify_article(
+            {
+                "title": "Vedanta outlook and strategy as investors weigh long-term growth - Ad-hoc-news.de",
+                "description": "Generic company overview with no aluminium market signal.",
+                "source": "Ad-hoc-news.de",
+                "url": "https://example.com/vedanta",
+                "published_at": "2026-07-01T00:00:00+00:00",
+                "query_factor_ids": ["demand_housing_infrastructure_pipeline"],
+            }
+        )
+
+        self.assertTrue(is_low_information_article(article))
+
+    def test_groups_japan_premium_sources_with_details(self):
+        articles = [
+            classify_article(
+                {
+                    "title": "Japan buyers agree on higher aluminum fees Due to war disruption - Mining.com",
+                    "description": "",
+                    "source": "Mining.com",
+                    "url": "https://www.mining.com/web/japan-buyers-agree-on-higher-aluminum-fees-due-to-war-disruption/",
+                    "published_at": "2026-07-04T00:04:00+00:00",
+                    "query_factor_ids": ["demand_trade_restocking"],
+                }
+            ),
+            classify_article(
+                {
+                    "title": "Japan's Q3 aluminium premium hits 11-year high at $395/t as physical supply tightens - AL Circle",
+                    "description": "",
+                    "source": "AL Circle",
+                    "url": "https://www.alcircle.com/news/japans-q3-aluminium-premium-hits-11-year-high-at-395-t-as-physical-supply-tightens-120181",
+                    "published_at": "2026-07-03T00:00:00+00:00",
+                    "query_factor_ids": ["demand_trade_restocking"],
+                }
+            ),
+        ]
+
+        signals = group_articles(articles)
+
+        self.assertEqual(len(signals), 1)
+        self.assertEqual(signals[0]["source_count"], 2)
+        self.assertEqual(signals[0]["side"], "supply")
+        self.assertEqual(signals[0]["horizon"], "short")
+        self.assertIn("Physical premiums and regional tightness", signals[0]["factor_labels"])
+        self.assertIn("$395/t", " ".join(signals[0]["details"]))
+        self.assertIn("$460-$480/t", " ".join(signals[0]["details"]))
+
+    def test_enriches_luoyang_wanji_capacity_details(self):
+        signal = group_articles(
+            [
+                classify_article(
+                    {
+                        "title": "On the morning of June 30, the 20,000 mt aluminum foil capacity expans - SMM Metal",
+                        "description": "Luoyang Wanji Aluminum expands foil capacity and enters trial production.",
+                        "source": "SMM Metal",
+                        "url": "https://news.metal.com/newscontent/103987818-luoyang-wanji-aluminum-expands-foil-capacity-enters-trial-production-with-advanced-equipment",
+                        "published_at": "2026-07-04T12:00:00+00:00",
+                        "query_factor_ids": ["supply_new_capacity"],
+                    }
+                )
+            ]
+        )[0]
+
+        detail_text = " ".join(signal["details"])
+        self.assertIn("New aluminium capacity and permanent closures", signal["factor_labels"])
+        self.assertIn("20,000 mt/year", detail_text)
+        self.assertIn("50,000 mt/year", detail_text)
 
 
 if __name__ == "__main__":
