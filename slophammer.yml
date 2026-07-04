@@ -1,0 +1,9 @@
+version: 1
+project:
+  language: python
+  paths:
+    - scripts
+    - tests
+checks:
+  commands:
+    - python3 -m unittest discover -s tests

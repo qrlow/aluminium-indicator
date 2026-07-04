@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aluminium Demand/Supply Monitor</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f7f4;
+        --panel: #ffffff;
+        --ink: #1c2421;
+        --muted: #667069;
+        --line: #d9ded6;
+        --accent: #0f766e;
+        --accent-ink: #ffffff;
+        --demand: #2563eb;
+        --supply: #b45309;
+        --long: #6d28d9;
+        --short: #047857;
+        --risk: #b91c1c;
+        --ease: #047857;
+        --watch: #475569;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+      }
+
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+
+      .shell {
+        width: min(1480px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 22px 0 36px;
+      }
+
+      .topbar {
+        display: grid;
+        grid-template-columns: minmax(280px, 1fr) auto;
+        gap: 20px;
+        align-items: end;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(1.65rem, 2.8vw, 2.55rem);
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      .timestamp {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .search {
+        min-width: min(330px, 100%);
+        height: 38px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0 12px;
+        background: #fff;
+        color: var(--ink);
+      }
+
+      .select {
+        height: 38px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0 34px 0 10px;
+        background: #fff;
+        color: var(--ink);
+      }
+
+      .segmented {
+        display: inline-grid;
+        grid-auto-flow: column;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fff;
+        height: 38px;
+      }
+
+      .segmented button {
+        border: 0;
+        border-right: 1px solid var(--line);
+        background: transparent;
+        color: var(--muted);
+        padding: 0 12px;
+        min-width: 56px;
+        cursor: pointer;
+      }
+
+      .segmented button:last-child {
+        border-right: 0;
+      }
+
+      .segmented button.active {
+        background: var(--accent);
+        color: var(--accent-ink);
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(140px, 1fr));
+        gap: 12px;
+        margin: 18px 0;
+      }
+
+      .metric {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 14px;
+        min-height: 92px;
+      }
+
+      .metric-label {
+        color: var(--muted);
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .metric-value {
+        margin-top: 8px;
+        font-size: 2rem;
+        line-height: 1;
+        font-weight: 750;
+      }
+
+      .main-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 370px;
+        gap: 18px;
+        align-items: start;
+      }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .section-head h2 {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.2;
+      }
+
+      .count {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .article-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .article {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-left: 5px solid var(--watch);
+        border-radius: 8px;
+        padding: 14px;
+      }
+
+      .article[data-side="demand"] {
+        border-left-color: var(--demand);
+      }
+
+      .article[data-side="supply"] {
+        border-left-color: var(--supply);
+      }
+
+      .article-title {
+        margin: 0;
+        font-size: 1.02rem;
+        line-height: 1.35;
+      }
+
+      .article-title a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .article-title a:hover {
+        text-decoration: underline;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        color: var(--muted);
+        font-size: 0.86rem;
+        margin: 7px 0 10px;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 10px 0 0;
+      }
+
+      .tag {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 4px 8px;
+        color: var(--muted);
+        background: #fafbf9;
+        font-size: 0.78rem;
+        line-height: 1;
+        white-space: nowrap;
+      }
+
+      .tag.demand {
+        color: var(--demand);
+        border-color: #bfdbfe;
+      }
+
+      .tag.supply {
+        color: var(--supply);
+        border-color: #fed7aa;
+      }
+
+      .tag.short {
+        color: var(--short);
+        border-color: #bbf7d0;
+      }
+
+      .tag.long {
+        color: var(--long);
+        border-color: #ddd6fe;
+      }
+
+      .tag.tight {
+        color: var(--risk);
+        border-color: #fecaca;
+      }
+
+      .tag.ease {
+        color: var(--ease);
+        border-color: #bbf7d0;
+      }
+
+      .market-read {
+        margin: 0;
+        color: #374151;
+        font-size: 0.93rem;
+        line-height: 1.45;
+      }
+
+      .factor-panel {
+        position: sticky;
+        top: 14px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .factor {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px;
+      }
+
+      .factor-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: start;
+      }
+
+      .factor-title {
+        font-weight: 700;
+        font-size: 0.94rem;
+        line-height: 1.25;
+      }
+
+      .factor-count {
+        min-width: 28px;
+        height: 26px;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        background: #eef2f7;
+        color: var(--ink);
+        font-size: 0.83rem;
+        font-weight: 700;
+      }
+
+      .factor-metrics {
+        color: var(--muted);
+        font-size: 0.83rem;
+        line-height: 1.4;
+        margin-top: 8px;
+      }
+
+      .empty,
+      .error {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        color: var(--muted);
+      }
+
+      .error {
+        color: var(--risk);
+      }
+
+      @media (max-width: 1050px) {
+        .topbar,
+        .main-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .toolbar {
+          justify-content: start;
+        }
+
+        .summary-grid {
+          grid-template-columns: repeat(2, minmax(140px, 1fr));
+        }
+
+        .factor-panel {
+          position: static;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .shell {
+          width: min(100vw - 20px, 1480px);
+          padding-top: 14px;
+        }
+
+        .summary-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .segmented {
+          width: 100%;
+          grid-auto-columns: 1fr;
+        }
+
+        .search,
+        .select {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1>Aluminium Demand/Supply Monitor</h1>
+          <div class="timestamp" id="timestamp">Loading latest scan...</div>
+        </div>
+        <div class="toolbar" aria-label="Filters">
+          <input class="search" id="search" type="search" placeholder="Search news, factors, sources">
+          <div class="segmented" data-filter="side" aria-label="Side">
+            <button class="active" data-value="all" type="button">All</button>
+            <button data-value="demand" type="button">Demand</button>
+            <button data-value="supply" type="button">Supply</button>
+            <button data-value="mixed" type="button">Mixed</button>
+          </div>
+          <div class="segmented" data-filter="horizon" aria-label="Horizon">
+            <button class="active" data-value="all" type="button">All</button>
+            <button data-value="short" type="button">0-3m</button>
+            <button data-value="long" type="button">3m+</button>
+          </div>
+          <select class="select" id="impact">
+            <option value="all">All impacts</option>
+            <option value="supply tightening">Supply tightening</option>
+            <option value="supply easing">Supply easing</option>
+            <option value="demand upside">Demand upside</option>
+            <option value="demand downside">Demand downside</option>
+            <option value="watch">Watch</option>
+          </select>
+        </div>
+      </header>
+
+      <section class="summary-grid" aria-label="Summary">
+        <div class="metric">
+          <div class="metric-label">Articles</div>
+          <div class="metric-value" id="metric-total">0</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Demand</div>
+          <div class="metric-value" id="metric-demand">0</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Supply</div>
+          <div class="metric-value" id="metric-supply">0</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">0-3m</div>
+          <div class="metric-value" id="metric-short">0</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">3m+</div>
+          <div class="metric-value" id="metric-long">0</div>
+        </div>
+      </section>
+
+      <section class="main-grid">
+        <div>
+          <div class="section-head">
+            <h2>News Signals</h2>
+            <div class="count" id="result-count">0 shown</div>
+          </div>
+          <div class="article-list" id="articles"></div>
+        </div>
+        <aside class="factor-panel">
+          <div class="section-head">
+            <h2>Watched Factors</h2>
+            <div class="count" id="factor-count">0 active</div>
+          </div>
+          <div id="factors"></div>
+        </aside>
+      </section>
+    </main>
+
+    <script>
+      const state = {
+        data: null,
+        filters: {
+          side: "all",
+          horizon: "all",
+          impact: "all",
+          search: ""
+        }
+      };
+
+      const nodes = {
+        timestamp: document.getElementById("timestamp"),
+        total: document.getElementById("metric-total"),
+        demand: document.getElementById("metric-demand"),
+        supply: document.getElementById("metric-supply"),
+        short: document.getElementById("metric-short"),
+        long: document.getElementById("metric-long"),
+        articles: document.getElementById("articles"),
+        factors: document.getElementById("factors"),
+        resultCount: document.getElementById("result-count"),
+        factorCount: document.getElementById("factor-count"),
+        search: document.getElementById("search"),
+        impact: document.getElementById("impact")
+      };
+
+      function formatDate(value, options = {}) {
+        if (!value) return "Unknown time";
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return "Unknown time";
+        return date.toLocaleString(undefined, {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+          timeZone: options.timeZone
+        });
+      }
+
+      function formatUtcDate(value) {
+        return `${formatDate(value, { timeZone: "UTC" })} UTC`;
+      }
+
+      function countValue(section, key) {
+        return state.data?.summary?.[section]?.[key] || 0;
+      }
+
+      function tagClass(value) {
+        if (value === "demand") return "demand";
+        if (value === "supply") return "supply";
+        if (value === "short") return "short";
+        if (value === "long") return "long";
+        if (value.includes("tightening") || value.includes("downside")) return "tight";
+        if (value.includes("easing") || value.includes("upside")) return "ease";
+        return "";
+      }
+
+      function labelHorizon(value) {
+        if (value === "short") return "0-3m";
+        if (value === "long") return "3m+";
+        return value;
+      }
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      function searchable(article) {
+        return [
+          article.title,
+          article.source,
+          article.impact,
+          article.side,
+          article.horizon,
+          ...(article.factor_labels || []),
+          ...(article.matched_terms || [])
+        ].join(" ").toLowerCase();
+      }
+
+      function filteredArticles() {
+        const search = state.filters.search.trim().toLowerCase();
+        return (state.data?.articles || []).filter((article) => {
+          if (state.filters.side !== "all" && article.side !== state.filters.side) return false;
+          if (state.filters.horizon !== "all" && article.horizon !== state.filters.horizon) return false;
+          if (state.filters.impact !== "all" && article.impact !== state.filters.impact) return false;
+          if (search && !searchable(article).includes(search)) return false;
+          return true;
+        });
+      }
+
+      function renderSummary() {
+        nodes.total.textContent = state.data?.summary?.total_articles || 0;
+        nodes.demand.textContent = countValue("side", "demand");
+        nodes.supply.textContent = countValue("side", "supply");
+        nodes.short.textContent = countValue("horizon", "short");
+        nodes.long.textContent = countValue("horizon", "long");
+        nodes.timestamp.textContent = `Last scan: ${formatUtcDate(state.data?.generated_at)} | Source: ${state.data?.source?.name || "unknown"}`;
+      }
+
+      function renderArticles() {
+        const articles = filteredArticles();
+        nodes.resultCount.textContent = `${articles.length} shown`;
+        if (!articles.length) {
+          nodes.articles.innerHTML = '<div class="empty">No matching articles in the current scan.</div>';
+          return;
+        }
+        nodes.articles.innerHTML = articles.map((article) => {
+          const tags = [
+            article.side,
+            labelHorizon(article.horizon),
+            article.impact,
+            ...(article.factor_labels || []).slice(0, 3)
+          ];
+          return `
+            <article class="article" data-side="${escapeHtml(article.side)}">
+              <h3 class="article-title">
+                <a href="${escapeHtml(article.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(article.title)}</a>
+              </h3>
+              <div class="meta">
+                <span>${escapeHtml(article.source || "Unknown source")}</span>
+                <span>${escapeHtml(formatDate(article.published_at))}</span>
+              </div>
+              <p class="market-read">${escapeHtml(article.market_read || "")}</p>
+              <div class="tags">
+                ${tags.map((tag) => `<span class="tag ${tagClass(String(tag).toLowerCase())}">${escapeHtml(tag)}</span>`).join("")}
+              </div>
+            </article>
+          `;
+        }).join("");
+      }
+
+      function renderFactors() {
+        const factorCounts = state.data?.summary?.factors || {};
+        const factors = [...(state.data?.factors || [])]
+          .sort((a, b) => (factorCounts[b.id] || 0) - (factorCounts[a.id] || 0) || a.label.localeCompare(b.label));
+        const active = factors.filter((factor) => (factorCounts[factor.id] || 0) > 0).length;
+        nodes.factorCount.textContent = `${active} active`;
+        nodes.factors.innerHTML = factors.map((factor) => `
+          <div class="factor">
+            <div class="factor-top">
+              <div>
+                <div class="factor-title">${escapeHtml(factor.label)}</div>
+                <div class="tags">
+                  <span class="tag ${tagClass(factor.side)}">${escapeHtml(factor.side)}</span>
+                  <span class="tag ${tagClass(factor.horizon)}">${escapeHtml(labelHorizon(factor.horizon))}</span>
+                </div>
+              </div>
+              <div class="factor-count">${factorCounts[factor.id] || 0}</div>
+            </div>
+            <div class="factor-metrics">${escapeHtml((factor.metrics || []).join(", "))}</div>
+          </div>
+        `).join("");
+      }
+
+      function render() {
+        renderSummary();
+        renderArticles();
+        renderFactors();
+      }
+
+      function bindControls() {
+        document.querySelectorAll(".segmented").forEach((group) => {
+          group.addEventListener("click", (event) => {
+            const button = event.target.closest("button");
+            if (!button) return;
+            group.querySelectorAll("button").forEach((node) => node.classList.remove("active"));
+            button.classList.add("active");
+            state.filters[group.dataset.filter] = button.dataset.value;
+            renderArticles();
+          });
+        });
+        nodes.search.addEventListener("input", () => {
+          state.filters.search = nodes.search.value;
+          renderArticles();
+        });
+        nodes.impact.addEventListener("change", () => {
+          state.filters.impact = nodes.impact.value;
+          renderArticles();
+        });
+      }
+
+      async function boot() {
+        bindControls();
+        try {
+          const response = await fetch(`data/latest.json?ts=${Date.now()}`);
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          state.data = await response.json();
+          render();
+        } catch (error) {
+          nodes.timestamp.textContent = "Scan data unavailable";
+          nodes.articles.innerHTML = `<div class="error">Could not load data/latest.json: ${escapeHtml(error.message)}</div>`;
+        }
+      }
+
+      boot();
+    </script>
+  </body>
+</html>
