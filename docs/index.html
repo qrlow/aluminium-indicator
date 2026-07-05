@@ -178,6 +178,14 @@
         margin-top: 7px;
       }
 
+      .factor-summary {
+        max-width: 900px;
+        color: #374151;
+        font-size: 0.94rem;
+        line-height: 1.45;
+        margin-top: 8px;
+      }
+
       .factor-count {
         color: var(--muted);
         font-size: 0.9rem;
@@ -473,6 +481,7 @@
           factor.label,
           factor.side,
           factor.horizon,
+          factor.section_summary,
           ...(factor.metrics || []),
           signal.title,
           signal.summary,
@@ -558,6 +567,7 @@
                 <div>
                   <h3 class="factor-title">${escapeHtml(factor.label)}</h3>
                   <div class="factor-metrics">${escapeHtml((factor.metrics || []).join(", "))}</div>
+                  <div class="factor-summary">${escapeHtml(factor.section_summary || "")}</div>
                   <div class="tags">
                     <span class="tag ${tagClass(factor.side)}">${escapeHtml(factor.side)}</span>
                     <span class="tag ${tagClass(factor.horizon)}">${escapeHtml(labelHorizon(factor.horizon))}</span>

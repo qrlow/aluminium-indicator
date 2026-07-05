@@ -1,6 +1,7 @@
 import unittest
 
 from scripts.scan_news import (
+    build_factor_groups,
     classify_article,
     group_articles,
     is_low_information_article,
@@ -128,6 +129,32 @@ class NewsScannerTests(unittest.TestCase):
         self.assertIn("New aluminium capacity and permanent closures", signal["factor_labels"])
         self.assertIn("20,000 mt/year", detail_text)
         self.assertIn("50,000 mt/year", detail_text)
+
+    def test_builds_section_summary_for_factor_group(self):
+        signals = group_articles(
+            [
+                classify_article(
+                    {
+                        "title": "Japan buyers agree on higher aluminum fees Due to war disruption - Mining.com",
+                        "description": "",
+                        "source": "Mining.com",
+                        "url": "https://www.mining.com/web/japan-buyers-agree-on-higher-aluminum-fees-due-to-war-disruption/",
+                        "published_at": "2026-07-04T00:04:00+00:00",
+                        "query_factor_ids": ["supply_physical_premiums"],
+                    }
+                )
+            ]
+        )
+
+        group = next(
+            group
+            for group in build_factor_groups(signals)
+            if group["id"] == "supply_physical_premiums"
+        )
+
+        self.assertIn("1 grouped signal", group["section_summary"])
+        self.assertIn("1 source article", group["section_summary"])
+        self.assertIn("Japan Q3 aluminium premium", group["section_summary"])
 
 
 if __name__ == "__main__":

@@ -1,6 +1,92 @@
 {
   "articles": [
     {
+      "description": "World Aluminium Cladding System - Market Analysis, Forecast, Size, Trends and Insights IndexBox",
+      "factor_ids": [
+        "demand_trade_restocking"
+      ],
+      "factor_labels": [
+        "Trade flows and restocking"
+      ],
+      "horizon": "short",
+      "impact": "watch",
+      "market_read": "watch; 0-3 month demand; matched the search topic.",
+      "matched_terms": [],
+      "published_at": "2026-07-04T22:36:05+00:00",
+      "query_factor_ids": [
+        "demand_trade_restocking"
+      ],
+      "side": "demand",
+      "source": "IndexBox",
+      "title": "World Aluminium Cladding System - Market Analysis, Forecast, Size, Trends and Insights - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPYk5sVXVHQ2pUVlJnUE5USGVPNm9SRk16dFlTWE03c0RBYXRGRGRXUXpXZ2dYbzdVX2djRy04UUdnbjloTmRwdm4zbVhkb2NhZlBWSVRMZG5XRFo2SFE4QWJ6YWdoSzNYcVc0WlNFUzRDemN2THp1TFhGdFlmTVB0d0x5eGpSS3FnZkV0N0VuWEdMQzFpM1MwNVowWVpCY3M5RDBCWlI0RjFQR2ZKTGFhTHBYcXNlRXl5RndGZVd0SjFPeWtrVk9heDBDbnhwUmZZT3VHVUtwclhDYU51RmdwUU5IVQ?oc=5"
+    },
+    {
+      "description": "Century Aluminum Stock And 2 U.S. Manufacturers Facing New Tariff Winners Test simplywall.st",
+      "factor_ids": [
+        "supply_trade_policy"
+      ],
+      "factor_labels": [
+        "Tariffs, sanctions, and export controls"
+      ],
+      "horizon": "short",
+      "impact": "supply tightening",
+      "market_read": "supply tightening; 0-3 month supply; matched tariff.",
+      "matched_terms": [
+        "tariff"
+      ],
+      "published_at": "2026-07-04T21:42:27+00:00",
+      "query_factor_ids": [
+        "supply_trade_policy"
+      ],
+      "side": "supply",
+      "source": "simplywall.st",
+      "title": "Century Aluminum Stock And 2 U.S. Manufacturers Facing New Tariff Winners Test - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMGtEaHU2YXEtckhJRWR2Y2hPYXFuMGdWcUJvWnJHOTMzZXd4ODl2UWpqQTh1ODZGejhLcGFVV0w0SEc2SW9UV2lzSU5TNmVyR3JLWWtyUmtnVkc1YnYxeUF3U09xa1FKNEhrOW5iRy1Fekc0TWpubnhqcGVWdFJ1aDZ4djdXeHdsWmxIa1IyWlpSV3dOcU5lUGhyMWt0UUdKMm9OdUs3LXVXZGc1WUtWcE51aGp5SkFBLVVpNW1YRjR3WU02bkd4blRhV0NhX1BMcFHSAdcBQVVfeXFMUGI0SWVGdXlobnJuLU9NV2tSRU5RZUZkZThyWVBIYXpKX0U1S2NtTXdJRmxLX2ZYQVoxTlltM1ctMnI1UnlwdDYzYTQ2amhhTkp6RElkUDNTNnJQOFZidFEtencxeENtdmRTTGhNaWJqSXdqUjJZLUVNRWE0cW4xUlNRYUlEbUdoLXBXRlJfQWhuODJ3YUh2RlZNWEFOX1RhSjM2RXFxbFVUbzNoNERUZ2dCMThuWW9GUW5hcWNuSFdtVEFXQUktV3h5S1F5VjFlZ1dzQ0FieUE?oc=5"
+    },
+    {
+      "description": "Chalco focuses on integrated aluminum operations as sector demand evolves AD HOC NEWS",
+      "factor_ids": [
+        "demand_housing_infrastructure_pipeline"
+      ],
+      "factor_labels": [
+        "Housing, infrastructure, and urbanization pipeline"
+      ],
+      "horizon": "long",
+      "impact": "watch",
+      "market_read": "watch; 3+ month demand; matched the search topic.",
+      "matched_terms": [],
+      "published_at": "2026-07-04T18:30:27+00:00",
+      "query_factor_ids": [
+        "demand_housing_infrastructure_pipeline"
+      ],
+      "side": "demand",
+      "source": "AD HOC NEWS",
+      "title": "Chalco focuses on integrated aluminum operations as sector demand evolves - AD HOC NEWS",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPb0lYdEVQLUV3Rmk0eXQxNzBabXloNFpKUG9EZVFlYkRQaEs4Y0xOQmZXREtaaTJjdEtOSFI5RVpiOUFRandzWER0YzBWTm9oc2VvQmFDSG9Nc05ZWWFrS25lWmVqNHdkcFFPSnJ6dlFhWGVRSmNtazUwODgtUEdaaUtudE1QY3h0WnNOWlJVb1VYRnNUenBBcy1BT1BDT1NTU3VGSFJVeUhNY05vY3pFZjJIQXNNRzhKWndmN0RsOVZtYjU2bmZDX2dzaDI?oc=5"
+    },
+    {
+      "description": "World Architectural Wall Panel - Market Analysis, Forecast, Size, Trends and Insights IndexBox",
+      "factor_ids": [
+        "demand_housing_infrastructure_pipeline"
+      ],
+      "factor_labels": [
+        "Housing, infrastructure, and urbanization pipeline"
+      ],
+      "horizon": "long",
+      "impact": "watch",
+      "market_read": "watch; 3+ month demand; matched the search topic.",
+      "matched_terms": [],
+      "published_at": "2026-07-04T18:21:04+00:00",
+      "query_factor_ids": [
+        "demand_housing_infrastructure_pipeline"
+      ],
+      "side": "demand",
+      "source": "IndexBox",
+      "title": "World Architectural Wall Panel - Market Analysis, Forecast, Size, Trends and Insights - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxObjdyXzFlaXVHN016S0tpS3Y2QmtDeEwxVFdhSXk1ZGFvc1VCbzBaNnlJcEFtRlhySkxIRkNwaGE2aHVyMzJOcHhIT1hSNzRKTGdmZ2Y4SXY2N2Jta09CNDJqaW5Eb3N0NlYydFpXd1JjTGdva1FPeHctcTNScjRwdzVYS19qcHZfNmViZlRoYnY0dUlyZEI2ejRTQm5wNmhiMFJuQU9oSXZ5N2ZpRkRWcFBoQWplbEg1djRtUVpySjZZWU9NTmd3T3o5ZHlLQk9lQTFDektMY2xWeVVhNEdnXzJxU015WHRWQmxqN25fZzBJODVC?oc=5"
+    },
+    {
       "description": "Aluminium billet inventory falls to 130,000mt, warehouse withdrawals rebound, processing fees soften AL Circle",
       "factor_ids": [
         "demand_trade_restocking",
@@ -186,25 +272,25 @@
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5JYnhaSGxRdElQVlFEWWlPWl93NlFLZk5LMVV4bC1uZGl5a25zYXhwNlJZSDZqZUZmMkZITUdELWRKUHljTW15eUF5STVWME85dnJ4LWlYNmZJcElWOWdNd1dZSmNBdG9hb1NYWVpqVEF6ODBFWEFkSHdaUDM?oc=5"
     },
     {
-      "description": "Honda CR-V overtakes Ford F-150 in midyear U.S. sales MSN",
+      "description": "Corbion\u2019s 2026 Gold Medal ranking from Ecovadis shows strong sustainability performance Nutraceutical Business Review",
       "factor_ids": [
-        "supply_inventories"
+        "demand_packaging"
       ],
       "factor_labels": [
-        "Exchange and visible inventories"
+        "Packaging and beverage cans"
       ],
       "horizon": "short",
       "impact": "watch",
-      "market_read": "watch; 0-3 month supply; matched the search topic.",
+      "market_read": "watch; 0-3 month demand; matched the search topic.",
       "matched_terms": [],
-      "published_at": "2026-07-03T06:53:39+00:00",
+      "published_at": "2026-07-03T07:01:31+00:00",
       "query_factor_ids": [
-        "supply_inventories"
+        "demand_packaging"
       ],
-      "side": "supply",
-      "source": "MSN",
-      "title": "Honda CR-V overtakes Ford F-150 in midyear U.S. sales - MSN",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMy1qSFpvTWJwSS10Ui1JeDRjWGdGZUIzV0owZHY2d0V2NVNwdkNLVEp5RkViWEVhcGNaSnN1clJVZzYzQXBiTF95UU9mMVliZ24wRHR1SlhWZ193cnBKd3NvOTRwZXluXzlTaThEcmJBaG1IQmtXYTVBWWVZNFE1X1Awa3A0SDEtZlByRWZpQ2VNUS1HV0JNQ0NreVd0dWtWdEZaVTgtMlZjOExMY3RMVk1CMlpRZEg2dmlJSXg0SDhBcVRrQjZyTENnR1FPZDRLTjUwT2lGMjlPZw?oc=5"
+      "side": "demand",
+      "source": "Nutraceutical Business Review",
+      "title": "Corbion\u2019s 2026 Gold Medal ranking from Ecovadis shows strong sustainability performance - Nutraceutical Business Review",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdTV3QkppQUpjb2pyV21SNjFtNDhJTDlzQ3MxbU1zUUVublZCLTdJelVuYWNlZEdjU1ZPMWU1S3hjelJZSkpOOG5xM1JxbmdZQ1NwVThUQXV5by1EbGEzUkZDdm9QYmxDNGs4TEc0a3c3aGg1SzdqcmRPZlQzaWh4dzktSlNFempCUE1jRm53VDRJLW9NNzJ3bg?oc=5"
     },
     {
       "description": "Japan Buyers Agree on Higher Aluminum Fees Due to War Disruption Bloomberg.com",
@@ -338,12 +424,10 @@
     {
       "description": "The Aluminum Smelter That Could Reshape the U.S. Industrial Map Area Development",
       "factor_ids": [
-        "demand_construction_near_term",
         "demand_macro_manufacturing",
         "supply_power_energy"
       ],
       "factor_labels": [
-        "Construction activity already underway",
         "Manufacturing and industrial activity",
         "Power availability and electricity cost"
       ],
@@ -353,7 +437,6 @@
       "matched_terms": [],
       "published_at": "2026-07-02T20:52:35+00:00",
       "query_factor_ids": [
-        "demand_construction_near_term",
         "demand_macro_manufacturing",
         "supply_power_energy"
       ],
@@ -384,6 +467,27 @@
       "source": "IndexBox",
       "title": "Adani Enterprises and IRH Partner with Odisha for $11.5 Billion Greenfield Aluminium Project - News and Statistics - IndexBox",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYTBPbmU1V0xHSWtTaldpUllkYml4dFluSGFaZkhXNE9DZUw5VXJSWVVWOGEzYkh0cmNfNHlZY0V1Y2NZVHl2cFk0bDJKcTF2OGJGYXVoWWY5WEtnWklUeEpMVC1KcDJtZVJBYklQTl85V1Y2eXpfZDE4SnMwWHl0Sm9MUS1idnJmZnp1U2VUOWxhcTd2QVAxOXZ4bThYVkFkOHA3WTFiTXJCWm9LMkZrVzJlNWkxTm1pei03T2t2c3h1bDg?oc=5"
+    },
+    {
+      "description": "Honda CR-V overtakes Ford F-150 in midyear U.S. sales MSN",
+      "factor_ids": [
+        "supply_inventories"
+      ],
+      "factor_labels": [
+        "Exchange and visible inventories"
+      ],
+      "horizon": "short",
+      "impact": "watch",
+      "market_read": "watch; 0-3 month supply; matched the search topic.",
+      "matched_terms": [],
+      "published_at": "2026-07-02T16:16:17+00:00",
+      "query_factor_ids": [
+        "supply_inventories"
+      ],
+      "side": "supply",
+      "source": "MSN",
+      "title": "Honda CR-V overtakes Ford F-150 in midyear U.S. sales - MSN",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMy1qSFpvTWJwSS10Ui1JeDRjWGdGZUIzV0owZHY2d0V2NVNwdkNLVEp5RkViWEVhcGNaSnN1clJVZzYzQXBiTF95UU9mMVliZ24wRHR1SlhWZ193cnBKd3NvOTRwZXluXzlTaThEcmJBaG1IQmtXYTVBWWVZNFE1X1Awa3A0SDEtZlByRWZpQ2VNUS1HV0JNQ0NreVd0dWtWdEZaVTgtMlZjOExMY3RMVk1CMlpRZEg2dmlJSXg0SDhBcVRrQjZyTENnR1FPZDRLTjUwT2lGMjlPZw?oc=5"
     },
     {
       "description": "Trump Tariff Tracker \u2013 July 2, 2026 (via Passle) Baker Botts",
@@ -493,7 +597,7 @@
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOV0ZDVWhnX1dfUzNQaUlLb3BfdjE5djBoSDlfVE5pSWxyQ2dvUE1uNWFXY0d3RkJIS3BlaFZyU21RSXdWSGxObTNjLW1scnZUb3h0ZmljRGR4bzlSUjRCdzNONmZXVDNlamN0WDA2THZQeHVzVUE1MWdWakoxNGRDcWdYbWU2UzQ2T0RlWGxQSkFScGlVZ0xyOVo2dDViRWM1ckc1dEIwMkRRVmdkRVdySW1PX2cwWGFWS2Jv?oc=5"
     },
     {
-      "description": "Adani\u2019s Rs1.08 Lakh Crore Odisha Aluminium Bet: 53,500 Jobs, India\u2019s Biggest Metallurgy FDI NiftyTrader",
+      "description": "T\u00fcrkiye collects 1.5M beverage containers on 1st day of desposit plan | Daily Sabah Daily Sabah",
       "factor_ids": [
         "demand_housing_infrastructure_pipeline"
       ],
@@ -504,14 +608,14 @@
       "impact": "watch",
       "market_read": "watch; 3+ month demand; matched the search topic.",
       "matched_terms": [],
-      "published_at": "2026-07-02T12:02:26+00:00",
+      "published_at": "2026-07-02T12:32:00+00:00",
       "query_factor_ids": [
         "demand_housing_infrastructure_pipeline"
       ],
       "side": "demand",
-      "source": "NiftyTrader",
-      "title": "Adani\u2019s Rs1.08 Lakh Crore Odisha Aluminium Bet: 53,500 Jobs, India\u2019s Biggest Metallurgy FDI - NiftyTrader",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVUpPV2VFUmZWR2JSYWFqUFhIV01RVUJTQjJWWmlHeHNna2dQdXlPUlBzZ0hsV2k1b2FtUjFKMElVTktCX0JaWDQ3ekJjcWZwM25LWEpzU0xDdTJpZjgzWC1vcGtIZkxSek5yVVhnMTRHQnAySmlTbGVXbUJhblhoWVNESTI?oc=5"
+      "source": "Daily Sabah",
+      "title": "T\u00fcrkiye collects 1.5M beverage containers on 1st day of desposit plan | Daily Sabah - Daily Sabah",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQam9ReDd0WmFyWWJNMHVvSVBHemZzNmZUS3RLYWgxaWJfYjNBOXFKWWZvRWFYYzJRVVFNaTdiRUxjeHpDYmRVNUlXVUpXdHdWeHFhaVUweGc0Zkd0ZjkxdHV3N0tlb1gtWWZYLXRUTVdaZ1IwLUV6QVhURnhnN2pnc2NQSmIxQXZKbnd2OFpTaXhmbkJhcDJpOXVZY3FObXowaW8xZEZzQk92YXV1c0pEcFRn0gGyAUFVX3lxTFBqb1F4N3RaYXJZYk0wdW9JUEd6ZnM2ZlRLdEthaDFpYl9iM0E5cUpZZm9FYVhjMlFVUU1pN2JFTGN4ekNiZFU1SVdVSld0d1Z4cWFpVTB4ZzRmR3RmOTF0dXc3S2VvWC1ZZlgtdFRNV1pnUjAtRXpBWFRGeGc3amdzY1BKYjFBdkpud3Y4WlNpeGZuQmFwMmk5dVljcU5tejBpbzFkRnNCT3ZhdXVzSkRwVGc?oc=5"
     },
     {
       "description": "CR-V dethrones Ford F-150, Toyota RAV4 as supply shortages hand Honda top spot Automotive News",
@@ -582,11 +686,13 @@
       "description": "Missouri aluminum smelter restart announced Recycling Today",
       "factor_ids": [
         "supply_smelter_operations",
-        "demand_macro_manufacturing"
+        "demand_macro_manufacturing",
+        "supply_trade_policy"
       ],
       "factor_labels": [
         "Smelter outages, restarts, and curtailments",
-        "Manufacturing and industrial activity"
+        "Manufacturing and industrial activity",
+        "Tariffs, sanctions, and export controls"
       ],
       "horizon": "short",
       "impact": "supply easing",
@@ -598,7 +704,8 @@
       "published_at": "2026-07-02T08:21:00+00:00",
       "query_factor_ids": [
         "demand_macro_manufacturing",
-        "supply_smelter_operations"
+        "supply_smelter_operations",
+        "supply_trade_policy"
       ],
       "side": "mixed",
       "source": "Recycling Today",
@@ -674,6 +781,29 @@
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQVI3U1Fqb0czVWhVaE5jSUlLWkVWZFI1NElwQzBUd3QzUGlsc0NtS09VVnFydHB0WDRvdVY2QkF1dnpXaHJkd2hROFA4eVduS1M2R1ctNFBUbm12TUtyT0FCWjQ4RXFJTEVpRWRsSGpMbXBCTEEwVE5yYzVxcUl5WE1BdjdtMkRsSEYtV2gtVW1VdVZTSXQ5emlnbUg0WkY5MC1ZRmdaOWVVRTJ6S2pUS2s4RjdyelFmVlZCNjlBSU9iX3BVYXVrYnJLNUExM1FR?oc=5"
     },
     {
+      "description": "Geopolitical Risk Premium Continues to Narrow, Aluminum Prices in the Doldrums [SMM Aluminum Morning Briefing] SMM Metal",
+      "factor_ids": [
+        "supply_physical_premiums"
+      ],
+      "factor_labels": [
+        "Physical premiums and regional tightness"
+      ],
+      "horizon": "short",
+      "impact": "watch",
+      "market_read": "watch; 0-3 month supply; matched premium.",
+      "matched_terms": [
+        "premium"
+      ],
+      "published_at": "2026-07-02T01:16:25+00:00",
+      "query_factor_ids": [
+        "supply_physical_premiums"
+      ],
+      "side": "supply",
+      "source": "SMM Metal",
+      "title": "Geopolitical Risk Premium Continues to Narrow, Aluminum Prices in the Doldrums [SMM Aluminum Morning Briefing] - SMM Metal",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNaDdlWlZPVTFldHd4OVJfT1dVS1hCY2ptcHBlRW45ODdlblJNWFhENW5xX1BmUTZBSnFyTG55dlBWV3RIR1BqQ2YtYnAzRzdLMjBVcjdnS1RCX2dDclpDeDlPdVNzaEZvQk10OHZ6R3Q5UWRzTDl6dUJiOHNXVGRNdUNVYkFET2dTN09NRHg5QnoyWjhUX1lfWTBqLVNvRVJjWmFJMWtwdXVLLXVlWkNIX29iOEY3MHRQeDgtX2ItQlNKWmhQX29fSXlXd3JCRWdRekhJV0N5ZnE1bjlNNE5RSy1QLXF1VXZuZ2xz?oc=5"
+    },
+    {
       "description": "Indonesia\u2019s aluminium downstream: Following nickel into a captive coal boom Centre for Research on Energy and Clean Air",
       "factor_ids": [
         "supply_power_energy"
@@ -740,32 +870,6 @@
       "source": "The Irish Times",
       "title": "Volodymyr Zelenskiy urges Ireland to cut off alumina supply to Russia - The Irish Times",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeU9YMUxZdGw5TXBTV1J0YkM3ZXR4ZkxSZjF4MUR3WXpYTm1fRDRBVU50U3RiV2Z3MGFqVFppMGlSVmZRQUNMRWplQnQtTm1GdVJQN1ZhSDNtZEItYzB2ZVdDam9RekFyWlhnd0F1RHFycHBnUlZ2TXNycDhwVnVuNDhMSGUwRnVWVXczZjF1OTBsNkx4QVFHaHRSWFNZZ2wyNFV4cU5BUVZJcnJxc1EwN2syMVNGY0pwMmNYbXZPVEZWUzg?oc=5"
-    },
-    {
-      "description": "Norsk Hydro\u2019s Slovak aluminum smelter to partially restart production Mining.com",
-      "factor_ids": [
-        "supply_power_energy",
-        "supply_smelter_operations"
-      ],
-      "factor_labels": [
-        "Power availability and electricity cost",
-        "Smelter outages, restarts, and curtailments"
-      ],
-      "horizon": "short",
-      "impact": "supply easing",
-      "market_read": "supply easing; 0-3 month supply; matched restart, smelter.",
-      "matched_terms": [
-        "restart",
-        "smelter"
-      ],
-      "published_at": "2026-07-01T17:19:08+00:00",
-      "query_factor_ids": [
-        "supply_power_energy"
-      ],
-      "side": "supply",
-      "source": "Mining.com",
-      "title": "Norsk Hydro\u2019s Slovak aluminum smelter to partially restart production - Mining.com",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVHpydWZDT3lwR0hteC1IUDFNb2RqR3U5MlNZT01kN1lCQ056OUY3MUU1X1hvaVdqOENSbGJkYmpxbXdONTItNDNUSEt6Rk5nM3dtMnBxdXExYnBfMlNqdlhSSlZQdGhGUXdFM3RpNy1SWFdrUVdnUUpoeHdtWjdOU0ozNkNHa3VvZ29PLXFtYmdhVDQtRkVMTGg0aWdPZw?oc=5"
     },
     {
       "description": "APAA Welcomes Magnitude 7 Metals' Decision to Restart Missouri Aluminum Smelter Morningstar",
@@ -842,29 +946,6 @@
       "source": "Aluminium International Today",
       "title": "Slovalco to restart aluminium smelting - Aluminium International Today",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE93SzNDUmJ3T1B3N1J3MmxrT21EUHNDYzJBdTl5aHF3NkgyanN5Z2RVZmFla19iZ3ZEaF9PcC1JSWhseHhHRTM3alZRQU5URHhsem1EM1k4NXo5MzRrU3YyemI4WkxxYmV4Rlppak1NanFJYmEtbDhIU1ZB?oc=5"
-    },
-    {
-      "description": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels Autonocion.com",
-      "factor_ids": [
-        "demand_grid_renewables"
-      ],
-      "factor_labels": [
-        "Grid expansion and renewables buildout"
-      ],
-      "horizon": "long",
-      "impact": "watch",
-      "market_read": "watch; 3+ month demand; matched solar.",
-      "matched_terms": [
-        "solar"
-      ],
-      "published_at": "2026-07-01T14:30:37+00:00",
-      "query_factor_ids": [
-        "demand_grid_renewables"
-      ],
-      "side": "demand",
-      "source": "Autonocion.com",
-      "title": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels - Autonocion.com",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TaVU0cHN2RkFtejRmVUtYYmJwWGdOTkZPNmFJcXVOYm1weXVsSWNOSDdCc2hlNFo1cXFodnZnQ1hraXdEQVNzUEEyOVl5b0pkRi1YdUdDb1dnSVlxMFBBWDJlU2xTV2h4TjZvemVnNGY?oc=5"
     },
     {
       "description": "Norsk Hydro\u2019s Slovak aluminium smelter to partially restart production KITCO",
@@ -1067,6 +1148,27 @@
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBHSVppNWQxaVRQZFpEWTRuYnBiamJzMDlnQkl5M0ZiamlObUtGaVlqbVlyU2dXUlZkeFhNcV9kUWZmOGVSelNkbFptQzhyMDhOQWp0Wnc3Z3JXQ3lkWVpDd0c2WnEwZEVNcU5KaktNd1phRzl6WGRJbjVB?oc=5"
     },
     {
+      "description": "South32 sells aluminium business to Alcoa in $9.8b deal AFR",
+      "factor_ids": [
+        "supply_alumina_bauxite_projects"
+      ],
+      "factor_labels": [
+        "Alumina refinery and bauxite mine projects"
+      ],
+      "horizon": "long",
+      "impact": "watch",
+      "market_read": "watch; 3+ month supply; matched the search topic.",
+      "matched_terms": [],
+      "published_at": "2026-07-01T07:03:00+00:00",
+      "query_factor_ids": [
+        "supply_alumina_bauxite_projects"
+      ],
+      "side": "supply",
+      "source": "AFR",
+      "title": "South32 sells aluminium business to Alcoa in $9.8b deal - AFR",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNU3lTQkdNaDAxeW9YdWhfSmJBcXBkR1ROVkg4NEJJWU9fbHdOMmZaQUxWc0VSOURDbFRraVpHSEtyUkxMSGNTaEpGT3Fmb2M4ZjlhdENROVJkQTQ1V0FmMVFxb0xIeTdkQXQwZXlELUtzbzBEc0M3eTdPekE2RVA5VXIzYUE5ODg0dmNPYnZwMXJ2M3NqeDdwbDVERmtwLVZOaU5zU3pIZDI?oc=5"
+    },
+    {
       "description": "ASX 200 Closes 0.6% Lower on First Day of Fiscal Year TradingView",
       "factor_ids": [
         "demand_housing_infrastructure_pipeline"
@@ -1200,27 +1302,6 @@
       "source": "KOCO",
       "title": "Inola City Council imposes 60-day moratorium on construction of controversial aluminum smelter - KOCO",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVzFOQmN5UHFPMWFaUjdFRVgyQms3ZUlwTnVob25wZVBKTWtJU3EyQnVESXl3dWFoWW1MdnJaamRPRkxkODVudC1uMjZSY0JHc3JmSUFldWRNLU5LWk1UZkNQLXJ4cWlwU0RfQ0VWblJXb1hlZjdQaE9Zc0RrbFdKblI1WUtRY2NTRDlpWm81SmlReWlFQ2EtdjdVcjM4bk55Y2xWMnVxRjRkYm9jZGhSdklfYlVhSzhyNEQ0S01XUUZPVzF3bnY2SA?oc=5"
-    },
-    {
-      "description": "South32\u2013Alcoa $5.6B aluminium deal: portfolio and asset impacts for mine planners Geomechanics.io",
-      "factor_ids": [
-        "supply_alumina_bauxite_projects"
-      ],
-      "factor_labels": [
-        "Alumina refinery and bauxite mine projects"
-      ],
-      "horizon": "long",
-      "impact": "watch",
-      "market_read": "watch; 3+ month supply; matched the search topic.",
-      "matched_terms": [],
-      "published_at": "2026-07-01T00:01:32+00:00",
-      "query_factor_ids": [
-        "supply_alumina_bauxite_projects"
-      ],
-      "side": "supply",
-      "source": "Geomechanics.io",
-      "title": "South32\u2013Alcoa $5.6B aluminium deal: portfolio and asset impacts for mine planners - Geomechanics.io",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTWxWZVVJeE13d29XMVlzZ3FTdXc1VlVabnR1dGlnbXRBOXJKNDIzZnk5VWNCYW5RNUJiOGE5d1dwZ3dIaTBYOFUyanZ1TEhzYjl3SGxYeXFEUU5pcW5KSTVQekVpWV9rOW01OUdnMjk0aFdBTlRoQmljektzVE1qYTYwUWpMT0FLcVAwTWhVcVh0V3FESGY3THVDUDBrTHprZHY4NXNqMDBnUDhFQmtUOWt4czg4QnIzeUE?oc=5"
     },
     {
       "description": "Alcoa strikes $4.8bn deal for South32\u2019s alumina and bauxite assets Financial Times",
@@ -1880,6 +1961,29 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOFk2QUxOb0NndUJGN00yTUtreWh4cmwtNFFrdUZlWXkyLVZ1QjJ3Zm83RzJUMjZzOWlXWDR3ZTJ4S3R3Z05LM2FNWjJGNjRvWm52bG16SlNieGlPcWpEQ29Fc0tvaThrejc1cjgxd3A5T2FRQmtTcnU5NWwxUGdBR1l3UXhHNVMwdzhJblk5SzZEaTlPUTFTSHphOFNBQjkwS2VoV2JLVUFqV2x1MmlRb1FPSktKN3hZc2FlSGxTQQ?oc=5"
     },
     {
+      "description": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity CXO Digitalpulse",
+      "factor_ids": [
+        "demand_trade_restocking"
+      ],
+      "factor_labels": [
+        "Trade flows and restocking"
+      ],
+      "horizon": "short",
+      "impact": "watch",
+      "market_read": "watch; 0-3 month demand; matched global trade.",
+      "matched_terms": [
+        "global trade"
+      ],
+      "published_at": "2026-06-29T07:33:22+00:00",
+      "query_factor_ids": [
+        "demand_trade_restocking"
+      ],
+      "side": "demand",
+      "source": "CXO Digitalpulse",
+      "title": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity - CXO Digitalpulse",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWkpwWjNpaXBMNTRLSlV1dnJXaVRDQ2l3Vk1PWDdJUVR0d3JCVzZzRUkyNmVxRDZ5QTcyWEF0UV9TOEhQZHdUaVpnYjRmaFNqRHlGbjNLR1VLQm1MeHdsTFJtX1lTZ21zX3NNOWI1WW5VNE1zQWVrMUFkNUs3Y09OTDgzT1l4c1RDLVk1Z0c3eUZsU3J5MHIwcTNuUHBicEk2UnVZZHVlYlJEU3M?oc=5"
+    },
+    {
       "description": "Emirates Global Aluminum (EGA) has officially inaugurated its aluminum SMM Metal",
       "factor_ids": [
         "supply_recycling_capacity"
@@ -2010,27 +2114,6 @@
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNME43Z0pOQ3FydDMtVURmYmRtbjBKa0NtQkJjZVUxLU44U3ktNlktUUdEQTBwaVpGSnFCbzJRRXZ0bU4wdVZWWHk3T29JU0J3U3Buempjc1JqMGFPdVVVX3FWMlpDM1Q4dHphSlN1RWhZa0phYU9BWmFSSjBBZnI3bXlVWlB2SFl3bXh1eHFwV0ViNEVFODlGM1A2dGxkN2RNZXN5aWMyMXBkR0VBVVJkU0VFcHhKMUl4Qk9jb0wyVWdrd9IBygFBVV95cUxOX21xb1Q0al93Y0pVYTdQX1NMTVp3SG1iTDJEYXE5RGg3RXRmVmZncWVkQnBBc2thVlJjLVRtVHJrandNODc4clFQRlZiTzV4blA3MnBDYlZOOHhZQW5ZYUFaa0VzWi01ZEpmM3VaMXFMWnU2OS0tYTc2OGVIZHk3ZEFpNVZZUVlwT29DdmxoRXQwNkpDbjRTZDdMN0NJbDB2LXFZTWFwVlVxT2RTNGV6ZWY2bDZlcmxlblM0YUtDVkJvTjl2TDVib2Vn?oc=5"
     },
     {
-      "description": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR) Fathom Journal",
-      "factor_ids": [
-        "demand_trade_restocking"
-      ],
-      "factor_labels": [
-        "Trade flows and restocking"
-      ],
-      "horizon": "short",
-      "impact": "watch",
-      "market_read": "watch; 0-3 month demand; matched the search topic.",
-      "matched_terms": [],
-      "published_at": "2026-06-27T08:09:55+00:00",
-      "query_factor_ids": [
-        "demand_trade_restocking"
-      ],
-      "side": "demand",
-      "source": "Fathom Journal",
-      "title": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR) - Fathom Journal",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE81QUpudTVxMndGdXJQWWNKOXlBMlIwN3hmV3JmVGxCUDFNNUp0aGxUUUd4eUFCM0x4Ym1lTGVvTXpvTWIyU0ZYUW4teWVGVEg5YXRnb3hMeExYMmk5bVFNNmlDYTQ?oc=5"
-    },
-    {
       "description": "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD) simplywall.st",
       "factor_ids": [
         "demand_housing_infrastructure_pipeline"
@@ -2050,27 +2133,6 @@
       "source": "simplywall.st",
       "title": "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD) - simplywall.st",
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQclRPV1lZbEpzeU1LbWloZVZVd0NMcUpyaUwxeHdnN0pqaW85RkFKTWtSVTVRVV9Ud3k0cWx4OXV0bUhSVXU4SXNQZkVLd1FrR2haeEd3eVZpaUtJSE5jcXFRZXBCSUd2bmxVV2JGcFVKLTdVaUwzZWJNX2dUZERfTWtULWdYc1Rkd1d1SzFQSUp6dWh2bWJTcE5HWnRNajBQVHl1ZU03elFveHJkdGwzd3kyVFMzcmNkQldPMTVGWGJZWFNIQm5JNXRYVmRrU2_SAdQBQVVfeXFMTmEzVXFIYmhNTDlGSkhKQVFZUEczT2JDRnM4MG5yYmhHeF9YVVRhT2oxZFVWYnlLMDdXR0JXZk1vdGEtUlpLUGxDd05feEY3Z1NGdVBZdVlSUGZ1LUJTLXFGMUlJYjZvV0xiNDdCZVZJTDY2OVdlVE9ZcXh4a3lZV3RpT2tXTnRpOC11MG9YY2JwUWNYbVl3VThtMmlhdHEzbTlySm9fRTdFMFFjRlBJd1ZGdGNoUnpFc0dDWmRKbTNzcWJpejExLWRYZzZoY21RRnp6UlE?oc=5"
-    },
-    {
-      "description": "EU approves steel, aluminum trade deal with the US ahead of July 4 deadline EUROMETAL",
-      "factor_ids": [
-        "supply_trade_policy"
-      ],
-      "factor_labels": [
-        "Tariffs, sanctions, and export controls"
-      ],
-      "horizon": "short",
-      "impact": "watch",
-      "market_read": "watch; 0-3 month supply; matched the search topic.",
-      "matched_terms": [],
-      "published_at": "2026-06-26T17:00:14+00:00",
-      "query_factor_ids": [
-        "supply_trade_policy"
-      ],
-      "side": "supply",
-      "source": "EUROMETAL",
-      "title": "EU approves steel, aluminum trade deal with the US ahead of July 4 deadline - EUROMETAL",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWFlOWFVRQnBLRjBrVWk3MGhRdUdzYnkxcFZ1NFBlR1lSNWhrVWEtcEdKdzJBMjZwMkJlNFpfbmw1R2hvYi1tcW5rNkVkV1VmbVBpSDJsbWNGT01XZHFtSHlRQVoyWDItSldfREExQnVSQ0pBWXI3SmNwWVJBVnl2VEt3QXRZRTBGd24xOFVOZXE5NXFFaHhPY0c0SmVZUQ?oc=5"
     },
     {
       "description": "This sleek aluminum low-profile Mac keyboard with a touch bar just dropped to $120 low for Prime Day 9to5Toys",
@@ -2138,27 +2200,6 @@
       "source": "Financial Times",
       "title": "EU plans 15% tax on aluminium scrap exports - Financial Times",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVEFZeXlfSU1ucWswSU1QMlpEZ09VMTlmei1JT2EwMXBWSHdpQ2QwdXpRR1NHbWhuRF9zR2ZQUnpOZUdYZmJBRWg3VFpLcFF5RTZPWEpNbXBQZU14Q2NLaTBtcmotdHVXNWI3WEdldDZUcHRIWWdzQjZkejBZbXlNbnROVVE?oc=5"
-    },
-    {
-      "description": "Dingchengzun Expands Global Footprint with Aluminum Facade Project in Luanda, Angola Big News Network.com",
-      "factor_ids": [
-        "demand_housing_infrastructure_pipeline"
-      ],
-      "factor_labels": [
-        "Housing, infrastructure, and urbanization pipeline"
-      ],
-      "horizon": "long",
-      "impact": "watch",
-      "market_read": "watch; 3+ month demand; matched the search topic.",
-      "matched_terms": [],
-      "published_at": "2026-06-26T13:17:00+00:00",
-      "query_factor_ids": [
-        "demand_housing_infrastructure_pipeline"
-      ],
-      "side": "demand",
-      "source": "Big News Network.com",
-      "title": "Dingchengzun Expands Global Footprint with Aluminum Facade Project in Luanda, Angola - Big News Network.com",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQTNkdUtVeVRkNUZSbTVVRmFjWXd2Vi1WQS1WVHhfN0xqS1JNSFA1STlEY2RHY01iZ2xxakJGbUZMSndYS1paWHhfUU9sQ0dYSVdNemMycHg3TXFvaHVkaW04eFpDRUFzenEwblR4WFNMSjY4b0RxZ0ZpRm9nRHFwUGRGbVlEZzBOY0k5d1lTTUVsM3ZnMUdRUkE1T0hSYkdSdFBHYU9WTV9tU19jdXR1QnBWYUtIM0hRUzZJZWpQWU1Nd05idXlLbw?oc=5"
     },
     {
       "description": "JGMA encases Humboldt Park Health and Wellness Center in aluminum composite panels The Architect\u2019s Newspaper",
@@ -2273,6 +2314,29 @@
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcE1pZGVLNEtJQVREdERLTFY0NHBySHR3ZlF4TlhfVWZHaXd2dHAtenhTZ0RWbk9pbXpjQjh0SFFSNTUxUWNyTFMxTHlsWDBlbDRDOXNTb0pqRVlHUm5QN2xmaDZKZE9tTjQ1OU1aSEZvdFVub2xDQjZSdmhHRnR1SEdsMVliMkJEQ3liMlExNklUWUM2T1ozLU9zNjNzME9iWVlabXFDWmNXOGw2?oc=5"
     },
     {
+      "description": "SupraMarine project to connect distant offshore wind farms to land with superconducting system Engineer Live",
+      "factor_ids": [
+        "demand_grid_renewables"
+      ],
+      "factor_labels": [
+        "Grid expansion and renewables buildout"
+      ],
+      "horizon": "long",
+      "impact": "watch",
+      "market_read": "watch; 3+ month demand; matched wind.",
+      "matched_terms": [
+        "wind"
+      ],
+      "published_at": "2026-06-25T15:52:22+00:00",
+      "query_factor_ids": [
+        "demand_grid_renewables"
+      ],
+      "side": "demand",
+      "source": "Engineer Live",
+      "title": "SupraMarine project to connect distant offshore wind farms to land with superconducting system - Engineer Live",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNUdSOXdpVTViZHkxc2NqZkdnTGhZWGNMenBiNHdpZlZWR0tqbU1qSVRDVVJDRVI2ZXNqT0lwT2VCRlpRVnIwNk5VaUw0c1MtVEJzTDcxT3ozc0Zodkd2WF9BbGQ3Yjd4dDJ0T05UMXpVRWI3YUNZZ2N2VXE2OWFYMy1QVXRycHZOc1YwVVU3UTZnSm9Rc1B1N1RCU2E2cWVrWVNUVVVWTVZQdWNURWc?oc=5"
+    },
+    {
       "description": "Supports the circular economy. Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
       "factor_ids": [
         "supply_recycling_capacity"
@@ -2317,27 +2381,6 @@
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLXdQWExuUWs4d2NrSHAwbUpEZTl2TUpBWXhWZkdfLXU1WlM1T29JODVUOWNkZ1pEMExyYlI2VUxxd1RnNjd1LTdqVjk2bFozZk8wbUlvQ2hJRXJMVGhkeEloemxjeExrVUk0OVgtOUJOeFZaSmQ1eEk3amlaNzljMDV0RVNBbGozWm9hUnVORmVsUEtqWE1EU3c4cGdUZw?oc=5"
     },
     {
-      "description": "China's aluminum scrap sector squee... mysteel.net",
-      "factor_ids": [
-        "demand_trade_restocking"
-      ],
-      "factor_labels": [
-        "Trade flows and restocking"
-      ],
-      "horizon": "short",
-      "impact": "watch",
-      "market_read": "watch; 0-3 month demand; matched the search topic.",
-      "matched_terms": [],
-      "published_at": "2026-06-25T07:00:00+00:00",
-      "query_factor_ids": [
-        "demand_trade_restocking"
-      ],
-      "side": "demand",
-      "source": "mysteel.net",
-      "title": "China's aluminum scrap sector squee... - mysteel.net",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNkppY3EzQVAtZ3lLbnRxenhndUJHOXowSkRZa2IzNUtoa2pmeG1wU2JCZFlkMUZPODBhZjJMakZ4cWhSMG5LZGtVY3hrMjZ1U2RQbzU1Y0xaS3N6TDBBNGx4aGxzWURseXFxQVFvR1I4UFdzNUFGalVNbVB4eWVNdC0ySVE2T2JTYTUtT3gwaG1KcWNNUG1ZeG1OZW4wWXJpRjB3N1Y4QXk3SHhvazhPek00WEJSd1I3OFZvN2g2LTQ2TjM2SzFFcw?oc=5"
-    },
-    {
       "description": "It turns out Trump does need something from Canada\u2014aluminum The Logic",
       "factor_ids": [
         "supply_power_energy"
@@ -2357,29 +2400,6 @@
       "source": "The Logic",
       "title": "It turns out Trump does need something from Canada\u2014aluminum - The Logic",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9vYXAwZ2VUbTFGWmh2WHgzYy1IaUxNYklUUmJYR3RWUFFobE1lbkJtTV9VaUxBSGhhU2hMREpKR3c1bzR6TU16LW9nSFJ6MzVtcFhjT28wM2M0WTBhekhYN0hmSTkzNEhENERLM2NHRUlRdw?oc=5"
-    },
-    {
-      "description": "SilverStone Launches ALTA T1 Premium Aluminum Unibody Super Tower Chassis TechPowerUp",
-      "factor_ids": [
-        "supply_physical_premiums"
-      ],
-      "factor_labels": [
-        "Physical premiums and regional tightness"
-      ],
-      "horizon": "short",
-      "impact": "watch",
-      "market_read": "watch; 0-3 month supply; matched premium.",
-      "matched_terms": [
-        "premium"
-      ],
-      "published_at": "2026-06-25T07:00:00+00:00",
-      "query_factor_ids": [
-        "supply_physical_premiums"
-      ],
-      "side": "supply",
-      "source": "TechPowerUp",
-      "title": "SilverStone Launches ALTA T1 Premium Aluminum Unibody Super Tower Chassis - TechPowerUp",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMEFZeVo2ZGdHUlNhMFh4ZDlPalpfNFFtN1VRRW53RGtZc2g4d096SElCakZERzhWa19scUJoSjdKRXl0ZWJkNUdfUFgtOURvOEsxajhvRFlHUlR1eV9iWGNiYkFfNU80aldWa2ZfMHhVeGVrOFk2X25PV1czb3luSWxhOEJQY0hwMGM4UDNWdnNFNE9SNmtvMmU2U1l2a0VHSHV5cUFFXzdraHVa0gGyAUFVX3lxTE5IRzh2YjdQeWdUOThYTTQyTExyZGlhZnRwcm4xWXNZMm9pa25LZEY5QUFfNVozdk40S3dNQ1BaTkRUZm0zZVJmY0hNRFhMSGhvSmliS2xUZDNxV2ZtcWkwRFd0NFZWV1AwZ2VtaUNFTnhyLUpfdFhfZmZQd0JVVW11Q1Y3ZDVJNzVBNFozUlptdm1DQmMzT0RmR0FrYjluanNsSThQc0ZRSWtjVEl6OS0xZHc?oc=5"
     },
     {
       "description": "EU aluminium scrap export curbs delayed until September, group and sources say Reuters",
@@ -2662,29 +2682,6 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTEpxeW9oTnV3dGJMNXBPeGd6RFA5b0dwcUJmU0tjb3NYbDhXM0ZXTG16YzVwZmRCakpEcDRCMlBlQzl5ekgzTlloR0F2T3lLLS12YzdIdTlmdW5aaldHMGFJTElHUFZaWFEtRThYQ0RwU0Fnbjh4ZUp2NHpJb2d4dDg1T2tTUWVBcmtMOGhFeEh3WFlUMEYyUkNpbWQwNVRwbnFzYXdVTF9BVEE?oc=5"
     },
     {
-      "description": "Steel, aluminum makers face records gauntlet for new US tariff exemptions Yahoo Finance",
-      "factor_ids": [
-        "supply_trade_policy"
-      ],
-      "factor_labels": [
-        "Tariffs, sanctions, and export controls"
-      ],
-      "horizon": "short",
-      "impact": "supply tightening",
-      "market_read": "supply tightening; 0-3 month supply; matched tariff.",
-      "matched_terms": [
-        "tariff"
-      ],
-      "published_at": "2026-06-23T07:00:00+00:00",
-      "query_factor_ids": [
-        "supply_trade_policy"
-      ],
-      "side": "supply",
-      "source": "Yahoo Finance",
-      "title": "Steel, aluminum makers face records gauntlet for new US tariff exemptions - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZV8xdVl4ZmpQS04wdEU2Nmgxd0lvUkFWNDZJSWpJN1ppeWxTNnZJem9ER2F2QzVtTXFEYmlZd0NxVHQxNkdXbU12eUM2YnBLRm8zNkxBZllWZkR6dHZaVld5SXBfUHpQQmh4eEx5T2VkamtYVG92ZHZ1REZqVUJfbk40LVRkRnBCMHRHRVlqYzNCNko3VE1iSUtkMXlrelBX?oc=5"
-    },
-    {
       "description": "Vedanta\u2019s post-demerger map has Aluminium ramp-up and critical minerals at core AL Circle",
       "factor_ids": [
         "supply_new_capacity"
@@ -2730,6 +2727,29 @@
       "source": "Recycling Today",
       "title": "Data center boom benefits metal producers, say studies - Recycling Today",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXhXbnNtb1FEWk1iMmhzVVVlejlIem12TFJENjB4ZzhGbjJVV1RGeGwtQ0ttTzh2U2ZxV3Q1anIxWGEzdEFuenBwbVhKcXdZaU1aRWx4Z0dqNFQtbkMyd3F0RFk2TkFIczdoNVdkRmp4alRxRDhHakJqZklXeHJxTGpDR2xnZmhPRDNmSjUwWFBlYlNaaDM0amJKdWctdDJ2OVlOQmNGVEI1QQ?oc=5"
+    },
+    {
+      "description": "Coal vs renewables: The electricity cost battle influencing aluminium production pattern AL Circle",
+      "factor_ids": [
+        "supply_power_energy"
+      ],
+      "factor_labels": [
+        "Power availability and electricity cost"
+      ],
+      "horizon": "short",
+      "impact": "watch",
+      "market_read": "watch; 0-3 month supply; matched electricity.",
+      "matched_terms": [
+        "electricity"
+      ],
+      "published_at": "2026-06-22T07:00:00+00:00",
+      "query_factor_ids": [
+        "supply_power_energy"
+      ],
+      "side": "supply",
+      "source": "AL Circle",
+      "title": "Coal vs renewables: The electricity cost battle influencing aluminium production pattern - AL Circle",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYk0zVnR4X0xyS2lqRXNMMHdUZUVicng5YnZ6YjlYcmFyd0lmaDA3YkVVY29acHF1djhDTXNzdUJPdkhIYUVUWWFoUHZYaVVSYS1CS1k1UDZiVHR1VzZBYW9WOHlJNWh2a3oweVppRW5DUnM0aWozWFBpLVA2dzNlWUpLTmdrN3MyTGgxWV9VZzB2cVphUzh2LXM0ejlnZmNLUXJ6Ni10OUNOOWVOeWdtdDRoN2RVd1RiVFAzMDdPSWliZw?oc=5"
     },
     {
       "description": "2026 Bike Industry Trade and Tariff Updates PeopleForBikes",
@@ -2795,32 +2815,280 @@
       "source": "Reuters",
       "title": "Guinea bets bauxite dominance can reshape aluminium supply - Reuters",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOT25TYmt0UFFURXhFVTk3NEhUSFY2VE1RV3ZxemlUUVlaWDhoTzNFTGhfNDh4dlpOQUdORU5VblRlWUdRTG05TGJ1cERIWjY1c1RyOXI3SHRHYklPUkxKcm1SNXZFRG5iNDBSUzdvUm9MMkF1MHVjbDFFeVVwVXJfandfd1dqenJHZ1RSaHlGWjI4aXVGb2VZSXg3VjV5TjNFNXF4N21wNHJzLUs4LWtJYnE3Q3l6MzY2Q0NsY3h0SGJReVN5WVE?oc=5"
-    },
-    {
-      "description": "Aluminum Drugstore Product Packaging Trend Hunter",
-      "factor_ids": [
-        "demand_packaging"
-      ],
-      "factor_labels": [
-        "Packaging and beverage cans"
-      ],
-      "horizon": "short",
-      "impact": "watch",
-      "market_read": "watch; 0-3 month demand; matched packaging.",
-      "matched_terms": [
-        "packaging"
-      ],
-      "published_at": "2026-06-20T22:58:11+00:00",
-      "query_factor_ids": [
-        "demand_packaging"
-      ],
-      "side": "demand",
-      "source": "Trend Hunter",
-      "title": "Aluminum Drugstore Product Packaging - Trend Hunter",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1aUFZuSDZka1RQVU9NTnBVaTkzTHFTU0FEcHFDUTZvVEtkLU04NkJMLVVmYVlSeWdkR2MzRHViVDBwaUVLRnJQMy1zZElzZ0c1MXBOUUtwYjg2OXYzc2ZaS2hGWmVMZXA10gFuQVVfeXFMTW5RV244Yjd2RUtKTWxrRWh3MTM4VnFFSktzbmltSVp2UGtMczM1SDVmVUdzQ3JZS1o4NWY2UHRDei1RdzhYZ0RTZlJuMk14ZHRKeXpMUGdodVJVeEVpMm95aTBuQlpzSzVaVzFzb2c?oc=5"
     }
   ],
   "factor_groups": [
+    {
+      "article_count": 8,
+      "horizon": "short",
+      "id": "supply_trade_policy",
+      "keywords": [
+        "tariff",
+        "tariffs",
+        "sanctions",
+        "export ban",
+        "quota",
+        "duties",
+        "anti-dumping",
+        "trade restrictions"
+      ],
+      "label": "Tariffs, sanctions, and export controls",
+      "metrics": [
+        "tariff rates",
+        "sanctioned volumes",
+        "export quotas"
+      ],
+      "section_summary": "Scanned 8 grouped signals from 8 source articles. Impact mix: 6 signals flagged supply tightening; 1 signal flagged supply easing. Latest themes: Century Aluminum Stock And 2 U.S. Manufacturers Facing New Tariff Winners Test; Trade & Tariff Update #23 - Changes to Section 232 Copper, Steel and Aluminum Tariffs.",
+      "side": "supply",
+      "signal_count": 8,
+      "signals": [
+        {
+          "details": [
+            "Century Aluminum Stock And 2 U.S."
+          ],
+          "factor_ids": [
+            "supply_trade_policy"
+          ],
+          "factor_labels": [
+            "Tariffs, sanctions, and export controls"
+          ],
+          "horizon": "short",
+          "id": "auto_2_2_century_stock_manufacturers_facing_new_tariff_winners",
+          "impact": "supply tightening",
+          "matched_terms": [
+            "tariff"
+          ],
+          "published_at": "2026-07-04T21:42:27+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-07-04T21:42:27+00:00",
+              "source": "simplywall.st",
+              "title": "Century Aluminum Stock And 2 U.S. Manufacturers Facing New Tariff Winners Test - simplywall.st",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMGtEaHU2YXEtckhJRWR2Y2hPYXFuMGdWcUJvWnJHOTMzZXd4ODl2UWpqQTh1ODZGejhLcGFVV0w0SEc2SW9UV2lzSU5TNmVyR3JLWWtyUmtnVkc1YnYxeUF3U09xa1FKNEhrOW5iRy1Fekc0TWpubnhqcGVWdFJ1aDZ4djdXeHdsWmxIa1IyWlpSV3dOcU5lUGhyMWt0UUdKMm9OdUs3LXVXZGc1WUtWcE51aGp5SkFBLVVpNW1YRjR3WU02bkd4blRhV0NhX1BMcFHSAdcBQVVfeXFMUGI0SWVGdXlobnJuLU9NV2tSRU5RZUZkZThyWVBIYXpKX0U1S2NtTXdJRmxLX2ZYQVoxTlltM1ctMnI1UnlwdDYzYTQ2amhhTkp6RElkUDNTNnJQOFZidFEtencxeENtdmRTTGhNaWJqSXdqUjJZLUVNRWE0cW4xUlNRYUlEbUdoLXBXRlJfQWhuODJ3YUh2RlZNWEFOX1RhSjM2RXFxbFVUbzNoNERUZ2dCMThuWW9GUW5hcWNuSFdtVEFXQUktV3h5S1F5VjFlZ1dzQ0FieUE?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Century Aluminum Stock And 2 U.S. Manufacturers Facing New Tariff Winners Test"
+        },
+        {
+          "details": [
+            "Trade & Tariff Update #23 - Changes to Section 232 Copper, Steel and Aluminum Tariffs"
+          ],
+          "factor_ids": [
+            "supply_trade_policy"
+          ],
+          "factor_labels": [
+            "Tariffs, sanctions, and export controls"
+          ],
+          "horizon": "short",
+          "id": "auto_23_232_trade_tariff_update_changes_to_section_copper",
+          "impact": "supply tightening",
+          "matched_terms": [
+            "tariff",
+            "tariffs"
+          ],
+          "published_at": "2026-07-03T01:51:45+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-07-03T01:51:45+00:00",
+              "source": "American Pet Products Association (APPA)",
+              "title": "Trade & Tariff Update #23 - Changes to Section 232 Copper, Steel and Aluminum Tariffs - American Pet Products Association (APPA)",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOEpQY2JqYnpWRTJGb1pkRVBTX2xpemQxWnpUbHZYWG9IQW1TUU8wOUpGUWsybDZ0Qnc4OE9MM3VZR0ppMkJKMW5kVzYyTEJsUFdOMTZRVEV1Z044Mm5QOW1Zc1lpN1pHSWFHcC12V1B0d0NUeVhsR2p1YmxGUlNZMlg0N0lzZFg0b0FLV0FjVVlhRkRTM2gxOTg4V3N0VlhoYWRVYzkyQ0RoN1RoR3dvRmZ6V1VBck1Kb200XzhwWGPSAdABQVVfeXFMTVdKWmhiWDVIbi1uUV9aQ084emdRSkg5b2JZY2FaY3NQZm05NE83ZWJvSkt2LWltWGNGWURQcVA1ZGRpd1pDQ3pOQTBPeGZNWGI1TkVOaFdPM1pSTTdWR2ROTkFQcmZ5cHZJdGUzQXpfNnZhVmZuNWdtUHNsblhicUlTRVZ4NTd3OGQzY3ZVS1JFNVNIZTBYZlJ6YlB1NmpBWF9JS2dGaDhmNHAwQnV4X3FYdl9oV2F1b1ZydjBJN09DNm9JWkRxN013VjQwU0E0YQ?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Trade & Tariff Update #23 - Changes to Section 232 Copper, Steel and Aluminum Tariffs"
+        },
+        {
+          "details": [
+            "Trump Tariff Tracker \u2013 July 2, 2026 (via Passle)"
+          ],
+          "factor_ids": [
+            "supply_trade_policy"
+          ],
+          "factor_labels": [
+            "Tariffs, sanctions, and export controls"
+          ],
+          "horizon": "short",
+          "id": "auto_2_2026_trump_tariff_tracker_july_via_passle_trump",
+          "impact": "supply tightening",
+          "matched_terms": [
+            "tariff"
+          ],
+          "published_at": "2026-07-02T14:21:21+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-07-02T14:21:21+00:00",
+              "source": "Baker Botts",
+              "title": "Trump Tariff Tracker \u2013 July 2, 2026 (via Passle) - Baker Botts",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMEtpWUN4ZVFJU3k1ekVmcWo4alZCenR6RGJTVzBGZi16SVU4dDRZQUhNMnBoYl9RWmR4YlRLVFg3SjZmakxsdkhqSGJpNjVNeGpSX2prSm0tYzE1N1d2TDdRN1B3aDBPY3hfMWRyZ3pmU21XNjFhNTdLXzFkbUcwYmhB?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Trump Tariff Tracker \u2013 July 2, 2026 (via Passle)"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_smelter_operations",
+            "demand_macro_manufacturing",
+            "supply_trade_policy"
+          ],
+          "factor_labels": [
+            "Smelter outages, restarts, and curtailments",
+            "Manufacturing and industrial activity",
+            "Tariffs, sanctions, and export controls"
+          ],
+          "horizon": "short",
+          "id": "auto_missouri_smelter_restart_announced_missouri_smelter_restart",
+          "impact": "supply easing",
+          "matched_terms": [
+            "restart",
+            "smelter"
+          ],
+          "published_at": "2026-07-02T08:21:00+00:00",
+          "side": "mixed",
+          "source_articles": [
+            {
+              "published_at": "2026-07-02T08:21:00+00:00",
+              "source": "Recycling Today",
+              "title": "Missouri aluminum smelter restart announced - Recycling Today",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPN3ZZM2JHWjFvY2wzZTlqcWlWdy1PUS1ScDF0WEFsUDc5SUtYdlpTeEVBYU1Ea1JiYTdZMWlMZDlWMElBcHIzU25JMDRzSkRxb0xacm4wQkVzNEtBSEk2bG5MRWtDTjdZMkZCN2szYXY5RUMwZjZYTFJ1RndCTy1CX3NTckoxdFRSVjJ0bFNDd1hzbHVVdFk1R0hNTmVEano3MHpsTmxOTFN0djVRRFc1cQ?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Missouri aluminum smelter restart announced"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_trade_policy"
+          ],
+          "factor_labels": [
+            "Tariffs, sanctions, and export controls"
+          ],
+          "horizon": "short",
+          "id": "auto_supreme_court_ieepa_tariff_ruling_next_steps",
+          "impact": "supply tightening",
+          "matched_terms": [
+            "tariff"
+          ],
+          "published_at": "2026-06-30T07:00:00+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-06-30T07:00:00+00:00",
+              "source": "Flexport",
+              "title": "The Supreme Court\u2019s IEEPA Tariff Ruling: Next Steps, Potential Refunds, and Guidance for Businesses - Flexport",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUzdoMk1sdmpIRllhalg3YnFLOXpiVnRuSVVyclhjdVQ1Yi1EUU9KaHpQc0NLc2tudGt4dTc4TkRZcWNZX3oyTkx5WGkxd1dxdUlydy1NM3I0bjVJb092MDktd1BGWkRrNjYzU1NwZGI4T0NhYjBkZldpRFpoQmh1dGlQWld0Q29mVTk5Zzc1MDNJbTRjR1RHV1EzM2EzSzRIVS1CZg?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "The Supreme Court\u2019s IEEPA Tariff Ruling: Next Steps, Potential Refunds, and Guidance for Businesses"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_scrap_secondary",
+            "supply_trade_policy"
+          ],
+          "factor_labels": [
+            "Scrap and secondary aluminium flows",
+            "Tariffs, sanctions, and export controls"
+          ],
+          "horizon": "short",
+          "id": "auto_eu_scrap_export_curbs_delayed_until_september",
+          "impact": "watch",
+          "matched_terms": [
+            "scrap"
+          ],
+          "published_at": "2026-06-25T07:00:00+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-06-25T07:00:00+00:00",
+              "source": "Reuters",
+              "title": "EU aluminium scrap export curbs delayed until September, group and sources say - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNEI4VGV3WUQzY0dQazZsMzl2dWRJUWoydDdOOEhDaWlfdHh5aWN0R0RwU2VMOUdGeWhnRzdxUU9pdFF5SDRYVnpTSG1IdG01UzlGc3VCLVMtR1UwQXFaNWVBeXhNZHNKSS1tb1EtNVFGc0hnQ2FxZ0t4cWlUanFJak91MElXQXBpZ1pYRE1sRVpYTkk5WVo1MV9pdmctSmx3Wm5NdzgyNXdoOGhrYnhNdVI5bUNYR3BPVEE?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "EU aluminium scrap export curbs delayed until September, group and sources say"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "demand_macro_manufacturing",
+            "supply_trade_policy",
+            "demand_construction_near_term"
+          ],
+          "factor_labels": [
+            "Manufacturing and industrial activity",
+            "Tariffs, sanctions, and export controls",
+            "Construction activity already underway"
+          ],
+          "horizon": "short",
+          "id": "auto_steel_makers_face_records_gauntlet_new_us",
+          "impact": "supply tightening",
+          "matched_terms": [
+            "manufacturing",
+            "tariff"
+          ],
+          "published_at": "2026-06-23T15:55:21+00:00",
+          "side": "mixed",
+          "source_articles": [
+            {
+              "published_at": "2026-06-23T15:55:21+00:00",
+              "source": "Manufacturing Dive",
+              "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks - Manufacturing Dive",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzJMNFhRVmVWRmhabUh6OHZ4WS1GcURCUFoyZm9GSVZLemZqbFRYWllCb2hRTmJrUTBrMHc2amxYUWZ1Y0hvVFh2XzJIc0Vzc3ZISXFlNzhMeTN1VzR5U0RDYlQ3UmlCcmpUNFVWc2d6UGdJYzlRODByRG9QakRYOW9VRURpbzBHMFluWFVCVndKSUhoZ0JMcEFCcHVVejFSeTlDeDNVSnJOVUFCUGFLRWlZU203UQ?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks"
+        },
+        {
+          "details": [
+            "2026 Bike Industry Trade and Tariff Updates"
+          ],
+          "factor_ids": [
+            "supply_trade_policy"
+          ],
+          "factor_labels": [
+            "Tariffs, sanctions, and export controls"
+          ],
+          "horizon": "short",
+          "id": "auto_2026_2026_bike_industry_trade_tariff_updates_bike_industry",
+          "impact": "supply tightening",
+          "matched_terms": [
+            "tariff"
+          ],
+          "published_at": "2026-06-22T07:00:00+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-06-22T07:00:00+00:00",
+              "source": "PeopleForBikes",
+              "title": "2026 Bike Industry Trade and Tariff Updates - PeopleForBikes",
+              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1LZmh6bW1WUy12S2RJTVhUSE9aMDdQRkYtZmhhUFJSaklEaDBrdDl1eFJuand6RExvc242S3BteUFMcVlkMFRIMElzZm1WRFFEZFg1Zmx6S0NkemVWWWJSRDRmYTVZWmlKdHVTTWlvUTVPR3hhTkduOQ?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "2026 Bike Industry Trade and Tariff Updates"
+        }
+      ]
+    },
     {
       "article_count": 8,
       "horizon": "short",
@@ -2839,9 +3107,36 @@
         "container throughput",
         "customer inventories"
       ],
+      "section_summary": "Scanned 8 grouped signals from 8 source articles. 4 signals flagged demand downside. Latest themes: World Aluminium Cladding System - Market Analysis, Forecast, Size, Trends and Insights; Aluminium billet inventory falls to 130,000mt, warehouse withdrawals rebound....",
       "side": "demand",
       "signal_count": 8,
       "signals": [
+        {
+          "details": [],
+          "factor_ids": [
+            "demand_trade_restocking"
+          ],
+          "factor_labels": [
+            "Trade flows and restocking"
+          ],
+          "horizon": "short",
+          "id": "auto_world_cladding_system_analysis_forecast_size_trends",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-04T22:36:05+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-07-04T22:36:05+00:00",
+              "source": "IndexBox",
+              "title": "World Aluminium Cladding System - Market Analysis, Forecast, Size, Trends and Insights - IndexBox",
+              "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPYk5sVXVHQ2pUVlJnUE5USGVPNm9SRk16dFlTWE03c0RBYXRGRGRXUXpXZ2dYbzdVX2djRy04UUdnbjloTmRwdm4zbVhkb2NhZlBWSVRMZG5XRFo2SFE4QWJ6YWdoSzNYcVc0WlNFUzRDemN2THp1TFhGdFlmTVB0d0x5eGpSS3FnZkV0N0VuWEdMQzFpM1MwNVowWVpCY3M5RDBCWlI0RjFQR2ZKTGFhTHBYcXNlRXl5RndGZVd0SjFPeWtrVk9heDBDbnhwUmZZT3VHVUtwclhDYU51RmdwUU5IVQ?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "World Aluminium Cladding System - Market Analysis, Forecast, Size, Trends and Insights"
+        },
         {
           "details": [
             "Aluminium billet inventory falls to 130,000mt, warehouse withdrawals rebound, processing fees soften"
@@ -2986,6 +3281,34 @@
           "title": "Destocking acceleration provides support, export concerns limit rebound space"
         },
         {
+          "details": [],
+          "factor_ids": [
+            "demand_trade_restocking"
+          ],
+          "factor_labels": [
+            "Trade flows and restocking"
+          ],
+          "horizon": "short",
+          "id": "auto_india_esg_advantage_turning_csrd_cbam_trade",
+          "impact": "watch",
+          "matched_terms": [
+            "global trade"
+          ],
+          "published_at": "2026-06-29T07:33:22+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-06-29T07:33:22+00:00",
+              "source": "CXO Digitalpulse",
+              "title": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity - CXO Digitalpulse",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWkpwWjNpaXBMNTRLSlV1dnJXaVRDQ2l3Vk1PWDdJUVR0d3JCVzZzRUkyNmVxRDZ5QTcyWEF0UV9TOEhQZHdUaVpnYjRmaFNqRHlGbjNLR1VLQm1MeHdsTFJtX1lTZ21zX3NNOWI1WW5VNE1zQWVrMUFkNUs3Y09OTDgzT1l4c1RDLVk1Z0c3eUZsU3J5MHIwcTNuUHBicEk2UnVZZHVlYlJEU3M?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity"
+        },
+        {
           "details": [
             "Global Economics Intelligence executive summary (May 2026)"
           ],
@@ -3012,58 +3335,6 @@
           "source_count": 1,
           "summary": "",
           "title": "Global Economics Intelligence executive summary (May 2026)"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_trade_restocking"
-          ],
-          "factor_labels": [
-            "Trade flows and restocking"
-          ],
-          "horizon": "short",
-          "id": "auto_trump_new_tariff_cut_guyana_hikqlefucr_trump",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-27T08:09:55+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-06-27T08:09:55+00:00",
-              "source": "Fathom Journal",
-              "title": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR) - Fathom Journal",
-              "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE81QUpudTVxMndGdXJQWWNKOXlBMlIwN3hmV3JmVGxCUDFNNUp0aGxUUUd4eUFCM0x4Ym1lTGVvTXpvTWIyU0ZYUW4teWVGVEg5YXRnb3hMeExYMmk5bVFNNmlDYTQ?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR)"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_trade_restocking"
-          ],
-          "factor_labels": [
-            "Trade flows and restocking"
-          ],
-          "horizon": "short",
-          "id": "auto_china_scrap_sector_squee_china_scrap_sector",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-25T07:00:00+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-06-25T07:00:00+00:00",
-              "source": "mysteel.net",
-              "title": "China's aluminum scrap sector squee... - mysteel.net",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNkppY3EzQVAtZ3lLbnRxenhndUJHOXowSkRZa2IzNUtoa2pmeG1wU2JCZFlkMUZPODBhZjJMakZ4cWhSMG5LZGtVY3hrMjZ1U2RQbzU1Y0xaS3N6TDBBNGx4aGxzWURseXFxQVFvR1I4UFdzNUFGalVNbVB4eWVNdC0ySVE2T2JTYTUtT3gwaG1KcWNNUG1ZeG1OZW4wWXJpRjB3N1Y4QXk3SHhvazhPek00WEJSd1I3OFZvN2g2LTQ2TjM2SzFFcw?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "China's aluminum scrap sector squee..."
         }
       ]
     },
@@ -3085,6 +3356,7 @@
         "bauxite mine capacity",
         "ore grade"
       ],
+      "section_summary": "Scanned 7 grouped signals from 18 source articles. 4 signals flagged supply easing. Latest themes: Alcoa-South32 asset deal reshapes alumina and bauxite exposure; Adani and IHC advance Odisha greenfield aluminium project.",
       "side": "supply",
       "signal_count": 7,
       "signals": [
@@ -3092,9 +3364,9 @@
           "details": [
             "Alcoa's acquisition of South32 aluminium market",
             "Alcoa to buy South32\u2019s alumina and bauxite assets for $4.1bn",
+            "South32 sells aluminium business to Alcoa in $9.8b deal",
             "Alcoa in $4.1 billion South32 aluminium assets acquisition",
-            "Alcoa To Acquire South32\u2019s Bauxite, Alumina, And Aluminum Assets For $4.1 Billion",
-            "South32\u2013Alcoa $5.6B aluminium deal: portfolio and asset impacts for mine planners"
+            "Alcoa To Acquire South32\u2019s Bauxite, Alumina, And Aluminum Assets For $4.1 Billion"
           ],
           "factor_ids": [
             "supply_alumina_bauxite_projects"
@@ -3125,6 +3397,12 @@
               "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYmVUdF9iZlZOWTdUMFR4dFFSeVA1TnppRUcySWZyZHZLOFYtOS1sZDE1NmNPbWhCWjZDTzFmbnd4T1F4dGtncjNDU3hOZlB0TnIxd0JXaGk3Q20tbVQxNTRTWVE1UTdtNUppUkRrc2hscXdlbHZGUzdMM05GaWxERVg3ckYyWHpPRC1qUUxzLTBnMFpqZUtDM0FsM2J1TTd1aTN2WXJjRUVVYVdhWE1McjlzZ3BXY1Y1dVdETldIMGZoZ1XSAdIBQVVfeXFMTTMyYXNLVFlsQmIxdDBRczJGdEZuZG94bnMtRS1CUTNqYVZOWDZ2THZBbTY5SXJZX0JadF9STUIzRFZRN3drVlhldTY3dHBPdkNrWER5Y2xQN3pQRWlRS3J4QzVZWGRXQ3V4V2JnRnJUSkdQSHkxdFVVWThmcUxIZmFsamZJc2F5S3RXb2oyWEVaWlAzdFNYdmtDWXIxdzBTelpiYVdad2QtcXozTzV5VlZXUm9UajF0WG1lUWZJUDVqNDl3YV9xQXBMY1VUTjNHZlBn?oc=5"
             },
             {
+              "published_at": "2026-07-01T07:03:00+00:00",
+              "source": "AFR",
+              "title": "South32 sells aluminium business to Alcoa in $9.8b deal - AFR",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNU3lTQkdNaDAxeW9YdWhfSmJBcXBkR1ROVkg4NEJJWU9fbHdOMmZaQUxWc0VSOURDbFRraVpHSEtyUkxMSGNTaEpGT3Fmb2M4ZjlhdENROVJkQTQ1V0FmMVFxb0xIeTdkQXQwZXlELUtzbzBEc0M3eTdPekE2RVA5VXIzYUE5ODg0dmNPYnZwMXJ2M3NqeDdwbDVERmtwLVZOaU5zU3pIZDI?oc=5"
+            },
+            {
               "published_at": "2026-07-01T05:37:03+00:00",
               "source": "Aluminium International Today",
               "title": "Alcoa in $4.1 billion South32 aluminium assets acquisition - Aluminium International Today",
@@ -3135,12 +3413,6 @@
               "source": "Pulse 2.0",
               "title": "Alcoa To Acquire South32\u2019s Bauxite, Alumina, And Aluminum Assets For $4.1 Billion - Pulse 2.0",
               "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUXhZTC10aDRjcUZwS1NGSkRYczJRU3RCOHVIUVk3c1VNbkJiaEV5MUlqeGcwT0VvVXNSX1B4Y2FxUXZSdjQ0LVhaOC0tSEV1d1hGUm5ZbGtnbVNNa3RvcWlUWWRaa2JJQ25YdENiUWFfZDlwSHVfbWw0a3lfdEdIOG4xQUNEQXpDVmZSOFVnSVROMlNDTnN5LTItd2lId9IBowFBVV95cUxQLVMyS2hHWVpCZ0oxaXgxbnYwdUJhV3ZkbmVjYURjdEt2ZlFFNWdvaWJibGJURUZQTmJMdDcwcXZqc1FWYy1rYmpHOG9PYkdGSkRiM1hKLTVIUEZKVEFIMGQ0VXdqOGhTWTFpSlc1dGdUM0VjT3lKQ1o1V3ZpZTJjVVZ5eFhkME1PN0xtODItRF84TG1sX0h4N2x2NzEwN2hYSDd3?oc=5"
-            },
-            {
-              "published_at": "2026-07-01T00:01:32+00:00",
-              "source": "Geomechanics.io",
-              "title": "South32\u2013Alcoa $5.6B aluminium deal: portfolio and asset impacts for mine planners - Geomechanics.io",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTWxWZVVJeE13d29XMVlzZ3FTdXc1VlVabnR1dGlnbXRBOXJKNDIzZnk5VWNCYW5RNUJiOGE5d1dwZ3dIaTBYOFUyanZ1TEhzYjl3SGxYeXFEUU5pcW5KSTVQekVpWV9rOW01OUdnMjk0aFdBTlRoQmljektzVE1qYTYwUWpMT0FLcVAwTWhVcVh0V3FESGY3THVDUDBrTHprZHY4NXNqMDBnUDhFQmtUOWt4czg4QnIzeUE?oc=5"
             },
             {
               "published_at": "2026-06-30T22:23:11+00:00",
@@ -3386,6 +3658,7 @@
         "SHFE stocks",
         "bonded stocks"
       ],
+      "section_summary": "Scanned 7 grouped signals from 7 source articles. 1 signal flagged demand downside. Latest themes: Aluminium billet inventory falls to 130,000mt, warehouse withdrawals rebound...; Honda CR-V overtakes Ford F-150 in midyear U.S. sales.",
       "side": "supply",
       "signal_count": 7,
       "signals": [
@@ -3436,11 +3709,11 @@
           "id": "auto_150_150_honda_cr_overtakes_ford_in_midyear_sales",
           "impact": "watch",
           "matched_terms": [],
-          "published_at": "2026-07-03T06:53:39+00:00",
+          "published_at": "2026-07-02T16:16:17+00:00",
           "side": "supply",
           "source_articles": [
             {
-              "published_at": "2026-07-03T06:53:39+00:00",
+              "published_at": "2026-07-02T16:16:17+00:00",
               "source": "MSN",
               "title": "Honda CR-V overtakes Ford F-150 in midyear U.S. sales - MSN",
               "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMy1qSFpvTWJwSS10Ui1JeDRjWGdGZUIzV0owZHY2d0V2NVNwdkNLVEp5RkViWEVhcGNaSnN1clJVZzYzQXBiTF95UU9mMVliZ24wRHR1SlhWZ193cnBKd3NvOTRwZXluXzlTaThEcmJBaG1IQmtXYTVBWWVZNFE1X1Awa3A0SDEtZlByRWZpQ2VNUS1HV0JNQ0NreVd0dWtWdEZaVTgtMlZjOExMY3RMVk1CMlpRZEg2dmlJSXg0SDhBcVRrQjZyTENnR1FPZDRLTjUwT2lGMjlPZw?oc=5"
@@ -3609,39 +3882,10 @@
         "transmission additions",
         "solar and wind installations"
       ],
+      "section_summary": "Scanned 7 grouped signals from 7 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Appleton Peace Pole, wind sculptures planned for Ellen Kort Peace Park; German scientists proposed producing new solar panels using recycled components.",
       "side": "demand",
       "signal_count": 7,
       "signals": [
-        {
-          "details": [
-            "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels"
-          ],
-          "factor_ids": [
-            "demand_grid_renewables"
-          ],
-          "factor_labels": [
-            "Grid expansion and renewables buildout"
-          ],
-          "horizon": "long",
-          "id": "auto_5_5_america_just_switched_on_gigawatt_plant_in",
-          "impact": "watch",
-          "matched_terms": [
-            "solar"
-          ],
-          "published_at": "2026-07-01T14:30:37+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-07-01T14:30:37+00:00",
-              "source": "Autonocion.com",
-              "title": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels - Autonocion.com",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TaVU0cHN2RkFtejRmVUtYYmJwWGdOTkZPNmFJcXVOYm1weXVsSWNOSDdCc2hlNFo1cXFodnZnQ1hraXdEQVNzUEEyOVl5b0pkRi1YdUdDb1dnSVlxMFBBWDJlU2xTV2h4TjZvemVnNGY?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels"
-        },
         {
           "details": [],
           "factor_ids": [
@@ -3697,6 +3941,34 @@
           "source_count": 1,
           "summary": "",
           "title": "German scientists proposed producing new solar panels using recycled components"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "demand_grid_renewables"
+          ],
+          "factor_labels": [
+            "Grid expansion and renewables buildout"
+          ],
+          "horizon": "long",
+          "id": "auto_supramarine_project_to_connect_distant_offshore_wind",
+          "impact": "watch",
+          "matched_terms": [
+            "wind"
+          ],
+          "published_at": "2026-06-25T15:52:22+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-06-25T15:52:22+00:00",
+              "source": "Engineer Live",
+              "title": "SupraMarine project to connect distant offshore wind farms to land with superconducting system - Engineer Live",
+              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNUdSOXdpVTViZHkxc2NqZkdnTGhZWGNMenBiNHdpZlZWR0tqbU1qSVRDVVJDRVI2ZXNqT0lwT2VCRlpRVnIwNk5VaUw0c1MtVEJzTDcxT3ozc0Zodkd2WF9BbGQ3Yjd4dDJ0T05UMXpVRWI3YUNZZ2N2VXE2OWFYMy1QVXRycHZOc1YwVVU3UTZnSm9Rc1B1N1RCU2E2cWVrWVNUVVVWTVZQdWNURWc?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "SupraMarine project to connect distant offshore wind farms to land with superconducting system"
         },
         {
           "details": [],
@@ -3813,7 +4085,7 @@
       ]
     },
     {
-      "article_count": 8,
+      "article_count": 7,
       "horizon": "short",
       "id": "demand_macro_manufacturing",
       "keywords": [
@@ -3830,6 +4102,7 @@
         "industrial production",
         "factory orders"
       ],
+      "section_summary": "Scanned 7 grouped signals from 7 source articles. Impact mix: 2 signals flagged supply easing; 1 signal flagged demand upside; 1 signal flagged supply tightening. Latest themes: Nikon SLM and Bosch print complete V8 engine block as single aluminum part; The Aluminum Smelter That Could Reshape the U.S. Industrial Map.",
       "side": "demand",
       "signal_count": 7,
       "signals": [
@@ -3864,12 +4137,10 @@
         {
           "details": [],
           "factor_ids": [
-            "demand_construction_near_term",
             "demand_macro_manufacturing",
             "supply_power_energy"
           ],
           "factor_labels": [
-            "Construction activity already underway",
             "Manufacturing and industrial activity",
             "Power availability and electricity cost"
           ],
@@ -3895,11 +4166,13 @@
           "details": [],
           "factor_ids": [
             "supply_smelter_operations",
-            "demand_macro_manufacturing"
+            "demand_macro_manufacturing",
+            "supply_trade_policy"
           ],
           "factor_labels": [
             "Smelter outages, restarts, and curtailments",
-            "Manufacturing and industrial activity"
+            "Manufacturing and industrial activity",
+            "Tariffs, sanctions, and export controls"
           ],
           "horizon": "short",
           "id": "auto_missouri_smelter_restart_announced_missouri_smelter_restart",
@@ -4036,15 +4309,9 @@
               "source": "Manufacturing Dive",
               "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks - Manufacturing Dive",
               "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzJMNFhRVmVWRmhabUh6OHZ4WS1GcURCUFoyZm9GSVZLemZqbFRYWllCb2hRTmJrUTBrMHc2amxYUWZ1Y0hvVFh2XzJIc0Vzc3ZISXFlNzhMeTN1VzR5U0RDYlQ3UmlCcmpUNFVWc2d6UGdJYzlRODByRG9QakRYOW9VRURpbzBHMFluWFVCVndKSUhoZ0JMcEFCcHVVejFSeTlDeDNVSnJOVUFCUGFLRWlZU203UQ?oc=5"
-            },
-            {
-              "published_at": "2026-06-23T07:00:00+00:00",
-              "source": "Yahoo Finance",
-              "title": "Steel, aluminum makers face records gauntlet for new US tariff exemptions - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZV8xdVl4ZmpQS04wdEU2Nmgxd0lvUkFWNDZJSWpJN1ppeWxTNnZJem9ER2F2QzVtTXFEYmlZd0NxVHQxNkdXbU12eUM2YnBLRm8zNkxBZllWZkR6dHZaVld5SXBfUHpQQmh4eEx5T2VkamtYVG92ZHZ1REZqVUJfbk40LVRkRnBCMHRHRVlqYzNCNko3VE1iSUtkMXlrelBX?oc=5"
             }
           ],
-          "source_count": 2,
+          "source_count": 1,
           "summary": "",
           "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks"
         }
@@ -4068,6 +4335,7 @@
         "scrap processing capacity",
         "collection rates"
       ],
+      "section_summary": "Scanned 7 grouped signals from 8 source articles. 1 signal flagged supply easing. Latest themes: EGA opens aluminium recycling capacity in the UAE; Emirates Global Aluminum (EGA) has officially inaugurated its aluminum.",
       "side": "supply",
       "signal_count": 7,
       "signals": [
@@ -4294,6 +4562,7 @@
         "secondary output",
         "recycling spreads"
       ],
+      "section_summary": "Scanned 7 grouped signals from 7 source articles. 1 signal flagged supply tightening. Latest themes: Federal agency to auction seized aluminum; EU plots 15% tax on aluminium scrap exports.",
       "side": "supply",
       "signal_count": 7,
       "signals": [
@@ -4507,247 +4776,6 @@
     {
       "article_count": 8,
       "horizon": "short",
-      "id": "supply_trade_policy",
-      "keywords": [
-        "tariff",
-        "tariffs",
-        "sanctions",
-        "export ban",
-        "quota",
-        "duties",
-        "anti-dumping",
-        "trade restrictions"
-      ],
-      "label": "Tariffs, sanctions, and export controls",
-      "metrics": [
-        "tariff rates",
-        "sanctioned volumes",
-        "export quotas"
-      ],
-      "side": "supply",
-      "signal_count": 7,
-      "signals": [
-        {
-          "details": [
-            "Trade & Tariff Update #23 - Changes to Section 232 Copper, Steel and Aluminum Tariffs"
-          ],
-          "factor_ids": [
-            "supply_trade_policy"
-          ],
-          "factor_labels": [
-            "Tariffs, sanctions, and export controls"
-          ],
-          "horizon": "short",
-          "id": "auto_23_232_trade_tariff_update_changes_to_section_copper",
-          "impact": "supply tightening",
-          "matched_terms": [
-            "tariff",
-            "tariffs"
-          ],
-          "published_at": "2026-07-03T01:51:45+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-07-03T01:51:45+00:00",
-              "source": "American Pet Products Association (APPA)",
-              "title": "Trade & Tariff Update #23 - Changes to Section 232 Copper, Steel and Aluminum Tariffs - American Pet Products Association (APPA)",
-              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOEpQY2JqYnpWRTJGb1pkRVBTX2xpemQxWnpUbHZYWG9IQW1TUU8wOUpGUWsybDZ0Qnc4OE9MM3VZR0ppMkJKMW5kVzYyTEJsUFdOMTZRVEV1Z044Mm5QOW1Zc1lpN1pHSWFHcC12V1B0d0NUeVhsR2p1YmxGUlNZMlg0N0lzZFg0b0FLV0FjVVlhRkRTM2gxOTg4V3N0VlhoYWRVYzkyQ0RoN1RoR3dvRmZ6V1VBck1Kb200XzhwWGPSAdABQVVfeXFMTVdKWmhiWDVIbi1uUV9aQ084emdRSkg5b2JZY2FaY3NQZm05NE83ZWJvSkt2LWltWGNGWURQcVA1ZGRpd1pDQ3pOQTBPeGZNWGI1TkVOaFdPM1pSTTdWR2ROTkFQcmZ5cHZJdGUzQXpfNnZhVmZuNWdtUHNsblhicUlTRVZ4NTd3OGQzY3ZVS1JFNVNIZTBYZlJ6YlB1NmpBWF9JS2dGaDhmNHAwQnV4X3FYdl9oV2F1b1ZydjBJN09DNm9JWkRxN013VjQwU0E0YQ?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Trade & Tariff Update #23 - Changes to Section 232 Copper, Steel and Aluminum Tariffs"
-        },
-        {
-          "details": [
-            "Trump Tariff Tracker \u2013 July 2, 2026 (via Passle)"
-          ],
-          "factor_ids": [
-            "supply_trade_policy"
-          ],
-          "factor_labels": [
-            "Tariffs, sanctions, and export controls"
-          ],
-          "horizon": "short",
-          "id": "auto_2_2026_trump_tariff_tracker_july_via_passle_trump",
-          "impact": "supply tightening",
-          "matched_terms": [
-            "tariff"
-          ],
-          "published_at": "2026-07-02T14:21:21+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-07-02T14:21:21+00:00",
-              "source": "Baker Botts",
-              "title": "Trump Tariff Tracker \u2013 July 2, 2026 (via Passle) - Baker Botts",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMEtpWUN4ZVFJU3k1ekVmcWo4alZCenR6RGJTVzBGZi16SVU4dDRZQUhNMnBoYl9RWmR4YlRLVFg3SjZmakxsdkhqSGJpNjVNeGpSX2prSm0tYzE1N1d2TDdRN1B3aDBPY3hfMWRyZ3pmU21XNjFhNTdLXzFkbUcwYmhB?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Trump Tariff Tracker \u2013 July 2, 2026 (via Passle)"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "supply_trade_policy"
-          ],
-          "factor_labels": [
-            "Tariffs, sanctions, and export controls"
-          ],
-          "horizon": "short",
-          "id": "auto_supreme_court_ieepa_tariff_ruling_next_steps",
-          "impact": "supply tightening",
-          "matched_terms": [
-            "tariff"
-          ],
-          "published_at": "2026-06-30T07:00:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-30T07:00:00+00:00",
-              "source": "Flexport",
-              "title": "The Supreme Court\u2019s IEEPA Tariff Ruling: Next Steps, Potential Refunds, and Guidance for Businesses - Flexport",
-              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUzdoMk1sdmpIRllhalg3YnFLOXpiVnRuSVVyclhjdVQ1Yi1EUU9KaHpQc0NLc2tudGt4dTc4TkRZcWNZX3oyTkx5WGkxd1dxdUlydy1NM3I0bjVJb092MDktd1BGWkRrNjYzU1NwZGI4T0NhYjBkZldpRFpoQmh1dGlQWld0Q29mVTk5Zzc1MDNJbTRjR1RHV1EzM2EzSzRIVS1CZg?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "The Supreme Court\u2019s IEEPA Tariff Ruling: Next Steps, Potential Refunds, and Guidance for Businesses"
-        },
-        {
-          "details": [
-            "EU approves steel, aluminum trade deal with the US ahead of July 4 deadline"
-          ],
-          "factor_ids": [
-            "supply_trade_policy"
-          ],
-          "factor_labels": [
-            "Tariffs, sanctions, and export controls"
-          ],
-          "horizon": "short",
-          "id": "auto_4_4_eu_approves_steel_trade_deal_us_ahead",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-26T17:00:14+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-26T17:00:14+00:00",
-              "source": "EUROMETAL",
-              "title": "EU approves steel, aluminum trade deal with the US ahead of July 4 deadline - EUROMETAL",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWFlOWFVRQnBLRjBrVWk3MGhRdUdzYnkxcFZ1NFBlR1lSNWhrVWEtcEdKdzJBMjZwMkJlNFpfbmw1R2hvYi1tcW5rNkVkV1VmbVBpSDJsbWNGT01XZHFtSHlRQVoyWDItSldfREExQnVSQ0pBWXI3SmNwWVJBVnl2VEt3QXRZRTBGd24xOFVOZXE5NXFFaHhPY0c0SmVZUQ?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "EU approves steel, aluminum trade deal with the US ahead of July 4 deadline"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "supply_scrap_secondary",
-            "supply_trade_policy"
-          ],
-          "factor_labels": [
-            "Scrap and secondary aluminium flows",
-            "Tariffs, sanctions, and export controls"
-          ],
-          "horizon": "short",
-          "id": "auto_eu_scrap_export_curbs_delayed_until_september",
-          "impact": "watch",
-          "matched_terms": [
-            "scrap"
-          ],
-          "published_at": "2026-06-25T07:00:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-25T07:00:00+00:00",
-              "source": "Reuters",
-              "title": "EU aluminium scrap export curbs delayed until September, group and sources say - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNEI4VGV3WUQzY0dQazZsMzl2dWRJUWoydDdOOEhDaWlfdHh5aWN0R0RwU2VMOUdGeWhnRzdxUU9pdFF5SDRYVnpTSG1IdG01UzlGc3VCLVMtR1UwQXFaNWVBeXhNZHNKSS1tb1EtNVFGc0hnQ2FxZ0t4cWlUanFJak91MElXQXBpZ1pYRE1sRVpYTkk5WVo1MV9pdmctSmx3Wm5NdzgyNXdoOGhrYnhNdVI5bUNYR3BPVEE?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "EU aluminium scrap export curbs delayed until September, group and sources say"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_macro_manufacturing",
-            "supply_trade_policy",
-            "demand_construction_near_term"
-          ],
-          "factor_labels": [
-            "Manufacturing and industrial activity",
-            "Tariffs, sanctions, and export controls",
-            "Construction activity already underway"
-          ],
-          "horizon": "short",
-          "id": "auto_steel_makers_face_records_gauntlet_new_us",
-          "impact": "supply tightening",
-          "matched_terms": [
-            "manufacturing",
-            "tariff"
-          ],
-          "published_at": "2026-06-23T15:55:21+00:00",
-          "side": "mixed",
-          "source_articles": [
-            {
-              "published_at": "2026-06-23T15:55:21+00:00",
-              "source": "Manufacturing Dive",
-              "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks - Manufacturing Dive",
-              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzJMNFhRVmVWRmhabUh6OHZ4WS1GcURCUFoyZm9GSVZLemZqbFRYWllCb2hRTmJrUTBrMHc2amxYUWZ1Y0hvVFh2XzJIc0Vzc3ZISXFlNzhMeTN1VzR5U0RDYlQ3UmlCcmpUNFVWc2d6UGdJYzlRODByRG9QakRYOW9VRURpbzBHMFluWFVCVndKSUhoZ0JMcEFCcHVVejFSeTlDeDNVSnJOVUFCUGFLRWlZU203UQ?oc=5"
-            },
-            {
-              "published_at": "2026-06-23T07:00:00+00:00",
-              "source": "Yahoo Finance",
-              "title": "Steel, aluminum makers face records gauntlet for new US tariff exemptions - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZV8xdVl4ZmpQS04wdEU2Nmgxd0lvUkFWNDZJSWpJN1ppeWxTNnZJem9ER2F2QzVtTXFEYmlZd0NxVHQxNkdXbU12eUM2YnBLRm8zNkxBZllWZkR6dHZaVld5SXBfUHpQQmh4eEx5T2VkamtYVG92ZHZ1REZqVUJfbk40LVRkRnBCMHRHRVlqYzNCNko3VE1iSUtkMXlrelBX?oc=5"
-            }
-          ],
-          "source_count": 2,
-          "summary": "",
-          "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks"
-        },
-        {
-          "details": [
-            "2026 Bike Industry Trade and Tariff Updates"
-          ],
-          "factor_ids": [
-            "supply_trade_policy"
-          ],
-          "factor_labels": [
-            "Tariffs, sanctions, and export controls"
-          ],
-          "horizon": "short",
-          "id": "auto_2026_2026_bike_industry_trade_tariff_updates_bike_industry",
-          "impact": "supply tightening",
-          "matched_terms": [
-            "tariff"
-          ],
-          "published_at": "2026-06-22T07:00:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-22T07:00:00+00:00",
-              "source": "PeopleForBikes",
-              "title": "2026 Bike Industry Trade and Tariff Updates - PeopleForBikes",
-              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1LZmh6bW1WUy12S2RJTVhUSE9aMDdQRkYtZmhhUFJSaklEaDBrdDl1eFJuand6RExvc242S3BteUFMcVlkMFRIMElzZm1WRFFEZFg1Zmx6S0NkemVWWWJSRDRmYTVZWmlKdHVTTWlvUTVPR3hhTkduOQ?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "2026 Bike Industry Trade and Tariff Updates"
-        }
-      ]
-    },
-    {
-      "article_count": 8,
-      "horizon": "short",
       "id": "demand_transport_near_term",
       "keywords": [
         "auto production",
@@ -4764,6 +4792,7 @@
         "EV output",
         "aircraft deliveries"
       ],
+      "section_summary": "Scanned 7 grouped signals from 8 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Ford Q2 sales drop 10.3% due to F-Series supplier issue, falling EV demand; North American EV demand slows as hybrids gain momentum and automotive OEM strategies....",
       "side": "demand",
       "signal_count": 7,
       "signals": [
@@ -4972,209 +5001,6 @@
       ]
     },
     {
-      "article_count": 7,
-      "horizon": "short",
-      "id": "demand_construction_near_term",
-      "keywords": [
-        "construction",
-        "building",
-        "real estate",
-        "property",
-        "infrastructure",
-        "extrusion",
-        "window frames"
-      ],
-      "label": "Construction activity already underway",
-      "metrics": [
-        "construction output",
-        "project starts",
-        "completed floor space"
-      ],
-      "side": "demand",
-      "signal_count": 6,
-      "signals": [
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_construction_near_term",
-            "demand_macro_manufacturing",
-            "supply_power_energy"
-          ],
-          "factor_labels": [
-            "Construction activity already underway",
-            "Manufacturing and industrial activity",
-            "Power availability and electricity cost"
-          ],
-          "horizon": "short",
-          "id": "auto_smelter_could_reshape_industrial_map_smelter_could",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-07-02T20:52:35+00:00",
-          "side": "mixed",
-          "source_articles": [
-            {
-              "published_at": "2026-07-02T20:52:35+00:00",
-              "source": "Area Development",
-              "title": "The Aluminum Smelter That Could Reshape the U.S. Industrial Map - Area Development",
-              "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOMzd6bENHVElEWjkxZVVpQ1dsbzVYSWswTTFFT2RMOXZvZGNuYU5IZWV5eGpkQlZGQVFMSmtPNGJrV3Qzbkp4SkVXSEdMVjlCSlNHcmpQbzQzOVQwcmtyNjkzU0pDYzRwel9aZFJNWE5UeG9oMzVEOGRXZVJDTmxyS0U1UnotR1pxdFN0SmJaQ3BRUTU2SGxSdmRJM0RaR2RsaG45YUtMZEFrT0N0YmtOWUJRd2N3RWFoS3M2Q2NubkdhampRN2d5UWhZemctbXVzQmlHRjJlYnUtLThsWlVLa1lDM3dJbVlQR2s2RzZEOHpIdnQ3b2hWOTRoR0RRUmx3N1o4WE9JbTRLZG5Mc2thSURDR180T05SOTJkcmdjN1BiSTdkX0QwMy1QNXFpUjhqeEE?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "The Aluminum Smelter That Could Reshape the U.S. Industrial Map"
-        },
-        {
-          "details": [
-            "Port of Inola would add barge infrastructure if $4 billion aluminum plant clears hurdles"
-          ],
-          "factor_ids": [
-            "demand_construction_near_term"
-          ],
-          "factor_labels": [
-            "Construction activity already underway"
-          ],
-          "horizon": "short",
-          "id": "auto_4_4_port_of_inola_would_add_barge_infrastructure",
-          "impact": "watch",
-          "matched_terms": [
-            "infrastructure"
-          ],
-          "published_at": "2026-06-28T07:00:39+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-06-28T07:00:39+00:00",
-              "source": "Tulsa World",
-              "title": "Port of Inola would add barge infrastructure if $4 billion aluminum plant clears hurdles - Tulsa World",
-              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMk54eWdzX3Q3LTd0aU14LXU3MUw1ZEV5NVJCUkhOQjBDSUxnUEhKbjhkTTgtLWcyUXBacF9wdVotY3BXRUN0NG9nQ0daMkxWZUNjX1RvVkZ1dk5Ma2duaWlHaWpyQXNLc29HYkVuSVpiMFdMMjl0Nzdrd3g2c0ZYeVpyNDdDOV93dF9EN1N3S0MyS3JVMUdV?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Port of Inola would add barge infrastructure if $4 billion aluminum plant clears hurdles"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_construction_near_term"
-          ],
-          "factor_labels": [
-            "Construction activity already underway"
-          ],
-          "horizon": "short",
-          "id": "auto_jgma_encases_humboldt_park_health_wellness_center",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-26T10:00:34+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-06-26T10:00:34+00:00",
-              "source": "The Architect\u2019s Newspaper",
-              "title": "JGMA encases Humboldt Park Health and Wellness Center in aluminum composite panels - The Architect\u2019s Newspaper",
-              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMnhiRU9PNmN3TWJIRkcweC1Xc2JSU2tDa0g1U3lSc2VzdUFjOEZfTzVZb3UyeXE5Z3h0aVEydndqVW56M1Buc09sendSZ3FHNDhHbDc1alVUU2V5SEFrLXd2OHBSd2Y0b1Joa0tJUXdFcEFoRGQ1SHViMHFDR0ZXcmh6bVhDaU5mZTUxQXN3?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "JGMA encases Humboldt Park Health and Wellness Center in aluminum composite panels"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_construction_near_term"
-          ],
-          "factor_labels": [
-            "Construction activity already underway"
-          ],
-          "horizon": "short",
-          "id": "auto_meganom_clads_manhattan_skyscraper_thousands_of_custom",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-25T07:00:00+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-06-25T07:00:00+00:00",
-              "source": "Dezeen",
-              "title": "Meganom clads Manhattan skyscraper with thousands of custom aluminium \"bricks\" - Dezeen",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLXdQWExuUWs4d2NrSHAwbUpEZTl2TUpBWXhWZkdfLXU1WlM1T29JODVUOWNkZ1pEMExyYlI2VUxxd1RnNjd1LTdqVjk2bFozZk8wbUlvQ2hJRXJMVGhkeEloemxjeExrVUk0OVgtOUJOeFZaSmQ1eEk3amlaNzljMDV0RVNBbGozWm9hUnVORmVsUEtqWE1EU3c4cGdUZw?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Meganom clads Manhattan skyscraper with thousands of custom aluminium \"bricks"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_macro_manufacturing",
-            "supply_trade_policy",
-            "demand_construction_near_term"
-          ],
-          "factor_labels": [
-            "Manufacturing and industrial activity",
-            "Tariffs, sanctions, and export controls",
-            "Construction activity already underway"
-          ],
-          "horizon": "short",
-          "id": "auto_steel_makers_face_records_gauntlet_new_us",
-          "impact": "supply tightening",
-          "matched_terms": [
-            "manufacturing",
-            "tariff"
-          ],
-          "published_at": "2026-06-23T15:55:21+00:00",
-          "side": "mixed",
-          "source_articles": [
-            {
-              "published_at": "2026-06-23T15:55:21+00:00",
-              "source": "Manufacturing Dive",
-              "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks - Manufacturing Dive",
-              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzJMNFhRVmVWRmhabUh6OHZ4WS1GcURCUFoyZm9GSVZLemZqbFRYWllCb2hRTmJrUTBrMHc2amxYUWZ1Y0hvVFh2XzJIc0Vzc3ZISXFlNzhMeTN1VzR5U0RDYlQ3UmlCcmpUNFVWc2d6UGdJYzlRODByRG9QakRYOW9VRURpbzBHMFluWFVCVndKSUhoZ0JMcEFCcHVVejFSeTlDeDNVSnJOVUFCUGFLRWlZU203UQ?oc=5"
-            },
-            {
-              "published_at": "2026-06-23T07:00:00+00:00",
-              "source": "Yahoo Finance",
-              "title": "Steel, aluminum makers face records gauntlet for new US tariff exemptions - Yahoo Finance",
-              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZV8xdVl4ZmpQS04wdEU2Nmgxd0lvUkFWNDZJSWpJN1ppeWxTNnZJem9ER2F2QzVtTXFEYmlZd0NxVHQxNkdXbU12eUM2YnBLRm8zNkxBZllWZkR6dHZaVld5SXBfUHpQQmh4eEx5T2VkamtYVG92ZHZ1REZqVUJfbk40LVRkRnBCMHRHRVlqYzNCNko3VE1iSUtkMXlrelBX?oc=5"
-            }
-          ],
-          "source_count": 2,
-          "summary": "",
-          "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_construction_near_term",
-            "demand_grid_renewables"
-          ],
-          "factor_labels": [
-            "Construction activity already underway",
-            "Grid expansion and renewables buildout"
-          ],
-          "horizon": "mixed",
-          "id": "auto_data_center_boom_benefits_metal_producers_say",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-22T07:00:00+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-06-22T07:00:00+00:00",
-              "source": "Recycling Today",
-              "title": "Data center boom benefits metal producers, say studies - Recycling Today",
-              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXhXbnNtb1FEWk1iMmhzVVVlejlIem12TFJENjB4ZzhGbjJVV1RGeGwtQ0ttTzh2U2ZxV3Q1anIxWGEzdEFuenBwbVhKcXdZaU1aRWx4Z0dqNFQtbkMyd3F0RFk2TkFIczdoNVdkRmp4alRxRDhHakJqZklXeHJxTGpDR2xnZmhPRDNmSjUwWFBlYlNaaDM0amJKdWctdDJ2OVlOQmNGVEI1QQ?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Data center boom benefits metal producers, say studies"
-        }
-      ]
-    },
-    {
       "article_count": 6,
       "horizon": "long",
       "id": "demand_transport_structural",
@@ -5192,6 +5018,7 @@
         "aircraft order book",
         "lightweighting programs"
       ],
+      "section_summary": "Scanned 6 grouped signals from 6 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Copper Under Pressure as Ferrari, BMW, and Tesla Embrace Cheaper Aluminum Wiring; Aluminum can makers rethink design as circularity meets consumer convenience.",
       "side": "demand",
       "signal_count": 6,
       "signals": [
@@ -5364,6 +5191,192 @@
       ]
     },
     {
+      "article_count": 6,
+      "horizon": "long",
+      "id": "demand_housing_infrastructure_pipeline",
+      "keywords": [
+        "housing starts",
+        "building permits",
+        "infrastructure spending",
+        "urbanization",
+        "stimulus",
+        "construction pipeline"
+      ],
+      "label": "Housing, infrastructure, and urbanization pipeline",
+      "metrics": [
+        "housing starts",
+        "building permits",
+        "infrastructure capex"
+      ],
+      "section_summary": "Scanned 6 grouped signals from 6 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Chalco focuses on integrated aluminum operations as sector demand evolves; World Architectural Wall Panel - Market Analysis, Forecast, Size, Trends and Insights.",
+      "side": "demand",
+      "signal_count": 6,
+      "signals": [
+        {
+          "details": [],
+          "factor_ids": [
+            "demand_housing_infrastructure_pipeline"
+          ],
+          "factor_labels": [
+            "Housing, infrastructure, and urbanization pipeline"
+          ],
+          "horizon": "long",
+          "id": "auto_chalco_focuses_on_integrated_operations_as_sector",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-04T18:30:27+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-07-04T18:30:27+00:00",
+              "source": "AD HOC NEWS",
+              "title": "Chalco focuses on integrated aluminum operations as sector demand evolves - AD HOC NEWS",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPb0lYdEVQLUV3Rmk0eXQxNzBabXloNFpKUG9EZVFlYkRQaEs4Y0xOQmZXREtaaTJjdEtOSFI5RVpiOUFRandzWER0YzBWTm9oc2VvQmFDSG9Nc05ZWWFrS25lWmVqNHdkcFFPSnJ6dlFhWGVRSmNtazUwODgtUEdaaUtudE1QY3h0WnNOWlJVb1VYRnNUenBBcy1BT1BDT1NTU3VGSFJVeUhNY05vY3pFZjJIQXNNRzhKWndmN0RsOVZtYjU2bmZDX2dzaDI?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Chalco focuses on integrated aluminum operations as sector demand evolves"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "demand_housing_infrastructure_pipeline"
+          ],
+          "factor_labels": [
+            "Housing, infrastructure, and urbanization pipeline"
+          ],
+          "horizon": "long",
+          "id": "auto_world_architectural_wall_panel_analysis_forecast_size",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-04T18:21:04+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-07-04T18:21:04+00:00",
+              "source": "IndexBox",
+              "title": "World Architectural Wall Panel - Market Analysis, Forecast, Size, Trends and Insights - IndexBox",
+              "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxObjdyXzFlaXVHN016S0tpS3Y2QmtDeEwxVFdhSXk1ZGFvc1VCbzBaNnlJcEFtRlhySkxIRkNwaGE2aHVyMzJOcHhIT1hSNzRKTGdmZ2Y4SXY2N2Jta09CNDJqaW5Eb3N0NlYydFpXd1JjTGdva1FPeHctcTNScjRwdzVYS19qcHZfNmViZlRoYnY0dUlyZEI2ejRTQm5wNmhiMFJuQU9oSXZ5N2ZpRkRWcFBoQWplbEg1djRtUVpySjZZWU9NTmd3T3o5ZHlLQk9lQTFDektMY2xWeVVhNEdnXzJxU015WHRWQmxqN25fZzBJODVC?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "World Architectural Wall Panel - Market Analysis, Forecast, Size, Trends and Insights"
+        },
+        {
+          "details": [
+            "T\u00fcrkiye collects 1.5M beverage containers on 1st day of desposit plan | Daily Sabah"
+          ],
+          "factor_ids": [
+            "demand_housing_infrastructure_pipeline"
+          ],
+          "factor_labels": [
+            "Housing, infrastructure, and urbanization pipeline"
+          ],
+          "horizon": "long",
+          "id": "auto_1_1_rkiye_collects_beverage_containers_on_st_day",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-02T12:32:00+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-07-02T12:32:00+00:00",
+              "source": "Daily Sabah",
+              "title": "T\u00fcrkiye collects 1.5M beverage containers on 1st day of desposit plan | Daily Sabah - Daily Sabah",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQam9ReDd0WmFyWWJNMHVvSVBHemZzNmZUS3RLYWgxaWJfYjNBOXFKWWZvRWFYYzJRVVFNaTdiRUxjeHpDYmRVNUlXVUpXdHdWeHFhaVUweGc0Zkd0ZjkxdHV3N0tlb1gtWWZYLXRUTVdaZ1IwLUV6QVhURnhnN2pnc2NQSmIxQXZKbnd2OFpTaXhmbkJhcDJpOXVZY3FObXowaW8xZEZzQk92YXV1c0pEcFRn0gGyAUFVX3lxTFBqb1F4N3RaYXJZYk0wdW9JUEd6ZnM2ZlRLdEthaDFpYl9iM0E5cUpZZm9FYVhjMlFVUU1pN2JFTGN4ekNiZFU1SVdVSld0d1Z4cWFpVTB4ZzRmR3RmOTF0dXc3S2VvWC1ZZlgtdFRNV1pnUjAtRXpBWFRGeGc3amdzY1BKYjFBdkpud3Y4WlNpeGZuQmFwMmk5dVljcU5tejBpbzFkRnNCT3ZhdXVzSkRwVGc?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "T\u00fcrkiye collects 1.5M beverage containers on 1st day of desposit plan | Daily Sabah"
+        },
+        {
+          "details": [
+            "ASX 200 Closes 0.6% Lower on First Day of Fiscal Year"
+          ],
+          "factor_ids": [
+            "demand_housing_infrastructure_pipeline"
+          ],
+          "factor_labels": [
+            "Housing, infrastructure, and urbanization pipeline"
+          ],
+          "horizon": "long",
+          "id": "auto_200_0.6_asx_closes_lower_on_first_day_of",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-01T06:49:00+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-07-01T06:49:00+00:00",
+              "source": "TradingView",
+              "title": "ASX 200 Closes 0.6% Lower on First Day of Fiscal Year - TradingView",
+              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcTdqb2V3bmxob0lkLTl4Z1FjMkJuWTRQdTZKX1dJanh6Y1poWXZocWdjU3VORkE0aENqUjduR2JqOWNlX0l3LVNwYjV0WHJFaFIyVjVGUnNRTk1VVW9VN1J3R2UwdEdmUGVVNEdKY3dQeXRmYWIwdkRvcTJueTR2X1doNWgyZXhKdUg4dm5rUEN2SWozdXZqSUlEdjBLOFV3YVFGaTlR?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "ASX 200 Closes 0.6% Lower on First Day of Fiscal Year"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "demand_housing_infrastructure_pipeline"
+          ],
+          "factor_labels": [
+            "Housing, infrastructure, and urbanization pipeline"
+          ],
+          "horizon": "long",
+          "id": "auto_rkiye_launches_nationwide_waste_return_scheme_rkiye",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-01T02:57:39+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-07-01T02:57:39+00:00",
+              "source": "H\u00fcrriyet Daily News",
+              "title": "T\u00fcrkiye launches nationwide waste return scheme - H\u00fcrriyet Daily News",
+              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNTZVVEp5ZC1VZ21BRUdBRUp4d3BoQlBiYzJSOEoxMlRzQ0I0M1I1Nm9mWmh3RHNYNGdFa3dmR3FiWENjRVNfdTFfRE9UY3pEb0FiMFN0UHZhOXhVbUJBb1pmcmZkLXRpVkVsSlg5bS1fNlNnS0c5QTlQUWFXemlOZmRkV0hkeG9MSU1FSU9zc1FVQQ?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "T\u00fcrkiye launches nationwide waste return scheme"
+        },
+        {
+          "details": [
+            "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD)"
+          ],
+          "factor_ids": [
+            "demand_housing_infrastructure_pipeline"
+          ],
+          "factor_labels": [
+            "Housing, infrastructure, and urbanization pipeline"
+          ],
+          "horizon": "long",
+          "id": "auto_softer_q2_earnings_outlook_might_change_case",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-06-27T03:56:42+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-06-27T03:56:42+00:00",
+              "source": "simplywall.st",
+              "title": "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD) - simplywall.st",
+              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQclRPV1lZbEpzeU1LbWloZVZVd0NMcUpyaUwxeHdnN0pqaW85RkFKTWtSVTVRVV9Ud3k0cWx4OXV0bUhSVXU4SXNQZkVLd1FrR2haeEd3eVZpaUtJSE5jcXFRZXBCSUd2bmxVV2JGcFVKLTdVaUwzZWJNX2dUZERfTWtULWdYc1Rkd1d1SzFQSUp6dWh2bWJTcE5HWnRNajBQVHl1ZU03elFveHJkdGwzd3kyVFMzcmNkQldPMTVGWGJZWFNIQm5JNXRYVmRrU2_SAdQBQVVfeXFMTmEzVXFIYmhNTDlGSkhKQVFZUEczT2JDRnM4MG5yYmhHeF9YVVRhT2oxZFVWYnlLMDdXR0JXZk1vdGEtUlpLUGxDd05feEY3Z1NGdVBZdVlSUGZ1LUJTLXFGMUlJYjZvV0xiNDdCZVZJTDY2OVdlVE9ZcXh4a3lZV3RpT2tXTnRpOC11MG9YY2JwUWNYbVl3VThtMmlhdHEzbTlySm9fRTdFMFFjRlBJd1ZGdGNoUnpFc0dDWmRKbTNzcWJpejExLWRYZzZoY21RRnp6UlE?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD)"
+        }
+      ]
+    },
+    {
       "article_count": 17,
       "horizon": "long",
       "id": "supply_new_capacity",
@@ -5387,6 +5400,7 @@
         "project ramp-ups",
         "permanent closures"
       ],
+      "section_summary": "Scanned 6 grouped signals from 17 source articles. Impact mix: 4 signals flagged supply easing; 1 signal flagged supply tightening. Latest themes: Luoyang Wanji adds 20,000 mt/year foil capacity in trial production; Adani and IHC advance Odisha greenfield aluminium project.",
       "side": "supply",
       "signal_count": 6,
       "signals": [
@@ -5659,9 +5673,38 @@
         "packaging volumes",
         "consumer goods sales"
       ],
+      "section_summary": "Scanned 6 grouped signals from 6 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Corbion\u2019s 2026 Gold Medal ranking from Ecovadis shows strong sustainability performance; Tube Packaging Market worth $5.27 billion by 2031 - Exclusive Report by MarketsandMarkets\u2122.",
       "side": "demand",
       "signal_count": 6,
       "signals": [
+        {
+          "details": [
+            "Corbion\u2019s 2026 Gold Medal ranking from Ecovadis shows strong sustainability performance"
+          ],
+          "factor_ids": [
+            "demand_packaging"
+          ],
+          "factor_labels": [
+            "Packaging and beverage cans"
+          ],
+          "horizon": "short",
+          "id": "auto_2026_2026_corbion_gold_medal_ranking_ecovadis_shows_strong",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-03T07:01:31+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-07-03T07:01:31+00:00",
+              "source": "Nutraceutical Business Review",
+              "title": "Corbion\u2019s 2026 Gold Medal ranking from Ecovadis shows strong sustainability performance - Nutraceutical Business Review",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdTV3QkppQUpjb2pyV21SNjFtNDhJTDlzQ3MxbU1zUUVublZCLTdJelVuYWNlZEdjU1ZPMWU1S3hjelJZSkpOOG5xM1JxbmdZQ1NwVThUQXV5by1EbGEzUkZDdm9QYmxDNGs4TEc0a3c3aGg1SzdqcmRPZlQzaWh4dzktSlNFempCUE1jRm53VDRJLW9NNzJ3bg?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Corbion\u2019s 2026 Gold Medal ranking from Ecovadis shows strong sustainability performance"
+        },
         {
           "details": [
             "Tube Packaging Market worth $5.27 billion by 2031"
@@ -5805,34 +5848,194 @@
           "source_count": 1,
           "summary": "",
           "title": "One can, many lives: How aluminium is powering Red Bull\u2019s circular future"
-        },
+        }
+      ]
+    },
+    {
+      "article_count": 6,
+      "horizon": "short",
+      "id": "supply_power_energy",
+      "keywords": [
+        "power",
+        "electricity",
+        "energy prices",
+        "hydropower",
+        "power cuts",
+        "grid",
+        "coal prices",
+        "gas prices"
+      ],
+      "label": "Power availability and electricity cost",
+      "metrics": [
+        "power prices",
+        "grid restrictions",
+        "hydropower levels"
+      ],
+      "section_summary": "Scanned 6 grouped signals from 6 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Nag Hammadi aluminium smelter project, Egypt; The Aluminum Smelter That Could Reshape the U.S. Industrial Map.",
+      "side": "supply",
+      "signal_count": 6,
+      "signals": [
         {
           "details": [],
           "factor_ids": [
-            "demand_packaging"
+            "supply_power_energy"
           ],
           "factor_labels": [
-            "Packaging and beverage cans"
+            "Power availability and electricity cost"
           ],
           "horizon": "short",
-          "id": "auto_drugstore_product_packaging_drugstore_product_packaging_trend",
+          "id": "auto_nag_hammadi_smelter_project_egypt_nag_hammadi",
           "impact": "watch",
-          "matched_terms": [
-            "packaging"
-          ],
-          "published_at": "2026-06-20T22:58:11+00:00",
-          "side": "demand",
+          "matched_terms": [],
+          "published_at": "2026-07-02T22:00:00+00:00",
+          "side": "supply",
           "source_articles": [
             {
-              "published_at": "2026-06-20T22:58:11+00:00",
-              "source": "Trend Hunter",
-              "title": "Aluminum Drugstore Product Packaging - Trend Hunter",
-              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1aUFZuSDZka1RQVU9NTnBVaTkzTHFTU0FEcHFDUTZvVEtkLU04NkJMLVVmYVlSeWdkR2MzRHViVDBwaUVLRnJQMy1zZElzZ0c1MXBOUUtwYjg2OXYzc2ZaS2hGWmVMZXA10gFuQVVfeXFMTW5RV244Yjd2RUtKTWxrRWh3MTM4VnFFSktzbmltSVp2UGtMczM1SDVmVUdzQ3JZS1o4NWY2UHRDei1RdzhYZ0RTZlJuMk14ZHRKeXpMUGdodVJVeEVpMm95aTBuQlpzSzVaVzFzb2c?oc=5"
+              "published_at": "2026-07-02T22:00:00+00:00",
+              "source": "Mining Weekly",
+              "title": "Nag Hammadi aluminium smelter project, Egypt - Mining Weekly",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaHRESG52d2ZQM1M1NUQycWlPZEJFRXo1ZFh6U0V3M0dld3Blb0xXMDYwRm1NV0djdy1XUFNkcnJRcGlJemkxeGN2Y0l3Rk5nalhfQVZhOUMxQmRpdFhuRmlETGZfZWxrNnB0dVBLTUhjWHhPT1R4TDdWdnhoWmkzY3ZQNkNzV3ZERVc1WTNwcjlBcENWNmc?oc=5"
             }
           ],
           "source_count": 1,
           "summary": "",
-          "title": "Aluminum Drugstore Product Packaging"
+          "title": "Nag Hammadi aluminium smelter project, Egypt"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "demand_macro_manufacturing",
+            "supply_power_energy"
+          ],
+          "factor_labels": [
+            "Manufacturing and industrial activity",
+            "Power availability and electricity cost"
+          ],
+          "horizon": "short",
+          "id": "auto_smelter_could_reshape_industrial_map_smelter_could",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-02T20:52:35+00:00",
+          "side": "mixed",
+          "source_articles": [
+            {
+              "published_at": "2026-07-02T20:52:35+00:00",
+              "source": "Area Development",
+              "title": "The Aluminum Smelter That Could Reshape the U.S. Industrial Map - Area Development",
+              "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOMzd6bENHVElEWjkxZVVpQ1dsbzVYSWswTTFFT2RMOXZvZGNuYU5IZWV5eGpkQlZGQVFMSmtPNGJrV3Qzbkp4SkVXSEdMVjlCSlNHcmpQbzQzOVQwcmtyNjkzU0pDYzRwel9aZFJNWE5UeG9oMzVEOGRXZVJDTmxyS0U1UnotR1pxdFN0SmJaQ3BRUTU2SGxSdmRJM0RaR2RsaG45YUtMZEFrT0N0YmtOWUJRd2N3RWFoS3M2Q2NubkdhampRN2d5UWhZemctbXVzQmlHRjJlYnUtLThsWlVLa1lDM3dJbVlQR2s2RzZEOHpIdnQ3b2hWOTRoR0RRUmx3N1o4WE9JbTRLZG5Mc2thSURDR180T05SOTJkcmdjN1BiSTdkX0QwMy1QNXFpUjhqeEE?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "The Aluminum Smelter That Could Reshape the U.S. Industrial Map"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_power_energy"
+          ],
+          "factor_labels": [
+            "Power availability and electricity cost"
+          ],
+          "horizon": "short",
+          "id": "auto_indonesia_downstream_following_nickel_captive_coal_boom",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-02T01:00:00+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-07-02T01:00:00+00:00",
+              "source": "Centre for Research on Energy and Clean Air",
+              "title": "Indonesia\u2019s aluminium downstream: Following nickel into a captive coal boom - Centre for Research on Energy and Clean Air",
+              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQXzV0dkhqMUxEZGRsWTcyU29rZkNyN1owbHNwcnI5WVN6SzBpS2pQaFVVUmF1S2ZFT295WnEySVpjTVRreXpfVnczZHRodWxydHBZWDhHS1h5QzhZSWRNOVlJY0wzeDI0WkJBa3NhOXBLekd2U25GQ095WVctc1BoSkZ0M0o4aUNkN2wyckZ2Uzd4VEZJeWJTQ05ZSmtKdVhNbGlJcEU0NV91OTVmTmJoTkVZWWVaQ0U?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Indonesia\u2019s aluminium downstream: Following nickel into a captive coal boom"
+        },
+        {
+          "details": [
+            "Aluminum smelter site in Australia targeted for 540MW data center development"
+          ],
+          "factor_ids": [
+            "supply_power_energy"
+          ],
+          "factor_labels": [
+            "Power availability and electricity cost"
+          ],
+          "horizon": "short",
+          "id": "auto_smelter_site_in_australia_targeted_mw_data",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-06-26T07:00:00+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-06-26T07:00:00+00:00",
+              "source": "Data Center Dynamics",
+              "title": "Aluminum smelter site in Australia targeted for 540MW data center development - Data Center Dynamics",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWUZ3b2g4aEV0bTE0N0VJRFNUMmFFeU42UWdCMjlrV2dlSm84U2F1c0hQODFaZ1djQlFvTUE0bWtmOWVQUURjenBybld0MUV2SnVTSFZ6ODBsU0t5dGpORXMyOFF0TzFNTVQxZGxXN3I2aG10N19zbkJ3aE1rak9zUVR0aTdKOS04VDR3ZkxPZnhZbXJ5YTVwX2NEZkg0N1JMTnZSdnlTakZTOF85RmM3ZkNfcVdualpha0hGdERB?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Aluminum smelter site in Australia targeted for 540MW data center development"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_power_energy"
+          ],
+          "factor_labels": [
+            "Power availability and electricity cost"
+          ],
+          "horizon": "short",
+          "id": "auto_it_turns_out_trump_does_need_something",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-06-25T07:00:00+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-06-25T07:00:00+00:00",
+              "source": "The Logic",
+              "title": "It turns out Trump does need something from Canada\u2014aluminum - The Logic",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9vYXAwZ2VUbTFGWmh2WHgzYy1IaUxNYklUUmJYR3RWUFFobE1lbkJtTV9VaUxBSGhhU2hMREpKR3c1bzR6TU16LW9nSFJ6MzVtcFhjT28wM2M0WTBhekhYN0hmSTkzNEhENERLM2NHRUlRdw?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "It turns out Trump does need something from Canada\u2014aluminum"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_power_energy"
+          ],
+          "factor_labels": [
+            "Power availability and electricity cost"
+          ],
+          "horizon": "short",
+          "id": "auto_coal_vs_renewables_electricity_cost_battle_influencing",
+          "impact": "watch",
+          "matched_terms": [
+            "electricity"
+          ],
+          "published_at": "2026-06-22T07:00:00+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-06-22T07:00:00+00:00",
+              "source": "AL Circle",
+              "title": "Coal vs renewables: The electricity cost battle influencing aluminium production pattern - AL Circle",
+              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYk0zVnR4X0xyS2lqRXNMMHdUZUVicng5YnZ6YjlYcmFyd0lmaDA3YkVVY29acHF1djhDTXNzdUJPdkhIYUVUWWFoUHZYaVVSYS1CS1k1UDZiVHR1VzZBYW9WOHlJNWh2a3oweVppRW5DUnM0aWozWFBpLVA2dzNlWUpLTmdrN3MyTGgxWV9VZzB2cVphUzh2LXM0ejlnZmNLUXJ6Ni10OUNOOWVOeWdtdDRoN2RVd1RiVFAzMDdPSWliZw?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Coal vs renewables: The electricity cost battle influencing aluminium production pattern"
         }
       ]
     },
@@ -5855,6 +6058,7 @@
         "refinery output",
         "bauxite exports"
       ],
+      "section_summary": "Scanned 5 grouped signals from 5 source articles. Impact mix: 1 signal flagged supply easing; 1 signal flagged supply tightening. Latest themes: EU Will Weigh Irish Probe in Russian Alumina Sanctions Decision; Volodymyr Zelenskiy urges Ireland to cut off alumina supply to Russia.",
       "side": "supply",
       "signal_count": 5,
       "signals": [
@@ -6008,160 +6212,169 @@
     },
     {
       "article_count": 5,
-      "horizon": "long",
-      "id": "demand_housing_infrastructure_pipeline",
+      "horizon": "short",
+      "id": "demand_construction_near_term",
       "keywords": [
-        "housing starts",
-        "building permits",
-        "infrastructure spending",
-        "urbanization",
-        "stimulus",
-        "construction pipeline"
+        "construction",
+        "building",
+        "real estate",
+        "property",
+        "infrastructure",
+        "extrusion",
+        "window frames"
       ],
-      "label": "Housing, infrastructure, and urbanization pipeline",
+      "label": "Construction activity already underway",
       "metrics": [
-        "housing starts",
-        "building permits",
-        "infrastructure capex"
+        "construction output",
+        "project starts",
+        "completed floor space"
       ],
+      "section_summary": "Scanned 5 grouped signals from 5 source articles. 1 signal flagged supply tightening. Latest themes: Port of Inola would add barge infrastructure if $4 billion aluminum plant clears hurdles; JGMA encases Humboldt Park Health and Wellness Center in aluminum composite panels.",
       "side": "demand",
       "signal_count": 5,
       "signals": [
         {
           "details": [
-            "Adani\u2019s Rs1.08 Lakh Crore Odisha Aluminium Bet: 53,500 Jobs, India\u2019s Biggest Metallurgy FDI"
+            "Port of Inola would add barge infrastructure if $4 billion aluminum plant clears hurdles"
           ],
           "factor_ids": [
-            "demand_housing_infrastructure_pipeline"
+            "demand_construction_near_term"
           ],
           "factor_labels": [
-            "Housing, infrastructure, and urbanization pipeline"
+            "Construction activity already underway"
           ],
-          "horizon": "long",
-          "id": "auto_08_53_adani_rs1_lakh_crore_odisha_bet_jobs",
+          "horizon": "short",
+          "id": "auto_4_4_port_of_inola_would_add_barge_infrastructure",
           "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-07-02T12:02:26+00:00",
+          "matched_terms": [
+            "infrastructure"
+          ],
+          "published_at": "2026-06-28T07:00:39+00:00",
           "side": "demand",
           "source_articles": [
             {
-              "published_at": "2026-07-02T12:02:26+00:00",
-              "source": "NiftyTrader",
-              "title": "Adani\u2019s Rs1.08 Lakh Crore Odisha Aluminium Bet: 53,500 Jobs, India\u2019s Biggest Metallurgy FDI - NiftyTrader",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVUpPV2VFUmZWR2JSYWFqUFhIV01RVUJTQjJWWmlHeHNna2dQdXlPUlBzZ0hsV2k1b2FtUjFKMElVTktCX0JaWDQ3ekJjcWZwM25LWEpzU0xDdTJpZjgzWC1vcGtIZkxSek5yVVhnMTRHQnAySmlTbGVXbUJhblhoWVNESTI?oc=5"
+              "published_at": "2026-06-28T07:00:39+00:00",
+              "source": "Tulsa World",
+              "title": "Port of Inola would add barge infrastructure if $4 billion aluminum plant clears hurdles - Tulsa World",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMk54eWdzX3Q3LTd0aU14LXU3MUw1ZEV5NVJCUkhOQjBDSUxnUEhKbjhkTTgtLWcyUXBacF9wdVotY3BXRUN0NG9nQ0daMkxWZUNjX1RvVkZ1dk5Ma2duaWlHaWpyQXNLc29HYkVuSVpiMFdMMjl0Nzdrd3g2c0ZYeVpyNDdDOV93dF9EN1N3S0MyS3JVMUdV?oc=5"
             }
           ],
           "source_count": 1,
           "summary": "",
-          "title": "Adani\u2019s Rs1.08 Lakh Crore Odisha Aluminium Bet: 53,500 Jobs, India\u2019s Biggest Metallurgy FDI"
-        },
-        {
-          "details": [
-            "ASX 200 Closes 0.6% Lower on First Day of Fiscal Year"
-          ],
-          "factor_ids": [
-            "demand_housing_infrastructure_pipeline"
-          ],
-          "factor_labels": [
-            "Housing, infrastructure, and urbanization pipeline"
-          ],
-          "horizon": "long",
-          "id": "auto_200_0.6_asx_closes_lower_on_first_day_of",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-07-01T06:49:00+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-07-01T06:49:00+00:00",
-              "source": "TradingView",
-              "title": "ASX 200 Closes 0.6% Lower on First Day of Fiscal Year - TradingView",
-              "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcTdqb2V3bmxob0lkLTl4Z1FjMkJuWTRQdTZKX1dJanh6Y1poWXZocWdjU3VORkE0aENqUjduR2JqOWNlX0l3LVNwYjV0WHJFaFIyVjVGUnNRTk1VVW9VN1J3R2UwdEdmUGVVNEdKY3dQeXRmYWIwdkRvcTJueTR2X1doNWgyZXhKdUg4dm5rUEN2SWozdXZqSUlEdjBLOFV3YVFGaTlR?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "ASX 200 Closes 0.6% Lower on First Day of Fiscal Year"
+          "title": "Port of Inola would add barge infrastructure if $4 billion aluminum plant clears hurdles"
         },
         {
           "details": [],
           "factor_ids": [
-            "demand_housing_infrastructure_pipeline"
+            "demand_construction_near_term"
           ],
           "factor_labels": [
-            "Housing, infrastructure, and urbanization pipeline"
+            "Construction activity already underway"
           ],
-          "horizon": "long",
-          "id": "auto_rkiye_launches_nationwide_waste_return_scheme_rkiye",
+          "horizon": "short",
+          "id": "auto_jgma_encases_humboldt_park_health_wellness_center",
           "impact": "watch",
           "matched_terms": [],
-          "published_at": "2026-07-01T02:57:39+00:00",
+          "published_at": "2026-06-26T10:00:34+00:00",
           "side": "demand",
           "source_articles": [
             {
-              "published_at": "2026-07-01T02:57:39+00:00",
-              "source": "H\u00fcrriyet Daily News",
-              "title": "T\u00fcrkiye launches nationwide waste return scheme - H\u00fcrriyet Daily News",
-              "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNTZVVEp5ZC1VZ21BRUdBRUp4d3BoQlBiYzJSOEoxMlRzQ0I0M1I1Nm9mWmh3RHNYNGdFa3dmR3FiWENjRVNfdTFfRE9UY3pEb0FiMFN0UHZhOXhVbUJBb1pmcmZkLXRpVkVsSlg5bS1fNlNnS0c5QTlQUWFXemlOZmRkV0hkeG9MSU1FSU9zc1FVQQ?oc=5"
+              "published_at": "2026-06-26T10:00:34+00:00",
+              "source": "The Architect\u2019s Newspaper",
+              "title": "JGMA encases Humboldt Park Health and Wellness Center in aluminum composite panels - The Architect\u2019s Newspaper",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMnhiRU9PNmN3TWJIRkcweC1Xc2JSU2tDa0g1U3lSc2VzdUFjOEZfTzVZb3UyeXE5Z3h0aVEydndqVW56M1Buc09sendSZ3FHNDhHbDc1alVUU2V5SEFrLXd2OHBSd2Y0b1Joa0tJUXdFcEFoRGQ1SHViMHFDR0ZXcmh6bVhDaU5mZTUxQXN3?oc=5"
             }
           ],
           "source_count": 1,
           "summary": "",
-          "title": "T\u00fcrkiye launches nationwide waste return scheme"
-        },
-        {
-          "details": [
-            "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD)"
-          ],
-          "factor_ids": [
-            "demand_housing_infrastructure_pipeline"
-          ],
-          "factor_labels": [
-            "Housing, infrastructure, and urbanization pipeline"
-          ],
-          "horizon": "long",
-          "id": "auto_softer_q2_earnings_outlook_might_change_case",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-27T03:56:42+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-06-27T03:56:42+00:00",
-              "source": "simplywall.st",
-              "title": "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD) - simplywall.st",
-              "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQclRPV1lZbEpzeU1LbWloZVZVd0NMcUpyaUwxeHdnN0pqaW85RkFKTWtSVTVRVV9Ud3k0cWx4OXV0bUhSVXU4SXNQZkVLd1FrR2haeEd3eVZpaUtJSE5jcXFRZXBCSUd2bmxVV2JGcFVKLTdVaUwzZWJNX2dUZERfTWtULWdYc1Rkd1d1SzFQSUp6dWh2bWJTcE5HWnRNajBQVHl1ZU03elFveHJkdGwzd3kyVFMzcmNkQldPMTVGWGJZWFNIQm5JNXRYVmRrU2_SAdQBQVVfeXFMTmEzVXFIYmhNTDlGSkhKQVFZUEczT2JDRnM4MG5yYmhHeF9YVVRhT2oxZFVWYnlLMDdXR0JXZk1vdGEtUlpLUGxDd05feEY3Z1NGdVBZdVlSUGZ1LUJTLXFGMUlJYjZvV0xiNDdCZVZJTDY2OVdlVE9ZcXh4a3lZV3RpT2tXTnRpOC11MG9YY2JwUWNYbVl3VThtMmlhdHEzbTlySm9fRTdFMFFjRlBJd1ZGdGNoUnpFc0dDWmRKbTNzcWJpejExLWRYZzZoY21RRnp6UlE?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD)"
+          "title": "JGMA encases Humboldt Park Health and Wellness Center in aluminum composite panels"
         },
         {
           "details": [],
           "factor_ids": [
-            "demand_housing_infrastructure_pipeline"
+            "demand_construction_near_term"
           ],
           "factor_labels": [
-            "Housing, infrastructure, and urbanization pipeline"
+            "Construction activity already underway"
           ],
-          "horizon": "long",
-          "id": "auto_dingchengzun_expands_footprint_facade_project_in_luanda",
+          "horizon": "short",
+          "id": "auto_meganom_clads_manhattan_skyscraper_thousands_of_custom",
           "impact": "watch",
           "matched_terms": [],
-          "published_at": "2026-06-26T13:17:00+00:00",
+          "published_at": "2026-06-25T07:00:00+00:00",
           "side": "demand",
           "source_articles": [
             {
-              "published_at": "2026-06-26T13:17:00+00:00",
-              "source": "Big News Network.com",
-              "title": "Dingchengzun Expands Global Footprint with Aluminum Facade Project in Luanda, Angola - Big News Network.com",
-              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQTNkdUtVeVRkNUZSbTVVRmFjWXd2Vi1WQS1WVHhfN0xqS1JNSFA1STlEY2RHY01iZ2xxakJGbUZMSndYS1paWHhfUU9sQ0dYSVdNemMycHg3TXFvaHVkaW04eFpDRUFzenEwblR4WFNMSjY4b0RxZ0ZpRm9nRHFwUGRGbVlEZzBOY0k5d1lTTUVsM3ZnMUdRUkE1T0hSYkdSdFBHYU9WTV9tU19jdXR1QnBWYUtIM0hRUzZJZWpQWU1Nd05idXlLbw?oc=5"
+              "published_at": "2026-06-25T07:00:00+00:00",
+              "source": "Dezeen",
+              "title": "Meganom clads Manhattan skyscraper with thousands of custom aluminium \"bricks\" - Dezeen",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLXdQWExuUWs4d2NrSHAwbUpEZTl2TUpBWXhWZkdfLXU1WlM1T29JODVUOWNkZ1pEMExyYlI2VUxxd1RnNjd1LTdqVjk2bFozZk8wbUlvQ2hJRXJMVGhkeEloemxjeExrVUk0OVgtOUJOeFZaSmQ1eEk3amlaNzljMDV0RVNBbGozWm9hUnVORmVsUEtqWE1EU3c4cGdUZw?oc=5"
             }
           ],
           "source_count": 1,
           "summary": "",
-          "title": "Dingchengzun Expands Global Footprint with Aluminum Facade Project in Luanda, Angola"
+          "title": "Meganom clads Manhattan skyscraper with thousands of custom aluminium \"bricks"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "demand_macro_manufacturing",
+            "supply_trade_policy",
+            "demand_construction_near_term"
+          ],
+          "factor_labels": [
+            "Manufacturing and industrial activity",
+            "Tariffs, sanctions, and export controls",
+            "Construction activity already underway"
+          ],
+          "horizon": "short",
+          "id": "auto_steel_makers_face_records_gauntlet_new_us",
+          "impact": "supply tightening",
+          "matched_terms": [
+            "manufacturing",
+            "tariff"
+          ],
+          "published_at": "2026-06-23T15:55:21+00:00",
+          "side": "mixed",
+          "source_articles": [
+            {
+              "published_at": "2026-06-23T15:55:21+00:00",
+              "source": "Manufacturing Dive",
+              "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks - Manufacturing Dive",
+              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzJMNFhRVmVWRmhabUh6OHZ4WS1GcURCUFoyZm9GSVZLemZqbFRYWllCb2hRTmJrUTBrMHc2amxYUWZ1Y0hvVFh2XzJIc0Vzc3ZISXFlNzhMeTN1VzR5U0RDYlQ3UmlCcmpUNFVWc2d6UGdJYzlRODByRG9QakRYOW9VRURpbzBHMFluWFVCVndKSUhoZ0JMcEFCcHVVejFSeTlDeDNVSnJOVUFCUGFLRWlZU203UQ?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "demand_construction_near_term",
+            "demand_grid_renewables"
+          ],
+          "factor_labels": [
+            "Construction activity already underway",
+            "Grid expansion and renewables buildout"
+          ],
+          "horizon": "mixed",
+          "id": "auto_data_center_boom_benefits_metal_producers_say",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-06-22T07:00:00+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-06-22T07:00:00+00:00",
+              "source": "Recycling Today",
+              "title": "Data center boom benefits metal producers, say studies - Recycling Today",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXhXbnNtb1FEWk1iMmhzVVVlejlIem12TFJENjB4ZzhGbjJVV1RGeGwtQ0ttTzh2U2ZxV3Q1anIxWGEzdEFuenBwbVhKcXdZaU1aRWx4Z0dqNFQtbkMyd3F0RFk2TkFIczdoNVdkRmp4alRxRDhHakJqZklXeHJxTGpDR2xnZmhPRDNmSjUwWFBlYlNaaDM0amJKdWctdDJ2OVlOQmNGVEI1QQ?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Data center boom benefits metal producers, say studies"
         }
       ]
     },
@@ -6185,6 +6398,7 @@
         "regional delivery premiums",
         "physical availability"
       ],
+      "section_summary": "Scanned 5 grouped signals from 8 source articles. 1 signal flagged supply tightening. Latest themes: Japan Q3 aluminium premium settles near $395/t; Geopolitical Risk Premium Continues to Narrow, Aluminum Prices in the Doldrums [SMM....",
       "side": "supply",
       "signal_count": 5,
       "signals": [
@@ -6240,6 +6454,34 @@
           "source_count": 4,
           "summary": "Regional physical premiums point to tighter nearby aluminium availability and higher delivered costs for Japanese buyers.",
           "title": "Japan Q3 aluminium premium settles near $395/t"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_physical_premiums"
+          ],
+          "factor_labels": [
+            "Physical premiums and regional tightness"
+          ],
+          "horizon": "short",
+          "id": "auto_geopolitical_risk_premium_continues_to_narrow_prices",
+          "impact": "watch",
+          "matched_terms": [
+            "premium"
+          ],
+          "published_at": "2026-07-02T01:16:25+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-07-02T01:16:25+00:00",
+              "source": "SMM Metal",
+              "title": "Geopolitical Risk Premium Continues to Narrow, Aluminum Prices in the Doldrums [SMM Aluminum Morning Briefing] - SMM Metal",
+              "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNaDdlWlZPVTFldHd4OVJfT1dVS1hCY2ptcHBlRW45ODdlblJNWFhENW5xX1BmUTZBSnFyTG55dlBWV3RIR1BqQ2YtYnAzRzdLMjBVcjdnS1RCX2dDclpDeDlPdVNzaEZvQk10OHZ6R3Q5UWRzTDl6dUJiOHNXVGRNdUNVYkFET2dTN09NRHg5QnoyWjhUX1lfWTBqLVNvRVJjWmFJMWtwdXVLLXVlWkNIX29iOEY3MHRQeDgtX2ItQlNKWmhQX29fSXlXd3JCRWdRekhJV0N5ZnE1bjlNNE5RSy1QLXF1VXZuZ2xz?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Geopolitical Risk Premium Continues to Narrow, Aluminum Prices in the Doldrums [SMM Aluminum Morning Briefing]"
         },
         {
           "details": [],
@@ -6326,197 +6568,6 @@
           "source_count": 1,
           "summary": "",
           "title": "This sleek aluminum low-profile Mac keyboard with a touch bar just dropped to $120 low for Prime Day"
-        },
-        {
-          "details": [
-            "SilverStone Launches ALTA T1 Premium Aluminum Unibody Super Tower Chassis"
-          ],
-          "factor_ids": [
-            "supply_physical_premiums"
-          ],
-          "factor_labels": [
-            "Physical premiums and regional tightness"
-          ],
-          "horizon": "short",
-          "id": "auto_silverstone_launches_alta_t1_premium_unibody_super",
-          "impact": "watch",
-          "matched_terms": [
-            "premium"
-          ],
-          "published_at": "2026-06-25T07:00:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-25T07:00:00+00:00",
-              "source": "TechPowerUp",
-              "title": "SilverStone Launches ALTA T1 Premium Aluminum Unibody Super Tower Chassis - TechPowerUp",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMEFZeVo2ZGdHUlNhMFh4ZDlPalpfNFFtN1VRRW53RGtZc2g4d096SElCakZERzhWa19scUJoSjdKRXl0ZWJkNUdfUFgtOURvOEsxajhvRFlHUlR1eV9iWGNiYkFfNU80aldWa2ZfMHhVeGVrOFk2X25PV1czb3luSWxhOEJQY0hwMGM4UDNWdnNFNE9SNmtvMmU2U1l2a0VHSHV5cUFFXzdraHVa0gGyAUFVX3lxTE5IRzh2YjdQeWdUOThYTTQyTExyZGlhZnRwcm4xWXNZMm9pa25LZEY5QUFfNVozdk40S3dNQ1BaTkRUZm0zZVJmY0hNRFhMSGhvSmliS2xUZDNxV2ZtcWkwRFd0NFZWV1AwZ2VtaUNFTnhyLUpfdFhfZmZQd0JVVW11Q1Y3ZDVJNzVBNFozUlptdm1DQmMzT0RmR0FrYjluanNsSThQc0ZRSWtjVEl6OS0xZHc?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "SilverStone Launches ALTA T1 Premium Aluminum Unibody Super Tower Chassis"
-        }
-      ]
-    },
-    {
-      "article_count": 5,
-      "horizon": "short",
-      "id": "supply_power_energy",
-      "keywords": [
-        "power",
-        "electricity",
-        "energy prices",
-        "hydropower",
-        "power cuts",
-        "grid",
-        "coal prices",
-        "gas prices"
-      ],
-      "label": "Power availability and electricity cost",
-      "metrics": [
-        "power prices",
-        "grid restrictions",
-        "hydropower levels"
-      ],
-      "side": "supply",
-      "signal_count": 5,
-      "signals": [
-        {
-          "details": [],
-          "factor_ids": [
-            "supply_power_energy"
-          ],
-          "factor_labels": [
-            "Power availability and electricity cost"
-          ],
-          "horizon": "short",
-          "id": "auto_nag_hammadi_smelter_project_egypt_nag_hammadi",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-07-02T22:00:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-07-02T22:00:00+00:00",
-              "source": "Mining Weekly",
-              "title": "Nag Hammadi aluminium smelter project, Egypt - Mining Weekly",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaHRESG52d2ZQM1M1NUQycWlPZEJFRXo1ZFh6U0V3M0dld3Blb0xXMDYwRm1NV0djdy1XUFNkcnJRcGlJemkxeGN2Y0l3Rk5nalhfQVZhOUMxQmRpdFhuRmlETGZfZWxrNnB0dVBLTUhjWHhPT1R4TDdWdnhoWmkzY3ZQNkNzV3ZERVc1WTNwcjlBcENWNmc?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Nag Hammadi aluminium smelter project, Egypt"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_construction_near_term",
-            "demand_macro_manufacturing",
-            "supply_power_energy"
-          ],
-          "factor_labels": [
-            "Construction activity already underway",
-            "Manufacturing and industrial activity",
-            "Power availability and electricity cost"
-          ],
-          "horizon": "short",
-          "id": "auto_smelter_could_reshape_industrial_map_smelter_could",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-07-02T20:52:35+00:00",
-          "side": "mixed",
-          "source_articles": [
-            {
-              "published_at": "2026-07-02T20:52:35+00:00",
-              "source": "Area Development",
-              "title": "The Aluminum Smelter That Could Reshape the U.S. Industrial Map - Area Development",
-              "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOMzd6bENHVElEWjkxZVVpQ1dsbzVYSWswTTFFT2RMOXZvZGNuYU5IZWV5eGpkQlZGQVFMSmtPNGJrV3Qzbkp4SkVXSEdMVjlCSlNHcmpQbzQzOVQwcmtyNjkzU0pDYzRwel9aZFJNWE5UeG9oMzVEOGRXZVJDTmxyS0U1UnotR1pxdFN0SmJaQ3BRUTU2SGxSdmRJM0RaR2RsaG45YUtMZEFrT0N0YmtOWUJRd2N3RWFoS3M2Q2NubkdhampRN2d5UWhZemctbXVzQmlHRjJlYnUtLThsWlVLa1lDM3dJbVlQR2s2RzZEOHpIdnQ3b2hWOTRoR0RRUmx3N1o4WE9JbTRLZG5Mc2thSURDR180T05SOTJkcmdjN1BiSTdkX0QwMy1QNXFpUjhqeEE?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "The Aluminum Smelter That Could Reshape the U.S. Industrial Map"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "supply_power_energy"
-          ],
-          "factor_labels": [
-            "Power availability and electricity cost"
-          ],
-          "horizon": "short",
-          "id": "auto_indonesia_downstream_following_nickel_captive_coal_boom",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-07-02T01:00:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-07-02T01:00:00+00:00",
-              "source": "Centre for Research on Energy and Clean Air",
-              "title": "Indonesia\u2019s aluminium downstream: Following nickel into a captive coal boom - Centre for Research on Energy and Clean Air",
-              "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQXzV0dkhqMUxEZGRsWTcyU29rZkNyN1owbHNwcnI5WVN6SzBpS2pQaFVVUmF1S2ZFT295WnEySVpjTVRreXpfVnczZHRodWxydHBZWDhHS1h5QzhZSWRNOVlJY0wzeDI0WkJBa3NhOXBLekd2U25GQ095WVctc1BoSkZ0M0o4aUNkN2wyckZ2Uzd4VEZJeWJTQ05ZSmtKdVhNbGlJcEU0NV91OTVmTmJoTkVZWWVaQ0U?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Indonesia\u2019s aluminium downstream: Following nickel into a captive coal boom"
-        },
-        {
-          "details": [
-            "Aluminum smelter site in Australia targeted for 540MW data center development"
-          ],
-          "factor_ids": [
-            "supply_power_energy"
-          ],
-          "factor_labels": [
-            "Power availability and electricity cost"
-          ],
-          "horizon": "short",
-          "id": "auto_smelter_site_in_australia_targeted_mw_data",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-26T07:00:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-26T07:00:00+00:00",
-              "source": "Data Center Dynamics",
-              "title": "Aluminum smelter site in Australia targeted for 540MW data center development - Data Center Dynamics",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWUZ3b2g4aEV0bTE0N0VJRFNUMmFFeU42UWdCMjlrV2dlSm84U2F1c0hQODFaZ1djQlFvTUE0bWtmOWVQUURjenBybld0MUV2SnVTSFZ6ODBsU0t5dGpORXMyOFF0TzFNTVQxZGxXN3I2aG10N19zbkJ3aE1rak9zUVR0aTdKOS04VDR3ZkxPZnhZbXJ5YTVwX2NEZkg0N1JMTnZSdnlTakZTOF85RmM3ZkNfcVdualpha0hGdERB?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Aluminum smelter site in Australia targeted for 540MW data center development"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "supply_power_energy"
-          ],
-          "factor_labels": [
-            "Power availability and electricity cost"
-          ],
-          "horizon": "short",
-          "id": "auto_it_turns_out_trump_does_need_something",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-25T07:00:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-25T07:00:00+00:00",
-              "source": "The Logic",
-              "title": "It turns out Trump does need something from Canada\u2014aluminum - The Logic",
-              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9vYXAwZ2VUbTFGWmh2WHgzYy1IaUxNYklUUmJYR3RWUFFobE1lbkJtTV9VaUxBSGhhU2hMREpKR3c1bzR6TU16LW9nSFJ6MzVtcFhjT28wM2M0WTBhekhYN0hmSTkzNEhENERLM2NHRUlRdw?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "It turns out Trump does need something from Canada\u2014aluminum"
         }
       ]
     },
@@ -6540,6 +6591,7 @@
         "emissions rules",
         "renewable power contracts"
       ],
+      "section_summary": "Scanned 4 grouped signals from 5 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Manufacturing Energy and Carbon Footprints (2018 MECS); Kaiser Aluminum expands recycling, cuts emissions by 17% in 2025 sustainability report.",
       "side": "supply",
       "signal_count": 4,
       "signals": [
@@ -6668,7 +6720,7 @@
       ]
     },
     {
-      "article_count": 6,
+      "article_count": 5,
       "horizon": "short",
       "id": "supply_smelter_operations",
       "keywords": [
@@ -6688,6 +6740,7 @@
         "smelter utilization",
         "curtailed capacity"
       ],
+      "section_summary": "Scanned 4 grouped signals from 5 source articles. 4 signals flagged supply easing. Latest themes: Missouri aluminum smelter restart announced; Magnitude 7 Metals plans partial restart of Missouri aluminum smelter.",
       "side": "supply",
       "signal_count": 4,
       "signals": [
@@ -6695,11 +6748,13 @@
           "details": [],
           "factor_ids": [
             "supply_smelter_operations",
-            "demand_macro_manufacturing"
+            "demand_macro_manufacturing",
+            "supply_trade_policy"
           ],
           "factor_labels": [
             "Smelter outages, restarts, and curtailments",
-            "Manufacturing and industrial activity"
+            "Manufacturing and industrial activity",
+            "Tariffs, sanctions, and export controls"
           ],
           "horizon": "short",
           "id": "auto_missouri_smelter_restart_announced_missouri_smelter_restart",
@@ -6754,48 +6809,6 @@
           "title": "Magnitude 7 Metals plans partial restart of Missouri aluminum smelter"
         },
         {
-          "details": [],
-          "factor_ids": [
-            "supply_smelter_operations"
-          ],
-          "factor_labels": [
-            "Smelter outages, restarts, and curtailments"
-          ],
-          "horizon": "short",
-          "id": "slovalco_partial_restart",
-          "impact": "supply easing",
-          "matched_terms": [
-            "restart",
-            "smelter",
-            "smelting"
-          ],
-          "published_at": "2026-07-01T17:19:08+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-07-01T17:19:08+00:00",
-              "source": "Mining.com",
-              "title": "Norsk Hydro\u2019s Slovak aluminum smelter to partially restart production - Mining.com",
-              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVHpydWZDT3lwR0hteC1IUDFNb2RqR3U5MlNZT01kN1lCQ056OUY3MUU1X1hvaVdqOENSbGJkYmpxbXdONTItNDNUSEt6Rk5nM3dtMnBxdXExYnBfMlNqdlhSSlZQdGhGUXdFM3RpNy1SWFdrUVdnUUpoeHdtWjdOU0ozNkNHa3VvZ29PLXFtYmdhVDQtRkVMTGg0aWdPZw?oc=5"
-            },
-            {
-              "published_at": "2026-07-01T15:13:49+00:00",
-              "source": "Aluminium International Today",
-              "title": "Slovalco to restart aluminium smelting - Aluminium International Today",
-              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE93SzNDUmJ3T1B3N1J3MmxrT21EUHNDYzJBdTl5aHF3NkgyanN5Z2RVZmFla19iZ3ZEaF9PcC1JSWhseHhHRTM3alZRQU5URHhsem1EM1k4NXo5MzRrU3YyemI4WkxxYmV4Rlppak1NanFJYmEtbDhIU1ZB?oc=5"
-            },
-            {
-              "published_at": "2026-07-01T14:16:00+00:00",
-              "source": "KITCO",
-              "title": "Norsk Hydro\u2019s Slovak aluminium smelter to partially restart production - KITCO",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNkhPak8yd2xQMGJIN1EwRGJGSXk0RlVSVVRGSGd1aEJwQU1raktlcVpDekl6Tm9XQWZlMnpFbU5uVHZMdG01M3FpWnBSSVRFdV9BQjYyZ3VVUDg0RlFyOUJXY2d5d1YzWDNrOGdIOUZPYU9Wb0pXVFJBQ28zR0dqMFJXZzFZN1JTdXlxUHhlQ0k1QUtlbm90dlBSN01IZkxjR1BlRnR4RnJGZWtmWVhHU28zOVN2NndC?oc=5"
-            }
-          ],
-          "source_count": 3,
-          "summary": "Restart news adds potential primary aluminium supply if power and operating economics hold.",
-          "title": "Slovalco aluminium smelter moves toward partial restart"
-        },
-        {
           "details": [
             "APAA Welcomes Magnitude 7 Metals' Decision to Restart Missouri Aluminum Smelter"
           ],
@@ -6827,6 +6840,42 @@
           "source_count": 1,
           "summary": "",
           "title": "APAA Welcomes Magnitude 7 Metals' Decision to Restart Missouri Aluminum Smelter"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_smelter_operations"
+          ],
+          "factor_labels": [
+            "Smelter outages, restarts, and curtailments"
+          ],
+          "horizon": "short",
+          "id": "slovalco_partial_restart",
+          "impact": "supply easing",
+          "matched_terms": [
+            "restart",
+            "smelting",
+            "smelter"
+          ],
+          "published_at": "2026-07-01T15:13:49+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-07-01T15:13:49+00:00",
+              "source": "Aluminium International Today",
+              "title": "Slovalco to restart aluminium smelting - Aluminium International Today",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE93SzNDUmJ3T1B3N1J3MmxrT21EUHNDYzJBdTl5aHF3NkgyanN5Z2RVZmFla19iZ3ZEaF9PcC1JSWhseHhHRTM3alZRQU5URHhsem1EM1k4NXo5MzRrU3YyemI4WkxxYmV4Rlppak1NanFJYmEtbDhIU1ZB?oc=5"
+            },
+            {
+              "published_at": "2026-07-01T14:16:00+00:00",
+              "source": "KITCO",
+              "title": "Norsk Hydro\u2019s Slovak aluminium smelter to partially restart production - KITCO",
+              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNkhPak8yd2xQMGJIN1EwRGJGSXk0RlVSVVRGSGd1aEJwQU1raktlcVpDekl6Tm9XQWZlMnpFbU5uVHZMdG01M3FpWnBSSVRFdV9BQjYyZ3VVUDg0RlFyOUJXY2d5d1YzWDNrOGdIOUZPYU9Wb0pXVFJBQ28zR0dqMFJXZzFZN1JTdXlxUHhlQ0k1QUtlbm90dlBSN01IZkxjR1BlRnR4RnJGZWtmWVhHU28zOVN2NndC?oc=5"
+            }
+          ],
+          "source_count": 2,
+          "summary": "Restart news adds potential primary aluminium supply if power and operating economics hold.",
+          "title": "Slovalco aluminium smelter moves toward partial restart"
         }
       ]
     }
@@ -7217,7 +7266,7 @@
       "side": "supply"
     }
   ],
-  "generated_at": "2026-07-04T17:11:09.009163+00:00",
+  "generated_at": "2026-07-05T02:28:18.147672+00:00",
   "queries": [
     {
       "error": "",
@@ -7354,6 +7403,114 @@
     }
   ],
   "signals": [
+    {
+      "details": [],
+      "factor_ids": [
+        "demand_trade_restocking"
+      ],
+      "factor_labels": [
+        "Trade flows and restocking"
+      ],
+      "horizon": "short",
+      "id": "auto_world_cladding_system_analysis_forecast_size_trends",
+      "impact": "watch",
+      "matched_terms": [],
+      "published_at": "2026-07-04T22:36:05+00:00",
+      "side": "demand",
+      "source_articles": [
+        {
+          "published_at": "2026-07-04T22:36:05+00:00",
+          "source": "IndexBox",
+          "title": "World Aluminium Cladding System - Market Analysis, Forecast, Size, Trends and Insights - IndexBox",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPYk5sVXVHQ2pUVlJnUE5USGVPNm9SRk16dFlTWE03c0RBYXRGRGRXUXpXZ2dYbzdVX2djRy04UUdnbjloTmRwdm4zbVhkb2NhZlBWSVRMZG5XRFo2SFE4QWJ6YWdoSzNYcVc0WlNFUzRDemN2THp1TFhGdFlmTVB0d0x5eGpSS3FnZkV0N0VuWEdMQzFpM1MwNVowWVpCY3M5RDBCWlI0RjFQR2ZKTGFhTHBYcXNlRXl5RndGZVd0SjFPeWtrVk9heDBDbnhwUmZZT3VHVUtwclhDYU51RmdwUU5IVQ?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "World Aluminium Cladding System - Market Analysis, Forecast, Size, Trends and Insights"
+    },
+    {
+      "details": [
+        "Century Aluminum Stock And 2 U.S."
+      ],
+      "factor_ids": [
+        "supply_trade_policy"
+      ],
+      "factor_labels": [
+        "Tariffs, sanctions, and export controls"
+      ],
+      "horizon": "short",
+      "id": "auto_2_2_century_stock_manufacturers_facing_new_tariff_winners",
+      "impact": "supply tightening",
+      "matched_terms": [
+        "tariff"
+      ],
+      "published_at": "2026-07-04T21:42:27+00:00",
+      "side": "supply",
+      "source_articles": [
+        {
+          "published_at": "2026-07-04T21:42:27+00:00",
+          "source": "simplywall.st",
+          "title": "Century Aluminum Stock And 2 U.S. Manufacturers Facing New Tariff Winners Test - simplywall.st",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMGtEaHU2YXEtckhJRWR2Y2hPYXFuMGdWcUJvWnJHOTMzZXd4ODl2UWpqQTh1ODZGejhLcGFVV0w0SEc2SW9UV2lzSU5TNmVyR3JLWWtyUmtnVkc1YnYxeUF3U09xa1FKNEhrOW5iRy1Fekc0TWpubnhqcGVWdFJ1aDZ4djdXeHdsWmxIa1IyWlpSV3dOcU5lUGhyMWt0UUdKMm9OdUs3LXVXZGc1WUtWcE51aGp5SkFBLVVpNW1YRjR3WU02bkd4blRhV0NhX1BMcFHSAdcBQVVfeXFMUGI0SWVGdXlobnJuLU9NV2tSRU5RZUZkZThyWVBIYXpKX0U1S2NtTXdJRmxLX2ZYQVoxTlltM1ctMnI1UnlwdDYzYTQ2amhhTkp6RElkUDNTNnJQOFZidFEtencxeENtdmRTTGhNaWJqSXdqUjJZLUVNRWE0cW4xUlNRYUlEbUdoLXBXRlJfQWhuODJ3YUh2RlZNWEFOX1RhSjM2RXFxbFVUbzNoNERUZ2dCMThuWW9GUW5hcWNuSFdtVEFXQUktV3h5S1F5VjFlZ1dzQ0FieUE?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "Century Aluminum Stock And 2 U.S. Manufacturers Facing New Tariff Winners Test"
+    },
+    {
+      "details": [],
+      "factor_ids": [
+        "demand_housing_infrastructure_pipeline"
+      ],
+      "factor_labels": [
+        "Housing, infrastructure, and urbanization pipeline"
+      ],
+      "horizon": "long",
+      "id": "auto_chalco_focuses_on_integrated_operations_as_sector",
+      "impact": "watch",
+      "matched_terms": [],
+      "published_at": "2026-07-04T18:30:27+00:00",
+      "side": "demand",
+      "source_articles": [
+        {
+          "published_at": "2026-07-04T18:30:27+00:00",
+          "source": "AD HOC NEWS",
+          "title": "Chalco focuses on integrated aluminum operations as sector demand evolves - AD HOC NEWS",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPb0lYdEVQLUV3Rmk0eXQxNzBabXloNFpKUG9EZVFlYkRQaEs4Y0xOQmZXREtaaTJjdEtOSFI5RVpiOUFRandzWER0YzBWTm9oc2VvQmFDSG9Nc05ZWWFrS25lWmVqNHdkcFFPSnJ6dlFhWGVRSmNtazUwODgtUEdaaUtudE1QY3h0WnNOWlJVb1VYRnNUenBBcy1BT1BDT1NTU3VGSFJVeUhNY05vY3pFZjJIQXNNRzhKWndmN0RsOVZtYjU2bmZDX2dzaDI?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "Chalco focuses on integrated aluminum operations as sector demand evolves"
+    },
+    {
+      "details": [],
+      "factor_ids": [
+        "demand_housing_infrastructure_pipeline"
+      ],
+      "factor_labels": [
+        "Housing, infrastructure, and urbanization pipeline"
+      ],
+      "horizon": "long",
+      "id": "auto_world_architectural_wall_panel_analysis_forecast_size",
+      "impact": "watch",
+      "matched_terms": [],
+      "published_at": "2026-07-04T18:21:04+00:00",
+      "side": "demand",
+      "source_articles": [
+        {
+          "published_at": "2026-07-04T18:21:04+00:00",
+          "source": "IndexBox",
+          "title": "World Architectural Wall Panel - Market Analysis, Forecast, Size, Trends and Insights - IndexBox",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxObjdyXzFlaXVHN016S0tpS3Y2QmtDeEwxVFdhSXk1ZGFvc1VCbzBaNnlJcEFtRlhySkxIRkNwaGE2aHVyMzJOcHhIT1hSNzRKTGdmZ2Y4SXY2N2Jta09CNDJqaW5Eb3N0NlYydFpXd1JjTGdva1FPeHctcTNScjRwdzVYS19qcHZfNmViZlRoYnY0dUlyZEI2ejRTQm5wNmhiMFJuQU9oSXZ5N2ZpRkRWcFBoQWplbEg1djRtUVpySjZZWU9NTmd3T3o5ZHlLQk9lQTFDektMY2xWeVVhNEdnXzJxU015WHRWQmxqN25fZzBJODVC?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "World Architectural Wall Panel - Market Analysis, Forecast, Size, Trends and Insights"
+    },
     {
       "details": [
         "Aluminium billet inventory falls to 130,000mt, warehouse withdrawals rebound, processing fees soften"
@@ -7504,9 +7661,9 @@
       "details": [
         "Alcoa's acquisition of South32 aluminium market",
         "Alcoa to buy South32\u2019s alumina and bauxite assets for $4.1bn",
+        "South32 sells aluminium business to Alcoa in $9.8b deal",
         "Alcoa in $4.1 billion South32 aluminium assets acquisition",
-        "Alcoa To Acquire South32\u2019s Bauxite, Alumina, And Aluminum Assets For $4.1 Billion",
-        "South32\u2013Alcoa $5.6B aluminium deal: portfolio and asset impacts for mine planners"
+        "Alcoa To Acquire South32\u2019s Bauxite, Alumina, And Aluminum Assets For $4.1 Billion"
       ],
       "factor_ids": [
         "supply_alumina_bauxite_projects"
@@ -7537,6 +7694,12 @@
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYmVUdF9iZlZOWTdUMFR4dFFSeVA1TnppRUcySWZyZHZLOFYtOS1sZDE1NmNPbWhCWjZDTzFmbnd4T1F4dGtncjNDU3hOZlB0TnIxd0JXaGk3Q20tbVQxNTRTWVE1UTdtNUppUkRrc2hscXdlbHZGUzdMM05GaWxERVg3ckYyWHpPRC1qUUxzLTBnMFpqZUtDM0FsM2J1TTd1aTN2WXJjRUVVYVdhWE1McjlzZ3BXY1Y1dVdETldIMGZoZ1XSAdIBQVVfeXFMTTMyYXNLVFlsQmIxdDBRczJGdEZuZG94bnMtRS1CUTNqYVZOWDZ2THZBbTY5SXJZX0JadF9STUIzRFZRN3drVlhldTY3dHBPdkNrWER5Y2xQN3pQRWlRS3J4QzVZWGRXQ3V4V2JnRnJUSkdQSHkxdFVVWThmcUxIZmFsamZJc2F5S3RXb2oyWEVaWlAzdFNYdmtDWXIxdzBTelpiYVdad2QtcXozTzV5VlZXUm9UajF0WG1lUWZJUDVqNDl3YV9xQXBMY1VUTjNHZlBn?oc=5"
         },
         {
+          "published_at": "2026-07-01T07:03:00+00:00",
+          "source": "AFR",
+          "title": "South32 sells aluminium business to Alcoa in $9.8b deal - AFR",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNU3lTQkdNaDAxeW9YdWhfSmJBcXBkR1ROVkg4NEJJWU9fbHdOMmZaQUxWc0VSOURDbFRraVpHSEtyUkxMSGNTaEpGT3Fmb2M4ZjlhdENROVJkQTQ1V0FmMVFxb0xIeTdkQXQwZXlELUtzbzBEc0M3eTdPekE2RVA5VXIzYUE5ODg0dmNPYnZwMXJ2M3NqeDdwbDVERmtwLVZOaU5zU3pIZDI?oc=5"
+        },
+        {
           "published_at": "2026-07-01T05:37:03+00:00",
           "source": "Aluminium International Today",
           "title": "Alcoa in $4.1 billion South32 aluminium assets acquisition - Aluminium International Today",
@@ -7547,12 +7710,6 @@
           "source": "Pulse 2.0",
           "title": "Alcoa To Acquire South32\u2019s Bauxite, Alumina, And Aluminum Assets For $4.1 Billion - Pulse 2.0",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUXhZTC10aDRjcUZwS1NGSkRYczJRU3RCOHVIUVk3c1VNbkJiaEV5MUlqeGcwT0VvVXNSX1B4Y2FxUXZSdjQ0LVhaOC0tSEV1d1hGUm5ZbGtnbVNNa3RvcWlUWWRaa2JJQ25YdENiUWFfZDlwSHVfbWw0a3lfdEdIOG4xQUNEQXpDVmZSOFVnSVROMlNDTnN5LTItd2lId9IBowFBVV95cUxQLVMyS2hHWVpCZ0oxaXgxbnYwdUJhV3ZkbmVjYURjdEt2ZlFFNWdvaWJibGJURUZQTmJMdDcwcXZqc1FWYy1rYmpHOG9PYkdGSkRiM1hKLTVIUEZKVEFIMGQ0VXdqOGhTWTFpSlc1dGdUM0VjT3lKQ1o1V3ZpZTJjVVZ5eFhkME1PN0xtODItRF84TG1sX0h4N2x2NzEwN2hYSDd3?oc=5"
-        },
-        {
-          "published_at": "2026-07-01T00:01:32+00:00",
-          "source": "Geomechanics.io",
-          "title": "South32\u2013Alcoa $5.6B aluminium deal: portfolio and asset impacts for mine planners - Geomechanics.io",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTWxWZVVJeE13d29XMVlzZ3FTdXc1VlVabnR1dGlnbXRBOXJKNDIzZnk5VWNCYW5RNUJiOGE5d1dwZ3dIaTBYOFUyanZ1TEhzYjl3SGxYeXFEUU5pcW5KSTVQekVpWV9rOW01OUdnMjk0aFdBTlRoQmljektzVE1qYTYwUWpMT0FLcVAwTWhVcVh0V3FESGY3THVDUDBrTHprZHY4NXNqMDBnUDhFQmtUOWt4czg4QnIzeUE?oc=5"
         },
         {
           "published_at": "2026-06-30T22:23:11+00:00",
@@ -7595,31 +7752,31 @@
     },
     {
       "details": [
-        "Honda CR-V overtakes Ford F-150 in midyear U.S."
+        "Corbion\u2019s 2026 Gold Medal ranking from Ecovadis shows strong sustainability performance"
       ],
       "factor_ids": [
-        "supply_inventories"
+        "demand_packaging"
       ],
       "factor_labels": [
-        "Exchange and visible inventories"
+        "Packaging and beverage cans"
       ],
       "horizon": "short",
-      "id": "auto_150_150_honda_cr_overtakes_ford_in_midyear_sales",
+      "id": "auto_2026_2026_corbion_gold_medal_ranking_ecovadis_shows_strong",
       "impact": "watch",
       "matched_terms": [],
-      "published_at": "2026-07-03T06:53:39+00:00",
-      "side": "supply",
+      "published_at": "2026-07-03T07:01:31+00:00",
+      "side": "demand",
       "source_articles": [
         {
-          "published_at": "2026-07-03T06:53:39+00:00",
-          "source": "MSN",
-          "title": "Honda CR-V overtakes Ford F-150 in midyear U.S. sales - MSN",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMy1qSFpvTWJwSS10Ui1JeDRjWGdGZUIzV0owZHY2d0V2NVNwdkNLVEp5RkViWEVhcGNaSnN1clJVZzYzQXBiTF95UU9mMVliZ24wRHR1SlhWZ193cnBKd3NvOTRwZXluXzlTaThEcmJBaG1IQmtXYTVBWWVZNFE1X1Awa3A0SDEtZlByRWZpQ2VNUS1HV0JNQ0NreVd0dWtWdEZaVTgtMlZjOExMY3RMVk1CMlpRZEg2dmlJSXg0SDhBcVRrQjZyTENnR1FPZDRLTjUwT2lGMjlPZw?oc=5"
+          "published_at": "2026-07-03T07:01:31+00:00",
+          "source": "Nutraceutical Business Review",
+          "title": "Corbion\u2019s 2026 Gold Medal ranking from Ecovadis shows strong sustainability performance - Nutraceutical Business Review",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdTV3QkppQUpjb2pyV21SNjFtNDhJTDlzQ3MxbU1zUUVublZCLTdJelVuYWNlZEdjU1ZPMWU1S3hjelJZSkpOOG5xM1JxbmdZQ1NwVThUQXV5by1EbGEzUkZDdm9QYmxDNGs4TEc0a3c3aGg1SzdqcmRPZlQzaWh4dzktSlNFempCUE1jRm53VDRJLW9NNzJ3bg?oc=5"
         }
       ],
       "source_count": 1,
       "summary": "",
-      "title": "Honda CR-V overtakes Ford F-150 in midyear U.S. sales"
+      "title": "Corbion\u2019s 2026 Gold Medal ranking from Ecovadis shows strong sustainability performance"
     },
     {
       "details": [
@@ -7809,12 +7966,10 @@
     {
       "details": [],
       "factor_ids": [
-        "demand_construction_near_term",
         "demand_macro_manufacturing",
         "supply_power_energy"
       ],
       "factor_labels": [
-        "Construction activity already underway",
         "Manufacturing and industrial activity",
         "Power availability and electricity cost"
       ],
@@ -7835,6 +7990,34 @@
       "source_count": 1,
       "summary": "",
       "title": "The Aluminum Smelter That Could Reshape the U.S. Industrial Map"
+    },
+    {
+      "details": [
+        "Honda CR-V overtakes Ford F-150 in midyear U.S."
+      ],
+      "factor_ids": [
+        "supply_inventories"
+      ],
+      "factor_labels": [
+        "Exchange and visible inventories"
+      ],
+      "horizon": "short",
+      "id": "auto_150_150_honda_cr_overtakes_ford_in_midyear_sales",
+      "impact": "watch",
+      "matched_terms": [],
+      "published_at": "2026-07-02T16:16:17+00:00",
+      "side": "supply",
+      "source_articles": [
+        {
+          "published_at": "2026-07-02T16:16:17+00:00",
+          "source": "MSN",
+          "title": "Honda CR-V overtakes Ford F-150 in midyear U.S. sales - MSN",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMy1qSFpvTWJwSS10Ui1JeDRjWGdGZUIzV0owZHY2d0V2NVNwdkNLVEp5RkViWEVhcGNaSnN1clJVZzYzQXBiTF95UU9mMVliZ24wRHR1SlhWZ193cnBKd3NvOTRwZXluXzlTaThEcmJBaG1IQmtXYTVBWWVZNFE1X1Awa3A0SDEtZlByRWZpQ2VNUS1HV0JNQ0NreVd0dWtWdEZaVTgtMlZjOExMY3RMVk1CMlpRZEg2dmlJSXg0SDhBcVRrQjZyTENnR1FPZDRLTjUwT2lGMjlPZw?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "Honda CR-V overtakes Ford F-150 in midyear U.S. sales"
     },
     {
       "details": [
@@ -7924,7 +8107,7 @@
     },
     {
       "details": [
-        "Adani\u2019s Rs1.08 Lakh Crore Odisha Aluminium Bet: 53,500 Jobs, India\u2019s Biggest Metallurgy FDI"
+        "T\u00fcrkiye collects 1.5M beverage containers on 1st day of desposit plan | Daily Sabah"
       ],
       "factor_ids": [
         "demand_housing_infrastructure_pipeline"
@@ -7933,22 +8116,22 @@
         "Housing, infrastructure, and urbanization pipeline"
       ],
       "horizon": "long",
-      "id": "auto_08_53_adani_rs1_lakh_crore_odisha_bet_jobs",
+      "id": "auto_1_1_rkiye_collects_beverage_containers_on_st_day",
       "impact": "watch",
       "matched_terms": [],
-      "published_at": "2026-07-02T12:02:26+00:00",
+      "published_at": "2026-07-02T12:32:00+00:00",
       "side": "demand",
       "source_articles": [
         {
-          "published_at": "2026-07-02T12:02:26+00:00",
-          "source": "NiftyTrader",
-          "title": "Adani\u2019s Rs1.08 Lakh Crore Odisha Aluminium Bet: 53,500 Jobs, India\u2019s Biggest Metallurgy FDI - NiftyTrader",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVUpPV2VFUmZWR2JSYWFqUFhIV01RVUJTQjJWWmlHeHNna2dQdXlPUlBzZ0hsV2k1b2FtUjFKMElVTktCX0JaWDQ3ekJjcWZwM25LWEpzU0xDdTJpZjgzWC1vcGtIZkxSek5yVVhnMTRHQnAySmlTbGVXbUJhblhoWVNESTI?oc=5"
+          "published_at": "2026-07-02T12:32:00+00:00",
+          "source": "Daily Sabah",
+          "title": "T\u00fcrkiye collects 1.5M beverage containers on 1st day of desposit plan | Daily Sabah - Daily Sabah",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQam9ReDd0WmFyWWJNMHVvSVBHemZzNmZUS3RLYWgxaWJfYjNBOXFKWWZvRWFYYzJRVVFNaTdiRUxjeHpDYmRVNUlXVUpXdHdWeHFhaVUweGc0Zkd0ZjkxdHV3N0tlb1gtWWZYLXRUTVdaZ1IwLUV6QVhURnhnN2pnc2NQSmIxQXZKbnd2OFpTaXhmbkJhcDJpOXVZY3FObXowaW8xZEZzQk92YXV1c0pEcFRn0gGyAUFVX3lxTFBqb1F4N3RaYXJZYk0wdW9JUEd6ZnM2ZlRLdEthaDFpYl9iM0E5cUpZZm9FYVhjMlFVUU1pN2JFTGN4ekNiZFU1SVdVSld0d1Z4cWFpVTB4ZzRmR3RmOTF0dXc3S2VvWC1ZZlgtdFRNV1pnUjAtRXpBWFRGeGc3amdzY1BKYjFBdkpud3Y4WlNpeGZuQmFwMmk5dVljcU5tejBpbzFkRnNCT3ZhdXVzSkRwVGc?oc=5"
         }
       ],
       "source_count": 1,
       "summary": "",
-      "title": "Adani\u2019s Rs1.08 Lakh Crore Odisha Aluminium Bet: 53,500 Jobs, India\u2019s Biggest Metallurgy FDI"
+      "title": "T\u00fcrkiye collects 1.5M beverage containers on 1st day of desposit plan | Daily Sabah"
     },
     {
       "details": [
@@ -7982,11 +8165,13 @@
       "details": [],
       "factor_ids": [
         "supply_smelter_operations",
-        "demand_macro_manufacturing"
+        "demand_macro_manufacturing",
+        "supply_trade_policy"
       ],
       "factor_labels": [
         "Smelter outages, restarts, and curtailments",
-        "Manufacturing and industrial activity"
+        "Manufacturing and industrial activity",
+        "Tariffs, sanctions, and export controls"
       ],
       "horizon": "short",
       "id": "auto_missouri_smelter_restart_announced_missouri_smelter_restart",
@@ -8062,6 +8247,34 @@
       "source_count": 1,
       "summary": "",
       "title": "[SMM Secondary Aluminum Alloy Flash] This week, China's social invento"
+    },
+    {
+      "details": [],
+      "factor_ids": [
+        "supply_physical_premiums"
+      ],
+      "factor_labels": [
+        "Physical premiums and regional tightness"
+      ],
+      "horizon": "short",
+      "id": "auto_geopolitical_risk_premium_continues_to_narrow_prices",
+      "impact": "watch",
+      "matched_terms": [
+        "premium"
+      ],
+      "published_at": "2026-07-02T01:16:25+00:00",
+      "side": "supply",
+      "source_articles": [
+        {
+          "published_at": "2026-07-02T01:16:25+00:00",
+          "source": "SMM Metal",
+          "title": "Geopolitical Risk Premium Continues to Narrow, Aluminum Prices in the Doldrums [SMM Aluminum Morning Briefing] - SMM Metal",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNaDdlWlZPVTFldHd4OVJfT1dVS1hCY2ptcHBlRW45ODdlblJNWFhENW5xX1BmUTZBSnFyTG55dlBWV3RIR1BqQ2YtYnAzRzdLMjBVcjdnS1RCX2dDclpDeDlPdVNzaEZvQk10OHZ6R3Q5UWRzTDl6dUJiOHNXVGRNdUNVYkFET2dTN09NRHg5QnoyWjhUX1lfWTBqLVNvRVJjWmFJMWtwdXVLLXVlWkNIX29iOEY3MHRQeDgtX2ItQlNKWmhQX29fSXlXd3JCRWdRekhJV0N5ZnE1bjlNNE5RSy1QLXF1VXZuZ2xz?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "Geopolitical Risk Premium Continues to Narrow, Aluminum Prices in the Doldrums [SMM Aluminum Morning Briefing]"
     },
     {
       "details": [],
@@ -8149,48 +8362,6 @@
       "title": "Volodymyr Zelenskiy urges Ireland to cut off alumina supply to Russia"
     },
     {
-      "details": [],
-      "factor_ids": [
-        "supply_smelter_operations"
-      ],
-      "factor_labels": [
-        "Smelter outages, restarts, and curtailments"
-      ],
-      "horizon": "short",
-      "id": "slovalco_partial_restart",
-      "impact": "supply easing",
-      "matched_terms": [
-        "restart",
-        "smelter",
-        "smelting"
-      ],
-      "published_at": "2026-07-01T17:19:08+00:00",
-      "side": "supply",
-      "source_articles": [
-        {
-          "published_at": "2026-07-01T17:19:08+00:00",
-          "source": "Mining.com",
-          "title": "Norsk Hydro\u2019s Slovak aluminum smelter to partially restart production - Mining.com",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVHpydWZDT3lwR0hteC1IUDFNb2RqR3U5MlNZT01kN1lCQ056OUY3MUU1X1hvaVdqOENSbGJkYmpxbXdONTItNDNUSEt6Rk5nM3dtMnBxdXExYnBfMlNqdlhSSlZQdGhGUXdFM3RpNy1SWFdrUVdnUUpoeHdtWjdOU0ozNkNHa3VvZ29PLXFtYmdhVDQtRkVMTGg0aWdPZw?oc=5"
-        },
-        {
-          "published_at": "2026-07-01T15:13:49+00:00",
-          "source": "Aluminium International Today",
-          "title": "Slovalco to restart aluminium smelting - Aluminium International Today",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE93SzNDUmJ3T1B3N1J3MmxrT21EUHNDYzJBdTl5aHF3NkgyanN5Z2RVZmFla19iZ3ZEaF9PcC1JSWhseHhHRTM3alZRQU5URHhsem1EM1k4NXo5MzRrU3YyemI4WkxxYmV4Rlppak1NanFJYmEtbDhIU1ZB?oc=5"
-        },
-        {
-          "published_at": "2026-07-01T14:16:00+00:00",
-          "source": "KITCO",
-          "title": "Norsk Hydro\u2019s Slovak aluminium smelter to partially restart production - KITCO",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNkhPak8yd2xQMGJIN1EwRGJGSXk0RlVSVVRGSGd1aEJwQU1raktlcVpDekl6Tm9XQWZlMnpFbU5uVHZMdG01M3FpWnBSSVRFdV9BQjYyZ3VVUDg0RlFyOUJXY2d5d1YzWDNrOGdIOUZPYU9Wb0pXVFJBQ28zR0dqMFJXZzFZN1JTdXlxUHhlQ0k1QUtlbm90dlBSN01IZkxjR1BlRnR4RnJGZWtmWVhHU28zOVN2NndC?oc=5"
-        }
-      ],
-      "source_count": 3,
-      "summary": "Restart news adds potential primary aluminium supply if power and operating economics hold.",
-      "title": "Slovalco aluminium smelter moves toward partial restart"
-    },
-    {
       "details": [
         "APAA Welcomes Magnitude 7 Metals' Decision to Restart Missouri Aluminum Smelter"
       ],
@@ -8250,34 +8421,40 @@
       "title": "Copper Under Pressure as Ferrari, BMW, and Tesla Embrace Cheaper Aluminum Wiring"
     },
     {
-      "details": [
-        "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels"
-      ],
+      "details": [],
       "factor_ids": [
-        "demand_grid_renewables"
+        "supply_smelter_operations"
       ],
       "factor_labels": [
-        "Grid expansion and renewables buildout"
+        "Smelter outages, restarts, and curtailments"
       ],
-      "horizon": "long",
-      "id": "auto_5_5_america_just_switched_on_gigawatt_plant_in",
-      "impact": "watch",
+      "horizon": "short",
+      "id": "slovalco_partial_restart",
+      "impact": "supply easing",
       "matched_terms": [
-        "solar"
+        "restart",
+        "smelting",
+        "smelter"
       ],
-      "published_at": "2026-07-01T14:30:37+00:00",
-      "side": "demand",
+      "published_at": "2026-07-01T15:13:49+00:00",
+      "side": "supply",
       "source_articles": [
         {
-          "published_at": "2026-07-01T14:30:37+00:00",
-          "source": "Autonocion.com",
-          "title": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels - Autonocion.com",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TaVU0cHN2RkFtejRmVUtYYmJwWGdOTkZPNmFJcXVOYm1weXVsSWNOSDdCc2hlNFo1cXFodnZnQ1hraXdEQVNzUEEyOVl5b0pkRi1YdUdDb1dnSVlxMFBBWDJlU2xTV2h4TjZvemVnNGY?oc=5"
+          "published_at": "2026-07-01T15:13:49+00:00",
+          "source": "Aluminium International Today",
+          "title": "Slovalco to restart aluminium smelting - Aluminium International Today",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE93SzNDUmJ3T1B3N1J3MmxrT21EUHNDYzJBdTl5aHF3NkgyanN5Z2RVZmFla19iZ3ZEaF9PcC1JSWhseHhHRTM3alZRQU5URHhsem1EM1k4NXo5MzRrU3YyemI4WkxxYmV4Rlppak1NanFJYmEtbDhIU1ZB?oc=5"
+        },
+        {
+          "published_at": "2026-07-01T14:16:00+00:00",
+          "source": "KITCO",
+          "title": "Norsk Hydro\u2019s Slovak aluminium smelter to partially restart production - KITCO",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNkhPak8yd2xQMGJIN1EwRGJGSXk0RlVSVVRGSGd1aEJwQU1raktlcVpDekl6Tm9XQWZlMnpFbU5uVHZMdG01M3FpWnBSSVRFdV9BQjYyZ3VVUDg0RlFyOUJXY2d5d1YzWDNrOGdIOUZPYU9Wb0pXVFJBQ28zR0dqMFJXZzFZN1JTdXlxUHhlQ0k1QUtlbm90dlBSN01IZkxjR1BlRnR4RnJGZWtmWVhHU28zOVN2NndC?oc=5"
         }
       ],
-      "source_count": 1,
-      "summary": "",
-      "title": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels"
+      "source_count": 2,
+      "summary": "Restart news adds potential primary aluminium supply if power and operating economics hold.",
+      "title": "Slovalco aluminium smelter moves toward partial restart"
     },
     {
       "details": [
@@ -9205,6 +9382,34 @@
     {
       "details": [],
       "factor_ids": [
+        "demand_trade_restocking"
+      ],
+      "factor_labels": [
+        "Trade flows and restocking"
+      ],
+      "horizon": "short",
+      "id": "auto_india_esg_advantage_turning_csrd_cbam_trade",
+      "impact": "watch",
+      "matched_terms": [
+        "global trade"
+      ],
+      "published_at": "2026-06-29T07:33:22+00:00",
+      "side": "demand",
+      "source_articles": [
+        {
+          "published_at": "2026-06-29T07:33:22+00:00",
+          "source": "CXO Digitalpulse",
+          "title": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity - CXO Digitalpulse",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWkpwWjNpaXBMNTRLSlV1dnJXaVRDQ2l3Vk1PWDdJUVR0d3JCVzZzRUkyNmVxRDZ5QTcyWEF0UV9TOEhQZHdUaVpnYjRmaFNqRHlGbjNLR1VLQm1MeHdsTFJtX1lTZ21zX3NNOWI1WW5VNE1zQWVrMUFkNUs3Y09OTDgzT1l4c1RDLVk1Z0c3eUZsU3J5MHIwcTNuUHBicEk2UnVZZHVlYlJEU3M?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity"
+    },
+    {
+      "details": [],
+      "factor_ids": [
         "supply_recycling_capacity"
       ],
       "factor_labels": [
@@ -9367,32 +9572,6 @@
       "title": "German scientists proposed producing new solar panels using recycled components"
     },
     {
-      "details": [],
-      "factor_ids": [
-        "demand_trade_restocking"
-      ],
-      "factor_labels": [
-        "Trade flows and restocking"
-      ],
-      "horizon": "short",
-      "id": "auto_trump_new_tariff_cut_guyana_hikqlefucr_trump",
-      "impact": "watch",
-      "matched_terms": [],
-      "published_at": "2026-06-27T08:09:55+00:00",
-      "side": "demand",
-      "source_articles": [
-        {
-          "published_at": "2026-06-27T08:09:55+00:00",
-          "source": "Fathom Journal",
-          "title": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR) - Fathom Journal",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE81QUpudTVxMndGdXJQWWNKOXlBMlIwN3hmV3JmVGxCUDFNNUp0aGxUUUd4eUFCM0x4Ym1lTGVvTXpvTWIyU0ZYUW4teWVGVEg5YXRnb3hMeExYMmk5bVFNNmlDYTQ?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR)"
-    },
-    {
       "details": [
         "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD)"
       ],
@@ -9419,34 +9598,6 @@
       "source_count": 1,
       "summary": "",
       "title": "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD)"
-    },
-    {
-      "details": [
-        "EU approves steel, aluminum trade deal with the US ahead of July 4 deadline"
-      ],
-      "factor_ids": [
-        "supply_trade_policy"
-      ],
-      "factor_labels": [
-        "Tariffs, sanctions, and export controls"
-      ],
-      "horizon": "short",
-      "id": "auto_4_4_eu_approves_steel_trade_deal_us_ahead",
-      "impact": "watch",
-      "matched_terms": [],
-      "published_at": "2026-06-26T17:00:14+00:00",
-      "side": "supply",
-      "source_articles": [
-        {
-          "published_at": "2026-06-26T17:00:14+00:00",
-          "source": "EUROMETAL",
-          "title": "EU approves steel, aluminum trade deal with the US ahead of July 4 deadline - EUROMETAL",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWFlOWFVRQnBLRjBrVWk3MGhRdUdzYnkxcFZ1NFBlR1lSNWhrVWEtcEdKdzJBMjZwMkJlNFpfbmw1R2hvYi1tcW5rNkVkV1VmbVBpSDJsbWNGT01XZHFtSHlRQVoyWDItSldfREExQnVSQ0pBWXI3SmNwWVJBVnl2VEt3QXRZRTBGd24xOFVOZXE5NXFFaHhPY0c0SmVZUQ?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "EU approves steel, aluminum trade deal with the US ahead of July 4 deadline"
     },
     {
       "details": [
@@ -9533,32 +9684,6 @@
       "source_count": 1,
       "summary": "",
       "title": "EU plans 15% tax on aluminium scrap exports"
-    },
-    {
-      "details": [],
-      "factor_ids": [
-        "demand_housing_infrastructure_pipeline"
-      ],
-      "factor_labels": [
-        "Housing, infrastructure, and urbanization pipeline"
-      ],
-      "horizon": "long",
-      "id": "auto_dingchengzun_expands_footprint_facade_project_in_luanda",
-      "impact": "watch",
-      "matched_terms": [],
-      "published_at": "2026-06-26T13:17:00+00:00",
-      "side": "demand",
-      "source_articles": [
-        {
-          "published_at": "2026-06-26T13:17:00+00:00",
-          "source": "Big News Network.com",
-          "title": "Dingchengzun Expands Global Footprint with Aluminum Facade Project in Luanda, Angola - Big News Network.com",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQTNkdUtVeVRkNUZSbTVVRmFjWXd2Vi1WQS1WVHhfN0xqS1JNSFA1STlEY2RHY01iZ2xxakJGbUZMSndYS1paWHhfUU9sQ0dYSVdNemMycHg3TXFvaHVkaW04eFpDRUFzenEwblR4WFNMSjY4b0RxZ0ZpRm9nRHFwUGRGbVlEZzBOY0k5d1lTTUVsM3ZnMUdRUkE1T0hSYkdSdFBHYU9WTV9tU19jdXR1QnBWYUtIM0hRUzZJZWpQWU1Nd05idXlLbw?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "Dingchengzun Expands Global Footprint with Aluminum Facade Project in Luanda, Angola"
     },
     {
       "details": [],
@@ -9700,6 +9825,34 @@
       "title": "Dubai: four-month ban on metal scrap exports"
     },
     {
+      "details": [],
+      "factor_ids": [
+        "demand_grid_renewables"
+      ],
+      "factor_labels": [
+        "Grid expansion and renewables buildout"
+      ],
+      "horizon": "long",
+      "id": "auto_supramarine_project_to_connect_distant_offshore_wind",
+      "impact": "watch",
+      "matched_terms": [
+        "wind"
+      ],
+      "published_at": "2026-06-25T15:52:22+00:00",
+      "side": "demand",
+      "source_articles": [
+        {
+          "published_at": "2026-06-25T15:52:22+00:00",
+          "source": "Engineer Live",
+          "title": "SupraMarine project to connect distant offshore wind farms to land with superconducting system - Engineer Live",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNUdSOXdpVTViZHkxc2NqZkdnTGhZWGNMenBiNHdpZlZWR0tqbU1qSVRDVVJDRVI2ZXNqT0lwT2VCRlpRVnIwNk5VaUw0c1MtVEJzTDcxT3ozc0Zodkd2WF9BbGQ3Yjd4dDJ0T05UMXpVRWI3YUNZZ2N2VXE2OWFYMy1QVXRycHZOc1YwVVU3UTZnSm9Rc1B1N1RCU2E2cWVrWVNUVVVWTVZQdWNURWc?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "SupraMarine project to connect distant offshore wind farms to land with superconducting system"
+    },
+    {
       "details": [
         "Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually"
       ],
@@ -9758,32 +9911,6 @@
     {
       "details": [],
       "factor_ids": [
-        "demand_trade_restocking"
-      ],
-      "factor_labels": [
-        "Trade flows and restocking"
-      ],
-      "horizon": "short",
-      "id": "auto_china_scrap_sector_squee_china_scrap_sector",
-      "impact": "watch",
-      "matched_terms": [],
-      "published_at": "2026-06-25T07:00:00+00:00",
-      "side": "demand",
-      "source_articles": [
-        {
-          "published_at": "2026-06-25T07:00:00+00:00",
-          "source": "mysteel.net",
-          "title": "China's aluminum scrap sector squee... - mysteel.net",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNkppY3EzQVAtZ3lLbnRxenhndUJHOXowSkRZa2IzNUtoa2pmeG1wU2JCZFlkMUZPODBhZjJMakZ4cWhSMG5LZGtVY3hrMjZ1U2RQbzU1Y0xaS3N6TDBBNGx4aGxzWURseXFxQVFvR1I4UFdzNUFGalVNbVB4eWVNdC0ySVE2T2JTYTUtT3gwaG1KcWNNUG1ZeG1OZW4wWXJpRjB3N1Y4QXk3SHhvazhPek00WEJSd1I3OFZvN2g2LTQ2TjM2SzFFcw?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "China's aluminum scrap sector squee..."
-    },
-    {
-      "details": [],
-      "factor_ids": [
         "supply_power_energy"
       ],
       "factor_labels": [
@@ -9806,36 +9933,6 @@
       "source_count": 1,
       "summary": "",
       "title": "It turns out Trump does need something from Canada\u2014aluminum"
-    },
-    {
-      "details": [
-        "SilverStone Launches ALTA T1 Premium Aluminum Unibody Super Tower Chassis"
-      ],
-      "factor_ids": [
-        "supply_physical_premiums"
-      ],
-      "factor_labels": [
-        "Physical premiums and regional tightness"
-      ],
-      "horizon": "short",
-      "id": "auto_silverstone_launches_alta_t1_premium_unibody_super",
-      "impact": "watch",
-      "matched_terms": [
-        "premium"
-      ],
-      "published_at": "2026-06-25T07:00:00+00:00",
-      "side": "supply",
-      "source_articles": [
-        {
-          "published_at": "2026-06-25T07:00:00+00:00",
-          "source": "TechPowerUp",
-          "title": "SilverStone Launches ALTA T1 Premium Aluminum Unibody Super Tower Chassis - TechPowerUp",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMEFZeVo2ZGdHUlNhMFh4ZDlPalpfNFFtN1VRRW53RGtZc2g4d096SElCakZERzhWa19scUJoSjdKRXl0ZWJkNUdfUFgtOURvOEsxajhvRFlHUlR1eV9iWGNiYkFfNU80aldWa2ZfMHhVeGVrOFk2X25PV1czb3luSWxhOEJQY0hwMGM4UDNWdnNFNE9SNmtvMmU2U1l2a0VHSHV5cUFFXzdraHVa0gGyAUFVX3lxTE5IRzh2YjdQeWdUOThYTTQyTExyZGlhZnRwcm4xWXNZMm9pa25LZEY5QUFfNVozdk40S3dNQ1BaTkRUZm0zZVJmY0hNRFhMSGhvSmliS2xUZDNxV2ZtcWkwRFd0NFZWV1AwZ2VtaUNFTnhyLUpfdFhfZmZQd0JVVW11Q1Y3ZDVJNzVBNFozUlptdm1DQmMzT0RmR0FrYjluanNsSThQc0ZRSWtjVEl6OS0xZHc?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "SilverStone Launches ALTA T1 Premium Aluminum Unibody Super Tower Chassis"
     },
     {
       "details": [],
@@ -10146,15 +10243,9 @@
           "source": "Manufacturing Dive",
           "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks - Manufacturing Dive",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMzJMNFhRVmVWRmhabUh6OHZ4WS1GcURCUFoyZm9GSVZLemZqbFRYWllCb2hRTmJrUTBrMHc2amxYUWZ1Y0hvVFh2XzJIc0Vzc3ZISXFlNzhMeTN1VzR5U0RDYlQ3UmlCcmpUNFVWc2d6UGdJYzlRODByRG9QakRYOW9VRURpbzBHMFluWFVCVndKSUhoZ0JMcEFCcHVVejFSeTlDeDNVSnJOVUFCUGFLRWlZU203UQ?oc=5"
-        },
-        {
-          "published_at": "2026-06-23T07:00:00+00:00",
-          "source": "Yahoo Finance",
-          "title": "Steel, aluminum makers face records gauntlet for new US tariff exemptions - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZV8xdVl4ZmpQS04wdEU2Nmgxd0lvUkFWNDZJSWpJN1ppeWxTNnZJem9ER2F2QzVtTXFEYmlZd0NxVHQxNkdXbU12eUM2YnBLRm8zNkxBZllWZkR6dHZaVld5SXBfUHpQQmh4eEx5T2VkamtYVG92ZHZ1REZqVUJfbk40LVRkRnBCMHRHRVlqYzNCNko3VE1iSUtkMXlrelBX?oc=5"
         }
       ],
-      "source_count": 2,
+      "source_count": 1,
       "summary": "",
       "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks"
     },
@@ -10241,6 +10332,34 @@
       "title": "Data center boom benefits metal producers, say studies"
     },
     {
+      "details": [],
+      "factor_ids": [
+        "supply_power_energy"
+      ],
+      "factor_labels": [
+        "Power availability and electricity cost"
+      ],
+      "horizon": "short",
+      "id": "auto_coal_vs_renewables_electricity_cost_battle_influencing",
+      "impact": "watch",
+      "matched_terms": [
+        "electricity"
+      ],
+      "published_at": "2026-06-22T07:00:00+00:00",
+      "side": "supply",
+      "source_articles": [
+        {
+          "published_at": "2026-06-22T07:00:00+00:00",
+          "source": "AL Circle",
+          "title": "Coal vs renewables: The electricity cost battle influencing aluminium production pattern - AL Circle",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYk0zVnR4X0xyS2lqRXNMMHdUZUVicng5YnZ6YjlYcmFyd0lmaDA3YkVVY29acHF1djhDTXNzdUJPdkhIYUVUWWFoUHZYaVVSYS1CS1k1UDZiVHR1VzZBYW9WOHlJNWh2a3oweVppRW5DUnM0aWozWFBpLVA2dzNlWUpLTmdrN3MyTGgxWV9VZzB2cVphUzh2LXM0ejlnZmNLUXJ6Ni10OUNOOWVOeWdtdDRoN2RVd1RiVFAzMDdPSWliZw?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "Coal vs renewables: The electricity cost battle influencing aluminium production pattern"
+    },
+    {
       "details": [
         "2026 Bike Industry Trade and Tariff Updates"
       ],
@@ -10321,34 +10440,6 @@
       "source_count": 1,
       "summary": "",
       "title": "Guinea bets bauxite dominance can reshape aluminium supply"
-    },
-    {
-      "details": [],
-      "factor_ids": [
-        "demand_packaging"
-      ],
-      "factor_labels": [
-        "Packaging and beverage cans"
-      ],
-      "horizon": "short",
-      "id": "auto_drugstore_product_packaging_drugstore_product_packaging_trend",
-      "impact": "watch",
-      "matched_terms": [
-        "packaging"
-      ],
-      "published_at": "2026-06-20T22:58:11+00:00",
-      "side": "demand",
-      "source_articles": [
-        {
-          "published_at": "2026-06-20T22:58:11+00:00",
-          "source": "Trend Hunter",
-          "title": "Aluminum Drugstore Product Packaging - Trend Hunter",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1aUFZuSDZka1RQVU9NTnBVaTkzTHFTU0FEcHFDUTZvVEtkLU04NkJMLVVmYVlSeWdkR2MzRHViVDBwaUVLRnJQMy1zZElzZ0c1MXBOUUtwYjg2OXYzc2ZaS2hGWmVMZXA10gFuQVVfeXFMTW5RV244Yjd2RUtKTWxrRWh3MTM4VnFFSktzbmltSVp2UGtMczM1SDVmVUdzQ3JZS1o4NWY2UHRDei1RdzhYZ0RTZlJuMk14ZHRKeXpMUGdodVJVeEVpMm95aTBuQlpzSzVaVzFzb2c?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "Aluminum Drugstore Product Packaging"
     }
   ],
   "source": {
@@ -10358,9 +10449,9 @@
   },
   "summary": {
     "factors": {
-      "demand_construction_near_term": 6,
+      "demand_construction_near_term": 5,
       "demand_grid_renewables": 7,
-      "demand_housing_infrastructure_pipeline": 5,
+      "demand_housing_infrastructure_pipeline": 6,
       "demand_macro_manufacturing": 7,
       "demand_packaging": 6,
       "demand_trade_restocking": 8,
@@ -10372,31 +10463,31 @@
       "supply_inventories": 7,
       "supply_new_capacity": 6,
       "supply_physical_premiums": 5,
-      "supply_power_energy": 5,
+      "supply_power_energy": 6,
       "supply_recycling_capacity": 7,
       "supply_scrap_secondary": 7,
       "supply_smelter_operations": 4,
-      "supply_trade_policy": 7
+      "supply_trade_policy": 8
     },
-    "filtered_articles": 7,
+    "filtered_articles": 6,
     "horizon": {
-      "long": 35,
+      "long": 36,
       "mixed": 6,
-      "short": 59
+      "short": 60
     },
     "impact": {
       "demand downside": 4,
       "demand upside": 1,
       "supply easing": 12,
-      "supply tightening": 9,
-      "watch": 74
+      "supply tightening": 10,
+      "watch": 75
     },
     "side": {
-      "demand": 39,
+      "demand": 40,
       "mixed": 7,
-      "supply": 54
+      "supply": 55
     },
     "total_articles": 124,
-    "total_signals": 100
+    "total_signals": 102
   }
 }

@@ -17,7 +17,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-from typing import Dict, Iterable, List, Sequence, Tuple
+from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 
 
 NEWS_ENDPOINT = "https://news.google.com/rss/search"
@@ -969,6 +969,58 @@ def group_articles(articles: Sequence[Dict[str, object]]) -> List[Dict[str, obje
     return signals
 
 
+def pluralize(count: int, singular: str, plural: Optional[str] = None) -> str:
+    if count == 1:
+        return f"{count} {singular}"
+    return f"{count} {plural or singular + 's'}"
+
+
+def impact_mix(signals: Sequence[Dict[str, object]]) -> str:
+    counts: Dict[str, int] = {}
+    for signal in signals:
+        impact = str(signal.get("impact", "watch"))
+        if impact == "watch":
+            continue
+        counts[impact] = counts.get(impact, 0) + 1
+    if not counts:
+        return "Most items are watchlist signals without a clear directional impact."
+    parts = [
+        f"{pluralize(count, 'signal')} flagged {impact}"
+        for impact, count in sorted(counts.items(), key=lambda item: (-item[1], item[0]))
+    ]
+    if len(parts) == 1:
+        return parts[0].capitalize() + "."
+    return "Impact mix: " + "; ".join(parts) + "."
+
+
+def shorten_text(value: str, max_length: int = 90) -> str:
+    value = clean_text(value)
+    if len(value) <= max_length:
+        return value
+    trimmed = value[: max_length - 3].rsplit(" ", 1)[0].rstrip(" ,.;:…")
+    return (trimmed or value[: max_length - 3]).rstrip() + "..."
+
+
+def build_section_summary(signals: Sequence[Dict[str, object]]) -> str:
+    if not signals:
+        return "No relevant news was found for this factor in the latest scan."
+    article_count = sum(int(signal.get("source_count", 0)) for signal in signals)
+    latest_titles = [
+        shorten_text(str(signal.get("title", "")))
+        for signal in signals[:2]
+        if signal.get("title")
+    ]
+    theme_sentence = ""
+    if latest_titles:
+        theme_sentence = " Latest themes: " + "; ".join(latest_titles) + "."
+    return (
+        f"Scanned {pluralize(len(signals), 'grouped signal')} from "
+        f"{pluralize(article_count, 'source article')}. "
+        f"{impact_mix(signals)}"
+        f"{theme_sentence}"
+    )
+
+
 def build_factor_groups(signals: Sequence[Dict[str, object]]) -> List[Dict[str, object]]:
     groups = []
     for factor in FACTOR_CATALOG:
@@ -983,6 +1035,7 @@ def build_factor_groups(signals: Sequence[Dict[str, object]]) -> List[Dict[str, 
                 **factor_to_json(factor),
                 "signal_count": len(factor_signals),
                 "article_count": sum(int(signal.get("source_count", 0)) for signal in factor_signals),
+                "section_summary": build_section_summary(factor_signals),
                 "signals": factor_signals,
             }
         )
