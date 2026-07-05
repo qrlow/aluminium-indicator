@@ -156,6 +156,35 @@ class NewsScannerTests(unittest.TestCase):
         self.assertIn("1 source article", group["section_summary"])
         self.assertIn("Japan Q3 aluminium premium", group["section_summary"])
 
+    def test_groups_ega_recycling_plant_title_variants(self):
+        titles = [
+            "Emirates Global Aluminum (EGA) has officially inaugurated its aluminum - SMM Metal",
+            "UAE opens largest aluminium recycling plant to drive circular economy - middle-east-online.com",
+            "Supports the circular economy. Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually - صوت الإمارات",
+            "EGA opens aluminium recycling capacity in the UAE",
+            "185,000 tonnes of change: EGA opens UAE’s largest aluminium recycling plant to power circular economy - Gulf Business",
+        ]
+        articles = [
+            classify_article(
+                {
+                    "title": title,
+                    "description": "",
+                    "source": "Example Source",
+                    "url": f"https://example.com/ega-{index}",
+                    "published_at": f"2026-07-0{index + 1}T00:00:00+00:00",
+                    "query_factor_ids": ["supply_recycling_capacity"],
+                }
+            )
+            for index, title in enumerate(titles)
+        ]
+
+        signals = group_articles(articles)
+
+        self.assertEqual(len(signals), 1)
+        self.assertEqual(signals[0]["id"], "ega_aluminium_recycling_plant")
+        self.assertEqual(signals[0]["source_count"], len(titles))
+        self.assertIn("185,000", " ".join(signals[0]["details"]))
+
 
 if __name__ == "__main__":
     unittest.main()

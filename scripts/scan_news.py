@@ -686,6 +686,41 @@ def is_luoyang_wanji_topic(text: str) -> bool:
     )
 
 
+def is_ega_recycling_topic(text: str) -> bool:
+    has_recycling = "recycling" in text or "recycled" in text
+    has_recycling_plant = has_recycling and "plant" in text
+    has_aluminium = "aluminium" in text or "aluminum" in text
+    has_ega_entity = (
+        "ega" in text
+        or "emirates global" in text
+        or "emirates aluminum" in text
+        or "emirates aluminium" in text
+    )
+    has_uae_largest_context = (
+        "uae" in text
+        and "largest" in text
+        and has_aluminium
+        and "recycling" in text
+    )
+    has_185k_capacity_context = (
+        ("185,000" in text or "185 thousand" in text)
+        and has_aluminium
+        and "recycling" in text
+    )
+    has_truncated_inauguration_context = (
+        has_ega_entity
+        and has_aluminium
+        and "inaugurated" in text
+    )
+    return (
+        (has_ega_entity and has_aluminium and has_recycling)
+        or has_uae_largest_context
+        or has_185k_capacity_context
+        or (has_recycling_plant and has_uae_largest_context)
+        or has_truncated_inauguration_context
+    )
+
+
 def topic_key(article: Dict[str, object]) -> str:
     title = strip_source_suffix(str(article.get("title", "")))
     text = canonical_text(" ".join([title, str(article.get("description", ""))]))
@@ -703,7 +738,7 @@ def topic_key(article: Dict[str, object]) -> str:
         return "slovalco_partial_restart"
     if "inola" in text and "smelter" in text:
         return "inola_aluminium_smelter_delay"
-    if "emirates global" in text and "recycling" in text:
+    if is_ega_recycling_topic(text):
         return "ega_aluminium_recycling_plant"
 
     numbers = re.findall(r"\b\d+(?:\.\d+)?\b", text)
@@ -767,6 +802,11 @@ def article_details(article: Dict[str, object]) -> List[str]:
             "Stable commissioning results mark the project's move into trial production.",
             "At full production, the project would lift total company foil capacity to more than 50,000 mt/year.",
         ]
+    if is_ega_recycling_topic(text):
+        return [
+            "Emirates Global Aluminium opened a UAE aluminium recycling plant reported at about 185,000 tonnes of annual capacity.",
+            "The project is described across sources as the UAE's largest aluminium recycling plant and a circular-economy capacity addition.",
+        ]
     return extract_numeric_phrases(title)
 
 
@@ -817,7 +857,7 @@ def signal_summary(key: str, signal: Dict[str, object]) -> str:
     if key == "inola_aluminium_smelter_delay":
         return "Local approval delays push potential new smelting capacity further into the future."
     if key == "ega_aluminium_recycling_plant":
-        return "Additional recycling capacity increases longer-term secondary aluminium supply."
+        return "EGA's UAE recycling plant opening adds reported 185,000-tonne annual secondary aluminium capacity and supports longer-term circular supply."
     return str(signal.get("market_read", ""))
 
 

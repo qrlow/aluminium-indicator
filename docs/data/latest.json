@@ -133,7 +133,7 @@
       "side": "supply",
       "source": "SMM Metal",
       "title": "On the morning of June 30, the 20,000 mt aluminum foil capacity expans - SMM Metal",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQc0habWk5LUlLV2FDZlQ1X1k3UmR0Zld4WVBhS0Y0Q1EyMUdoWW5XUHVuV0YwY3RXOXZjcTlCUjJKeUdkSHh2bHBpREFvZnlkZzFWUDFMTC1ONDhXSXBqRjJ5SDB1eHBkTVlHLTBCMmEyWHRKbDVnNGNYajktS0kycGx1dXpOM1hZMldyeEtxSGM5eklnLVpTcTV0eTVQSG1FdXFNUUVZY3ZGcC1oRGRVckI0QzVPUERxS1ZLNnRrY0I1V280Ukd0NlQwejVtMkRvaHhLUnJDVQ?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQcHo3dXIwMU85NU51WnlnZWpTRDJxdUhDaWdvOXplX1JsVHpfbmI2dkl0QTZUQ2xSXy1BcnBhSWJHRTQ1MVhtam05TXcwcEFiTGRsTjRkcnBjSHVvNjE1d1pwcnBDWGJCeDgyV2llV2N1SzUzY2w0c2llMGRDanRqdGRmZDJLUzQyZkQ3SUpsMWkwTGFMc19YWDc5cnpUemRZRTlMdnBDdndrdDN0S0txdGY2M0Nna2NGTUJSNllLVjB2ZFUzZ0VXZV9NTmNGV3FJWVlj?oc=5"
     },
     {
       "description": "EU Will Weigh Irish Probe in Russian Alumina Sanctions Decision Bloomberg.com",
@@ -207,10 +207,12 @@
     {
       "description": "Nikon SLM and Bosch print complete V8 engine block as single aluminum part VoxelMatters",
       "factor_ids": [
-        "demand_macro_manufacturing"
+        "demand_macro_manufacturing",
+        "demand_transport_near_term"
       ],
       "factor_labels": [
-        "Manufacturing and industrial activity"
+        "Manufacturing and industrial activity",
+        "Transport production schedules"
       ],
       "horizon": "short",
       "impact": "watch",
@@ -218,7 +220,8 @@
       "matched_terms": [],
       "published_at": "2026-07-03T09:30:51+00:00",
       "query_factor_ids": [
-        "demand_macro_manufacturing"
+        "demand_macro_manufacturing",
+        "demand_transport_near_term"
       ],
       "side": "demand",
       "source": "VoxelMatters",
@@ -354,6 +357,27 @@
       "source": "The New Indian Express",
       "title": "Odisha bags India\u2019s largest metallurgy FDI with Rs 1.08L crore aluminium project - The New Indian Express",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNN2ZFMDVZeDgzbERYNDJONWJXS3JGTUlxeDdXcExQYUo0OF9xYlV3VjN6ZFNSQUpfdlctUTl6OWdRUU9QVmhKTU1QclN1dnoxU1Y1aWlRS1pCTnNDUzR0cmdhZE51aFVOcWxSR2JuNGQwN0dZMi1HQWdYX2loZHZFdmlzQTBqYVgzOWlSU1FLWHlscjJXQkZ4U1JEeWp3MG9tSzNhZG9BNFlpQlZ5Nm1ZLU51YjNLT1l0dWhNdE9XTXg5d182OGdodGQxaVhBNndyV3NZ0gHgAUFVX3lxTE9ZdkJpZnZLVFJZRE8tRmdnUU8tdXROT245eVdXc2p2VHlnczMtSS1HMmVhNUdkVGFKdThtTjdXNnlBSHJxTXYtWmhweWlRWEliTEljTEpSWU93b1kzUE9xVnpQTm9fTVFaUWstRzVCTmhBV291c2tHcEtDXzVLZzBQUnJFZFFJUFNXMEFhYjhJNk9Sc2JJZ0xLQUV2LXpiTl95R0RrWG5LeXZjYmhDVUhjbHBMQ3FhckVyZnA5cHNLT0hyR1ljYzU2UEstTWRkdW5xY2REQk95R1dKVzNyOHM2?oc=5"
+    },
+    {
+      "description": "Expectations for US Fed Rate Hikes Delayed, Aluminum Prices' Short-Term Weakness Hard to Break [SMM Aluminum Morning Meeting Summary] SMM Metal",
+      "factor_ids": [
+        "supply_inventories"
+      ],
+      "factor_labels": [
+        "Exchange and visible inventories"
+      ],
+      "horizon": "short",
+      "impact": "watch",
+      "market_read": "watch; 0-3 month supply; matched the search topic.",
+      "matched_terms": [],
+      "published_at": "2026-07-03T01:53:38+00:00",
+      "query_factor_ids": [
+        "supply_inventories"
+      ],
+      "side": "supply",
+      "source": "SMM Metal",
+      "title": "Expectations for US Fed Rate Hikes Delayed, Aluminum Prices' Short-Term Weakness Hard to Break [SMM Aluminum Morning Meeting Summary] - SMM Metal",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxON2l1a01OalIwbVJTQVVsbVRhbXoxSHU4dzUwQW56ZHJjcXQtTDloa1liQmZwbTFITG1OUlFONmlrNlVxN1hwS05DNHl3YW9GdC1yNHo0Uk9PLUtKMW9rd2Vnb1lNVUo0cGQ0Rlg5MTlvTXlXM1RmV3MyN1BVQnVIRHVZYTlzOXg3N0tWV3dPcVhleGZrS2ZTQlc1bTJZVU5mMDlSQVJMLVQ3U3RTTW54eGZhZnY3M2pQUXl4NmlPSkxhekh4VXZpbmduN01wdkhzSkxMTmlvNjA3SGhnSzJCM2g5ZXl4QkR1V2ZLLVcxZVV0YXVzX25B?oc=5"
     },
     {
       "description": "Trade & Tariff Update #23 - Changes to Section 232 Copper, Steel and Aluminum Tariffs American Pet Products Association (APPA)",
@@ -513,27 +537,6 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMEtpWUN4ZVFJU3k1ekVmcWo4alZCenR6RGJTVzBGZi16SVU4dDRZQUhNMnBoYl9RWmR4YlRLVFg3SjZmakxsdkhqSGJpNjVNeGpSX2prSm0tYzE1N1d2TDdRN1B3aDBPY3hfMWRyZ3pmU21XNjFhNTdLXzFkbUcwYmhB?oc=5"
     },
     {
-      "description": "LME metals whipsawed by war and peace in first half of 2026 Reuters",
-      "factor_ids": [
-        "supply_inventories"
-      ],
-      "factor_labels": [
-        "Exchange and visible inventories"
-      ],
-      "horizon": "short",
-      "impact": "watch",
-      "market_read": "watch; 0-3 month supply; matched the search topic.",
-      "matched_terms": [],
-      "published_at": "2026-07-02T13:45:00+00:00",
-      "query_factor_ids": [
-        "supply_inventories"
-      ],
-      "side": "supply",
-      "source": "Reuters",
-      "title": "LME metals whipsawed by war and peace in first half of 2026 - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONnpZQjdPMnRxa3Z1cERaLWo2c2t2SUFYQldzNjZNVGhkb3Blb3NWbEoySUxmQ29vbjE3REhwRzhPNDNqeHFIaHlTQVhlR0l4MVk0bE5tZmtGdlBuVVhLdXV5a1c1dUs3NmUyd3hWSUdsVmlyUXVBRFFzTm9VbFN2eDk4aHdyTXl6a1BJTXd3eU5CRVQxaUNoQkVBZHlMNlNWRnJiczR1cHFDd3dvU3ZPWXVpMUNoZl9yZkE?oc=5"
-    },
-    {
       "description": "Ford Q2 sales drop 10.3% due to F-Series supplier issue, falling EV demand CNBC",
       "factor_ids": [
         "demand_transport_near_term"
@@ -686,17 +689,19 @@
       "description": "Missouri aluminum smelter restart announced Recycling Today",
       "factor_ids": [
         "supply_smelter_operations",
+        "supply_carbon_policy_energy_mix",
         "demand_macro_manufacturing",
         "supply_trade_policy"
       ],
       "factor_labels": [
         "Smelter outages, restarts, and curtailments",
+        "Carbon policy and long-term energy mix",
         "Manufacturing and industrial activity",
         "Tariffs, sanctions, and export controls"
       ],
-      "horizon": "short",
+      "horizon": "mixed",
       "impact": "supply easing",
-      "market_read": "supply easing; 0-3 month mixed demand/supply; matched restart, smelter.",
+      "market_read": "supply easing; mixed horizon mixed demand/supply; matched restart, smelter.",
       "matched_terms": [
         "restart",
         "smelter"
@@ -704,6 +709,7 @@
       "published_at": "2026-07-02T08:21:00+00:00",
       "query_factor_ids": [
         "demand_macro_manufacturing",
+        "supply_carbon_policy_energy_mix",
         "supply_smelter_operations",
         "supply_trade_policy"
       ],
@@ -946,6 +952,29 @@
       "source": "Aluminium International Today",
       "title": "Slovalco to restart aluminium smelting - Aluminium International Today",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE93SzNDUmJ3T1B3N1J3MmxrT21EUHNDYzJBdTl5aHF3NkgyanN5Z2RVZmFla19iZ3ZEaF9PcC1JSWhseHhHRTM3alZRQU5URHhsem1EM1k4NXo5MzRrU3YyemI4WkxxYmV4Rlppak1NanFJYmEtbDhIU1ZB?oc=5"
+    },
+    {
+      "description": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels Autonocion.com",
+      "factor_ids": [
+        "demand_grid_renewables"
+      ],
+      "factor_labels": [
+        "Grid expansion and renewables buildout"
+      ],
+      "horizon": "long",
+      "impact": "watch",
+      "market_read": "watch; 3+ month demand; matched solar.",
+      "matched_terms": [
+        "solar"
+      ],
+      "published_at": "2026-07-01T14:30:37+00:00",
+      "query_factor_ids": [
+        "demand_grid_renewables"
+      ],
+      "side": "demand",
+      "source": "Autonocion.com",
+      "title": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels - Autonocion.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TaVU0cHN2RkFtejRmVUtYYmJwWGdOTkZPNmFJcXVOYm1weXVsSWNOSDdCc2hlNFo1cXFodnZnQ1hraXdEQVNzUEEyOVl5b0pkRi1YdUdDb1dnSVlxMFBBWDJlU2xTV2h4TjZvemVnNGY?oc=5"
     },
     {
       "description": "Norsk Hydro\u2019s Slovak aluminium smelter to partially restart production KITCO",
@@ -1328,30 +1357,6 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOU2dBMDh0VUVLMU5TQWsyeG5STmNoYW9MOTBtZVZ6WGV3bXM2bHhVRkk4dnhwcGdhLTBZZTJDN1FfdFg5QWNDVzhJU040TVlDWmtuN0lRRk9mWElXRUF6SFVXYklfNmZEOERlZ19RaXR5X2g5S29GVDYzREgxVzdPM0dRM0w?oc=5"
     },
     {
-      "description": "Automakers Shift to Aluminum Wiring as Copper Prices Rise Mexico Business News",
-      "factor_ids": [
-        "demand_transport_structural",
-        "demand_transport_near_term"
-      ],
-      "factor_labels": [
-        "EV, aircraft, and lightweighting trends",
-        "Transport production schedules"
-      ],
-      "horizon": "mixed",
-      "impact": "watch",
-      "market_read": "watch; mixed horizon demand; matched the search topic.",
-      "matched_terms": [],
-      "published_at": "2026-06-30T19:22:37+00:00",
-      "query_factor_ids": [
-        "demand_transport_near_term",
-        "demand_transport_structural"
-      ],
-      "side": "demand",
-      "source": "Mexico Business News",
-      "title": "Automakers Shift to Aluminum Wiring as Copper Prices Rise - Mexico Business News",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPM3JrR3BZMXNwOE11el9ZQ1RSOUM4ZEdsMkdIVHhoRnRnVW96NmdSWmdGRV9HZy1kYzhneUV1dE02Z1Q4NFYwYktTSklFQ0stdzRHZDd0a3FLNlExME5aT0Z6ZWYzLWpDRHhFYWlRSC11QzZZblVsSlkybG9hTUNDaTducUVCWGdCSTBGb2ZKQVNCNlVsUEZWZGNpTQ?oc=5"
-    },
-    {
       "description": "Inola hits pause on smelter after weighing resident pushback, Trump support KOSU",
       "factor_ids": [
         "supply_smelter_operations"
@@ -1377,44 +1382,31 @@
     {
       "description": "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand GlobeNewswire",
       "factor_ids": [
+        "demand_transport_near_term",
+        "demand_transport_structural",
         "demand_packaging"
       ],
       "factor_labels": [
+        "Transport production schedules",
+        "EV, aircraft, and lightweighting trends",
         "Packaging and beverage cans"
       ],
-      "horizon": "short",
+      "horizon": "mixed",
       "impact": "watch",
-      "market_read": "watch; 0-3 month demand; matched the search topic.",
-      "matched_terms": [],
+      "market_read": "watch; mixed horizon demand; matched automotive.",
+      "matched_terms": [
+        "automotive"
+      ],
       "published_at": "2026-06-30T15:46:45+00:00",
       "query_factor_ids": [
-        "demand_packaging"
+        "demand_packaging",
+        "demand_transport_near_term",
+        "demand_transport_structural"
       ],
       "side": "demand",
       "source": "GlobeNewswire",
       "title": "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand - GlobeNewswire",
       "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPWXRjeVJNRThPTXVnWUtoZHhFWjFNZUFLaldnSzJSbXZDQWhoRFB2VjdocldkY0N3WTZIWTJPLURfUnFGQ0poQnhVZWJXUDFzUldJV3ZPYkhVTjFiZ1ZIT1l1SUpjZl9uXzRvNmxjTmpqRWZWejF2T3djODNJUDg2bmotc1VwcC1zUFp6UEM0dE5hbnkwZXlRVGpSYzRUTE52RmV1UGxvWE5TT0ZjQkF5Z3V0WUhYdkE1Wk5qaWNHd0kzbUhVSjkxVmFKZTVfSU9LczV6aTFtZWoxSGczSHp1aTJIekt2NW1hOEx3NFE5d2F2blZrWTJqeA?oc=5"
-    },
-    {
-      "description": "Ferrari and BMW join Tesla in shift from copper to aluminum wiring CBT News",
-      "factor_ids": [
-        "demand_transport_near_term"
-      ],
-      "factor_labels": [
-        "Transport production schedules"
-      ],
-      "horizon": "short",
-      "impact": "watch",
-      "market_read": "watch; 0-3 month demand; matched the search topic.",
-      "matched_terms": [],
-      "published_at": "2026-06-30T15:36:21+00:00",
-      "query_factor_ids": [
-        "demand_transport_near_term"
-      ],
-      "side": "demand",
-      "source": "CBT News",
-      "title": "Ferrari and BMW join Tesla in shift from copper to aluminum wiring - CBT News",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5TUxPdlkzLXlNUzJwOTh4RXhYTXFUOTYyNEJFUElWdFhoUFZYaTJacC1jeWtrcS1tY2tKcTVnVkd2bElMSkFqcXpjbDFJWDhTQzdlejVGcWhIN0ZtTEhRWE5Fa2VzT2RnbXc?oc=5"
     },
     {
       "description": "Business, Conflict and Complicity: The Case of an Irish Alumina Factory Global Rights Compliance",
@@ -1806,27 +1798,6 @@
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQdTY1T1dLWDhySnBGcW5fbF9EUUdXM3FTWEdoR0ltSE56TW1YTTJUaVc1d0YtblNueUs1WnVwYms3bERQdmdTMFJ4Q1BZZWhLaXRZb08xd1ZDSXl5Q3RMUkFvTVp1UVNTMWN6cGFMcDVoNFRTZjF0bzExSWYwb3FNRUQyV2ZBdHN1aHE5eTRPdkFRUE9jQ1JUSjh1Q0RYOFJkaHA3SFFEQkF4UHZJbi0wS1gyUGNsbmt6QkR6V19TZFFiYVlwRlc2ZGRaYkczSDVj?oc=5"
     },
     {
-      "description": "Kaiser Aluminum Corporation Publishes 2025 Sustainability Report Business Wire",
-      "factor_ids": [
-        "supply_carbon_policy_energy_mix"
-      ],
-      "factor_labels": [
-        "Carbon policy and long-term energy mix"
-      ],
-      "horizon": "long",
-      "impact": "watch",
-      "market_read": "watch; 3+ month supply; matched the search topic.",
-      "matched_terms": [],
-      "published_at": "2026-06-29T20:30:00+00:00",
-      "query_factor_ids": [
-        "supply_carbon_policy_energy_mix"
-      ],
-      "side": "supply",
-      "source": "Business Wire",
-      "title": "Kaiser Aluminum Corporation Publishes 2025 Sustainability Report - Business Wire",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQeGVoU3BwaUFZdmkwTkZUWnIteWRHSUZta0NjZjVVWjNtQ01ENVA2NG00RHdUMFFSSndPSHhFcmlOSWxnNDRlalVjLUxUMDFjMVhVdU52WTRpQlIzUkkxZzlfYmg0Ynh3RFlWdGU5dklwajNQdkZsUTlyYWZBNXdvZ1RhV2I0aURNS0FUbS16cExYZ3puN3RQc2NyWmVERy1Ya0hxUlFKOThzR1FiZDFpYjlTbzduUTZyS0ktaFBn?oc=5"
-    },
-    {
       "description": "Aluminium, Brass, Copper or Stainless Steel? London Metal Store's Guide to Choosing the Right Metal for Your Project The Manila Times",
       "factor_ids": [
         "demand_trade_restocking"
@@ -1961,29 +1932,6 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOFk2QUxOb0NndUJGN00yTUtreWh4cmwtNFFrdUZlWXkyLVZ1QjJ3Zm83RzJUMjZzOWlXWDR3ZTJ4S3R3Z05LM2FNWjJGNjRvWm52bG16SlNieGlPcWpEQ29Fc0tvaThrejc1cjgxd3A5T2FRQmtTcnU5NWwxUGdBR1l3UXhHNVMwdzhJblk5SzZEaTlPUTFTSHphOFNBQjkwS2VoV2JLVUFqV2x1MmlRb1FPSktKN3hZc2FlSGxTQQ?oc=5"
     },
     {
-      "description": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity CXO Digitalpulse",
-      "factor_ids": [
-        "demand_trade_restocking"
-      ],
-      "factor_labels": [
-        "Trade flows and restocking"
-      ],
-      "horizon": "short",
-      "impact": "watch",
-      "market_read": "watch; 0-3 month demand; matched global trade.",
-      "matched_terms": [
-        "global trade"
-      ],
-      "published_at": "2026-06-29T07:33:22+00:00",
-      "query_factor_ids": [
-        "demand_trade_restocking"
-      ],
-      "side": "demand",
-      "source": "CXO Digitalpulse",
-      "title": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity - CXO Digitalpulse",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWkpwWjNpaXBMNTRLSlV1dnJXaVRDQ2l3Vk1PWDdJUVR0d3JCVzZzRUkyNmVxRDZ5QTcyWEF0UV9TOEhQZHdUaVpnYjRmaFNqRHlGbjNLR1VLQm1MeHdsTFJtX1lTZ21zX3NNOWI1WW5VNE1zQWVrMUFkNUs3Y09OTDgzT1l4c1RDLVk1Z0c3eUZsU3J5MHIwcTNuUHBicEk2UnVZZHVlYlJEU3M?oc=5"
-    },
-    {
       "description": "Emirates Global Aluminum (EGA) has officially inaugurated its aluminum SMM Metal",
       "factor_ids": [
         "supply_recycling_capacity"
@@ -2114,6 +2062,27 @@
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNME43Z0pOQ3FydDMtVURmYmRtbjBKa0NtQkJjZVUxLU44U3ktNlktUUdEQTBwaVpGSnFCbzJRRXZ0bU4wdVZWWHk3T29JU0J3U3Buempjc1JqMGFPdVVVX3FWMlpDM1Q4dHphSlN1RWhZa0phYU9BWmFSSjBBZnI3bXlVWlB2SFl3bXh1eHFwV0ViNEVFODlGM1A2dGxkN2RNZXN5aWMyMXBkR0VBVVJkU0VFcHhKMUl4Qk9jb0wyVWdrd9IBygFBVV95cUxOX21xb1Q0al93Y0pVYTdQX1NMTVp3SG1iTDJEYXE5RGg3RXRmVmZncWVkQnBBc2thVlJjLVRtVHJrandNODc4clFQRlZiTzV4blA3MnBDYlZOOHhZQW5ZYUFaa0VzWi01ZEpmM3VaMXFMWnU2OS0tYTc2OGVIZHk3ZEFpNVZZUVlwT29DdmxoRXQwNkpDbjRTZDdMN0NJbDB2LXFZTWFwVlVxT2RTNGV6ZWY2bDZlcmxlblM0YUtDVkJvTjl2TDVib2Vn?oc=5"
     },
     {
+      "description": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR) Fathom Journal",
+      "factor_ids": [
+        "demand_trade_restocking"
+      ],
+      "factor_labels": [
+        "Trade flows and restocking"
+      ],
+      "horizon": "short",
+      "impact": "watch",
+      "market_read": "watch; 0-3 month demand; matched the search topic.",
+      "matched_terms": [],
+      "published_at": "2026-06-27T08:09:55+00:00",
+      "query_factor_ids": [
+        "demand_trade_restocking"
+      ],
+      "side": "demand",
+      "source": "Fathom Journal",
+      "title": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR) - Fathom Journal",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE81QUpudTVxMndGdXJQWWNKOXlBMlIwN3hmV3JmVGxCUDFNNUp0aGxUUUd4eUFCM0x4Ym1lTGVvTXpvTWIyU0ZYUW4teWVGVEg5YXRnb3hMeExYMmk5bVFNNmlDYTQ?oc=5"
+    },
+    {
       "description": "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD) simplywall.st",
       "factor_ids": [
         "demand_housing_infrastructure_pipeline"
@@ -2181,10 +2150,12 @@
     {
       "description": "EU plans 15% tax on aluminium scrap exports Financial Times",
       "factor_ids": [
-        "supply_scrap_secondary"
+        "supply_scrap_secondary",
+        "supply_inventories"
       ],
       "factor_labels": [
-        "Scrap and secondary aluminium flows"
+        "Scrap and secondary aluminium flows",
+        "Exchange and visible inventories"
       ],
       "horizon": "short",
       "impact": "watch",
@@ -2194,6 +2165,7 @@
       ],
       "published_at": "2026-06-26T13:28:02+00:00",
       "query_factor_ids": [
+        "supply_inventories",
         "supply_scrap_secondary"
       ],
       "side": "supply",
@@ -2312,29 +2284,6 @@
       "source": "Recycling International",
       "title": "Dubai: four-month ban on metal scrap exports - Recycling International",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcE1pZGVLNEtJQVREdERLTFY0NHBySHR3ZlF4TlhfVWZHaXd2dHAtenhTZ0RWbk9pbXpjQjh0SFFSNTUxUWNyTFMxTHlsWDBlbDRDOXNTb0pqRVlHUm5QN2xmaDZKZE9tTjQ1OU1aSEZvdFVub2xDQjZSdmhHRnR1SEdsMVliMkJEQ3liMlExNklUWUM2T1ozLU9zNjNzME9iWVlabXFDWmNXOGw2?oc=5"
-    },
-    {
-      "description": "SupraMarine project to connect distant offshore wind farms to land with superconducting system Engineer Live",
-      "factor_ids": [
-        "demand_grid_renewables"
-      ],
-      "factor_labels": [
-        "Grid expansion and renewables buildout"
-      ],
-      "horizon": "long",
-      "impact": "watch",
-      "market_read": "watch; 3+ month demand; matched wind.",
-      "matched_terms": [
-        "wind"
-      ],
-      "published_at": "2026-06-25T15:52:22+00:00",
-      "query_factor_ids": [
-        "demand_grid_renewables"
-      ],
-      "side": "demand",
-      "source": "Engineer Live",
-      "title": "SupraMarine project to connect distant offshore wind farms to land with superconducting system - Engineer Live",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNUdSOXdpVTViZHkxc2NqZkdnTGhZWGNMenBiNHdpZlZWR0tqbU1qSVRDVVJDRVI2ZXNqT0lwT2VCRlpRVnIwNk5VaUw0c1MtVEJzTDcxT3ozc0Zodkd2WF9BbGQ3Yjd4dDJ0T05UMXpVRWI3YUNZZ2N2VXE2OWFYMy1QVXRycHZOc1YwVVU3UTZnSm9Rc1B1N1RCU2E2cWVrWVNUVVVWTVZQdWNURWc?oc=5"
     },
     {
       "description": "Supports the circular economy. Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
@@ -2474,27 +2423,6 @@
       "source": "EUWID Recycling and Waste Management",
       "title": "German non-ferrous prices edge lower in volatile market - EUWID Recycling and Waste Management",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbGt6ZkV4bTctN0FuQ0hZYTNxVnUzMTZjMTJaTkpWZXlVeE4ySkpxOC1IMHRSbmFZQldJc0dSLU92YTlLdmdiNDE1Q2ViVkdRNXJyVm5UUEE4MDJ2eXp3V0ZId1BlRjBrVXlxUkZQdExUZ0xzUW1WbmtXZEQtSmVEMDZvTkNoeWQ2WnZ0enFwNUVNbk5iQndKSzVyQ0FQMWE1OGlUMlBUYUpycWVS?oc=5"
-    },
-    {
-      "description": "Exclusive: ISTIM slowing metal flow out of its LME warehouses - sources Yahoo Finance Singapore",
-      "factor_ids": [
-        "supply_inventories"
-      ],
-      "factor_labels": [
-        "Exchange and visible inventories"
-      ],
-      "horizon": "short",
-      "impact": "watch",
-      "market_read": "watch; 0-3 month supply; matched the search topic.",
-      "matched_terms": [],
-      "published_at": "2026-06-25T02:34:00+00:00",
-      "query_factor_ids": [
-        "supply_inventories"
-      ],
-      "side": "supply",
-      "source": "Yahoo Finance Singapore",
-      "title": "Exclusive: ISTIM slowing metal flow out of its LME warehouses - sources - Yahoo Finance Singapore",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVnI5WEdNa1F5aEpmOG02bnVjZ2x3X09nNWZwenJOMjV2bVVOZUhnbjVTbW9LV2w3NFNJbEJUNmFzTndLWDIwTHZXaXIyS3ZpQ2FkaVQ2c2NEOWFwSjNaandMaHNTNTdzYmNGVVlwWnFOOU9rbWtjdGlxSV9tc1Y2VWJZTmNOLWxiQkZOTmpfZWFoY0FtTVlWOWoxcDV5Z2J3VURtUVpOODU3YzY2VlJaaDduSUJadw?oc=5"
     },
     {
       "description": "185,000 tonnes of change: EGA opens UAE\u2019s largest aluminium recycling plant to power circular economy Gulf Business",
@@ -2937,15 +2865,17 @@
           "details": [],
           "factor_ids": [
             "supply_smelter_operations",
+            "supply_carbon_policy_energy_mix",
             "demand_macro_manufacturing",
             "supply_trade_policy"
           ],
           "factor_labels": [
             "Smelter outages, restarts, and curtailments",
+            "Carbon policy and long-term energy mix",
             "Manufacturing and industrial activity",
             "Tariffs, sanctions, and export controls"
           ],
-          "horizon": "short",
+          "horizon": "mixed",
           "id": "auto_missouri_smelter_restart_announced_missouri_smelter_restart",
           "impact": "supply easing",
           "matched_terms": [
@@ -3281,34 +3211,6 @@
           "title": "Destocking acceleration provides support, export concerns limit rebound space"
         },
         {
-          "details": [],
-          "factor_ids": [
-            "demand_trade_restocking"
-          ],
-          "factor_labels": [
-            "Trade flows and restocking"
-          ],
-          "horizon": "short",
-          "id": "auto_india_esg_advantage_turning_csrd_cbam_trade",
-          "impact": "watch",
-          "matched_terms": [
-            "global trade"
-          ],
-          "published_at": "2026-06-29T07:33:22+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-06-29T07:33:22+00:00",
-              "source": "CXO Digitalpulse",
-              "title": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity - CXO Digitalpulse",
-              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWkpwWjNpaXBMNTRLSlV1dnJXaVRDQ2l3Vk1PWDdJUVR0d3JCVzZzRUkyNmVxRDZ5QTcyWEF0UV9TOEhQZHdUaVpnYjRmaFNqRHlGbjNLR1VLQm1MeHdsTFJtX1lTZ21zX3NNOWI1WW5VNE1zQWVrMUFkNUs3Y09OTDgzT1l4c1RDLVk1Z0c3eUZsU3J5MHIwcTNuUHBicEk2UnVZZHVlYlJEU3M?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity"
-        },
-        {
           "details": [
             "Global Economics Intelligence executive summary (May 2026)"
           ],
@@ -3335,6 +3237,32 @@
           "source_count": 1,
           "summary": "",
           "title": "Global Economics Intelligence executive summary (May 2026)"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "demand_trade_restocking"
+          ],
+          "factor_labels": [
+            "Trade flows and restocking"
+          ],
+          "horizon": "short",
+          "id": "auto_trump_new_tariff_cut_guyana_hikqlefucr_trump",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-06-27T08:09:55+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-06-27T08:09:55+00:00",
+              "source": "Fathom Journal",
+              "title": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR) - Fathom Journal",
+              "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE81QUpudTVxMndGdXJQWWNKOXlBMlIwN3hmV3JmVGxCUDFNNUp0aGxUUUd4eUFCM0x4Ym1lTGVvTXpvTWIyU0ZYUW4teWVGVEg5YXRnb3hMeExYMmk5bVFNNmlDYTQ?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR)"
         }
       ]
     },
@@ -3658,7 +3586,7 @@
         "SHFE stocks",
         "bonded stocks"
       ],
-      "section_summary": "Scanned 7 grouped signals from 7 source articles. 1 signal flagged demand downside. Latest themes: Aluminium billet inventory falls to 130,000mt, warehouse withdrawals rebound...; Honda CR-V overtakes Ford F-150 in midyear U.S. sales.",
+      "section_summary": "Scanned 7 grouped signals from 7 source articles. 1 signal flagged demand downside. Latest themes: Aluminium billet inventory falls to 130,000mt, warehouse withdrawals rebound...; Expectations for US Fed Rate Hikes Delayed, Aluminum Prices' Short-Term Weakness Hard....",
       "side": "supply",
       "signal_count": 7,
       "signals": [
@@ -3696,6 +3624,32 @@
           "title": "Aluminium billet inventory falls to 130,000mt, warehouse withdrawals rebound, processing fees soften"
         },
         {
+          "details": [],
+          "factor_ids": [
+            "supply_inventories"
+          ],
+          "factor_labels": [
+            "Exchange and visible inventories"
+          ],
+          "horizon": "short",
+          "id": "auto_expectations_us_fed_rate_hikes_delayed_prices",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-03T01:53:38+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-07-03T01:53:38+00:00",
+              "source": "SMM Metal",
+              "title": "Expectations for US Fed Rate Hikes Delayed, Aluminum Prices' Short-Term Weakness Hard to Break [SMM Aluminum Morning Meeting Summary] - SMM Metal",
+              "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxON2l1a01OalIwbVJTQVVsbVRhbXoxSHU4dzUwQW56ZHJjcXQtTDloa1liQmZwbTFITG1OUlFONmlrNlVxN1hwS05DNHl3YW9GdC1yNHo0Uk9PLUtKMW9rd2Vnb1lNVUo0cGQ0Rlg5MTlvTXlXM1RmV3MyN1BVQnVIRHVZYTlzOXg3N0tWV3dPcVhleGZrS2ZTQlc1bTJZVU5mMDlSQVJMLVQ3U3RTTW54eGZhZnY3M2pQUXl4NmlPSkxhekh4VXZpbmduN01wdkhzSkxMTmlvNjA3SGhnSzJCM2g5ZXl4QkR1V2ZLLVcxZVV0YXVzX25B?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Expectations for US Fed Rate Hikes Delayed, Aluminum Prices' Short-Term Weakness Hard to Break [SMM Aluminum Morning Meeting Summary]"
+        },
+        {
           "details": [
             "Honda CR-V overtakes Ford F-150 in midyear U.S."
           ],
@@ -3722,34 +3676,6 @@
           "source_count": 1,
           "summary": "",
           "title": "Honda CR-V overtakes Ford F-150 in midyear U.S. sales"
-        },
-        {
-          "details": [
-            "LME metals whipsawed by war and peace in first half of 2026"
-          ],
-          "factor_ids": [
-            "supply_inventories"
-          ],
-          "factor_labels": [
-            "Exchange and visible inventories"
-          ],
-          "horizon": "short",
-          "id": "auto_2026_2026_lme_metals_whipsawed_by_war_peace_in",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-07-02T13:45:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-07-02T13:45:00+00:00",
-              "source": "Reuters",
-              "title": "LME metals whipsawed by war and peace in first half of 2026 - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONnpZQjdPMnRxa3Z1cERaLWo2c2t2SUFYQldzNjZNVGhkb3Blb3NWbEoySUxmQ29vbjE3REhwRzhPNDNqeHFIaHlTQVhlR0l4MVk0bE5tZmtGdlBuVVhLdXV5a1c1dUs3NmUyd3hWSUdsVmlyUXVBRFFzTm9VbFN2eDk4aHdyTXl6a1BJTXd3eU5CRVQxaUNoQkVBZHlMNlNWRnJiczR1cHFDd3dvU3ZPWXVpMUNoZl9yZkE?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "LME metals whipsawed by war and peace in first half of 2026"
         },
         {
           "details": [
@@ -3835,30 +3761,36 @@
           "title": "LME aluminium price graph: Aluminium prices remain largely stable as warehouse inventories continue to decline"
         },
         {
-          "details": [],
+          "details": [
+            "EU plans 15% tax on aluminium scrap exports"
+          ],
           "factor_ids": [
+            "supply_scrap_secondary",
             "supply_inventories"
           ],
           "factor_labels": [
+            "Scrap and secondary aluminium flows",
             "Exchange and visible inventories"
           ],
           "horizon": "short",
-          "id": "auto_exclusive_istim_slowing_metal_flow_out_of",
+          "id": "auto_15_15_eu_plans_tax_on_scrap_exports_eu",
           "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-25T02:34:00+00:00",
+          "matched_terms": [
+            "scrap"
+          ],
+          "published_at": "2026-06-26T13:28:02+00:00",
           "side": "supply",
           "source_articles": [
             {
-              "published_at": "2026-06-25T02:34:00+00:00",
-              "source": "Yahoo Finance Singapore",
-              "title": "Exclusive: ISTIM slowing metal flow out of its LME warehouses - sources - Yahoo Finance Singapore",
-              "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVnI5WEdNa1F5aEpmOG02bnVjZ2x3X09nNWZwenJOMjV2bVVOZUhnbjVTbW9LV2w3NFNJbEJUNmFzTndLWDIwTHZXaXIyS3ZpQ2FkaVQ2c2NEOWFwSjNaandMaHNTNTdzYmNGVVlwWnFOOU9rbWtjdGlxSV9tc1Y2VWJZTmNOLWxiQkZOTmpfZWFoY0FtTVlWOWoxcDV5Z2J3VURtUVpOODU3YzY2VlJaaDduSUJadw?oc=5"
+              "published_at": "2026-06-26T13:28:02+00:00",
+              "source": "Financial Times",
+              "title": "EU plans 15% tax on aluminium scrap exports - Financial Times",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVEFZeXlfSU1ucWswSU1QMlpEZ09VMTlmei1JT2EwMXBWSHdpQ2QwdXpRR1NHbWhuRF9zR2ZQUnpOZUdYZmJBRWg3VFpLcFF5RTZPWEpNbXBQZU14Q2NLaTBtcmotdHVXNWI3WEdldDZUcHRIWWdzQjZkejBZbXlNbnROVVE?oc=5"
             }
           ],
           "source_count": 1,
           "summary": "",
-          "title": "Exclusive: ISTIM slowing metal flow out of its LME warehouses - sources"
+          "title": "EU plans 15% tax on aluminium scrap exports"
         }
       ]
     },
@@ -3882,10 +3814,40 @@
         "transmission additions",
         "solar and wind installations"
       ],
-      "section_summary": "Scanned 7 grouped signals from 7 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Appleton Peace Pole, wind sculptures planned for Ellen Kort Peace Park; German scientists proposed producing new solar panels using recycled components.",
+      "section_summary": "Scanned 7 grouped signals from 7 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: America just switched on a 5-gigawatt plant in Georgia that strips old solar panels...; Appleton Peace Pole, wind sculptures planned for Ellen Kort Peace Park.",
       "side": "demand",
       "signal_count": 7,
       "signals": [
+        {
+          "details": [
+            "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels"
+          ],
+          "factor_ids": [
+            "demand_grid_renewables"
+          ],
+          "factor_labels": [
+            "Grid expansion and renewables buildout"
+          ],
+          "horizon": "long",
+          "id": "auto_5_5_america_just_switched_on_gigawatt_plant_in",
+          "impact": "watch",
+          "matched_terms": [
+            "solar"
+          ],
+          "published_at": "2026-07-01T14:30:37+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-07-01T14:30:37+00:00",
+              "source": "Autonocion.com",
+              "title": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels - Autonocion.com",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TaVU0cHN2RkFtejRmVUtYYmJwWGdOTkZPNmFJcXVOYm1weXVsSWNOSDdCc2hlNFo1cXFodnZnQ1hraXdEQVNzUEEyOVl5b0pkRi1YdUdDb1dnSVlxMFBBWDJlU2xTV2h4TjZvemVnNGY?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels"
+        },
         {
           "details": [],
           "factor_ids": [
@@ -3941,34 +3903,6 @@
           "source_count": 1,
           "summary": "",
           "title": "German scientists proposed producing new solar panels using recycled components"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_grid_renewables"
-          ],
-          "factor_labels": [
-            "Grid expansion and renewables buildout"
-          ],
-          "horizon": "long",
-          "id": "auto_supramarine_project_to_connect_distant_offshore_wind",
-          "impact": "watch",
-          "matched_terms": [
-            "wind"
-          ],
-          "published_at": "2026-06-25T15:52:22+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-06-25T15:52:22+00:00",
-              "source": "Engineer Live",
-              "title": "SupraMarine project to connect distant offshore wind farms to land with superconducting system - Engineer Live",
-              "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNUdSOXdpVTViZHkxc2NqZkdnTGhZWGNMenBiNHdpZlZWR0tqbU1qSVRDVVJDRVI2ZXNqT0lwT2VCRlpRVnIwNk5VaUw0c1MtVEJzTDcxT3ozc0Zodkd2WF9BbGQ3Yjd4dDJ0T05UMXpVRWI3YUNZZ2N2VXE2OWFYMy1QVXRycHZOc1YwVVU3UTZnSm9Rc1B1N1RCU2E2cWVrWVNUVVVWTVZQdWNURWc?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "SupraMarine project to connect distant offshore wind farms to land with superconducting system"
         },
         {
           "details": [],
@@ -4111,10 +4045,12 @@
             "Nikon SLM and Bosch print complete V8 engine block as single aluminum part"
           ],
           "factor_ids": [
-            "demand_macro_manufacturing"
+            "demand_macro_manufacturing",
+            "demand_transport_near_term"
           ],
           "factor_labels": [
-            "Manufacturing and industrial activity"
+            "Manufacturing and industrial activity",
+            "Transport production schedules"
           ],
           "horizon": "short",
           "id": "auto_nikon_slm_bosch_print_complete_v8_engine",
@@ -4166,15 +4102,17 @@
           "details": [],
           "factor_ids": [
             "supply_smelter_operations",
+            "supply_carbon_policy_energy_mix",
             "demand_macro_manufacturing",
             "supply_trade_policy"
           ],
           "factor_labels": [
             "Smelter outages, restarts, and curtailments",
+            "Carbon policy and long-term energy mix",
             "Manufacturing and industrial activity",
             "Tariffs, sanctions, and export controls"
           ],
-          "horizon": "short",
+          "horizon": "mixed",
           "id": "auto_missouri_smelter_restart_announced_missouri_smelter_restart",
           "impact": "supply easing",
           "matched_terms": [
@@ -4314,233 +4252,6 @@
           "source_count": 1,
           "summary": "",
           "title": "Steel, aluminum makers face records gauntlet for new US tariff breaks"
-        }
-      ]
-    },
-    {
-      "article_count": 8,
-      "horizon": "long",
-      "id": "supply_recycling_capacity",
-      "keywords": [
-        "recycling plant",
-        "recycling capacity",
-        "scrap processing",
-        "closed loop",
-        "collection rate",
-        "secondary capacity"
-      ],
-      "label": "Recycling infrastructure and scrap processing",
-      "metrics": [
-        "recycling capacity",
-        "scrap processing capacity",
-        "collection rates"
-      ],
-      "section_summary": "Scanned 7 grouped signals from 8 source articles. 1 signal flagged supply easing. Latest themes: EGA opens aluminium recycling capacity in the UAE; Emirates Global Aluminum (EGA) has officially inaugurated its aluminum.",
-      "side": "supply",
-      "signal_count": 7,
-      "signals": [
-        {
-          "details": [
-            "Emirates Global Aluminium Opens 185,000-Tonne Recycling Plant in Al Taweelah"
-          ],
-          "factor_ids": [
-            "supply_recycling_capacity"
-          ],
-          "factor_labels": [
-            "Recycling infrastructure and scrap processing"
-          ],
-          "horizon": "long",
-          "id": "ega_aluminium_recycling_plant",
-          "impact": "supply easing",
-          "matched_terms": [
-            "recycling",
-            "recycling plant"
-          ],
-          "published_at": "2026-07-01T09:02:16+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-07-01T09:02:16+00:00",
-              "source": "Packaging Insights",
-              "title": "Emirates Global Aluminium opens recycling plant after US-Iran war disruption - Packaging Insights",
-              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1DSUZKaWR6enU3NTRYd29VaDdYLVdMS0s2UnZxdi02eWM0OThvRzNMRUZfcjBiQXkyMTM4S1ppdXpaakJGVDNBYUhLSnE4bUhuOXBpdk80c2lyWU92dUprblZOQ0NIQW81eEREMkZBLWVDWWJMaTVoMHZOc0M?oc=5"
-            },
-            {
-              "published_at": "2026-06-29T10:31:00+00:00",
-              "source": "IndexBox",
-              "title": "Emirates Global Aluminium Opens 185,000-Tonne Recycling Plant in Al Taweelah - News and Statistics - IndexBox",
-              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTVZEd2lJYmlDb3dfM0M3VUtINGtBMXhBS29CcldCZWZjNkhwME5nU3E2aVk3MG5iN1BoclV6azdxMXhkcWxONTZIQXljOVdXbm5HT2dkc00yVXVOVFdsX09KTHVtRFJrUGtfREREa2pNb1hOb21DWmczN3o3UDBxMnJlYzItWnVtTXZHWENjOV84WFBuQzUwX3hVbDY1N2UtbERr?oc=5"
-            }
-          ],
-          "source_count": 2,
-          "summary": "Additional recycling capacity increases longer-term secondary aluminium supply.",
-          "title": "EGA opens aluminium recycling capacity in the UAE"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "supply_recycling_capacity"
-          ],
-          "factor_labels": [
-            "Recycling infrastructure and scrap processing"
-          ],
-          "horizon": "long",
-          "id": "auto_emirates_ega_has_officially_inaugurated_its_emirates",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-29T02:35:49+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-29T02:35:49+00:00",
-              "source": "SMM Metal",
-              "title": "Emirates Global Aluminum (EGA) has officially inaugurated its aluminum - SMM Metal",
-              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxORXZlQnc5NGx0c1ptSi1LUXFsOHhQbXRoSVZyQlVSaFQtVTQwT19XZWcySkFaZTdRcERkUFJPRUpiZEhkbFdlMVNIRGJ5SU1Yall5aU0taWVCdWNZQmRwa2hhY2lPbXhqcXBNTnowYVA4ZjJ3WWwyZE0wYTVLNG5XeDY2RW9HWWRIMkJrWUhFemFBaXlnRjlSUUNtNkdaYVFvREhxVmlnaXZ5SWJ6Q25KZ0ItQXhaeGJIYzhSQkt2UnJ0aG5HT2VlNVFOU1J5UnhPTW1sVkRSSUZTbEZ1WjBOTV9DTGI?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Emirates Global Aluminum (EGA) has officially inaugurated its aluminum"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "supply_recycling_capacity"
-          ],
-          "factor_labels": [
-            "Recycling infrastructure and scrap processing"
-          ],
-          "horizon": "long",
-          "id": "auto_arizona_ag_benson_beat_big_corporation_recycler",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-27T15:41:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-27T15:41:00+00:00",
-              "source": "The Cool Down",
-              "title": "Arizona AG says Benson 'beat a big corporation' after aluminum recycler walks away - The Cool Down",
-              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVjZXSHpqVWM3Mm54TDdadDVtQ196THhtTzV3emRUTlZ4dGhwYUVoZGowT0FfSU1jclVTUXFFemtRenJLZkY5akt3YndMSnk2Q0NmYXJ3dHhvMmkwbmJqY05iYjYzdzN4eHQ3eG84MjVhR2dENl9SdzkzeG03RGNtUXdjTW1zZ04zMXBhUTFEbGpjV1k3a2c?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Arizona AG says Benson 'beat a big corporation' after aluminum recycler walks away"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "supply_recycling_capacity"
-          ],
-          "factor_labels": [
-            "Recycling infrastructure and scrap processing"
-          ],
-          "horizon": "long",
-          "id": "auto_uae_opens_largest_recycling_plant_to_drive",
-          "impact": "watch",
-          "matched_terms": [
-            "recycling plant"
-          ],
-          "published_at": "2026-06-26T04:05:47+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-26T04:05:47+00:00",
-              "source": "middle-east-online.com",
-              "title": "UAE opens largest aluminium recycling plant to drive circular economy - middle-east-online.com",
-              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY2c3d2ZUcFRCVzJOaEJ4SmtFcU1mVVQtUUpzWEtQeVZpd3BCeEo4SV9pWmZKMlZrRGg2MWxhcHd6QnM1T1F1UXlhcHBjcUZFZkhNM0RiS3ZsNE56UlVrV2d4T1otZUgxQjd3SzMxbnRMcUlTcFB2dDBMQ21fNVRmaFBGYjhXM3VKaU4xNVJadXB4cWd0R1J3bVlsZ1BMekRnT3c?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "UAE opens largest aluminium recycling plant to drive circular economy"
-        },
-        {
-          "details": [
-            "Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually"
-          ],
-          "factor_ids": [
-            "supply_recycling_capacity"
-          ],
-          "factor_labels": [
-            "Recycling infrastructure and scrap processing"
-          ],
-          "horizon": "long",
-          "id": "auto_185_185_supports_circular_economy_emirates_launches_recycling_plant",
-          "impact": "watch",
-          "matched_terms": [
-            "recycling plant"
-          ],
-          "published_at": "2026-06-25T09:25:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-25T09:25:00+00:00",
-              "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
-              "title": "Supports the circular economy. Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually - \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
-              "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPOEcyXzFYYmdZeFgta0tLeWJVT3FjaC05LVZ4NmZNd1hwVDBwOF83VlJhcmxwak1lZ3RfQ0FkcWZiTXNfUDdvMHdMczBrSHpXU3dmZDhQS1E5R29pVzQtLU01R2lIV05CNnltWkk4dF9sbjhnRzVUUGlrc0M4MWNZQUR1RlljaWZZT2d4X2ZjNzVRUHM4aWFqdS01N2VxRUJ0YUplb2NobUFXMER2RlhfRzFESlRvRlk2R19JMjItN0t3Vy03bWxhYjNDUHBDYU1LdVhrRUFLVDFJbmtybVkzRmpIV3E2UGt5WGVZSjBPa2hPaENQTlAzLW9MSklJdHhHMkl0UHFPTQ?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Supports the circular economy. Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "supply_recycling_capacity"
-          ],
-          "factor_labels": [
-            "Recycling infrastructure and scrap processing"
-          ],
-          "horizon": "long",
-          "id": "auto_german_non_ferrous_prices_edge_lower_in",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-25T07:00:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-25T07:00:00+00:00",
-              "source": "EUWID Recycling and Waste Management",
-              "title": "German non-ferrous prices edge lower in volatile market - EUWID Recycling and Waste Management",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbGt6ZkV4bTctN0FuQ0hZYTNxVnUzMTZjMTJaTkpWZXlVeE4ySkpxOC1IMHRSbmFZQldJc0dSLU92YTlLdmdiNDE1Q2ViVkdRNXJyVm5UUEE4MDJ2eXp3V0ZId1BlRjBrVXlxUkZQdExUZ0xzUW1WbmtXZEQtSmVEMDZvTkNoeWQ2WnZ0enFwNUVNbk5iQndKSzVyQ0FQMWE1OGlUMlBUYUpycWVS?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "German non-ferrous prices edge lower in volatile market"
-        },
-        {
-          "details": [
-            "185,000 tonnes of change: EGA opens UAE\u2019s largest aluminium recycling plant to power circular economy"
-          ],
-          "factor_ids": [
-            "supply_recycling_capacity"
-          ],
-          "factor_labels": [
-            "Recycling infrastructure and scrap processing"
-          ],
-          "horizon": "long",
-          "id": "auto_185_000_tonnes_of_change_ega_opens_uae_largest",
-          "impact": "watch",
-          "matched_terms": [
-            "recycling plant"
-          ],
-          "published_at": "2026-06-24T15:52:18+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-24T15:52:18+00:00",
-              "source": "Gulf Business",
-              "title": "185,000 tonnes of change: EGA opens UAE\u2019s largest aluminium recycling plant to power circular economy - Gulf Business",
-              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQ2hlOGc2enZ0ZUZZVEdNMV8tOFdxQlh3SGQ3YlNYRFpvT3ZPTm5FUUhRbjE5OTY0c3NJVzllMmM0LVhlUFo3NmFhZURBeWZmaXpZQXJsUk9xNmt3YkNfUmhfNDNtWEg0TE5IcWtBY2hjOEFpeWV0Z1Z0YWdITTQ0S1diWDNGY1oxQ2NpblJXdWYyTGFtSlVxcmtpZC0xVUVyQmZyN1U0b0UyNzRIRDR2TjBXQUJrWWw5VzZoUEt6QjdCbEhWYkVJbzVIRzFTUQ?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "185,000 tonnes of change: EGA opens UAE\u2019s largest aluminium recycling plant to power circular economy"
         }
       ]
     },
@@ -4687,10 +4398,12 @@
             "EU plans 15% tax on aluminium scrap exports"
           ],
           "factor_ids": [
-            "supply_scrap_secondary"
+            "supply_scrap_secondary",
+            "supply_inventories"
           ],
           "factor_labels": [
-            "Scrap and secondary aluminium flows"
+            "Scrap and secondary aluminium flows",
+            "Exchange and visible inventories"
           ],
           "horizon": "short",
           "id": "auto_15_15_eu_plans_tax_on_scrap_exports_eu",
@@ -4792,10 +4505,40 @@
         "EV output",
         "aircraft deliveries"
       ],
-      "section_summary": "Scanned 7 grouped signals from 8 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Ford Q2 sales drop 10.3% due to F-Series supplier issue, falling EV demand; North American EV demand slows as hybrids gain momentum and automotive OEM strategies....",
+      "section_summary": "Scanned 7 grouped signals from 8 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Nikon SLM and Bosch print complete V8 engine block as single aluminum part; Ford Q2 sales drop 10.3% due to F-Series supplier issue, falling EV demand.",
       "side": "demand",
       "signal_count": 7,
       "signals": [
+        {
+          "details": [
+            "Nikon SLM and Bosch print complete V8 engine block as single aluminum part"
+          ],
+          "factor_ids": [
+            "demand_macro_manufacturing",
+            "demand_transport_near_term"
+          ],
+          "factor_labels": [
+            "Manufacturing and industrial activity",
+            "Transport production schedules"
+          ],
+          "horizon": "short",
+          "id": "auto_nikon_slm_bosch_print_complete_v8_engine",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-07-03T09:30:51+00:00",
+          "side": "demand",
+          "source_articles": [
+            {
+              "published_at": "2026-07-03T09:30:51+00:00",
+              "source": "VoxelMatters",
+              "title": "Nikon SLM and Bosch print complete V8 engine block as single aluminum part - VoxelMatters",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZmNNN1Z3MHgzTktEXzU2U0puZEkwVUJJMkZ1Rmk1Q3ZnQ2VmRWFJM2xzMWxhWXB4NlRmY2pCYm1DZlRVcTd6WnhOQUFkWjF0ME16OTBDMzQwNEtDQVhmNVRYZFlYZXowRFlndVV5TXlIb2ZiWnc0OXNwOGtybllZelFoTjVJcVY1SnpsSm5yUU15SGNDNFBCV3ZSMzlyejF0RjlnRnZLbWVNcFVW0gGsAUFVX3lxTFBmY003VncweDNOS0RfNTZTSm5kSTBVQkkyRnVGaTVDdmdDZWZFYUkzbHMxbGFZcHg2VGZjakJibUNmVFVxN3paeE5BQWRaMXQwTXo5MEMzNDA0S0NBWGY1VFhkWVhlejBEWWd1VXlNeUhvZmJadzQ5c3A4a3JuWVl6UWhONUlxVjVKemxKbnJRTXlIY0M0UEJXdlIzOXJ6MXRGOWdGdkttZU1wVVY?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Nikon SLM and Bosch print complete V8 engine block as single aluminum part"
+        },
         {
           "details": [
             "Ford Q2 sales drop 10.3% due to F-Series supplier issue, falling EV demand"
@@ -4853,58 +4596,38 @@
           "title": "North American EV demand slows as hybrids gain momentum and automotive OEM strategies reset"
         },
         {
-          "details": [],
+          "details": [
+            "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand"
+          ],
           "factor_ids": [
+            "demand_transport_near_term",
             "demand_transport_structural",
-            "demand_transport_near_term"
+            "demand_packaging"
           ],
           "factor_labels": [
+            "Transport production schedules",
             "EV, aircraft, and lightweighting trends",
-            "Transport production schedules"
+            "Packaging and beverage cans"
           ],
           "horizon": "mixed",
-          "id": "auto_automakers_shift_to_wiring_as_copper_prices",
+          "id": "auto_156.64_2030_rolled_products_to_hit_usd_billion_by",
           "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-30T19:22:37+00:00",
+          "matched_terms": [
+            "automotive"
+          ],
+          "published_at": "2026-06-30T15:46:45+00:00",
           "side": "demand",
           "source_articles": [
             {
-              "published_at": "2026-06-30T19:22:37+00:00",
-              "source": "Mexico Business News",
-              "title": "Automakers Shift to Aluminum Wiring as Copper Prices Rise - Mexico Business News",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPM3JrR3BZMXNwOE11el9ZQ1RSOUM4ZEdsMkdIVHhoRnRnVW96NmdSWmdGRV9HZy1kYzhneUV1dE02Z1Q4NFYwYktTSklFQ0stdzRHZDd0a3FLNlExME5aT0Z6ZWYzLWpDRHhFYWlRSC11QzZZblVsSlkybG9hTUNDaTducUVCWGdCSTBGb2ZKQVNCNlVsUEZWZGNpTQ?oc=5"
+              "published_at": "2026-06-30T15:46:45+00:00",
+              "source": "GlobeNewswire",
+              "title": "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand - GlobeNewswire",
+              "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPWXRjeVJNRThPTXVnWUtoZHhFWjFNZUFLaldnSzJSbXZDQWhoRFB2VjdocldkY0N3WTZIWTJPLURfUnFGQ0poQnhVZWJXUDFzUldJV3ZPYkhVTjFiZ1ZIT1l1SUpjZl9uXzRvNmxjTmpqRWZWejF2T3djODNJUDg2bmotc1VwcC1zUFp6UEM0dE5hbnkwZXlRVGpSYzRUTE52RmV1UGxvWE5TT0ZjQkF5Z3V0WUhYdkE1Wk5qaWNHd0kzbUhVSjkxVmFKZTVfSU9LczV6aTFtZWoxSGczSHp1aTJIekt2NW1hOEx3NFE5d2F2blZrWTJqeA?oc=5"
             }
           ],
           "source_count": 1,
           "summary": "",
-          "title": "Automakers Shift to Aluminum Wiring as Copper Prices Rise"
-        },
-        {
-          "details": [],
-          "factor_ids": [
-            "demand_transport_near_term"
-          ],
-          "factor_labels": [
-            "Transport production schedules"
-          ],
-          "horizon": "short",
-          "id": "auto_ferrari_bmw_join_tesla_in_shift_copper",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-30T15:36:21+00:00",
-          "side": "demand",
-          "source_articles": [
-            {
-              "published_at": "2026-06-30T15:36:21+00:00",
-              "source": "CBT News",
-              "title": "Ferrari and BMW join Tesla in shift from copper to aluminum wiring - CBT News",
-              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5TUxPdlkzLXlNUzJwOTh4RXhYTXFUOTYyNEJFUElWdFhoUFZYaTJacC1jeWtrcS1tY2tKcTVnVkd2bElMSkFqcXpjbDFJWDhTQzdlejVGcWhIN0ZtTEhRWE5Fa2VzT2RnbXc?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Ferrari and BMW join Tesla in shift from copper to aluminum wiring"
+          "title": "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand"
         },
         {
           "details": [],
@@ -5107,32 +4830,38 @@
           "title": "Aluminum\u2019s Ascent: Cost and Weight Advantages Drive Historic Shift Away from Copper in Auto Sector"
         },
         {
-          "details": [],
+          "details": [
+            "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand"
+          ],
           "factor_ids": [
+            "demand_transport_near_term",
             "demand_transport_structural",
-            "demand_transport_near_term"
+            "demand_packaging"
           ],
           "factor_labels": [
+            "Transport production schedules",
             "EV, aircraft, and lightweighting trends",
-            "Transport production schedules"
+            "Packaging and beverage cans"
           ],
           "horizon": "mixed",
-          "id": "auto_automakers_shift_to_wiring_as_copper_prices",
+          "id": "auto_156.64_2030_rolled_products_to_hit_usd_billion_by",
           "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-30T19:22:37+00:00",
+          "matched_terms": [
+            "automotive"
+          ],
+          "published_at": "2026-06-30T15:46:45+00:00",
           "side": "demand",
           "source_articles": [
             {
-              "published_at": "2026-06-30T19:22:37+00:00",
-              "source": "Mexico Business News",
-              "title": "Automakers Shift to Aluminum Wiring as Copper Prices Rise - Mexico Business News",
-              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPM3JrR3BZMXNwOE11el9ZQ1RSOUM4ZEdsMkdIVHhoRnRnVW96NmdSWmdGRV9HZy1kYzhneUV1dE02Z1Q4NFYwYktTSklFQ0stdzRHZDd0a3FLNlExME5aT0Z6ZWYzLWpDRHhFYWlRSC11QzZZblVsSlkybG9hTUNDaTducUVCWGdCSTBGb2ZKQVNCNlVsUEZWZGNpTQ?oc=5"
+              "published_at": "2026-06-30T15:46:45+00:00",
+              "source": "GlobeNewswire",
+              "title": "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand - GlobeNewswire",
+              "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPWXRjeVJNRThPTXVnWUtoZHhFWjFNZUFLaldnSzJSbXZDQWhoRFB2VjdocldkY0N3WTZIWTJPLURfUnFGQ0poQnhVZWJXUDFzUldJV3ZPYkhVTjFiZ1ZIT1l1SUpjZl9uXzRvNmxjTmpqRWZWejF2T3djODNJUDg2bmotc1VwcC1zUFp6UEM0dE5hbnkwZXlRVGpSYzRUTE52RmV1UGxvWE5TT0ZjQkF5Z3V0WUhYdkE1Wk5qaWNHd0kzbUhVSjkxVmFKZTVfSU9LczV6aTFtZWoxSGczSHp1aTJIekt2NW1hOEx3NFE5d2F2blZrWTJqeA?oc=5"
             }
           ],
           "source_count": 1,
           "summary": "",
-          "title": "Automakers Shift to Aluminum Wiring as Copper Prices Rise"
+          "title": "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand"
         },
         {
           "details": [],
@@ -5772,15 +5501,21 @@
             "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand"
           ],
           "factor_ids": [
+            "demand_transport_near_term",
+            "demand_transport_structural",
             "demand_packaging"
           ],
           "factor_labels": [
+            "Transport production schedules",
+            "EV, aircraft, and lightweighting trends",
             "Packaging and beverage cans"
           ],
-          "horizon": "short",
+          "horizon": "mixed",
           "id": "auto_156.64_2030_rolled_products_to_hit_usd_billion_by",
           "impact": "watch",
-          "matched_terms": [],
+          "matched_terms": [
+            "automotive"
+          ],
           "published_at": "2026-06-30T15:46:45+00:00",
           "side": "demand",
           "source_articles": [
@@ -6591,10 +6326,45 @@
         "emissions rules",
         "renewable power contracts"
       ],
-      "section_summary": "Scanned 4 grouped signals from 5 source articles. Most items are watchlist signals without a clear directional impact. Latest themes: Manufacturing Energy and Carbon Footprints (2018 MECS); Kaiser Aluminum expands recycling, cuts emissions by 17% in 2025 sustainability report.",
+      "section_summary": "Scanned 4 grouped signals from 5 source articles. 1 signal flagged supply easing. Latest themes: Missouri aluminum smelter restart announced; Manufacturing Energy and Carbon Footprints (2018 MECS).",
       "side": "supply",
       "signal_count": 4,
       "signals": [
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_smelter_operations",
+            "supply_carbon_policy_energy_mix",
+            "demand_macro_manufacturing",
+            "supply_trade_policy"
+          ],
+          "factor_labels": [
+            "Smelter outages, restarts, and curtailments",
+            "Carbon policy and long-term energy mix",
+            "Manufacturing and industrial activity",
+            "Tariffs, sanctions, and export controls"
+          ],
+          "horizon": "mixed",
+          "id": "auto_missouri_smelter_restart_announced_missouri_smelter_restart",
+          "impact": "supply easing",
+          "matched_terms": [
+            "restart",
+            "smelter"
+          ],
+          "published_at": "2026-07-02T08:21:00+00:00",
+          "side": "mixed",
+          "source_articles": [
+            {
+              "published_at": "2026-07-02T08:21:00+00:00",
+              "source": "Recycling Today",
+              "title": "Missouri aluminum smelter restart announced - Recycling Today",
+              "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPN3ZZM2JHWjFvY2wzZTlqcWlWdy1PUS1ScDF0WEFsUDc5SUtYdlpTeEVBYU1Ea1JiYTdZMWlMZDlWMElBcHIzU25JMDRzSkRxb0xacm4wQkVzNEtBSEk2bG5MRWtDTjdZMkZCN2szYXY5RUMwZjZYTFJ1RndCTy1CX3NTckoxdFRSVjJ0bFNDd1hzbHVVdFk1R0hNTmVEano3MHpsTmxOTFN0djVRRFc1cQ?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Missouri aluminum smelter restart announced"
+        },
         {
           "details": [
             "Manufacturing Energy and Carbon Footprints (2018 MECS)"
@@ -6688,34 +6458,6 @@
           "source_count": 2,
           "summary": "",
           "title": "Ferrari and BMW join Tesla, China in switch from copper to cheaper aluminium"
-        },
-        {
-          "details": [
-            "Kaiser Aluminum Corporation Publishes 2025 Sustainability Report"
-          ],
-          "factor_ids": [
-            "supply_carbon_policy_energy_mix"
-          ],
-          "factor_labels": [
-            "Carbon policy and long-term energy mix"
-          ],
-          "horizon": "long",
-          "id": "auto_2025_2025_kaiser_corporation_publishes_sustainability_report_kaiser_corporation",
-          "impact": "watch",
-          "matched_terms": [],
-          "published_at": "2026-06-29T20:30:00+00:00",
-          "side": "supply",
-          "source_articles": [
-            {
-              "published_at": "2026-06-29T20:30:00+00:00",
-              "source": "Business Wire",
-              "title": "Kaiser Aluminum Corporation Publishes 2025 Sustainability Report - Business Wire",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQeGVoU3BwaUFZdmkwTkZUWnIteWRHSUZta0NjZjVVWjNtQ01ENVA2NG00RHdUMFFSSndPSHhFcmlOSWxnNDRlalVjLUxUMDFjMVhVdU52WTRpQlIzUkkxZzlfYmg0Ynh3RFlWdGU5dklwajNQdkZsUTlyYWZBNXdvZ1RhV2I0aURNS0FUbS16cExYZ3puN3RQc2NyWmVERy1Ya0hxUlFKOThzR1FiZDFpYjlTbzduUTZyS0ktaFBn?oc=5"
-            }
-          ],
-          "source_count": 1,
-          "summary": "",
-          "title": "Kaiser Aluminum Corporation Publishes 2025 Sustainability Report"
         }
       ]
     },
@@ -6748,15 +6490,17 @@
           "details": [],
           "factor_ids": [
             "supply_smelter_operations",
+            "supply_carbon_policy_energy_mix",
             "demand_macro_manufacturing",
             "supply_trade_policy"
           ],
           "factor_labels": [
             "Smelter outages, restarts, and curtailments",
+            "Carbon policy and long-term energy mix",
             "Manufacturing and industrial activity",
             "Tariffs, sanctions, and export controls"
           ],
-          "horizon": "short",
+          "horizon": "mixed",
           "id": "auto_missouri_smelter_restart_announced_missouri_smelter_restart",
           "impact": "supply easing",
           "matched_terms": [
@@ -6876,6 +6620,144 @@
           "source_count": 2,
           "summary": "Restart news adds potential primary aluminium supply if power and operating economics hold.",
           "title": "Slovalco aluminium smelter moves toward partial restart"
+        }
+      ]
+    },
+    {
+      "article_count": 8,
+      "horizon": "long",
+      "id": "supply_recycling_capacity",
+      "keywords": [
+        "recycling plant",
+        "recycling capacity",
+        "scrap processing",
+        "closed loop",
+        "collection rate",
+        "secondary capacity"
+      ],
+      "label": "Recycling infrastructure and scrap processing",
+      "metrics": [
+        "recycling capacity",
+        "scrap processing capacity",
+        "collection rates"
+      ],
+      "section_summary": "Scanned 3 grouped signals from 8 source articles. 1 signal flagged supply easing. Latest themes: EGA opens aluminium recycling capacity in the UAE; Arizona AG says Benson 'beat a big corporation' after aluminum recycler walks away.",
+      "side": "supply",
+      "signal_count": 3,
+      "signals": [
+        {
+          "details": [
+            "Emirates Global Aluminium opened a UAE aluminium recycling plant reported at about 185,000 tonnes of annual capacity.",
+            "The project is described across sources as the UAE's largest aluminium recycling plant and a circular-economy capacity addition."
+          ],
+          "factor_ids": [
+            "supply_recycling_capacity"
+          ],
+          "factor_labels": [
+            "Recycling infrastructure and scrap processing"
+          ],
+          "horizon": "long",
+          "id": "ega_aluminium_recycling_plant",
+          "impact": "supply easing",
+          "matched_terms": [
+            "recycling",
+            "recycling plant"
+          ],
+          "published_at": "2026-07-01T09:02:16+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-07-01T09:02:16+00:00",
+              "source": "Packaging Insights",
+              "title": "Emirates Global Aluminium opens recycling plant after US-Iran war disruption - Packaging Insights",
+              "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1DSUZKaWR6enU3NTRYd29VaDdYLVdMS0s2UnZxdi02eWM0OThvRzNMRUZfcjBiQXkyMTM4S1ppdXpaakJGVDNBYUhLSnE4bUhuOXBpdk80c2lyWU92dUprblZOQ0NIQW81eEREMkZBLWVDWWJMaTVoMHZOc0M?oc=5"
+            },
+            {
+              "published_at": "2026-06-29T10:31:00+00:00",
+              "source": "IndexBox",
+              "title": "Emirates Global Aluminium Opens 185,000-Tonne Recycling Plant in Al Taweelah - News and Statistics - IndexBox",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTVZEd2lJYmlDb3dfM0M3VUtINGtBMXhBS29CcldCZWZjNkhwME5nU3E2aVk3MG5iN1BoclV6azdxMXhkcWxONTZIQXljOVdXbm5HT2dkc00yVXVOVFdsX09KTHVtRFJrUGtfREREa2pNb1hOb21DWmczN3o3UDBxMnJlYzItWnVtTXZHWENjOV84WFBuQzUwX3hVbDY1N2UtbERr?oc=5"
+            },
+            {
+              "published_at": "2026-06-29T02:35:49+00:00",
+              "source": "SMM Metal",
+              "title": "Emirates Global Aluminum (EGA) has officially inaugurated its aluminum - SMM Metal",
+              "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxORXZlQnc5NGx0c1ptSi1LUXFsOHhQbXRoSVZyQlVSaFQtVTQwT19XZWcySkFaZTdRcERkUFJPRUpiZEhkbFdlMVNIRGJ5SU1Yall5aU0taWVCdWNZQmRwa2hhY2lPbXhqcXBNTnowYVA4ZjJ3WWwyZE0wYTVLNG5XeDY2RW9HWWRIMkJrWUhFemFBaXlnRjlSUUNtNkdaYVFvREhxVmlnaXZ5SWJ6Q25KZ0ItQXhaeGJIYzhSQkt2UnJ0aG5HT2VlNVFOU1J5UnhPTW1sVkRSSUZTbEZ1WjBOTV9DTGI?oc=5"
+            },
+            {
+              "published_at": "2026-06-26T04:05:47+00:00",
+              "source": "middle-east-online.com",
+              "title": "UAE opens largest aluminium recycling plant to drive circular economy - middle-east-online.com",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY2c3d2ZUcFRCVzJOaEJ4SmtFcU1mVVQtUUpzWEtQeVZpd3BCeEo4SV9pWmZKMlZrRGg2MWxhcHd6QnM1T1F1UXlhcHBjcUZFZkhNM0RiS3ZsNE56UlVrV2d4T1otZUgxQjd3SzMxbnRMcUlTcFB2dDBMQ21fNVRmaFBGYjhXM3VKaU4xNVJadXB4cWd0R1J3bVlsZ1BMekRnT3c?oc=5"
+            },
+            {
+              "published_at": "2026-06-25T09:25:00+00:00",
+              "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+              "title": "Supports the circular economy. Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually - \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+              "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPOEcyXzFYYmdZeFgta0tLeWJVT3FjaC05LVZ4NmZNd1hwVDBwOF83VlJhcmxwak1lZ3RfQ0FkcWZiTXNfUDdvMHdMczBrSHpXU3dmZDhQS1E5R29pVzQtLU01R2lIV05CNnltWkk4dF9sbjhnRzVUUGlrc0M4MWNZQUR1RlljaWZZT2d4X2ZjNzVRUHM4aWFqdS01N2VxRUJ0YUplb2NobUFXMER2RlhfRzFESlRvRlk2R19JMjItN0t3Vy03bWxhYjNDUHBDYU1LdVhrRUFLVDFJbmtybVkzRmpIV3E2UGt5WGVZSjBPa2hPaENQTlAzLW9MSklJdHhHMkl0UHFPTQ?oc=5"
+            },
+            {
+              "published_at": "2026-06-24T15:52:18+00:00",
+              "source": "Gulf Business",
+              "title": "185,000 tonnes of change: EGA opens UAE\u2019s largest aluminium recycling plant to power circular economy - Gulf Business",
+              "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQ2hlOGc2enZ0ZUZZVEdNMV8tOFdxQlh3SGQ3YlNYRFpvT3ZPTm5FUUhRbjE5OTY0c3NJVzllMmM0LVhlUFo3NmFhZURBeWZmaXpZQXJsUk9xNmt3YkNfUmhfNDNtWEg0TE5IcWtBY2hjOEFpeWV0Z1Z0YWdITTQ0S1diWDNGY1oxQ2NpblJXdWYyTGFtSlVxcmtpZC0xVUVyQmZyN1U0b0UyNzRIRDR2TjBXQUJrWWw5VzZoUEt6QjdCbEhWYkVJbzVIRzFTUQ?oc=5"
+            }
+          ],
+          "source_count": 6,
+          "summary": "EGA's UAE recycling plant opening adds reported 185,000-tonne annual secondary aluminium capacity and supports longer-term circular supply.",
+          "title": "EGA opens aluminium recycling capacity in the UAE"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_recycling_capacity"
+          ],
+          "factor_labels": [
+            "Recycling infrastructure and scrap processing"
+          ],
+          "horizon": "long",
+          "id": "auto_arizona_ag_benson_beat_big_corporation_recycler",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-06-27T15:41:00+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-06-27T15:41:00+00:00",
+              "source": "The Cool Down",
+              "title": "Arizona AG says Benson 'beat a big corporation' after aluminum recycler walks away - The Cool Down",
+              "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVjZXSHpqVWM3Mm54TDdadDVtQ196THhtTzV3emRUTlZ4dGhwYUVoZGowT0FfSU1jclVTUXFFemtRenJLZkY5akt3YndMSnk2Q0NmYXJ3dHhvMmkwbmJqY05iYjYzdzN4eHQ3eG84MjVhR2dENl9SdzkzeG03RGNtUXdjTW1zZ04zMXBhUTFEbGpjV1k3a2c?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "Arizona AG says Benson 'beat a big corporation' after aluminum recycler walks away"
+        },
+        {
+          "details": [],
+          "factor_ids": [
+            "supply_recycling_capacity"
+          ],
+          "factor_labels": [
+            "Recycling infrastructure and scrap processing"
+          ],
+          "horizon": "long",
+          "id": "auto_german_non_ferrous_prices_edge_lower_in",
+          "impact": "watch",
+          "matched_terms": [],
+          "published_at": "2026-06-25T07:00:00+00:00",
+          "side": "supply",
+          "source_articles": [
+            {
+              "published_at": "2026-06-25T07:00:00+00:00",
+              "source": "EUWID Recycling and Waste Management",
+              "title": "German non-ferrous prices edge lower in volatile market - EUWID Recycling and Waste Management",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbGt6ZkV4bTctN0FuQ0hZYTNxVnUzMTZjMTJaTkpWZXlVeE4ySkpxOC1IMHRSbmFZQldJc0dSLU92YTlLdmdiNDE1Q2ViVkdRNXJyVm5UUEE4MDJ2eXp3V0ZId1BlRjBrVXlxUkZQdExUZ0xzUW1WbmtXZEQtSmVEMDZvTkNoeWQ2WnZ0enFwNUVNbk5iQndKSzVyQ0FQMWE1OGlUMlBUYUpycWVS?oc=5"
+            }
+          ],
+          "source_count": 1,
+          "summary": "",
+          "title": "German non-ferrous prices edge lower in volatile market"
         }
       ]
     }
@@ -7266,7 +7148,7 @@
       "side": "supply"
     }
   ],
-  "generated_at": "2026-07-05T02:28:18.147672+00:00",
+  "generated_at": "2026-07-05T02:42:02.682853+00:00",
   "queries": [
     {
       "error": "",
@@ -7727,10 +7609,12 @@
         "Nikon SLM and Bosch print complete V8 engine block as single aluminum part"
       ],
       "factor_ids": [
-        "demand_macro_manufacturing"
+        "demand_macro_manufacturing",
+        "demand_transport_near_term"
       ],
       "factor_labels": [
-        "Manufacturing and industrial activity"
+        "Manufacturing and industrial activity",
+        "Transport production schedules"
       ],
       "horizon": "short",
       "id": "auto_nikon_slm_bosch_print_complete_v8_engine",
@@ -7877,6 +7761,32 @@
       "source_count": 1,
       "summary": "",
       "title": "Odisha bags India\u2019s largest metallurgy FDI with Rs 1.08L crore aluminium project"
+    },
+    {
+      "details": [],
+      "factor_ids": [
+        "supply_inventories"
+      ],
+      "factor_labels": [
+        "Exchange and visible inventories"
+      ],
+      "horizon": "short",
+      "id": "auto_expectations_us_fed_rate_hikes_delayed_prices",
+      "impact": "watch",
+      "matched_terms": [],
+      "published_at": "2026-07-03T01:53:38+00:00",
+      "side": "supply",
+      "source_articles": [
+        {
+          "published_at": "2026-07-03T01:53:38+00:00",
+          "source": "SMM Metal",
+          "title": "Expectations for US Fed Rate Hikes Delayed, Aluminum Prices' Short-Term Weakness Hard to Break [SMM Aluminum Morning Meeting Summary] - SMM Metal",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxON2l1a01OalIwbVJTQVVsbVRhbXoxSHU4dzUwQW56ZHJjcXQtTDloa1liQmZwbTFITG1OUlFONmlrNlVxN1hwS05DNHl3YW9GdC1yNHo0Uk9PLUtKMW9rd2Vnb1lNVUo0cGQ0Rlg5MTlvTXlXM1RmV3MyN1BVQnVIRHVZYTlzOXg3N0tWV3dPcVhleGZrS2ZTQlc1bTJZVU5mMDlSQVJMLVQ3U3RTTW54eGZhZnY3M2pQUXl4NmlPSkxhekh4VXZpbmduN01wdkhzSkxMTmlvNjA3SGhnSzJCM2g5ZXl4QkR1V2ZLLVcxZVV0YXVzX25B?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "Expectations for US Fed Rate Hikes Delayed, Aluminum Prices' Short-Term Weakness Hard to Break [SMM Aluminum Morning Meeting Summary]"
     },
     {
       "details": [
@@ -8051,34 +7961,6 @@
     },
     {
       "details": [
-        "LME metals whipsawed by war and peace in first half of 2026"
-      ],
-      "factor_ids": [
-        "supply_inventories"
-      ],
-      "factor_labels": [
-        "Exchange and visible inventories"
-      ],
-      "horizon": "short",
-      "id": "auto_2026_2026_lme_metals_whipsawed_by_war_peace_in",
-      "impact": "watch",
-      "matched_terms": [],
-      "published_at": "2026-07-02T13:45:00+00:00",
-      "side": "supply",
-      "source_articles": [
-        {
-          "published_at": "2026-07-02T13:45:00+00:00",
-          "source": "Reuters",
-          "title": "LME metals whipsawed by war and peace in first half of 2026 - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONnpZQjdPMnRxa3Z1cERaLWo2c2t2SUFYQldzNjZNVGhkb3Blb3NWbEoySUxmQ29vbjE3REhwRzhPNDNqeHFIaHlTQVhlR0l4MVk0bE5tZmtGdlBuVVhLdXV5a1c1dUs3NmUyd3hWSUdsVmlyUXVBRFFzTm9VbFN2eDk4aHdyTXl6a1BJTXd3eU5CRVQxaUNoQkVBZHlMNlNWRnJiczR1cHFDd3dvU3ZPWXVpMUNoZl9yZkE?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "LME metals whipsawed by war and peace in first half of 2026"
-    },
-    {
-      "details": [
         "Ford Q2 sales drop 10.3% due to F-Series supplier issue, falling EV demand"
       ],
       "factor_ids": [
@@ -8165,15 +8047,17 @@
       "details": [],
       "factor_ids": [
         "supply_smelter_operations",
+        "supply_carbon_policy_energy_mix",
         "demand_macro_manufacturing",
         "supply_trade_policy"
       ],
       "factor_labels": [
         "Smelter outages, restarts, and curtailments",
+        "Carbon policy and long-term energy mix",
         "Manufacturing and industrial activity",
         "Tariffs, sanctions, and export controls"
       ],
-      "horizon": "short",
+      "horizon": "mixed",
       "id": "auto_missouri_smelter_restart_announced_missouri_smelter_restart",
       "impact": "supply easing",
       "matched_terms": [
@@ -8458,6 +8342,36 @@
     },
     {
       "details": [
+        "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels"
+      ],
+      "factor_ids": [
+        "demand_grid_renewables"
+      ],
+      "factor_labels": [
+        "Grid expansion and renewables buildout"
+      ],
+      "horizon": "long",
+      "id": "auto_5_5_america_just_switched_on_gigawatt_plant_in",
+      "impact": "watch",
+      "matched_terms": [
+        "solar"
+      ],
+      "published_at": "2026-07-01T14:30:37+00:00",
+      "side": "demand",
+      "source_articles": [
+        {
+          "published_at": "2026-07-01T14:30:37+00:00",
+          "source": "Autonocion.com",
+          "title": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels - Autonocion.com",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TaVU0cHN2RkFtejRmVUtYYmJwWGdOTkZPNmFJcXVOYm1weXVsSWNOSDdCc2hlNFo1cXFodnZnQ1hraXdEQVNzUEEyOVl5b0pkRi1YdUdDb1dnSVlxMFBBWDJlU2xTV2h4TjZvemVnNGY?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "America just switched on a 5-gigawatt plant in Georgia that strips old solar panels down to the silver, copper and glass by the million, with a glass factory going up right beside it to feed the recovered material straight back into new US-made panels"
+    },
+    {
+      "details": [
         "Inola City Council imposes 60-day moratorium on construction of controversial aluminum smelter",
         "Inola town leaders approve 60-day moratorium over proposed aluminum smelter",
         "Inola City Council approves 60-day moratorium for aluminum smelter"
@@ -8607,7 +8521,8 @@
     },
     {
       "details": [
-        "Emirates Global Aluminium Opens 185,000-Tonne Recycling Plant in Al Taweelah"
+        "Emirates Global Aluminium opened a UAE aluminium recycling plant reported at about 185,000 tonnes of annual capacity.",
+        "The project is described across sources as the UAE's largest aluminium recycling plant and a circular-economy capacity addition."
       ],
       "factor_ids": [
         "supply_recycling_capacity"
@@ -8636,10 +8551,34 @@
           "source": "IndexBox",
           "title": "Emirates Global Aluminium Opens 185,000-Tonne Recycling Plant in Al Taweelah - News and Statistics - IndexBox",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTVZEd2lJYmlDb3dfM0M3VUtINGtBMXhBS29CcldCZWZjNkhwME5nU3E2aVk3MG5iN1BoclV6azdxMXhkcWxONTZIQXljOVdXbm5HT2dkc00yVXVOVFdsX09KTHVtRFJrUGtfREREa2pNb1hOb21DWmczN3o3UDBxMnJlYzItWnVtTXZHWENjOV84WFBuQzUwX3hVbDY1N2UtbERr?oc=5"
+        },
+        {
+          "published_at": "2026-06-29T02:35:49+00:00",
+          "source": "SMM Metal",
+          "title": "Emirates Global Aluminum (EGA) has officially inaugurated its aluminum - SMM Metal",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxORXZlQnc5NGx0c1ptSi1LUXFsOHhQbXRoSVZyQlVSaFQtVTQwT19XZWcySkFaZTdRcERkUFJPRUpiZEhkbFdlMVNIRGJ5SU1Yall5aU0taWVCdWNZQmRwa2hhY2lPbXhqcXBNTnowYVA4ZjJ3WWwyZE0wYTVLNG5XeDY2RW9HWWRIMkJrWUhFemFBaXlnRjlSUUNtNkdaYVFvREhxVmlnaXZ5SWJ6Q25KZ0ItQXhaeGJIYzhSQkt2UnJ0aG5HT2VlNVFOU1J5UnhPTW1sVkRSSUZTbEZ1WjBOTV9DTGI?oc=5"
+        },
+        {
+          "published_at": "2026-06-26T04:05:47+00:00",
+          "source": "middle-east-online.com",
+          "title": "UAE opens largest aluminium recycling plant to drive circular economy - middle-east-online.com",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY2c3d2ZUcFRCVzJOaEJ4SmtFcU1mVVQtUUpzWEtQeVZpd3BCeEo4SV9pWmZKMlZrRGg2MWxhcHd6QnM1T1F1UXlhcHBjcUZFZkhNM0RiS3ZsNE56UlVrV2d4T1otZUgxQjd3SzMxbnRMcUlTcFB2dDBMQ21fNVRmaFBGYjhXM3VKaU4xNVJadXB4cWd0R1J3bVlsZ1BMekRnT3c?oc=5"
+        },
+        {
+          "published_at": "2026-06-25T09:25:00+00:00",
+          "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+          "title": "Supports the circular economy. Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually - \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPOEcyXzFYYmdZeFgta0tLeWJVT3FjaC05LVZ4NmZNd1hwVDBwOF83VlJhcmxwak1lZ3RfQ0FkcWZiTXNfUDdvMHdMczBrSHpXU3dmZDhQS1E5R29pVzQtLU01R2lIV05CNnltWkk4dF9sbjhnRzVUUGlrc0M4MWNZQUR1RlljaWZZT2d4X2ZjNzVRUHM4aWFqdS01N2VxRUJ0YUplb2NobUFXMER2RlhfRzFESlRvRlk2R19JMjItN0t3Vy03bWxhYjNDUHBDYU1LdVhrRUFLVDFJbmtybVkzRmpIV3E2UGt5WGVZSjBPa2hPaENQTlAzLW9MSklJdHhHMkl0UHFPTQ?oc=5"
+        },
+        {
+          "published_at": "2026-06-24T15:52:18+00:00",
+          "source": "Gulf Business",
+          "title": "185,000 tonnes of change: EGA opens UAE\u2019s largest aluminium recycling plant to power circular economy - Gulf Business",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQ2hlOGc2enZ0ZUZZVEdNMV8tOFdxQlh3SGQ3YlNYRFpvT3ZPTm5FUUhRbjE5OTY0c3NJVzllMmM0LVhlUFo3NmFhZURBeWZmaXpZQXJsUk9xNmt3YkNfUmhfNDNtWEg0TE5IcWtBY2hjOEFpeWV0Z1Z0YWdITTQ0S1diWDNGY1oxQ2NpblJXdWYyTGFtSlVxcmtpZC0xVUVyQmZyN1U0b0UyNzRIRDR2TjBXQUJrWWw5VzZoUEt6QjdCbEhWYkVJbzVIRzFTUQ?oc=5"
         }
       ],
-      "source_count": 2,
-      "summary": "Additional recycling capacity increases longer-term secondary aluminium supply.",
+      "source_count": 6,
+      "summary": "EGA's UAE recycling plant opening adds reported 185,000-tonne annual secondary aluminium capacity and supports longer-term circular supply.",
       "title": "EGA opens aluminium recycling capacity in the UAE"
     },
     {
@@ -8755,47 +8694,25 @@
       "title": "T\u00fcrkiye launches nationwide waste return scheme"
     },
     {
-      "details": [],
-      "factor_ids": [
-        "demand_transport_structural",
-        "demand_transport_near_term"
-      ],
-      "factor_labels": [
-        "EV, aircraft, and lightweighting trends",
-        "Transport production schedules"
-      ],
-      "horizon": "mixed",
-      "id": "auto_automakers_shift_to_wiring_as_copper_prices",
-      "impact": "watch",
-      "matched_terms": [],
-      "published_at": "2026-06-30T19:22:37+00:00",
-      "side": "demand",
-      "source_articles": [
-        {
-          "published_at": "2026-06-30T19:22:37+00:00",
-          "source": "Mexico Business News",
-          "title": "Automakers Shift to Aluminum Wiring as Copper Prices Rise - Mexico Business News",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPM3JrR3BZMXNwOE11el9ZQ1RSOUM4ZEdsMkdIVHhoRnRnVW96NmdSWmdGRV9HZy1kYzhneUV1dE02Z1Q4NFYwYktTSklFQ0stdzRHZDd0a3FLNlExME5aT0Z6ZWYzLWpDRHhFYWlRSC11QzZZblVsSlkybG9hTUNDaTducUVCWGdCSTBGb2ZKQVNCNlVsUEZWZGNpTQ?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "Automakers Shift to Aluminum Wiring as Copper Prices Rise"
-    },
-    {
       "details": [
         "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand"
       ],
       "factor_ids": [
+        "demand_transport_near_term",
+        "demand_transport_structural",
         "demand_packaging"
       ],
       "factor_labels": [
+        "Transport production schedules",
+        "EV, aircraft, and lightweighting trends",
         "Packaging and beverage cans"
       ],
-      "horizon": "short",
+      "horizon": "mixed",
       "id": "auto_156.64_2030_rolled_products_to_hit_usd_billion_by",
       "impact": "watch",
-      "matched_terms": [],
+      "matched_terms": [
+        "automotive"
+      ],
       "published_at": "2026-06-30T15:46:45+00:00",
       "side": "demand",
       "source_articles": [
@@ -8809,32 +8726,6 @@
       "source_count": 1,
       "summary": "",
       "title": "Aluminum Rolled Products Market to Hit USD 156.64 Billion by 2030, Driven by Automotive Demand"
-    },
-    {
-      "details": [],
-      "factor_ids": [
-        "demand_transport_near_term"
-      ],
-      "factor_labels": [
-        "Transport production schedules"
-      ],
-      "horizon": "short",
-      "id": "auto_ferrari_bmw_join_tesla_in_shift_copper",
-      "impact": "watch",
-      "matched_terms": [],
-      "published_at": "2026-06-30T15:36:21+00:00",
-      "side": "demand",
-      "source_articles": [
-        {
-          "published_at": "2026-06-30T15:36:21+00:00",
-          "source": "CBT News",
-          "title": "Ferrari and BMW join Tesla in shift from copper to aluminum wiring - CBT News",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5TUxPdlkzLXlNUzJwOTh4RXhYTXFUOTYyNEJFUElWdFhoUFZYaTJacC1jeWtrcS1tY2tKcTVnVkd2bElMSkFqcXpjbDFJWDhTQzdlejVGcWhIN0ZtTEhRWE5Fa2VzT2RnbXc?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "Ferrari and BMW join Tesla in shift from copper to aluminum wiring"
     },
     {
       "details": [],
@@ -9210,34 +9101,6 @@
       "title": "EU delays aluminum scrap trade curbs, as Dubai's exports pause"
     },
     {
-      "details": [
-        "Kaiser Aluminum Corporation Publishes 2025 Sustainability Report"
-      ],
-      "factor_ids": [
-        "supply_carbon_policy_energy_mix"
-      ],
-      "factor_labels": [
-        "Carbon policy and long-term energy mix"
-      ],
-      "horizon": "long",
-      "id": "auto_2025_2025_kaiser_corporation_publishes_sustainability_report_kaiser_corporation",
-      "impact": "watch",
-      "matched_terms": [],
-      "published_at": "2026-06-29T20:30:00+00:00",
-      "side": "supply",
-      "source_articles": [
-        {
-          "published_at": "2026-06-29T20:30:00+00:00",
-          "source": "Business Wire",
-          "title": "Kaiser Aluminum Corporation Publishes 2025 Sustainability Report - Business Wire",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQeGVoU3BwaUFZdmkwTkZUWnIteWRHSUZta0NjZjVVWjNtQ01ENVA2NG00RHdUMFFSSndPSHhFcmlOSWxnNDRlalVjLUxUMDFjMVhVdU52WTRpQlIzUkkxZzlfYmg0Ynh3RFlWdGU5dklwajNQdkZsUTlyYWZBNXdvZ1RhV2I0aURNS0FUbS16cExYZ3puN3RQc2NyWmVERy1Ya0hxUlFKOThzR1FiZDFpYjlTbzduUTZyS0ktaFBn?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "Kaiser Aluminum Corporation Publishes 2025 Sustainability Report"
-    },
-    {
       "details": [],
       "factor_ids": [
         "demand_trade_restocking"
@@ -9380,60 +9243,6 @@
       "title": "Destocking acceleration provides support, export concerns limit rebound space"
     },
     {
-      "details": [],
-      "factor_ids": [
-        "demand_trade_restocking"
-      ],
-      "factor_labels": [
-        "Trade flows and restocking"
-      ],
-      "horizon": "short",
-      "id": "auto_india_esg_advantage_turning_csrd_cbam_trade",
-      "impact": "watch",
-      "matched_terms": [
-        "global trade"
-      ],
-      "published_at": "2026-06-29T07:33:22+00:00",
-      "side": "demand",
-      "source_articles": [
-        {
-          "published_at": "2026-06-29T07:33:22+00:00",
-          "source": "CXO Digitalpulse",
-          "title": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity - CXO Digitalpulse",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWkpwWjNpaXBMNTRLSlV1dnJXaVRDQ2l3Vk1PWDdJUVR0d3JCVzZzRUkyNmVxRDZ5QTcyWEF0UV9TOEhQZHdUaVpnYjRmaFNqRHlGbjNLR1VLQm1MeHdsTFJtX1lTZ21zX3NNOWI1WW5VNE1zQWVrMUFkNUs3Y09OTDgzT1l4c1RDLVk1Z0c3eUZsU3J5MHIwcTNuUHBicEk2UnVZZHVlYlJEU3M?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "India\u2019s ESG Advantage: Turning CSRD and CBAM into a Global Trade Opportunity"
-    },
-    {
-      "details": [],
-      "factor_ids": [
-        "supply_recycling_capacity"
-      ],
-      "factor_labels": [
-        "Recycling infrastructure and scrap processing"
-      ],
-      "horizon": "long",
-      "id": "auto_emirates_ega_has_officially_inaugurated_its_emirates",
-      "impact": "watch",
-      "matched_terms": [],
-      "published_at": "2026-06-29T02:35:49+00:00",
-      "side": "supply",
-      "source_articles": [
-        {
-          "published_at": "2026-06-29T02:35:49+00:00",
-          "source": "SMM Metal",
-          "title": "Emirates Global Aluminum (EGA) has officially inaugurated its aluminum - SMM Metal",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxORXZlQnc5NGx0c1ptSi1LUXFsOHhQbXRoSVZyQlVSaFQtVTQwT19XZWcySkFaZTdRcERkUFJPRUpiZEhkbFdlMVNIRGJ5SU1Yall5aU0taWVCdWNZQmRwa2hhY2lPbXhqcXBNTnowYVA4ZjJ3WWwyZE0wYTVLNG5XeDY2RW9HWWRIMkJrWUhFemFBaXlnRjlSUUNtNkdaYVFvREhxVmlnaXZ5SWJ6Q25KZ0ItQXhaeGJIYzhSQkt2UnJ0aG5HT2VlNVFOU1J5UnhPTW1sVkRSSUZTbEZ1WjBOTV9DTGI?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "Emirates Global Aluminum (EGA) has officially inaugurated its aluminum"
-    },
-    {
       "details": [
         "Global Economics Intelligence executive summary (May 2026)"
       ],
@@ -9572,6 +9381,32 @@
       "title": "German scientists proposed producing new solar panels using recycled components"
     },
     {
+      "details": [],
+      "factor_ids": [
+        "demand_trade_restocking"
+      ],
+      "factor_labels": [
+        "Trade flows and restocking"
+      ],
+      "horizon": "short",
+      "id": "auto_trump_new_tariff_cut_guyana_hikqlefucr_trump",
+      "impact": "watch",
+      "matched_terms": [],
+      "published_at": "2026-06-27T08:09:55+00:00",
+      "side": "demand",
+      "source_articles": [
+        {
+          "published_at": "2026-06-27T08:09:55+00:00",
+          "source": "Fathom Journal",
+          "title": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR) - Fathom Journal",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE81QUpudTVxMndGdXJQWWNKOXlBMlIwN3hmV3JmVGxCUDFNNUp0aGxUUUd4eUFCM0x4Ym1lTGVvTXpvTWIyU0ZYUW4teWVGVEg5YXRnb3hMeExYMmk5bVFNNmlDYTQ?oc=5"
+        }
+      ],
+      "source_count": 1,
+      "summary": "",
+      "title": "\u091f\u094d\u0930\u0902\u092a \u0915\u0947 \u091f\u0948\u0930\u093f\u092b \u0915\u091f \u0938\u0947 \u092d\u093e\u0930\u0924 \u0915\u094b \u0915\u093f\u0924\u0928\u093e \u092b\u093e\u092f\u0926\u093e?Trump\u2019s New Tariff Cut Guyana (hIKqlEfUCR)"
+    },
+    {
       "details": [
         "Softer Q2 Earnings Outlook Might Change The Case For Investing In Steel Dynamics (STLD)"
       ],
@@ -9660,10 +9495,12 @@
         "EU plans 15% tax on aluminium scrap exports"
       ],
       "factor_ids": [
-        "supply_scrap_secondary"
+        "supply_scrap_secondary",
+        "supply_inventories"
       ],
       "factor_labels": [
-        "Scrap and secondary aluminium flows"
+        "Scrap and secondary aluminium flows",
+        "Exchange and visible inventories"
       ],
       "horizon": "short",
       "id": "auto_15_15_eu_plans_tax_on_scrap_exports_eu",
@@ -9742,34 +9579,6 @@
     {
       "details": [],
       "factor_ids": [
-        "supply_recycling_capacity"
-      ],
-      "factor_labels": [
-        "Recycling infrastructure and scrap processing"
-      ],
-      "horizon": "long",
-      "id": "auto_uae_opens_largest_recycling_plant_to_drive",
-      "impact": "watch",
-      "matched_terms": [
-        "recycling plant"
-      ],
-      "published_at": "2026-06-26T04:05:47+00:00",
-      "side": "supply",
-      "source_articles": [
-        {
-          "published_at": "2026-06-26T04:05:47+00:00",
-          "source": "middle-east-online.com",
-          "title": "UAE opens largest aluminium recycling plant to drive circular economy - middle-east-online.com",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY2c3d2ZUcFRCVzJOaEJ4SmtFcU1mVVQtUUpzWEtQeVZpd3BCeEo4SV9pWmZKMlZrRGg2MWxhcHd6QnM1T1F1UXlhcHBjcUZFZkhNM0RiS3ZsNE56UlVrV2d4T1otZUgxQjd3SzMxbnRMcUlTcFB2dDBMQ21fNVRmaFBGYjhXM3VKaU4xNVJadXB4cWd0R1J3bVlsZ1BMekRnT3c?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "UAE opens largest aluminium recycling plant to drive circular economy"
-    },
-    {
-      "details": [],
-      "factor_ids": [
         "demand_macro_manufacturing"
       ],
       "factor_labels": [
@@ -9823,64 +9632,6 @@
       "source_count": 1,
       "summary": "",
       "title": "Dubai: four-month ban on metal scrap exports"
-    },
-    {
-      "details": [],
-      "factor_ids": [
-        "demand_grid_renewables"
-      ],
-      "factor_labels": [
-        "Grid expansion and renewables buildout"
-      ],
-      "horizon": "long",
-      "id": "auto_supramarine_project_to_connect_distant_offshore_wind",
-      "impact": "watch",
-      "matched_terms": [
-        "wind"
-      ],
-      "published_at": "2026-06-25T15:52:22+00:00",
-      "side": "demand",
-      "source_articles": [
-        {
-          "published_at": "2026-06-25T15:52:22+00:00",
-          "source": "Engineer Live",
-          "title": "SupraMarine project to connect distant offshore wind farms to land with superconducting system - Engineer Live",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNUdSOXdpVTViZHkxc2NqZkdnTGhZWGNMenBiNHdpZlZWR0tqbU1qSVRDVVJDRVI2ZXNqT0lwT2VCRlpRVnIwNk5VaUw0c1MtVEJzTDcxT3ozc0Zodkd2WF9BbGQ3Yjd4dDJ0T05UMXpVRWI3YUNZZ2N2VXE2OWFYMy1QVXRycHZOc1YwVVU3UTZnSm9Rc1B1N1RCU2E2cWVrWVNUVVVWTVZQdWNURWc?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "SupraMarine project to connect distant offshore wind farms to land with superconducting system"
-    },
-    {
-      "details": [
-        "Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually"
-      ],
-      "factor_ids": [
-        "supply_recycling_capacity"
-      ],
-      "factor_labels": [
-        "Recycling infrastructure and scrap processing"
-      ],
-      "horizon": "long",
-      "id": "auto_185_185_supports_circular_economy_emirates_launches_recycling_plant",
-      "impact": "watch",
-      "matched_terms": [
-        "recycling plant"
-      ],
-      "published_at": "2026-06-25T09:25:00+00:00",
-      "side": "supply",
-      "source_articles": [
-        {
-          "published_at": "2026-06-25T09:25:00+00:00",
-          "source": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
-          "title": "Supports the circular economy. Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually - \u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
-          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPOEcyXzFYYmdZeFgta0tLeWJVT3FjaC05LVZ4NmZNd1hwVDBwOF83VlJhcmxwak1lZ3RfQ0FkcWZiTXNfUDdvMHdMczBrSHpXU3dmZDhQS1E5R29pVzQtLU01R2lIV05CNnltWkk4dF9sbjhnRzVUUGlrc0M4MWNZQUR1RlljaWZZT2d4X2ZjNzVRUHM4aWFqdS01N2VxRUJ0YUplb2NobUFXMER2RlhfRzFESlRvRlk2R19JMjItN0t3Vy03bWxhYjNDUHBDYU1LdVhrRUFLVDFJbmtybVkzRmpIV3E2UGt5WGVZSjBPa2hPaENQTlAzLW9MSklJdHhHMkl0UHFPTQ?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "Supports the circular economy. Emirates Aluminum launches a recycling plant with a capacity of 185 thousand tons annually"
     },
     {
       "details": [],
@@ -10021,62 +9772,6 @@
       "source_count": 1,
       "summary": "",
       "title": "German non-ferrous prices edge lower in volatile market"
-    },
-    {
-      "details": [],
-      "factor_ids": [
-        "supply_inventories"
-      ],
-      "factor_labels": [
-        "Exchange and visible inventories"
-      ],
-      "horizon": "short",
-      "id": "auto_exclusive_istim_slowing_metal_flow_out_of",
-      "impact": "watch",
-      "matched_terms": [],
-      "published_at": "2026-06-25T02:34:00+00:00",
-      "side": "supply",
-      "source_articles": [
-        {
-          "published_at": "2026-06-25T02:34:00+00:00",
-          "source": "Yahoo Finance Singapore",
-          "title": "Exclusive: ISTIM slowing metal flow out of its LME warehouses - sources - Yahoo Finance Singapore",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVnI5WEdNa1F5aEpmOG02bnVjZ2x3X09nNWZwenJOMjV2bVVOZUhnbjVTbW9LV2w3NFNJbEJUNmFzTndLWDIwTHZXaXIyS3ZpQ2FkaVQ2c2NEOWFwSjNaandMaHNTNTdzYmNGVVlwWnFOOU9rbWtjdGlxSV9tc1Y2VWJZTmNOLWxiQkZOTmpfZWFoY0FtTVlWOWoxcDV5Z2J3VURtUVpOODU3YzY2VlJaaDduSUJadw?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "Exclusive: ISTIM slowing metal flow out of its LME warehouses - sources"
-    },
-    {
-      "details": [
-        "185,000 tonnes of change: EGA opens UAE\u2019s largest aluminium recycling plant to power circular economy"
-      ],
-      "factor_ids": [
-        "supply_recycling_capacity"
-      ],
-      "factor_labels": [
-        "Recycling infrastructure and scrap processing"
-      ],
-      "horizon": "long",
-      "id": "auto_185_000_tonnes_of_change_ega_opens_uae_largest",
-      "impact": "watch",
-      "matched_terms": [
-        "recycling plant"
-      ],
-      "published_at": "2026-06-24T15:52:18+00:00",
-      "side": "supply",
-      "source_articles": [
-        {
-          "published_at": "2026-06-24T15:52:18+00:00",
-          "source": "Gulf Business",
-          "title": "185,000 tonnes of change: EGA opens UAE\u2019s largest aluminium recycling plant to power circular economy - Gulf Business",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQ2hlOGc2enZ0ZUZZVEdNMV8tOFdxQlh3SGQ3YlNYRFpvT3ZPTm5FUUhRbjE5OTY0c3NJVzllMmM0LVhlUFo3NmFhZURBeWZmaXpZQXJsUk9xNmt3YkNfUmhfNDNtWEg0TE5IcWtBY2hjOEFpeWV0Z1Z0YWdITTQ0S1diWDNGY1oxQ2NpblJXdWYyTGFtSlVxcmtpZC0xVUVyQmZyN1U0b0UyNzRIRDR2TjBXQUJrWWw5VzZoUEt6QjdCbEhWYkVJbzVIRzFTUQ?oc=5"
-        }
-      ],
-      "source_count": 1,
-      "summary": "",
-      "title": "185,000 tonnes of change: EGA opens UAE\u2019s largest aluminium recycling plant to power circular economy"
     },
     {
       "details": [],
@@ -10464,30 +10159,30 @@
       "supply_new_capacity": 6,
       "supply_physical_premiums": 5,
       "supply_power_energy": 6,
-      "supply_recycling_capacity": 7,
+      "supply_recycling_capacity": 3,
       "supply_scrap_secondary": 7,
       "supply_smelter_operations": 4,
       "supply_trade_policy": 8
     },
     "filtered_articles": 6,
     "horizon": {
-      "long": 36,
-      "mixed": 6,
-      "short": 60
+      "long": 31,
+      "mixed": 7,
+      "short": 56
     },
     "impact": {
       "demand downside": 4,
       "demand upside": 1,
       "supply easing": 12,
       "supply tightening": 10,
-      "watch": 75
+      "watch": 67
     },
     "side": {
-      "demand": 40,
+      "demand": 38,
       "mixed": 7,
-      "supply": 55
+      "supply": 49
     },
-    "total_articles": 124,
-    "total_signals": 102
+    "total_articles": 120,
+    "total_signals": 94
   }
 }
