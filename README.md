@@ -1,14 +1,19 @@
-# Aluminium Demand/Supply Monitor
+# Aluminium LME/SHFE Arb Monitor
 
-Aluminium Demand/Supply Monitor is a static dashboard and news scanner for the aluminium market.
-It scans public news for signals tied to measurable demand and supply factors, filters low-information hits, consolidates similar articles, and writes a GitHub Pages-ready dashboard.
+Aluminium LME/SHFE Arb Monitor is a static dashboard and scanner for aluminium market signals.
+It combines public market quotes, an import-parity calculator, source-linked coverage rows, and public news scans into a GitHub Pages-ready dashboard.
 
 ## What It Tracks
 
+- LME aluminium proxy quotes from Sina Finance, SHFE aluminium front/active contracts, nearby SHFE calendar spreads, and USD/CNY plus USD/CNH.
+- Indicative import parity using the working formula `SHFE - landed cost`, with editable premium, freight, duty, VAT, admin, and financing assumptions.
+- Source/status rows for cash/3M, China spot and bonded premiums, regional physical premiums, freight, warehouse queues, warrants, taxes, funding, fees, and margin requirements.
 - Short-term demand: manufacturing, construction already underway, transport schedules, packaging, trade flows, and restocking.
 - Short-term supply: smelter operations, power costs, alumina and bauxite disruptions, inventories, regional premiums, trade policy, and scrap flows.
 - Long-term demand: housing and infrastructure pipelines, grid and renewables buildout, EVs, aircraft, and lightweighting.
 - Long-term supply: new aluminium capacity, alumina and bauxite projects, carbon policy, energy mix, and recycling capacity.
+
+Some physical premiums, warehouse reports, broker fees, and margin add-ons are source-linked rather than scraped because they are exchange login flows, broker-specific, or vendor-restricted data. The dashboard shows those rows explicitly instead of filling them with stale or invented values.
 
 ## Run A Scan
 
@@ -16,8 +21,8 @@ It scans public news for signals tied to measurable demand and supply factors, f
 python3 scripts/scan_news.py
 ```
 
-The scanner writes the latest grouped factor signals to `docs/data/latest.json`.
-It uses Google News RSS and does not need an API key.
+The scanner writes market data and grouped factor signals to `docs/data/latest.json`.
+It uses public endpoints and does not need an API key.
 
 ## Preview The Dashboard
 
@@ -40,8 +45,7 @@ The dashboard reads `docs/data/latest.json`, so every scan refreshes the visible
 
 ## Refresh Workflow
 
-`.github/workflows/scan.yml` can be run manually with `workflow_dispatch`.
-The daily cron is included as a commented block and can be enabled when daily refresh is wanted.
+`.github/workflows/scan.yml` runs on weekday mornings UTC and can also be run manually with `workflow_dispatch`.
 
 ## License
 

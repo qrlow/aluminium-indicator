@@ -2,10 +2,15 @@ import unittest
 
 from scripts.scan_news import (
     build_factor_groups,
+    build_calendar_spreads,
     classify_article,
+    compute_parity,
     group_articles,
     is_low_information_article,
+    parse_lme_sina_quote,
     parse_rss_items,
+    parse_shfe_contract,
+    parse_sina_hq,
 )
 
 
@@ -184,6 +189,59 @@ class NewsScannerTests(unittest.TestCase):
         self.assertEqual(signals[0]["id"], "ega_aluminium_recycling_plant")
         self.assertEqual(signals[0]["source_count"], len(titles))
         self.assertIn("185,000", " ".join(signals[0]["details"]))
+
+    def test_parses_public_sina_market_quotes(self):
+        raw = (
+            b'var hq_str_nf_AL2608="AL2608,144822,22940.000,23140.000,22940.000,0.000,'
+            b'23055.000,23060.000,23060.000,0.000,22920.000,17,81,232342.000,'
+            b'141231,t,AL,2026-07-08,1,,,,,,,,,23075.318,0.000";\n'
+            b'var hq_str_hf_AHD="3157.880,,3156.000,3157.500,3165.000,3136.000,'
+            b'14:48:20,3137.500,3140.000,0,2,6,2026-07-08,LME Aluminium,2481";'
+        )
+
+        quotes = parse_sina_hq(raw)
+        shfe = parse_shfe_contract("nf_AL2608", quotes["nf_AL2608"])
+        lme = parse_lme_sina_quote(quotes["hf_AHD"])
+
+        self.assertEqual(shfe["contract"], "AL2608")
+        self.assertEqual(shfe["last"], 23060.0)
+        self.assertTrue(shfe["is_active"])
+        self.assertEqual(shfe["timestamp"], "2026-07-08T14:48:22+08:00")
+        self.assertEqual(lme["last"], 3157.88)
+        self.assertEqual(lme["timestamp"], "2026-07-08T14:48:20+08:00")
+
+    def test_computes_shfe_calendar_spreads(self):
+        contracts = [
+            {"contract": "AL2607", "last": 23015.0},
+            {"contract": "AL2608", "last": 23060.0},
+            {"contract": "AL2609", "last": 23090.0},
+        ]
+
+        spreads = build_calendar_spreads(contracts)
+
+        self.assertEqual(spreads[0]["label"], "AL2608 - AL2607")
+        self.assertEqual(spreads[0]["value"], 45.0)
+        self.assertEqual(spreads[1]["value"], 30.0)
+
+    def test_compute_import_parity_pnl_uses_landed_cost_sign(self):
+        parity = compute_parity(
+            lme_price=2600,
+            shfe_price=22200,
+            fx_cny=7.2,
+            assumptions={
+                "offshore_premium_usd_t": 80.0,
+                "freight_insurance_usd_t": 40.0,
+                "import_duty_pct": 0.0,
+                "vat_pct": 13.0,
+                "admin_logistics_cny_t": 150.0,
+                "financing_cny_t": 0.0,
+            },
+        )
+
+        self.assertEqual(parity["status"], "computed")
+        self.assertAlmostEqual(parity["landed_cost_cny_t"], 22279.92)
+        self.assertAlmostEqual(parity["import_pnl_cny_t"], -79.92)
+        self.assertAlmostEqual(parity["vat_only_breakeven_ratio"], 8.136)
 
 
 if __name__ == "__main__":

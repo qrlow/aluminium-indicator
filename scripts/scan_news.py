@@ -21,7 +21,40 @@ from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 
 
 NEWS_ENDPOINT = "https://news.google.com/rss/search"
+SINA_HQ_ENDPOINT = "https://hq.sinajs.cn/list={symbols}"
+SINA_REFERER = "https://finance.sina.com.cn/"
+FX_ENDPOINT = "https://open.er-api.com/v6/latest/USD"
 USER_AGENT = "AluminiumIndicator/0.1"
+
+DEFAULT_PARITY_ASSUMPTIONS = {
+    "offshore_premium_usd_t": 80.0,
+    "freight_insurance_usd_t": 40.0,
+    "import_duty_pct": 0.0,
+    "vat_pct": 13.0,
+    "admin_logistics_cny_t": 150.0,
+    "financing_cny_t": 0.0,
+}
+
+SOURCE_URLS = {
+    "lme_aluminium": "https://www.lme.com/en/Metals/Non-ferrous/LME-Aluminium",
+    "lme_cash_3m": "https://www.lme.com/en/Market-data/Reports-and-data/Cash-and-3-month-3M-prompt-date-checker",
+    "lme_stock_reports": "https://www.lme.com/Market-data/Reports-and-data/Warehouse-and-stocks-reports/Stock-breakdown-report",
+    "lme_queue_reports": "https://www.lme.com/Market-data/Reports-and-data/Warehouse-and-stocks-reports/Warehouse-and-queue-data",
+    "lme_fees": "https://www.lme.com/en/Trading/Access-the-market/Fees",
+    "lme_margin": "https://www.lme.com/Clearing/Risk-management/Margin-parameter-files",
+    "shfe_market": "https://www.shfe.com.cn/en/MarketData/",
+    "shfe_aluminium": "https://www.shfe.com.cn/en/Products/Aluminum/",
+    "smm_aluminium": "https://www.metal.com/aluminum",
+    "smm_import_arb": "https://www.metal.com/aluminum/alArbiYKSpot",
+    "freightos": "https://fbx.freightos.com/",
+    "drewry_wci": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry",
+    "china_customs": "http://www.customs.gov.cn/",
+    "china_tax": "https://www.chinatax.gov.cn/eng/",
+    "shibor": "https://www.shibor.org/",
+    "tma": "https://www.tma.org.hk/en_market_info.aspx",
+    "fx": FX_ENDPOINT,
+    "sina_hq": SINA_HQ_ENDPOINT.format(symbols="nf_AL0,hf_AHD"),
+}
 
 
 @dataclass(frozen=True)
@@ -518,10 +551,600 @@ def build_news_url(query: str) -> str:
     return NEWS_ENDPOINT + "?" + urllib.parse.urlencode(params)
 
 
-def fetch_url(url: str, timeout: int) -> bytes:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+def fetch_url(url: str, timeout: int, headers: Optional[Dict[str, str]] = None) -> bytes:
+    request_headers = {"User-Agent": USER_AGENT}
+    if headers:
+        request_headers.update(headers)
+    request = urllib.request.Request(url, headers=request_headers)
     with urllib.request.urlopen(request, timeout=timeout) as response:
         return response.read()
+
+
+def parse_number(value: object) -> Optional[float]:
+    text = str(value or "").replace(",", "").strip()
+    if not text:
+        return None
+    try:
+        number = float(text)
+    except ValueError:
+        return None
+    return number
+
+
+def parse_int(value: object) -> Optional[int]:
+    number = parse_number(value)
+    if number is None:
+        return None
+    return int(number)
+
+
+def compact_time(value: str) -> str:
+    value = str(value or "").strip()
+    if re.fullmatch(r"\d{6}", value):
+        return f"{value[0:2]}:{value[2:4]}:{value[4:6]}"
+    return value
+
+
+def quote_timestamp(date_text: str, time_text: str, offset: str = "+08:00") -> str:
+    date_text = str(date_text or "").strip()
+    time_text = compact_time(time_text)
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", date_text) and re.fullmatch(r"\d{2}:\d{2}:\d{2}", time_text):
+        return f"{date_text}T{time_text}{offset}"
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", date_text):
+        return f"{date_text}T00:00:00{offset}"
+    return ""
+
+
+def add_months(value: datetime, months: int) -> Tuple[int, int]:
+    month_index = value.month - 1 + months
+    year = value.year + month_index // 12
+    month = month_index % 12 + 1
+    return year, month
+
+
+def shfe_aluminium_symbols(now: Optional[datetime] = None, months: int = 8) -> List[str]:
+    now = now or datetime.now(timezone.utc)
+    symbols = ["nf_AL0"]
+    for offset in range(months):
+        year, month = add_months(now, offset)
+        symbols.append(f"nf_AL{str(year)[-2:]}{month:02d}")
+    return symbols
+
+
+def parse_sina_hq(raw: bytes) -> Dict[str, List[str]]:
+    text = raw.decode("gb18030", errors="replace")
+    quotes: Dict[str, List[str]] = {}
+    for symbol, payload in re.findall(r'var hq_str_([^=]+)="([^"]*)";', text):
+        if not payload:
+            continue
+        quotes[symbol] = payload.split(",")
+    return quotes
+
+
+def fetch_sina_hq(symbols: Sequence[str], timeout: int) -> Dict[str, List[str]]:
+    url = SINA_HQ_ENDPOINT.format(symbols=",".join(symbols))
+    raw = fetch_url(url, timeout=timeout, headers={"Referer": SINA_REFERER})
+    return parse_sina_hq(raw)
+
+
+def parse_shfe_contract(symbol: str, fields: Sequence[str]) -> Optional[Dict[str, object]]:
+    if len(fields) < 19:
+        return None
+    last = parse_number(fields[8]) or parse_number(fields[6]) or parse_number(fields[7])
+    if last is None:
+        return None
+    contract = symbol.replace("nf_", "")
+    return {
+        "symbol": symbol,
+        "contract": contract,
+        "name": clean_text(fields[0]) or contract,
+        "last": last,
+        "unit": "CNY/t",
+        "open": parse_number(fields[2]),
+        "high": parse_number(fields[3]),
+        "low": parse_number(fields[4]),
+        "bid": parse_number(fields[6]),
+        "ask": parse_number(fields[7]),
+        "previous_settle": parse_number(fields[10]),
+        "bid_size": parse_int(fields[11]),
+        "ask_size": parse_int(fields[12]),
+        "volume": parse_int(fields[13]),
+        "open_interest": parse_int(fields[14]),
+        "date": str(fields[17]).strip(),
+        "time": compact_time(str(fields[1])),
+        "timestamp": quote_timestamp(str(fields[17]), str(fields[1])),
+        "is_active": str(fields[18]).strip() == "1",
+    }
+
+
+def parse_lme_sina_quote(fields: Sequence[str]) -> Optional[Dict[str, object]]:
+    if len(fields) < 14:
+        return None
+    last = parse_number(fields[0])
+    if last is None:
+        return None
+    return {
+        "symbol": "hf_AHD",
+        "name": clean_text(fields[13]) or "LME aluminium",
+        "last": last,
+        "unit": "USD/t",
+        "open": parse_number(fields[8]),
+        "high": parse_number(fields[4]),
+        "low": parse_number(fields[5]),
+        "previous_close": parse_number(fields[7]),
+        "date": str(fields[12]).strip(),
+        "time": compact_time(str(fields[6])),
+        "timestamp": quote_timestamp(str(fields[12]), str(fields[6])),
+    }
+
+
+def fetch_fx_rates(timeout: int) -> Dict[str, object]:
+    payload = json.loads(fetch_url(FX_ENDPOINT, timeout=timeout).decode("utf-8"))
+    rates = payload.get("rates", {})
+    return {
+        "base": payload.get("base_code", "USD"),
+        "updated_at": payload.get("time_last_update_utc", ""),
+        "next_update_at": payload.get("time_next_update_utc", ""),
+        "rates": {
+            "CNY": parse_number(rates.get("CNY")),
+            "CNH": parse_number(rates.get("CNH")),
+        },
+        "provider": payload.get("provider", ""),
+    }
+
+
+def metric(
+    metric_id: str,
+    label: str,
+    category: str,
+    value: object,
+    unit: str,
+    status: str,
+    source: str,
+    source_url: str,
+    notes: str = "",
+    updated_at: str = "",
+    sort_order: int = 0,
+    extra: Optional[Dict[str, object]] = None,
+) -> Dict[str, object]:
+    payload = {
+        "id": metric_id,
+        "label": label,
+        "category": category,
+        "value": value,
+        "unit": unit,
+        "status": status,
+        "source": source,
+        "source_url": source_url,
+        "notes": notes,
+        "updated_at": updated_at,
+        "sort_order": sort_order,
+    }
+    if extra:
+        payload.update(extra)
+    return payload
+
+
+def latest_signal_for_factor(signals: Sequence[Dict[str, object]], factor_id: str) -> Optional[Dict[str, object]]:
+    for signal in signals:
+        if factor_id in signal.get("factor_ids", []):
+            return signal
+    return None
+
+
+def signal_note(signal: Optional[Dict[str, object]], fallback: str) -> str:
+    if not signal:
+        return fallback
+    source_count = int(signal.get("source_count", 0))
+    return f"Latest news scan: {signal.get('title', '')} ({source_count} source{'s' if source_count != 1 else ''})."
+
+
+def signal_source_url(signal: Optional[Dict[str, object]], fallback: str) -> str:
+    if not signal:
+        return fallback
+    articles = signal.get("source_articles", [])
+    if articles:
+        return str(articles[0].get("url", fallback))
+    return fallback
+
+
+def build_calendar_spreads(contracts: Sequence[Dict[str, object]]) -> List[Dict[str, object]]:
+    spreads = []
+    sorted_contracts = sorted(
+        [contract for contract in contracts if contract.get("last") is not None],
+        key=lambda contract: str(contract.get("contract", "")),
+    )
+    for first, second in zip(sorted_contracts, sorted_contracts[1:]):
+        first_last = parse_number(first.get("last"))
+        second_last = parse_number(second.get("last"))
+        if first_last is None or second_last is None:
+            continue
+        spreads.append(
+            {
+                "id": f"{second['contract']}-{first['contract']}",
+                "label": f"{second['contract']} - {first['contract']}",
+                "near_contract": first["contract"],
+                "far_contract": second["contract"],
+                "value": round(second_last - first_last, 2),
+                "unit": "CNY/t",
+            }
+        )
+    return spreads[:6]
+
+
+def compute_parity(
+    lme_price: Optional[float],
+    shfe_price: Optional[float],
+    fx_cny: Optional[float],
+    assumptions: Dict[str, float],
+) -> Dict[str, object]:
+    result = {
+        "status": "unavailable",
+        "assumptions": assumptions,
+    }
+    if lme_price is None or shfe_price is None or fx_cny is None:
+        result["notes"] = "Parity requires LME aluminium, SHFE aluminium, and USD/CNY."
+        return result
+
+    offshore_cost = (
+        lme_price
+        + assumptions["offshore_premium_usd_t"]
+        + assumptions["freight_insurance_usd_t"]
+    )
+    landed_cost = (
+        offshore_cost
+        * fx_cny
+        * (1 + assumptions["import_duty_pct"] / 100)
+        * (1 + assumptions["vat_pct"] / 100)
+        + assumptions["admin_logistics_cny_t"]
+        + assumptions["financing_cny_t"]
+    )
+    shfe_lme_ratio = shfe_price / lme_price if lme_price else None
+    adjusted_ratio = shfe_price / (lme_price * fx_cny) if lme_price and fx_cny else None
+    vat_only_ratio = fx_cny * (1 + assumptions["vat_pct"] / 100)
+    return {
+        **result,
+        "status": "computed",
+        "lme_price_usd_t": round(lme_price, 2),
+        "shfe_price_cny_t": round(shfe_price, 2),
+        "fx_usd_cny": round(fx_cny, 6),
+        "landed_cost_cny_t": round(landed_cost, 2),
+        "import_pnl_cny_t": round(shfe_price - landed_cost, 2),
+        "shfe_lme_ratio": round(shfe_lme_ratio, 4) if shfe_lme_ratio is not None else None,
+        "adjusted_shfe_lme_ratio": round(adjusted_ratio, 4) if adjusted_ratio is not None else None,
+        "vat_only_breakeven_ratio": round(vat_only_ratio, 4),
+        "notes": "Positive import P&L means SHFE is above estimated landed cost. Manual physical inputs are defaults.",
+    }
+
+
+def build_market_coverage(
+    lme_quote: Optional[Dict[str, object]],
+    front_contract: Optional[Dict[str, object]],
+    active_contract: Optional[Dict[str, object]],
+    spreads: Sequence[Dict[str, object]],
+    fx_rates: Dict[str, object],
+    parity: Dict[str, object],
+    signals: Sequence[Dict[str, object]],
+    quote_error: str,
+    fx_error: str,
+) -> List[Dict[str, object]]:
+    rows: List[Dict[str, object]] = []
+    rows.append(
+        metric(
+            "lme_3m_aluminium",
+            "LME 3M aluminium",
+            "Exchange prices",
+            round(float(lme_quote["last"]), 2) if lme_quote else "Unavailable",
+            "USD/t" if lme_quote else "",
+            "live" if lme_quote else "unavailable",
+            "Sina Finance quote feed",
+            SOURCE_URLS["lme_aluminium"],
+            "Sina symbol hf_AHD is used as the public delayed LME aluminium proxy." if lme_quote else quote_error,
+            str(lme_quote.get("timestamp", "")) if lme_quote else "",
+            10,
+        )
+    )
+    rows.append(
+        metric(
+            "lme_cash_3m_spread",
+            "LME cash/3M spread",
+            "Exchange prices",
+            "Source-linked",
+            "",
+            "reference",
+            "LME cash and 3M prompt checker",
+            SOURCE_URLS["lme_cash_3m"],
+            "Public live cash/3M values are not fetched; use the LME checker/report as the source of record.",
+            sort_order=20,
+        )
+    )
+    rows.append(
+        metric(
+            "shfe_front_month",
+            "SHFE front month",
+            "Exchange prices",
+            round(float(front_contract["last"]), 2) if front_contract else "Unavailable",
+            "CNY/t" if front_contract else "",
+            "live" if front_contract else "unavailable",
+            "Sina Finance quote feed",
+            SOURCE_URLS["shfe_market"],
+            str(front_contract.get("contract", "")) if front_contract else quote_error,
+            str(front_contract.get("timestamp", "")) if front_contract else "",
+            30,
+            {"contract": front_contract.get("contract", "") if front_contract else ""},
+        )
+    )
+    rows.append(
+        metric(
+            "shfe_active_month",
+            "SHFE active month",
+            "Exchange prices",
+            round(float(active_contract["last"]), 2) if active_contract else "Unavailable",
+            "CNY/t" if active_contract else "",
+            "live" if active_contract else "unavailable",
+            "Sina Finance quote feed",
+            SOURCE_URLS["shfe_market"],
+            str(active_contract.get("contract", "")) if active_contract else quote_error,
+            str(active_contract.get("timestamp", "")) if active_contract else "",
+            40,
+            {"contract": active_contract.get("contract", "") if active_contract else ""},
+        )
+    )
+    spread_value = ", ".join(f"{spread['label']}: {spread['value']:+.0f}" for spread in spreads[:3])
+    rows.append(
+        metric(
+            "shfe_nearby_spreads",
+            "SHFE nearby calendar spreads",
+            "Exchange prices",
+            spread_value or "Unavailable",
+            "CNY/t",
+            "computed" if spreads else "unavailable",
+            "Computed from SHFE aluminium quotes",
+            SOURCE_URLS["shfe_market"],
+            "Far minus near. Positive values mean the later contract trades above the nearby contract.",
+            sort_order=50,
+            extra={"spreads": list(spreads)},
+        )
+    )
+
+    rates = fx_rates.get("rates", {}) if fx_rates else {}
+    for index, code in enumerate(("CNH", "CNY"), start=1):
+        value = rates.get(code) if isinstance(rates, dict) else None
+        rows.append(
+            metric(
+                f"usd_{code.lower()}",
+                f"USD/{code}",
+                "FX and funding",
+                round(float(value), 6) if value is not None else "Unavailable",
+                code,
+                "live" if value is not None else "unavailable",
+                "ExchangeRate-API free endpoint",
+                SOURCE_URLS["fx"],
+                "" if value is not None else fx_error,
+                str(fx_rates.get("updated_at", "")) if fx_rates else "",
+                60 + index,
+            )
+        )
+
+    rows.append(
+        metric(
+            "import_parity",
+            "Indicative import parity P&L",
+            "Arb model",
+            parity.get("import_pnl_cny_t", "Unavailable"),
+            "CNY/t" if parity.get("status") == "computed" else "",
+            str(parity.get("status", "unavailable")),
+            "Computed from public quotes and manual cost defaults",
+            SOURCE_URLS["lme_aluminium"],
+            str(parity.get("notes", "")),
+            sort_order=70,
+            extra={"parity": parity},
+        )
+    )
+
+    premium_signal = latest_signal_for_factor(signals, "supply_physical_premiums")
+    inventory_signal = latest_signal_for_factor(signals, "supply_inventories")
+    policy_signal = latest_signal_for_factor(signals, "supply_trade_policy")
+    rows.extend(
+        [
+            metric(
+                "china_spot_premium_discount",
+                "China spot aluminium premium/discount",
+                "Physical premiums",
+                "Source-linked",
+                "",
+                "reference",
+                "Shanghai Metals Market",
+                SOURCE_URLS["smm_aluminium"],
+                "SMM publishes China spot aluminium assessments; the scanner links the source but does not copy restricted price tables.",
+                sort_order=80,
+            ),
+            metric(
+                "shanghai_bonded_premium",
+                "Shanghai bonded premium",
+                "Physical premiums",
+                "Source-linked",
+                "",
+                "reference",
+                "Shanghai Metals Market import arbitrage screen",
+                SOURCE_URLS["smm_import_arb"],
+                "Bonded premium is a key physical input for landed-cost modelling; keep it as a manual dashboard assumption when no public feed is available.",
+                sort_order=90,
+            ),
+            metric(
+                "regional_physical_premiums",
+                "Japan/Europe/US physical premiums",
+                "Physical premiums",
+                str(premium_signal.get("title", "Source-linked")) if premium_signal else "Source-linked",
+                "",
+                "watch" if premium_signal else "reference",
+                "News scan and LME aluminium premium contracts",
+                signal_source_url(premium_signal, "https://www.lme.com/en/Metals/Non-ferrous/LME-Aluminium-Premiums"),
+                signal_note(premium_signal, "Use public LME premium contract pages and news scans; many spot premium assessments are vendor data."),
+                sort_order=100,
+            ),
+            metric(
+                "freight_insurance",
+                "Freight and insurance",
+                "Logistics",
+                "Source-linked",
+                "",
+                "reference",
+                "Freightos FBX and Drewry WCI",
+                SOURCE_URLS["freightos"],
+                "Container/freight indexes are public references; route-specific aluminium cargo and insurance costs remain manual model inputs.",
+                sort_order=110,
+            ),
+            metric(
+                "warehouse_rent_queues",
+                "Warehouse rent and load-out queues",
+                "Warehousing",
+                "Source-linked",
+                "",
+                "reference",
+                "LME warehouse and queue reports",
+                SOURCE_URLS["lme_queue_reports"],
+                "LME publishes queue and warehouse reports; live scanner access may require browser/login flow.",
+                sort_order=120,
+            ),
+            metric(
+                "lme_warrant_availability",
+                "LME warrant availability",
+                "Warehousing",
+                str(inventory_signal.get("title", "Source-linked")) if inventory_signal else "Source-linked",
+                "",
+                "watch" if inventory_signal else "reference",
+                "LME stock breakdown report and news scan",
+                signal_source_url(inventory_signal, SOURCE_URLS["lme_stock_reports"]),
+                signal_note(inventory_signal, "Use LME stock breakdown reports for on-warrant/cancelled-warrant detail."),
+                sort_order=130,
+            ),
+            metric(
+                "shfe_warrant_stocks",
+                "SHFE warrant stocks",
+                "Warehousing",
+                "Source-linked",
+                "",
+                "reference",
+                "SHFE market data",
+                SOURCE_URLS["shfe_market"],
+                "SHFE warehouse receipt and inventory data are public market-data references but not parsed by this static scanner yet.",
+                sort_order=140,
+            ),
+            metric(
+                "import_vat_export_rebate_rules",
+                "Import duty/VAT/export rebate rules",
+                "Rules and costs",
+                str(policy_signal.get("title", "13% VAT default")) if policy_signal else "13% VAT default",
+                "",
+                "watch" if policy_signal else "manual",
+                "China tax/customs references and news scan",
+                signal_source_url(policy_signal, SOURCE_URLS["china_tax"]),
+                signal_note(policy_signal, "The model defaults to 13% VAT and 0% import duty; verify HS-code-specific duties, export taxes, and rebate rules before trading."),
+                sort_order=150,
+            ),
+            metric(
+                "funding_rates",
+                "Onshore/offshore funding rates",
+                "FX and funding",
+                "Source-linked",
+                "",
+                "reference",
+                "SHIBOR and TMA CNH HIBOR",
+                SOURCE_URLS["shibor"],
+                "Funding is kept as a manual model input; public rate pages are linked for onshore RMB and offshore CNH references.",
+                sort_order=160,
+            ),
+            metric(
+                "fees_margin",
+                "Brokerage, exchange fees, margin requirements",
+                "Rules and costs",
+                "Source-linked",
+                "",
+                "reference",
+                "LME and SHFE fee/margin references",
+                SOURCE_URLS["lme_fees"],
+                "Exchange fees and margin files are linked; broker commission and client margin add-ons are account-specific.",
+                sort_order=170,
+            ),
+        ]
+    )
+    rows.sort(key=lambda row: int(row.get("sort_order", 0)))
+    return rows
+
+
+def build_market_data(
+    signals: Sequence[Dict[str, object]] = (),
+    timeout: int = 20,
+    now: Optional[datetime] = None,
+) -> Dict[str, object]:
+    generated_at = datetime.now(timezone.utc).isoformat()
+    quote_error = ""
+    fx_error = ""
+    quote_map: Dict[str, List[str]] = {}
+    fx_rates: Dict[str, object] = {}
+    symbols = shfe_aluminium_symbols(now)
+    try:
+        quote_map = fetch_sina_hq(["hf_AHD", *symbols], timeout=timeout)
+    except Exception as exc:  # pragma: no cover - network defense
+        quote_error = str(exc)
+    try:
+        fx_rates = fetch_fx_rates(timeout=timeout)
+    except Exception as exc:  # pragma: no cover - network defense
+        fx_error = str(exc)
+
+    lme_quote = parse_lme_sina_quote(quote_map.get("hf_AHD", [])) if quote_map else None
+    contracts = [
+        contract
+        for symbol in symbols[1:]
+        for contract in [parse_shfe_contract(symbol, quote_map.get(symbol, []))]
+        if contract is not None
+    ]
+    contracts.sort(key=lambda contract: str(contract.get("contract", "")))
+    front_contract = contracts[0] if contracts else None
+    active_contract = next((contract for contract in contracts if contract.get("is_active")), None)
+    if active_contract is None and contracts:
+        active_contract = max(contracts, key=lambda contract: int(contract.get("open_interest") or 0))
+
+    spreads = build_calendar_spreads(contracts)
+    rates = fx_rates.get("rates", {}) if fx_rates else {}
+    parity = compute_parity(
+        parse_number(lme_quote.get("last")) if lme_quote else None,
+        parse_number(active_contract.get("last")) if active_contract else None,
+        parse_number(rates.get("CNY")) if isinstance(rates, dict) else None,
+        dict(DEFAULT_PARITY_ASSUMPTIONS),
+    )
+    coverage = build_market_coverage(
+        lme_quote=lme_quote,
+        front_contract=front_contract,
+        active_contract=active_contract,
+        spreads=spreads,
+        fx_rates=fx_rates,
+        parity=parity,
+        signals=signals,
+        quote_error=quote_error,
+        fx_error=fx_error,
+    )
+    return {
+        "generated_at": generated_at,
+        "source": {
+            "name": "Sina Finance quotes, ExchangeRate-API, public exchange/reference pages",
+            "quote_status": "ok" if quote_map else "error",
+            "quote_error": quote_error,
+            "fx_status": "ok" if fx_rates else "error",
+            "fx_error": fx_error,
+        },
+        "lme": lme_quote,
+        "shfe": {
+            "contracts": contracts,
+            "front_month": front_contract,
+            "active_month": active_contract,
+            "nearby_spreads": spreads,
+        },
+        "fx": fx_rates,
+        "parity": parity,
+        "coverage": coverage,
+    }
 
 
 def parse_rss_items(xml_bytes: bytes, query_factor_ids: Sequence[str]) -> List[Dict[str, object]]:
@@ -1168,6 +1791,7 @@ def scan_news(max_per_query: int, lookback_days: int, timeout: int) -> Dict[str,
     ]
     classified.sort(key=lambda article: str(article.get("published_at", "")), reverse=True)
     signals = group_articles(classified)
+    market_data = build_market_data(signals=signals, timeout=timeout)
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -1183,6 +1807,7 @@ def scan_news(max_per_query: int, lookback_days: int, timeout: int) -> Dict[str,
         ),
         "factors": [factor_to_json(factor) for factor in FACTOR_CATALOG],
         "factor_groups": build_factor_groups(signals),
+        "market_data": market_data,
         "queries": query_log,
         "articles": classified,
         "signals": signals,

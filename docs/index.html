@@ -3,24 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aluminium Demand/Supply Monitor</title>
+    <title>Aluminium LME/SHFE Arb Monitor</title>
     <style>
       :root {
         color-scheme: light;
-        --bg: #f6f7f4;
+        --bg: #f4f6f8;
         --panel: #ffffff;
-        --ink: #1c2421;
-        --muted: #667069;
-        --line: #d9ded6;
+        --ink: #17201c;
+        --muted: #617067;
+        --line: #d8dfda;
+        --line-strong: #b8c2bc;
         --accent: #0f766e;
         --accent-ink: #ffffff;
-        --demand: #2563eb;
-        --supply: #b45309;
-        --long: #6d28d9;
-        --short: #047857;
-        --risk: #b91c1c;
-        --ease: #047857;
-        --watch: #475569;
+        --blue: #1d4ed8;
+        --amber: #b45309;
+        --green: #047857;
+        --red: #b91c1c;
+        --purple: #6d28d9;
+        --slate: #475569;
+        --soft-blue: #eff6ff;
+        --soft-amber: #fff7ed;
+        --soft-green: #ecfdf5;
+        --soft-red: #fef2f2;
         font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       }
 
@@ -40,10 +44,14 @@
         font: inherit;
       }
 
+      a {
+        color: inherit;
+      }
+
       .shell {
-        width: min(1480px, calc(100vw - 32px));
+        width: min(1500px, calc(100vw - 32px));
         margin: 0 auto;
-        padding: 22px 0 38px;
+        padding: 22px 0 40px;
       }
 
       .topbar {
@@ -57,8 +65,8 @@
 
       h1 {
         margin: 0 0 8px;
-        font-size: clamp(1.65rem, 2.8vw, 2.55rem);
-        line-height: 1.05;
+        font-size: clamp(1.65rem, 2.7vw, 2.5rem);
+        line-height: 1.06;
         letter-spacing: 0;
       }
 
@@ -81,7 +89,7 @@
       }
 
       .search {
-        min-width: min(360px, 100%);
+        width: min(360px, 100%);
         height: 38px;
         border: 1px solid var(--line);
         border-radius: 8px;
@@ -133,7 +141,7 @@
         justify-content: space-between;
         gap: 12px;
         align-items: center;
-        margin: 20px 0 10px;
+        margin: 24px 0 10px;
       }
 
       .section-head h2 {
@@ -145,6 +153,261 @@
       .count {
         color: var(--muted);
         font-size: 0.92rem;
+      }
+
+      .kpi-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(160px, 1fr));
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .kpi {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 13px;
+        min-width: 0;
+      }
+
+      .kpi-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        color: var(--muted);
+        font-size: 0.82rem;
+        line-height: 1.25;
+      }
+
+      .kpi-value {
+        margin-top: 8px;
+        font-size: 1.45rem;
+        line-height: 1.1;
+        font-weight: 720;
+        overflow-wrap: anywhere;
+      }
+
+      .kpi-note {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 0.8rem;
+        line-height: 1.35;
+      }
+
+      .status {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        padding: 3px 7px;
+        font-size: 0.72rem;
+        line-height: 1;
+        white-space: nowrap;
+        color: var(--slate);
+        background: #f8fafc;
+      }
+
+      .status.live,
+      .status.computed {
+        border-color: #bbf7d0;
+        color: var(--green);
+        background: var(--soft-green);
+      }
+
+      .status.watch {
+        border-color: #fed7aa;
+        color: var(--amber);
+        background: var(--soft-amber);
+      }
+
+      .status.reference,
+      .status.manual {
+        border-color: #bfdbfe;
+        color: var(--blue);
+        background: var(--soft-blue);
+      }
+
+      .status.unavailable,
+      .status.error {
+        border-color: #fecaca;
+        color: var(--red);
+        background: var(--soft-red);
+      }
+
+      .parity-grid {
+        display: grid;
+        grid-template-columns: minmax(300px, 0.95fr) minmax(420px, 1.4fr);
+        gap: 14px;
+        align-items: start;
+      }
+
+      .parity-output,
+      .assumption-panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 14px;
+      }
+
+      .parity-main {
+        display: grid;
+        gap: 10px;
+      }
+
+      .parity-number {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        line-height: 1.02;
+        font-weight: 760;
+        overflow-wrap: anywhere;
+      }
+
+      .parity-number.positive {
+        color: var(--green);
+      }
+
+      .parity-number.negative {
+        color: var(--red);
+      }
+
+      .parity-subgrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: 8px;
+      }
+
+      .parity-stat {
+        border-top: 1px solid var(--line);
+        padding-top: 9px;
+      }
+
+      .parity-stat span {
+        display: block;
+        color: var(--muted);
+        font-size: 0.78rem;
+        line-height: 1.25;
+      }
+
+      .parity-stat strong {
+        display: block;
+        margin-top: 3px;
+        font-size: 1rem;
+        line-height: 1.2;
+      }
+
+      .input-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(120px, 1fr));
+        gap: 10px;
+      }
+
+      .field label {
+        display: block;
+        margin-bottom: 5px;
+        color: var(--muted);
+        font-size: 0.78rem;
+        line-height: 1.2;
+      }
+
+      .field input {
+        width: 100%;
+        height: 38px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0 10px;
+        color: var(--ink);
+        background: #fff;
+      }
+
+      .assumption-actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+      }
+
+      .icon-button {
+        height: 34px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        color: var(--ink);
+        padding: 0 10px;
+        cursor: pointer;
+      }
+
+      .matrix-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+      }
+
+      .matrix-table {
+        width: 100%;
+        min-width: 980px;
+        border-collapse: collapse;
+      }
+
+      .matrix-table th,
+      .matrix-table td {
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+        font-size: 0.9rem;
+        line-height: 1.35;
+      }
+
+      .matrix-table th {
+        color: var(--muted);
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        background: #f8fafc;
+        letter-spacing: 0;
+      }
+
+      .matrix-table tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .metric-name {
+        font-weight: 670;
+      }
+
+      .metric-category {
+        color: var(--muted);
+        font-size: 0.78rem;
+        margin-top: 3px;
+      }
+
+      .metric-value {
+        font-weight: 680;
+      }
+
+      .metric-note {
+        color: #334155;
+        max-width: 520px;
+      }
+
+      .source-link {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 8px;
+        color: var(--ink);
+        background: #fafafa;
+        font-size: 0.8rem;
+        line-height: 1;
+        text-decoration: none;
+        display: inline-block;
+        max-width: 220px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .source-link:hover {
+        border-color: var(--accent);
+        color: var(--accent);
       }
 
       .factor-list {
@@ -194,25 +457,25 @@
 
       .signal-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr));
         gap: 10px;
       }
 
       .signal {
         background: var(--panel);
         border: 1px solid var(--line);
-        border-left: 5px solid var(--watch);
+        border-left: 5px solid var(--slate);
         border-radius: 8px;
         padding: 14px;
         min-width: 0;
       }
 
       .signal[data-side="demand"] {
-        border-left-color: var(--demand);
+        border-left-color: var(--blue);
       }
 
       .signal[data-side="supply"] {
-        border-left-color: var(--supply);
+        border-left-color: var(--amber);
       }
 
       .signal-title {
@@ -256,26 +519,6 @@
         margin-top: 10px;
       }
 
-      .source-link {
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        padding: 5px 8px;
-        color: var(--ink);
-        background: #fafbf9;
-        font-size: 0.8rem;
-        line-height: 1;
-        text-decoration: none;
-        max-width: 100%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-
-      .source-link:hover {
-        border-color: var(--accent);
-        color: var(--accent);
-      }
-
       .tags {
         display: flex;
         flex-wrap: wrap;
@@ -288,39 +531,39 @@
         border-radius: 999px;
         padding: 4px 8px;
         color: var(--muted);
-        background: #fafbf9;
+        background: #fafafa;
         font-size: 0.78rem;
         line-height: 1;
         white-space: nowrap;
       }
 
       .tag.demand {
-        color: var(--demand);
+        color: var(--blue);
         border-color: #bfdbfe;
       }
 
       .tag.supply {
-        color: var(--supply);
+        color: var(--amber);
         border-color: #fed7aa;
       }
 
       .tag.short {
-        color: var(--short);
+        color: var(--green);
         border-color: #bbf7d0;
       }
 
       .tag.long {
-        color: var(--long);
+        color: var(--purple);
         border-color: #ddd6fe;
       }
 
       .tag.tight {
-        color: var(--risk);
+        color: var(--red);
         border-color: #fecaca;
       }
 
       .tag.ease {
-        color: var(--ease);
+        color: var(--green);
         border-color: #bbf7d0;
       }
 
@@ -334,10 +577,20 @@
       }
 
       .error {
-        color: var(--risk);
+        color: var(--red);
       }
 
-      @media (max-width: 1050px) {
+      @media (max-width: 1180px) {
+        .kpi-grid {
+          grid-template-columns: repeat(3, minmax(160px, 1fr));
+        }
+
+        .parity-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 860px) {
         .topbar {
           grid-template-columns: 1fr;
         }
@@ -345,14 +598,26 @@
         .toolbar {
           justify-content: start;
         }
+
+        .kpi-grid {
+          grid-template-columns: repeat(2, minmax(150px, 1fr));
+        }
+
+        .input-grid,
+        .parity-subgrid {
+          grid-template-columns: repeat(2, minmax(120px, 1fr));
+        }
       }
 
-      @media (max-width: 720px) {
+      @media (max-width: 620px) {
         .shell {
-          width: min(100vw - 20px, 1480px);
+          width: min(100vw - 20px, 1500px);
           padding-top: 14px;
         }
 
+        .kpi-grid,
+        .input-grid,
+        .parity-subgrid,
         .factor-header {
           grid-template-columns: 1fr;
         }
@@ -377,10 +642,10 @@
     <main class="shell">
       <header class="topbar">
         <div>
-          <h1>Aluminium Demand/Supply Monitor</h1>
+          <h1>Aluminium LME/SHFE Arb Monitor</h1>
           <div class="timestamp" id="timestamp">Loading latest scan...</div>
         </div>
-        <div class="toolbar" aria-label="Filters">
+        <div class="toolbar" aria-label="News filters">
           <input class="search" id="search" type="search" placeholder="Search factors, summaries, sources">
           <div class="segmented" data-filter="side" aria-label="Side">
             <button class="active" data-value="all" type="button">All</button>
@@ -405,8 +670,86 @@
       </header>
 
       <section>
+        <div class="kpi-grid" id="kpis"></div>
+      </section>
+
+      <section>
         <div class="section-head">
-          <h2>Watched Factors</h2>
+          <h2>Import Parity</h2>
+          <div class="count" id="parity-source">Waiting for market data</div>
+        </div>
+        <div class="parity-grid">
+          <div class="parity-output">
+            <div class="parity-main">
+              <div>
+                <div class="kpi-label">Import P&amp;L</div>
+                <div class="parity-number" id="parity-pnl">-</div>
+              </div>
+              <div class="parity-subgrid">
+                <div class="parity-stat">
+                  <span>Landed cost</span>
+                  <strong id="landed-cost">-</strong>
+                </div>
+                <div class="parity-stat">
+                  <span>SHFE active</span>
+                  <strong id="shfe-active">-</strong>
+                </div>
+                <div class="parity-stat">
+                  <span>Adjusted ratio</span>
+                  <strong id="adjusted-ratio">-</strong>
+                </div>
+                <div class="parity-stat">
+                  <span>VAT-only breakeven</span>
+                  <strong id="vat-ratio">-</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="assumption-panel">
+            <div class="input-grid">
+              <div class="field">
+                <label for="offshore-premium">Offshore premium USD/t</label>
+                <input id="offshore-premium" data-assumption="offshore_premium_usd_t" type="number" step="1">
+              </div>
+              <div class="field">
+                <label for="freight-insurance">Freight + insurance USD/t</label>
+                <input id="freight-insurance" data-assumption="freight_insurance_usd_t" type="number" step="1">
+              </div>
+              <div class="field">
+                <label for="import-duty">Import duty %</label>
+                <input id="import-duty" data-assumption="import_duty_pct" type="number" step="0.1">
+              </div>
+              <div class="field">
+                <label for="vat">VAT %</label>
+                <input id="vat" data-assumption="vat_pct" type="number" step="0.1">
+              </div>
+              <div class="field">
+                <label for="admin-logistics">Admin/logistics CNY/t</label>
+                <input id="admin-logistics" data-assumption="admin_logistics_cny_t" type="number" step="1">
+              </div>
+              <div class="field">
+                <label for="financing">Financing CNY/t</label>
+                <input id="financing" data-assumption="financing_cny_t" type="number" step="1">
+              </div>
+            </div>
+            <div class="assumption-actions">
+              <button class="icon-button" id="reset-assumptions" type="button">Reset</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Market Matrix</h2>
+          <div class="count" id="market-count">0 rows</div>
+        </div>
+        <div class="matrix-wrap" id="market-matrix"></div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Watched News Factors</h2>
           <div class="count" id="result-count">0 signals</div>
         </div>
         <div class="factor-list" id="factors"></div>
@@ -416,6 +759,8 @@
     <script>
       const state = {
         data: null,
+        assumptions: {},
+        defaultAssumptions: {},
         filters: {
           side: "all",
           horizon: "all",
@@ -426,16 +771,26 @@
 
       const nodes = {
         timestamp: document.getElementById("timestamp"),
+        kpis: document.getElementById("kpis"),
+        paritySource: document.getElementById("parity-source"),
+        parityPnl: document.getElementById("parity-pnl"),
+        landedCost: document.getElementById("landed-cost"),
+        shfeActive: document.getElementById("shfe-active"),
+        adjustedRatio: document.getElementById("adjusted-ratio"),
+        vatRatio: document.getElementById("vat-ratio"),
+        marketCount: document.getElementById("market-count"),
+        marketMatrix: document.getElementById("market-matrix"),
         factors: document.getElementById("factors"),
         resultCount: document.getElementById("result-count"),
         search: document.getElementById("search"),
-        impact: document.getElementById("impact")
+        impact: document.getElementById("impact"),
+        resetAssumptions: document.getElementById("reset-assumptions")
       };
 
       function formatDate(value, options = {}) {
         if (!value) return "Unknown time";
         const date = new Date(value);
-        if (Number.isNaN(date.getTime())) return "Unknown time";
+        if (Number.isNaN(date.getTime())) return String(value);
         return date.toLocaleString(undefined, {
           year: "numeric",
           month: "short",
@@ -450,6 +805,30 @@
         return `${formatDate(value, { timeZone: "UTC" })} UTC`;
       }
 
+      function formatNumber(value, digits = 0) {
+        const number = Number(value);
+        if (!Number.isFinite(number)) return "-";
+        return number.toLocaleString(undefined, {
+          minimumFractionDigits: digits,
+          maximumFractionDigits: digits
+        });
+      }
+
+      function signedNumber(value, digits = 0) {
+        const number = Number(value);
+        if (!Number.isFinite(number)) return "-";
+        const sign = number > 0 ? "+" : "";
+        return `${sign}${formatNumber(number, digits)}`;
+      }
+
+      function metricValue(row) {
+        if (!row) return "-";
+        const value = row.value;
+        const numeric = Number(value);
+        const valueText = Number.isFinite(numeric) ? formatNumber(numeric, Math.abs(numeric) < 10 ? 4 : 0) : escapeHtml(value || "-");
+        return `${valueText}${row.unit ? ` ${escapeHtml(row.unit)}` : ""}`;
+      }
+
       function tagClass(value) {
         const text = String(value || "").toLowerCase();
         if (text === "demand") return "demand";
@@ -459,6 +838,10 @@
         if (text.includes("tightening") || text.includes("downside")) return "tight";
         if (text.includes("easing") || text.includes("upside")) return "ease";
         return "";
+      }
+
+      function statusClass(value) {
+        return String(value || "unavailable").toLowerCase().replace(/[^a-z0-9]+/g, "-");
       }
 
       function labelHorizon(value) {
@@ -474,6 +857,138 @@
           .replaceAll(">", "&gt;")
           .replaceAll('"', "&quot;")
           .replaceAll("'", "&#039;");
+      }
+
+      function coverageRows() {
+        return state.data?.market_data?.coverage || [];
+      }
+
+      function rowById(id) {
+        return coverageRows().find((row) => row.id === id);
+      }
+
+      function renderKpis() {
+        const ids = [
+          "lme_3m_aluminium",
+          "shfe_active_month",
+          "usd_cnh",
+          "shfe_nearby_spreads",
+          "import_parity"
+        ];
+        nodes.kpis.innerHTML = ids.map((id) => {
+          const row = rowById(id);
+          if (!row) return "";
+          const status = row.status || "unavailable";
+          const note = row.id === "shfe_active_month" && row.contract ? row.contract : row.notes;
+          return `
+            <article class="kpi">
+              <div class="kpi-label">
+                <span>${escapeHtml(row.label)}</span>
+                <span class="status ${statusClass(status)}">${escapeHtml(status)}</span>
+              </div>
+              <div class="kpi-value">${metricValue(row)}</div>
+              <div class="kpi-note">${escapeHtml(note || row.source || "")}</div>
+            </article>
+          `;
+        }).join("");
+      }
+
+      function loadAssumptions() {
+        const defaults = state.data?.market_data?.parity?.assumptions || {};
+        state.defaultAssumptions = { ...defaults };
+        state.assumptions = { ...defaults };
+        document.querySelectorAll("[data-assumption]").forEach((input) => {
+          const key = input.dataset.assumption;
+          input.value = state.assumptions[key] ?? "";
+        });
+      }
+
+      function marketInputs() {
+        const market = state.data?.market_data || {};
+        return {
+          lme: Number(market.lme?.last),
+          shfe: Number(market.shfe?.active_month?.last),
+          fx: Number(market.fx?.rates?.CNY)
+        };
+      }
+
+      function calculateParity() {
+        const { lme, shfe, fx } = marketInputs();
+        if (![lme, shfe, fx].every(Number.isFinite)) return null;
+        const premium = Number(state.assumptions.offshore_premium_usd_t || 0);
+        const freight = Number(state.assumptions.freight_insurance_usd_t || 0);
+        const duty = Number(state.assumptions.import_duty_pct || 0) / 100;
+        const vat = Number(state.assumptions.vat_pct || 0) / 100;
+        const admin = Number(state.assumptions.admin_logistics_cny_t || 0);
+        const financing = Number(state.assumptions.financing_cny_t || 0);
+        const landed = (lme + premium + freight) * fx * (1 + duty) * (1 + vat) + admin + financing;
+        return {
+          landed,
+          pnl: shfe - landed,
+          shfe,
+          adjustedRatio: shfe / (lme * fx),
+          vatRatio: fx * (1 + vat)
+        };
+      }
+
+      function renderParity() {
+        const parity = calculateParity();
+        const source = state.data?.market_data?.source || {};
+        nodes.paritySource.textContent = `Quotes: ${source.quote_status || "unknown"} | FX: ${source.fx_status || "unknown"}`;
+        if (!parity) {
+          nodes.parityPnl.textContent = "-";
+          nodes.parityPnl.classList.remove("positive", "negative");
+          nodes.landedCost.textContent = "-";
+          nodes.shfeActive.textContent = "-";
+          nodes.adjustedRatio.textContent = "-";
+          nodes.vatRatio.textContent = "-";
+          return;
+        }
+        nodes.parityPnl.textContent = `${signedNumber(parity.pnl, 0)} CNY/t`;
+        nodes.parityPnl.classList.toggle("positive", parity.pnl > 0);
+        nodes.parityPnl.classList.toggle("negative", parity.pnl < 0);
+        nodes.landedCost.textContent = `${formatNumber(parity.landed, 0)} CNY/t`;
+        nodes.shfeActive.textContent = `${formatNumber(parity.shfe, 0)} CNY/t`;
+        nodes.adjustedRatio.textContent = formatNumber(parity.adjustedRatio, 4);
+        nodes.vatRatio.textContent = formatNumber(parity.vatRatio, 4);
+      }
+
+      function renderMarketMatrix() {
+        const rows = coverageRows();
+        nodes.marketCount.textContent = `${rows.length} rows`;
+        if (!rows.length) {
+          nodes.marketMatrix.innerHTML = '<div class="empty">No market matrix rows in the current scan.</div>';
+          return;
+        }
+        nodes.marketMatrix.innerHTML = `
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Value</th>
+                <th>Status</th>
+                <th>Updated</th>
+                <th>Source</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows.map((row) => `
+                <tr>
+                  <td>
+                    <div class="metric-name">${escapeHtml(row.label)}</div>
+                    <div class="metric-category">${escapeHtml(row.category || "")}</div>
+                  </td>
+                  <td class="metric-value">${metricValue(row)}</td>
+                  <td><span class="status ${statusClass(row.status)}">${escapeHtml(row.status || "unavailable")}</span></td>
+                  <td>${escapeHtml(row.updated_at ? formatDate(row.updated_at) : "-")}</td>
+                  <td><a class="source-link" href="${escapeHtml(row.source_url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.source || "Source")}</a></td>
+                  <td class="metric-note">${escapeHtml(row.notes || "")}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        `;
       }
 
       function searchable(factor, signal) {
@@ -584,7 +1099,11 @@
       }
 
       function render() {
-        nodes.timestamp.textContent = `Last scan: ${formatUtcDate(state.data?.generated_at)} | Source: ${state.data?.source?.name || "unknown"}`;
+        const marketSource = state.data?.market_data?.source?.name || "market data unavailable";
+        nodes.timestamp.textContent = `Last scan: ${formatUtcDate(state.data?.generated_at)} | News: ${state.data?.source?.name || "unknown"} | Market: ${marketSource}`;
+        renderKpis();
+        renderParity();
+        renderMarketMatrix();
         renderFactors();
       }
 
@@ -607,6 +1126,19 @@
           state.filters.impact = nodes.impact.value;
           renderFactors();
         });
+        document.querySelectorAll("[data-assumption]").forEach((input) => {
+          input.addEventListener("input", () => {
+            state.assumptions[input.dataset.assumption] = Number(input.value || 0);
+            renderParity();
+          });
+        });
+        nodes.resetAssumptions.addEventListener("click", () => {
+          state.assumptions = { ...state.defaultAssumptions };
+          document.querySelectorAll("[data-assumption]").forEach((input) => {
+            input.value = state.assumptions[input.dataset.assumption] ?? "";
+          });
+          renderParity();
+        });
       }
 
       async function boot() {
@@ -615,10 +1147,13 @@
           const response = await fetch(`data/latest.json?ts=${Date.now()}`);
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           state.data = await response.json();
+          loadAssumptions();
           render();
         } catch (error) {
           nodes.timestamp.textContent = "Scan data unavailable";
-          nodes.factors.innerHTML = `<div class="error">Could not load data/latest.json: ${escapeHtml(error.message)}</div>`;
+          nodes.kpis.innerHTML = "";
+          nodes.marketMatrix.innerHTML = `<div class="error">Could not load data/latest.json: ${escapeHtml(error.message)}</div>`;
+          nodes.factors.innerHTML = "";
         }
       }
 
