@@ -325,6 +325,21 @@
         margin-top: 10px;
       }
 
+      .method-note {
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+        color: #374151;
+        font-size: 0.86rem;
+        line-height: 1.45;
+      }
+
+      .method-note code {
+        color: var(--ink);
+        font-size: 0.82rem;
+        overflow-wrap: anywhere;
+      }
+
       .icon-button {
         height: 34px;
         border: 1px solid var(--line);
@@ -734,6 +749,11 @@
             </div>
             <div class="assumption-actions">
               <button class="icon-button" id="reset-assumptions" type="button">Reset</button>
+            </div>
+            <div class="method-note">
+              SMM Aluminum import arbitrage(Spot) benchmark:
+              <code>SHFE futures + SMM A00 spot premium - (LME 3M + SWAP Fee + import premium) * SGX USD/CNH FX futures * (1 + VAT) * (1 + import tariff) - charges</code>.
+              The SMM SWAP Fee is the LME prompt spread adjustment in USD/t, shown as Spread ($/T), not a broker commission.
             </div>
           </div>
         </div>
