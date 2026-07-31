@@ -848,21 +848,21 @@
       "side": "supply"
     }
   ],
-  "generated_at": "2026-07-30T09:49:26.484975+00:00",
+  "generated_at": "2026-07-31T10:03:38.910463+00:00",
   "market_data": {
     "coverage": [
       {
         "category": "Exchange prices",
         "id": "lme_3m_aluminium",
         "label": "LME 3M aluminium",
-        "notes": "<urlopen error [Errno 101] Network is unreachable>",
+        "notes": "Sina symbol hf_AHD is used as the public delayed LME aluminium proxy.",
         "sort_order": 10,
         "source": "Sina Finance quote feed",
         "source_url": "https://www.lme.com/en/Metals/Non-ferrous/LME-Aluminium",
-        "status": "unavailable",
-        "unit": "",
-        "updated_at": "",
-        "value": "Unavailable"
+        "status": "live",
+        "unit": "USD/t",
+        "updated_at": "2026-07-31T18:03:28+08:00",
+        "value": 3168.82
       },
       {
         "category": "Exchange prices",
@@ -879,31 +879,31 @@
       },
       {
         "category": "Exchange prices",
-        "contract": "",
+        "contract": "AL2607",
         "id": "shfe_front_month",
         "label": "SHFE front month",
-        "notes": "<urlopen error [Errno 101] Network is unreachable>",
+        "notes": "AL2607",
         "sort_order": 30,
         "source": "Sina Finance quote feed",
         "source_url": "https://www.shfe.com.cn/en/MarketData/",
-        "status": "unavailable",
-        "unit": "",
-        "updated_at": "",
-        "value": "Unavailable"
+        "status": "live",
+        "unit": "CNY/t",
+        "updated_at": "2026-07-15T15:00:00+08:00",
+        "value": 23140.0
       },
       {
         "category": "Exchange prices",
-        "contract": "",
+        "contract": "AL2609",
         "id": "shfe_active_month",
         "label": "SHFE active month",
-        "notes": "<urlopen error [Errno 101] Network is unreachable>",
+        "notes": "AL2609",
         "sort_order": 40,
         "source": "Sina Finance quote feed",
         "source_url": "https://www.shfe.com.cn/en/MarketData/",
-        "status": "unavailable",
-        "unit": "",
-        "updated_at": "",
-        "value": "Unavailable"
+        "status": "live",
+        "unit": "CNY/t",
+        "updated_at": "2026-07-31T15:00:00+08:00",
+        "value": 23630.0
       },
       {
         "category": "Exchange prices",
@@ -913,11 +913,60 @@
         "sort_order": 50,
         "source": "Computed from SHFE aluminium quotes",
         "source_url": "https://www.shfe.com.cn/en/MarketData/",
-        "spreads": [],
-        "status": "unavailable",
+        "spreads": [
+          {
+            "far_contract": "AL2608",
+            "id": "AL2608-AL2607",
+            "label": "AL2608 - AL2607",
+            "near_contract": "AL2607",
+            "unit": "CNY/t",
+            "value": 510.0
+          },
+          {
+            "far_contract": "AL2609",
+            "id": "AL2609-AL2608",
+            "label": "AL2609 - AL2608",
+            "near_contract": "AL2608",
+            "unit": "CNY/t",
+            "value": -20.0
+          },
+          {
+            "far_contract": "AL2610",
+            "id": "AL2610-AL2609",
+            "label": "AL2610 - AL2609",
+            "near_contract": "AL2609",
+            "unit": "CNY/t",
+            "value": -10.0
+          },
+          {
+            "far_contract": "AL2611",
+            "id": "AL2611-AL2610",
+            "label": "AL2611 - AL2610",
+            "near_contract": "AL2610",
+            "unit": "CNY/t",
+            "value": -45.0
+          },
+          {
+            "far_contract": "AL2612",
+            "id": "AL2612-AL2611",
+            "label": "AL2612 - AL2611",
+            "near_contract": "AL2611",
+            "unit": "CNY/t",
+            "value": -65.0
+          },
+          {
+            "far_contract": "AL2701",
+            "id": "AL2701-AL2612",
+            "label": "AL2701 - AL2612",
+            "near_contract": "AL2612",
+            "unit": "CNY/t",
+            "value": -40.0
+          }
+        ],
+        "status": "computed",
         "unit": "CNY/t",
         "updated_at": "",
-        "value": "Unavailable"
+        "value": "AL2608 - AL2607: +510, AL2609 - AL2608: -20, AL2610 - AL2609: -10"
       },
       {
         "category": "FX and funding",
@@ -929,8 +978,8 @@
         "source_url": "https://open.er-api.com/v6/latest/USD",
         "status": "live",
         "unit": "CNH",
-        "updated_at": "Thu, 30 Jul 2026 00:02:31 +0000",
-        "value": 6.764472
+        "updated_at": "Fri, 31 Jul 2026 00:02:31 +0000",
+        "value": 6.750225
       },
       {
         "category": "FX and funding",
@@ -942,15 +991,16 @@
         "source_url": "https://open.er-api.com/v6/latest/USD",
         "status": "live",
         "unit": "CNY",
-        "updated_at": "Thu, 30 Jul 2026 00:02:31 +0000",
-        "value": 6.773647
+        "updated_at": "Fri, 31 Jul 2026 00:02:31 +0000",
+        "value": 6.765736
       },
       {
         "category": "Arb model",
         "id": "import_parity",
         "label": "Indicative import parity P&L",
-        "notes": "Parity requires LME aluminium, SHFE aluminium, and USD/CNY.",
+        "notes": "Positive import P&L means SHFE is above estimated landed cost. Manual physical inputs are defaults.",
         "parity": {
+          "adjusted_shfe_lme_ratio": 1.1022,
           "assumptions": {
             "admin_logistics_cny_t": 150.0,
             "financing_cny_t": 0.0,
@@ -959,16 +1009,23 @@
             "offshore_premium_usd_t": 80.0,
             "vat_pct": 13.0
           },
-          "notes": "Parity requires LME aluminium, SHFE aluminium, and USD/CNY.",
-          "status": "unavailable"
+          "fx_usd_cny": 6.765736,
+          "import_pnl_cny_t": -1663.96,
+          "landed_cost_cny_t": 25293.96,
+          "lme_price_usd_t": 3168.82,
+          "notes": "Positive import P&L means SHFE is above estimated landed cost. Manual physical inputs are defaults.",
+          "shfe_lme_ratio": 7.457,
+          "shfe_price_cny_t": 23630.0,
+          "status": "computed",
+          "vat_only_breakeven_ratio": 7.6453
         },
         "sort_order": 70,
         "source": "Computed from public quotes and manual cost defaults",
         "source_url": "https://www.lme.com/en/Metals/Non-ferrous/LME-Aluminium",
-        "status": "unavailable",
-        "unit": "",
+        "status": "computed",
+        "unit": "CNY/t",
         "updated_at": "",
-        "value": "Unavailable"
+        "value": -1663.96
       },
       {
         "category": "Physical premiums",
@@ -1103,17 +1160,30 @@
     ],
     "fx": {
       "base": "USD",
-      "next_update_at": "Fri, 31 Jul 2026 00:17:01 +0000",
+      "next_update_at": "Sat, 01 Aug 2026 00:18:21 +0000",
       "provider": "https://www.exchangerate-api.com",
       "rates": {
-        "CNH": 6.764472,
-        "CNY": 6.773647
+        "CNH": 6.750225,
+        "CNY": 6.765736
       },
-      "updated_at": "Thu, 30 Jul 2026 00:02:31 +0000"
+      "updated_at": "Fri, 31 Jul 2026 00:02:31 +0000"
     },
-    "generated_at": "2026-07-30T09:49:05.888874+00:00",
-    "lme": null,
+    "generated_at": "2026-07-31T10:03:37.822004+00:00",
+    "lme": {
+      "date": "2026-07-31",
+      "high": 3204.5,
+      "last": 3168.82,
+      "low": 3167.0,
+      "name": "\u4f26\u94dd",
+      "open": 3191.0,
+      "previous_close": 3195.5,
+      "symbol": "hf_AHD",
+      "time": "18:03:28",
+      "timestamp": "2026-07-31T18:03:28+08:00",
+      "unit": "USD/t"
+    },
     "parity": {
+      "adjusted_shfe_lme_ratio": 1.1022,
       "assumptions": {
         "admin_logistics_cny_t": 150.0,
         "financing_cny_t": 0.0,
@@ -1122,21 +1192,286 @@
         "offshore_premium_usd_t": 80.0,
         "vat_pct": 13.0
       },
-      "notes": "Parity requires LME aluminium, SHFE aluminium, and USD/CNY.",
-      "status": "unavailable"
+      "fx_usd_cny": 6.765736,
+      "import_pnl_cny_t": -1663.96,
+      "landed_cost_cny_t": 25293.96,
+      "lme_price_usd_t": 3168.82,
+      "notes": "Positive import P&L means SHFE is above estimated landed cost. Manual physical inputs are defaults.",
+      "shfe_lme_ratio": 7.457,
+      "shfe_price_cny_t": 23630.0,
+      "status": "computed",
+      "vat_only_breakeven_ratio": 7.6453
     },
     "shfe": {
-      "active_month": null,
-      "contracts": [],
-      "front_month": null,
-      "nearby_spreads": []
+      "active_month": {
+        "ask": 23630.0,
+        "ask_size": 35,
+        "bid": 23625.0,
+        "bid_size": 41,
+        "contract": "AL2609",
+        "date": "2026-07-31",
+        "high": 23760.0,
+        "is_active": true,
+        "last": 23630.0,
+        "low": 23620.0,
+        "name": "\u94dd2609",
+        "open": 23650.0,
+        "open_interest": 139957,
+        "previous_settle": 23585.0,
+        "symbol": "nf_AL2609",
+        "time": "15:00:00",
+        "timestamp": "2026-07-31T15:00:00+08:00",
+        "unit": "CNY/t",
+        "volume": 247263
+      },
+      "contracts": [
+        {
+          "ask": 0.0,
+          "ask_size": 0,
+          "bid": 22825.0,
+          "bid_size": 5,
+          "contract": "AL2607",
+          "date": "2026-07-15",
+          "high": 23340.0,
+          "is_active": false,
+          "last": 23140.0,
+          "low": 22765.0,
+          "name": "\u94dd2607",
+          "open": 23300.0,
+          "open_interest": 2470,
+          "previous_settle": 23165.0,
+          "symbol": "nf_AL2607",
+          "time": "15:00:00",
+          "timestamp": "2026-07-15T15:00:00+08:00",
+          "unit": "CNY/t",
+          "volume": 15685
+        },
+        {
+          "ask": 23600.0,
+          "ask_size": 1,
+          "bid": 23580.0,
+          "bid_size": 3,
+          "contract": "AL2608",
+          "date": "2026-07-31",
+          "high": 23725.0,
+          "is_active": false,
+          "last": 23650.0,
+          "low": 23580.0,
+          "name": "\u94dd2608",
+          "open": 23615.0,
+          "open_interest": 16089,
+          "previous_settle": 23560.0,
+          "symbol": "nf_AL2608",
+          "time": "15:00:00",
+          "timestamp": "2026-07-31T15:00:00+08:00",
+          "unit": "CNY/t",
+          "volume": 45524
+        },
+        {
+          "ask": 23630.0,
+          "ask_size": 35,
+          "bid": 23625.0,
+          "bid_size": 41,
+          "contract": "AL2609",
+          "date": "2026-07-31",
+          "high": 23760.0,
+          "is_active": true,
+          "last": 23630.0,
+          "low": 23620.0,
+          "name": "\u94dd2609",
+          "open": 23650.0,
+          "open_interest": 139957,
+          "previous_settle": 23585.0,
+          "symbol": "nf_AL2609",
+          "time": "15:00:00",
+          "timestamp": "2026-07-31T15:00:00+08:00",
+          "unit": "CNY/t",
+          "volume": 247263
+        },
+        {
+          "ask": 23620.0,
+          "ask_size": 35,
+          "bid": 23615.0,
+          "bid_size": 84,
+          "contract": "AL2610",
+          "date": "2026-07-31",
+          "high": 23730.0,
+          "is_active": false,
+          "last": 23620.0,
+          "low": 23605.0,
+          "name": "\u94dd2610",
+          "open": 23650.0,
+          "open_interest": 57542,
+          "previous_settle": 23565.0,
+          "symbol": "nf_AL2610",
+          "time": "15:00:00",
+          "timestamp": "2026-07-31T15:00:00+08:00",
+          "unit": "CNY/t",
+          "volume": 144102
+        },
+        {
+          "ask": 23570.0,
+          "ask_size": 4,
+          "bid": 23555.0,
+          "bid_size": 5,
+          "contract": "AL2611",
+          "date": "2026-07-31",
+          "high": 23665.0,
+          "is_active": false,
+          "last": 23575.0,
+          "low": 23550.0,
+          "name": "\u94dd2611",
+          "open": 23555.0,
+          "open_interest": 12594,
+          "previous_settle": 23505.0,
+          "symbol": "nf_AL2611",
+          "time": "15:00:00",
+          "timestamp": "2026-07-31T15:00:00+08:00",
+          "unit": "CNY/t",
+          "volume": 53344
+        },
+        {
+          "ask": 23520.0,
+          "ask_size": 1,
+          "bid": 23505.0,
+          "bid_size": 5,
+          "contract": "AL2612",
+          "date": "2026-07-31",
+          "high": 23600.0,
+          "is_active": false,
+          "last": 23510.0,
+          "low": 23495.0,
+          "name": "\u94dd2612",
+          "open": 23530.0,
+          "open_interest": 5450,
+          "previous_settle": 23490.0,
+          "symbol": "nf_AL2612",
+          "time": "15:00:00",
+          "timestamp": "2026-07-31T15:00:00+08:00",
+          "unit": "CNY/t",
+          "volume": 50201
+        },
+        {
+          "ask": 23495.0,
+          "ask_size": 1,
+          "bid": 23465.0,
+          "bid_size": 1,
+          "contract": "AL2701",
+          "date": "2026-07-31",
+          "high": 23615.0,
+          "is_active": false,
+          "last": 23470.0,
+          "low": 23435.0,
+          "name": "\u94dd2701",
+          "open": 23615.0,
+          "open_interest": 3554,
+          "previous_settle": 23440.0,
+          "symbol": "nf_AL2701",
+          "time": "15:00:00",
+          "timestamp": "2026-07-31T15:00:00+08:00",
+          "unit": "CNY/t",
+          "volume": 20154
+        },
+        {
+          "ask": 23500.0,
+          "ask_size": 1,
+          "bid": 23450.0,
+          "bid_size": 2,
+          "contract": "AL2702",
+          "date": "2026-07-31",
+          "high": 23540.0,
+          "is_active": false,
+          "last": 23465.0,
+          "low": 23450.0,
+          "name": "\u94dd2702",
+          "open": 23515.0,
+          "open_interest": 935,
+          "previous_settle": 23435.0,
+          "symbol": "nf_AL2702",
+          "time": "15:00:00",
+          "timestamp": "2026-07-31T15:00:00+08:00",
+          "unit": "CNY/t",
+          "volume": 7531
+        }
+      ],
+      "front_month": {
+        "ask": 0.0,
+        "ask_size": 0,
+        "bid": 22825.0,
+        "bid_size": 5,
+        "contract": "AL2607",
+        "date": "2026-07-15",
+        "high": 23340.0,
+        "is_active": false,
+        "last": 23140.0,
+        "low": 22765.0,
+        "name": "\u94dd2607",
+        "open": 23300.0,
+        "open_interest": 2470,
+        "previous_settle": 23165.0,
+        "symbol": "nf_AL2607",
+        "time": "15:00:00",
+        "timestamp": "2026-07-15T15:00:00+08:00",
+        "unit": "CNY/t",
+        "volume": 15685
+      },
+      "nearby_spreads": [
+        {
+          "far_contract": "AL2608",
+          "id": "AL2608-AL2607",
+          "label": "AL2608 - AL2607",
+          "near_contract": "AL2607",
+          "unit": "CNY/t",
+          "value": 510.0
+        },
+        {
+          "far_contract": "AL2609",
+          "id": "AL2609-AL2608",
+          "label": "AL2609 - AL2608",
+          "near_contract": "AL2608",
+          "unit": "CNY/t",
+          "value": -20.0
+        },
+        {
+          "far_contract": "AL2610",
+          "id": "AL2610-AL2609",
+          "label": "AL2610 - AL2609",
+          "near_contract": "AL2609",
+          "unit": "CNY/t",
+          "value": -10.0
+        },
+        {
+          "far_contract": "AL2611",
+          "id": "AL2611-AL2610",
+          "label": "AL2611 - AL2610",
+          "near_contract": "AL2610",
+          "unit": "CNY/t",
+          "value": -45.0
+        },
+        {
+          "far_contract": "AL2612",
+          "id": "AL2612-AL2611",
+          "label": "AL2612 - AL2611",
+          "near_contract": "AL2611",
+          "unit": "CNY/t",
+          "value": -65.0
+        },
+        {
+          "far_contract": "AL2701",
+          "id": "AL2701-AL2612",
+          "label": "AL2701 - AL2612",
+          "near_contract": "AL2612",
+          "unit": "CNY/t",
+          "value": -40.0
+        }
+      ]
     },
     "source": {
       "fx_error": "",
       "fx_status": "ok",
       "name": "Sina Finance quotes, ExchangeRate-API, public exchange/reference pages",
-      "quote_error": "<urlopen error [Errno 101] Network is unreachable>",
-      "quote_status": "error"
+      "quote_error": "",
+      "quote_status": "ok"
     }
   },
   "queries": [
